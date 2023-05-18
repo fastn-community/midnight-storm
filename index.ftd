@@ -23,13 +23,6 @@ brand-name: Fastn
 heading: Documentation
 list-of-footer-logo: $list-of-footer-logo
 
-/-- document-header: Documentation
-nav1: Breadcrums
-nav2: Breadcrums
-nav3: Breadcrums
-nav4: Breadcrums
-arrow: $assets.files.static.arrowRight.png
-
 -- page-wrapper: 
 
 -- sidenav:
@@ -819,51 +812,6 @@ $footer-copyright.body
 
 
 
--- component document-header:
-caption title:
-string nav1:
-string nav2:
-string nav3:
-string nav4:
-ftd.image-src arrow:
-
--- ftd.column:
-width: fill-container
-padding-horizontal.px: 40
-
--- ftd.row:
-spacing.fixed.px: 14
-
--- breadcrums: $document-header.nav1
-arrow: $document-header.arrow
-
--- breadcrums: $document-header.nav2
-arrow: $document-header.arrow
-
--- breadcrums: $document-header.nav3
-arrow: $document-header.arrow
-
--- breadcrums: $document-header.nav4
-
--- end: ftd.row
-
--- ftd.text: $document-header.title
-role: $inherited.types.heading-large
-color: $inherited.colors.text
-
--- end: ftd.column
-
--- end: document-header
-
-
-
-
-
-
-
-
-
-
 -- component doc-paragraph:
 body body:
 
@@ -1349,43 +1297,6 @@ children: $col.child
 -- end: ftd.column
 
 -- end: col
-
-
-
-
-
-
-
-
-
-
--- component breadcrums: 
-caption title:
-optional ftd.image-src arrow:
-
--- ftd.column:
-width: fill-container
-align-content: center
-margin-vertical.px: 50
-
--- ftd.row:
-align-content: center
-spacing.fixed.px: 14
-padding-right.px: 6
-
--- ftd.text: $breadcrums.title
-role: $inherited.types.label-large
-color: $inherited.colors.text
-
--- ftd.image: 
-if: { breadcrums.arrow != NULL }
-src: $breadcrums.arrow
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: breadcrums
 
 
 
