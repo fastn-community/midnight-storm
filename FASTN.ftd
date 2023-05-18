@@ -2,8 +2,30 @@
 
 -- fastn.package: fastn-community.github.io/set-2-ds
 
--- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
+-- fastn.dependency: fastn-community.github.io/set-2-typography as typo
 
--- fastn.auto-import: bling/chat as chat
+-- fastn.dependency: fastn-community.github.io/set-2-cs as cs
+
+-- fastn.dependency: fastn-community.github.io/code-block
+
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
+
 -- fastn.auto-import: ds
+
+-- fastn.auto-import: cs
+
+-- fastn.auto-import: typo
+
+-- fastn.auto-import: fastn-community.github.io/set-2-ds/assets
+
+-- fastn.sitemap:
+
+# Label: /
+
+# Label: /
+
+# Label: /
+
+# Label: /
+
+# Label: /
