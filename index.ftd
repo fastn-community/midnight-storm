@@ -2,6 +2,8 @@
 -- import: fastn/processors as pr
 -- import: typo 
 -- import: cs
+-- import: fastn-community.github.io/set-2-ds/font as fonts
+
 
 -- string site-url: index.html
 
@@ -432,7 +434,6 @@ is-active: $obj.is-active
 -- cta-button: $header.cta-text
 role: primary
 link: /
-border-radius: 4 
 
 -- end: ftd.row
 
@@ -483,12 +484,17 @@ boolean is-active:
 -- ftd.text: $section-loop.title
 role: $inherited.types.copy-regular
 link: $section-loop.url
-color: $inherited.colors.text
-color if { section-loop.is-active }: $inherited.colors.shadow
+color: $inherited.colors.text-strong
+color if { section-loop.is-active }: $inherited.colors.text
+style if { section-loop.is-active }: bold
 
 -- end: ftd.column
 
 -- end: section-loop
+
+
+
+
 
 
 
@@ -506,8 +512,8 @@ spacing.fixed.px: 14
 padding-horizontal.px: 8
 
 -- ftd.text: $subsections-links.title
-color: $inherited.colors.text
-color if { subsections-links.is-active }: $inherited.colors.cta-primary.base
+color: $inherited.colors.text-strong
+color if { subsections-links.is-active }: $inherited.colors.shadow
 role: $inherited.types.label-large
 white-space: nowrap
 link: $subsections-links.url
@@ -526,35 +532,28 @@ align-self: center
 
 
 
+
+
+
 -- component cta-button:
 caption title:
 optional string role:
-integer border-radius: 0
 optional string link: /
-optional boolean medium: false
-boolean show-arrow: false
-optional ftd.image-src cta-icon: 
-optional integer width:
+optional boolean show-arrow: false
 boolean align-center: false
-integer padding-vertical: 10
-integer padding-horizontal: 28
 boolean transparent: false
-integer border-width: 1
-optional ftd.image-src src: 
 
 -- ftd.column:
 align-self if { cta-button.align-center }: center
 
 -- ftd.row:
-if: { !cta-button.medium }
-width.fixed.px if { cta-button.width != NULL}: $cta-button.width
 spacing.fixed.px: 10
 link if { cta-button.link != NULL }: $cta-button.link
 background.solid if { cta-button.role == "primary" }: $inherited.colors.cta-primary.base
 background.solid if { cta-button.role == "secondary" }: $inherited.colors.cta-secondary.base
-border-radius.px: $cta-button.border-radius
-padding-vertical.px: $cta-button.padding-vertical
-padding-horizontal.px: $cta-button.padding-horizontal
+border-radius.px: 4
+padding-vertical.px: 10
+padding-horizontal.px: 28
 align-content: center
 
 -- ftd.text: $cta-button.title
@@ -563,41 +562,6 @@ color if { cta-button.role == "secondary" }: $inherited.colors.cta-secondary.tex
 color if { cta-button.role == "primary" }: $inherited.colors.cta-primary.text
 white-space: nowrap
 text-align: center
-
--- ftd.image:
-if: { cta-button.src != NULL }
-src: $cta-button.src
-width: auto
-height: auto
-align-self: center
-
--- end: ftd.row
-
--- ftd.row:
-if: { cta-button.medium }
-width.fixed.px if { cta-button.width != NULL}: $cta-button.width
-spacing.fixed.px: 10
-link if { cta-button.link != NULL }: $cta-button.link
-background.solid if { cta-button.role == "primary" }: $inherited.colors.cta-primary.base
-background.solid if { cta-button.role == "secondary" }: $inherited.colors.cta-secondary.base
-border-radius.px: 30
-padding-vertical.px: $cta-button.padding-vertical
-padding-horizontal.px: $cta-button.padding-horizontal
-align-content: center
-
--- ftd.text: $cta-button.title
-role: $inherited.types.button-small
-color if { cta-button.role == "secondary" }: $inherited.colors.cta-secondary.text
-color if { cta-button.role == "primary" }: $inherited.colors.cta-primary.text
-white-space: nowrap
-text-align: center
-
--- ftd.image:
-if: { cta-button.show-arrow }
-src: $cta-button.src
-width: auto
-height: auto
-align-self: center
 
 -- end: ftd.row
 
@@ -640,7 +604,7 @@ background.solid: $inherited.colors.text
 -- end: ftd.column
 
 -- ftd.text: $use-case.title
-role: $inherited.types.copy-regular
+role: $fonts.copy-regular
 color if { use-case.shadow }: $inherited.colors.shadow
 color: $inherited.colors.text
 
@@ -1185,7 +1149,7 @@ border-radius.px: 10
 spacing.fixed.px: 15
 
 -- ftd.text: $box-code.title
-role: $inherited.types.heading-tiny
+role: $fonts.copy-medium
 color: $inherited.colors.text
 
 -- ftd.text: 
@@ -1250,7 +1214,7 @@ align-self: center
 spacing.fixed.px: 4
 
 -- ftd.text: $toast.title
-role: $inherited.types.heading-small
+role: $fonts.copy-large
 color: $inherited.colors.text
 
 -- ftd.text: 
