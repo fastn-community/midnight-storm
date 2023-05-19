@@ -39,10 +39,13 @@ We enable teams to iterate quickly and develop, preview, and ship delightful use
 
 Middleware uses the Vercel Edge Runtime, which is built on the same high-performance V8 JavaScript and WebAssembly engine that is used by the Chrome browser. The Edge Runtime exposes and extends a subset of Web Standard APIs such FetchEvent, Response, and Request, to give you more control over how you manipulate and configure a response, based on the incoming requests. To learn more about writing Middleware, see the Middleware API guide.
 
+-- doc-paragraph:
+
 As a developer, Edge Middleware gives you more control over the user experience, without adding additional size to the application, meaning better performance. For your end-users, they experience pre-rendered, personalized content with very low latency because it's running on the edge.
 
 Some common use-cases of Middleware are:
 
+-- end: doc-paragraph
 
 -- use-case: Authentication
 shadow: true
@@ -96,7 +99,7 @@ If the Middleware function is a default export, it can be named anything you cho
 
 npx create-docusaurus@latest my-website classic
 
--- markdown:
+-- doc-paragraph:
 
 The following code snippet shows an example of rewriting a URL, using a matcher config.
 
@@ -109,12 +112,13 @@ See the next/server documentation for more information.
 
 npx create-docusaurus@latest my-website classic
 
--- markdown:
+-- doc-paragraph:
 
 Edge Middleware is code that executes before a request is processed on a site. Based on the request, you can modify the response. Because it runs before the cache, using Middleware is an effective way of providing personalization to statically generated content. Depending on the incoming request, you can execute custom logic, rewrite, redirect, add headers and more, before returning a response.
 
 We enable teams to iterate quickly and develop, preview, and ship delightful user experiences. Fastn has zero-configuration support for 35+ frontend frameworks and integrates with your headless content, commerce, or database of choice.
 
+-- end: doc-paragraph
 
 -- title: Match Paths based on custom matcher config
 
@@ -177,6 +181,7 @@ down: true
 npx create-docusaurus@latest my-website classic
 
 -- h1: Loggings
+src1: $assets.files.static.doc2.png
 
 Our suite of products are open source and available on Github. You are free to download install and customize them to your needs.We’d love to hear your feedback and suggestions, and collectively make Documentation easier and better for everyone.
 
@@ -767,7 +772,7 @@ $footer-copyright.body
 
 
 
--- component markdown:
+-- component doc-paragraph:
 body body:
 
 -- ftd.column:
@@ -777,11 +782,11 @@ margin-vertical.px: 20
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
-$markdown.body
+$doc-paragraph.body
 
 -- end: ftd.column
 
--- end: markdown
+-- end: doc-paragraph
 
 
 
@@ -1083,13 +1088,40 @@ align-self: center
 
 -- component h1:
 caption title:
-optional body body:
-optional string id:
+body body:
+optional ftd.image-src src1:
+children child:
+optional string id: 
 
--- tf.h1: $h1.title
-id: $h1.id
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+id if { h1.id != NULL }: $h1.id
+region: h1
+
+-- ftd.text: $h1.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+
+-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+opacity: 0.60
 
 $h1.body
+
+-- ftd.image:
+if: { h1.src1 != NULL }
+src: $h1.src1
+align-self: center
+width: fill-container
+
+-- ftd.column:
+children: $h1.child
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: h1
 
@@ -1101,9 +1133,6 @@ $h1.body
 
 
 
-
-/-- component image:
-ftd.image-src image:
 
 -- component box-code:
 caption title:
