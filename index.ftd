@@ -1,7 +1,5 @@
 -- import: fastn
 -- import: fastn/processors as pr
--- import: typo 
--- import: cs
 -- import: fastn-community.github.io/set-2-ds/font as fonts
 
 
@@ -33,8 +31,7 @@ list-of-footer-logo: $list-of-footer-logo
 
 -- sub-section:
 
--- document: Edge Middleware
-src1: $assets.files.static.doc1.png
+-- h1: Edge Middleware
 
 Edge Middleware is code that executes before a request is processed on a site. Based on the request, you can modify the response. Because it runs before the cache, using Middleware is an effective way of providing personalization to statically generated content. Depending on the incoming request, you can execute custom logic, rewrite, redirect, add headers and more, before returning a response.
 
@@ -88,11 +85,11 @@ shadow: true
 shadow: true
 
 -- toast: Important
-toast-icon: $assets.files.static.important.svg
 
 Please note that some functionality (for example, anchor links) will not work in development. The functionality will work as expected in production.
 
--- document: Creating Edge Middleware
+-- h1: Creating Edge Middleware
+id: create-edge-mioddleware
 
 You can use Edge Middleware with any framework. To add Middleware to your app, you need to create a middleware.ts or middleware.js file in the root of your project.
 
@@ -110,7 +107,6 @@ Next.js Middleware comes with built in helpers that are based upon the native Fe
 
 See the next/server documentation for more information.
 
--- end: doc-paragraph
 
 -- box-code: -- -- FTD.ROW
 
@@ -184,7 +180,7 @@ down: true
 
 npx create-docusaurus@latest my-website classic
 
--- document: Loggings
+-- h1: Loggings
 src1: $assets.files.static.doc2.png
 
 Our suite of products are open source and available on Github. You are free to download install and customize them to your needs.We’d love to hear your feedback and suggestions, and collectively make Documentation easier and better for everyone.
@@ -1014,6 +1010,7 @@ role: $inherited.types.label-large
 style if { right-navbar-list.active }: bold
 color: $inherited.colors.text
 color if { right-navbar-list.active}: $inherited.colors.shadow
+link: $right-navbar-list.item.link
 
 -- end: ftd.column
 
@@ -1089,40 +1086,44 @@ align-self: center
 
 
 
--- component document:
+-- component h1:
 caption title:
 body body:
 optional ftd.image-src src1:
 children child:
+optional string id: 
 
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 24
+id if { h1.id != NULL }: $h1.id
+region: h1
 
--- ftd.text: $document.title
+-- ftd.text: $h1.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 
 -- ftd.text:
 role: $inherited.types.copy-large
 color: $inherited.colors.text
+opacity: 0.60
 
-$document.body
+$h1.body
 
 -- ftd.image:
-if: { document.src1 != NULL }
-src: $document.src1
+if: { h1.src1 != NULL }
+src: $h1.src1
 align-self: center
 width: fill-container
 
 -- ftd.column:
-children: $document.child
+children: $h1.child
 
 -- end: ftd.column
 
 -- end: ftd.column
 
--- end: document
+-- end: h1
 
 
 
@@ -1193,7 +1194,6 @@ children: $sub-section.child
 -- component toast:
 caption title:
 body body:
-ftd.image-src toast-icon:
 
 -- ftd.column:
 background.solid: $inherited.colors.info.text
@@ -1205,7 +1205,7 @@ margin-vertical.px: 44
 -- ftd.row:
 
 -- ftd.image:
-src: $toast.toast-icon
+src: $assets.files.static.info-icon.svg
 padding-right.px: 8
 padding-left.px: 16
 align-self: center
@@ -1349,29 +1349,41 @@ arrow: true
 
 -- record right-sidebar:
 caption title:
+string link: 
 
 -- right-sidebar list right-subtitle:
 
 -- right-sidebar: Create Edge Middleware
+link: #create-edge-mioddleware
 
 -- right-sidebar: Match Paths based on custom matcher config
+link: #create-edge-mioddleware
 
 -- right-sidebar: Match a single path
+link: #create-edge-mioddleware
 
 -- right-sidebar: Match multiple paths
+link: #create-edge-mioddleware
 
 -- right-sidebar: Match using regex
+link: #create-edge-mioddleware
 
 -- right-sidebar: Match based on character matching
+link: #create-edge-mioddleware
 
 -- right-sidebar: Match paths based on conditional statements
+link: #create-edge-mioddleware
 
 -- right-sidebar: Loggings
+link: #create-edge-mioddleware
 
 -- right-sidebar: Existing login connection
+link: #create-edge-mioddleware
 
 -- right-sidebar: Choosing a connection when creating a project
+link: #create-edge-mioddleware
 
 -- right-sidebar: Known limitations
+link: #create-edge-mioddleware
 
 -- end: right-subtitle
