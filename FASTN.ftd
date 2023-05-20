@@ -12,14 +12,14 @@
 
 -- fastn.dependency: fastn-community.github.io/set-2-cs as cs
 
--- fastn.dependency: fifthtry.github.io/code-block
--- fastn.dependency: fifthtry.github.io/typography
--- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+-- fastn.dependency: fastn-community.github.io/code-block
 
--- fastn.auto-import: fifthtry.github.io/code-block as cb
+-- fastn.dependency: fastn-community.github.io/typography
+
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
 exposing: code, rendered
 
--- fastn.auto-import: fifthtry.github.io/typography as tf
+-- fastn.auto-import: fastn-community.github.io/typography as tf
 exposing: h0, h1, h2, h3, markdown
 
 -- fastn.auto-import: ds

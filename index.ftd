@@ -23,7 +23,7 @@ brand-name: Fastn
 heading: Documentation
 list-of-footer-logo: $list-of-footer-logo
 
--- page-wrapper: 
+bodylllll
 
 -- sidenav:
 
@@ -47,42 +47,34 @@ As a developer, Edge Middleware gives you more control over the user experience,
 
 Some common use-cases of Middleware are:
 
--- use-case: Authentication
-shadow: true
+-- list-item-bold: Authentication
 
--- use-case: Geolocation
-shadow: true
+-- list-item-bold: Geolocation
 
--- use-case: Working with cookies
-shadow: true
+-- list-item-bold: Working with cookies
 
--- use-case: A/B testing
-shadow: true
+-- list-item-bold: A/B testing
 
--- use-case: Bot protection
-shadow: true
+-- list-item-bold: Bot protection
 
--- use-case: Rewrites
-shadow: true
+-- list-item-bold: Rewrites
 
--- use-case: Authentication
-margin-top: 44
-shadow: true
+-- markdown: 
 
--- use-case: Geolocation
-shadow: true
+\.
 
--- use-case: Working with cookies
-shadow: true
+-- list-item-bold: Authentication
 
--- use-case: A/B testing
-shadow: true
+-- list-item-bold: Geolocation
 
--- use-case: Bot protection
-shadow: true
+-- list-item-bold: Working with cookies
 
--- use-case: Rewrites
-shadow: true
+-- list-item-bold: A/B testing
+
+-- list-item-bold: Bot protection
+
+-- list-item-bold: Rewrites
+
 
 -- toast: Important
 
@@ -247,6 +239,7 @@ lang: ftd
 npx create-docusaurus@latest my-website classic
 
 -- h2: Known limitations
+id: know-limitations
 
 Our suite of products are open source and available on Github. You are free to download install and customize them to your needs.We’d love to hear your feedback and suggestions, and collectively make Documentation easier and better for everyone.
 
@@ -254,9 +247,8 @@ We enable teams to iterate quickly and develop, preview, and ship delightful use
 
 -- end: col
 
--- right-sidenav:
+-- right-sidebar:
 
--- end: page-wrapper
 
 -- end: page
 
@@ -272,7 +264,7 @@ We enable teams to iterate quickly and develop, preview, and ship delightful use
 -- component page:
 optional caption title:
 optional body body:
-children page-wrap:
+children wrapper:
 ftd.type-data types: $typo.types
 ftd.color-scheme colors: $cs.main
 pr.toc-item list sections: $sitemap.sections
@@ -350,14 +342,14 @@ color: $inherited.colors.text
 
 $page.body
 
--- ftd.column:
+-- ftd.row:
 width: fill-container
 align-content: center
 align-self: center
-children: $page.page-wrap
+children: $page.wrapper
 min-height.fixed.px: 300
 
--- end: ftd.column
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -506,6 +498,7 @@ color: $inherited.colors.text
 caption title:
 string url:
 boolean is-active:
+boolean $hover: false
 
 -- ftd.column:
 
@@ -515,6 +508,10 @@ link: $section-loop.url
 color: $inherited.colors.text-strong
 color if { section-loop.is-active }: $inherited.colors.text
 style if { section-loop.is-active }: bold
+style if { section-loop.hover }: bold
+color if { section-loop.hover }: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $section-loop.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $section-loop.hover, v = false)
 
 -- end: ftd.column
 
@@ -533,6 +530,7 @@ style if { section-loop.is-active }: bold
 caption title:
 optional boolean is-active:
 optional string url: 
+boolean $hover: false
 pr.toc-item list item:
 
 -- ftd.row:
@@ -545,6 +543,9 @@ color if { subsections-links.is-active }: $inherited.colors.shadow
 role: $inherited.types.label-large
 white-space: nowrap
 link: $subsections-links.url
+color if { subsections-links.hover }: $inherited.colors.shadow
+$on-mouse-enter$: $ftd.set-bool($a = $subsections-links.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $subsections-links.hover, v = false)
 
 -- ftd.image:
 src: $assets.files.static.right.svg
@@ -946,7 +947,7 @@ if: { navbar-list.item.arrow && navbar-list.show-sub-nav }
 src: $assets.files.static.down.svg
 
 -- ftd.text: $navbar-list.item.title
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-medium
 color: $inherited.colors.text
 
 -- end: ftd.row
@@ -979,8 +980,9 @@ padding-left.px: 35
 padding-top.px: 24
 
 -- ftd.text: $sub-nav.item.title
-role: $inherited.types.copy-regular
+role: $inherited.types.button-medium
 color: $inherited.colors.text
+opacity: 0.60
 
 -- end: ftd.column
 
@@ -995,24 +997,25 @@ color: $inherited.colors.text
 
 
 
--- component right-sidenav:
-right-sidebar list links: $right-subtitle
+-- component right-sidebar:
+right-sidebar-lists list links: $right-subtitle
 
 -- ftd.column:
 width: fill-container
 padding-horizontal.px: 20
 margin-top.px: 50
-padding-top.px: 30
+spacing.fixed.px: 12
+padding-top.px: 56
 border-color: $inherited.colors.border
 border-top-width.px: 1 
 max-width.fixed.px: 370
 
 -- right-navbar-list: $obj
-$loop$: $right-sidenav.links as $obj
+$loop$: $right-sidebar.links as $obj
 
 -- end: ftd.column
 
--- end: right-sidenav
+-- end: right-sidebar
 
 
 
@@ -1024,30 +1027,61 @@ $loop$: $right-sidenav.links as $obj
 
 
 -- component right-navbar-list:
-caption right-sidebar item:
+caption right-sidebar-lists item:
 boolean $active: false
+boolean $hover: false
 
 -- ftd.column:
 width: fill-container
-margin-top.px: 30
-
--- ftd.column:
-width: fill-container
-spacing.fixed.px: 15
 $on-click$: $ftd.set-bool($a= $right-navbar-list.active, v = true)
 
 -- ftd.text: $right-navbar-list.item.title
-role: $inherited.types.label-large
+role: $inherited.types.link
+role if { right-navbar-list.active }: $inherited.types.button-medium
 style if { right-navbar-list.active }: bold
+style if { right-navbar-list.hover }: bold
 color: $inherited.colors.text
 color if { right-navbar-list.active}: $inherited.colors.shadow
+color if { right-navbar-list.hover}: $inherited.colors.shadow
 link: $right-navbar-list.item.link
-
--- end: ftd.column
+opacity if { !right-navbar-list.active && !right-navbar-list.hover }: 0.60
+$on-mouse-enter$: $ftd.set-bool($a = $right-navbar-list.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $right-navbar-list.hover, v = false)
 
 -- end: ftd.column
 
 -- end: right-navbar-list
+
+
+
+
+
+
+
+
+
+
+-- component list-item-bold:
+caption title:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 8
+margin-bottom.px: 8
+
+-- ftd.text: &#x2022;
+role: $inherited.types.label-large
+style: bold
+color: $inherited.colors.shadow
+
+-- ftd.text: $list-item-bold.title
+role: $inherited.types.label-large
+style: bold
+color: $inherited.colors.shadow
+
+-- end: ftd.row
+
+-- end: list-item-bold
 
 
 
@@ -1134,7 +1168,7 @@ role: $inherited.types.heading-large
 color: $inherited.colors.text
 
 -- ftd.text:
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 opacity: 0.60
 
@@ -1251,7 +1285,8 @@ background.solid: $inherited.colors.info.text
 padding-vertical.px: 12
 border-radius.px: 8
 padding-right.px: 8
-margin-vertical.px: 44
+margin-top.px: 20
+margin-bottom.px: 50
 
 -- ftd.row:
 
@@ -1398,43 +1433,43 @@ arrow: true
 
 
 
--- record right-sidebar:
+-- record right-sidebar-lists:
 caption title:
 string link: 
 
--- right-sidebar list right-subtitle:
+-- right-sidebar-lists list right-subtitle:
 
--- right-sidebar: Create Edge Middleware
+-- right-sidebar-lists: Create Edge Middleware
 link: #create-edge-mioddleware
 
--- right-sidebar: Match Paths based on custom matcher config
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Match Paths based on custom matcher config
+link: #match-paths-based-on-customer-matcher-config
 
--- right-sidebar: Match a single path
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Match a single path
+link: #match-a-single-path
 
--- right-sidebar: Match multiple paths
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Match multiple paths
+link: #match-multiple-paths
 
--- right-sidebar: Match using regex
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Match using regex
+link: #match-using-regex
 
--- right-sidebar: Match based on character matching
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Match based on character matching
+link: #match-based-on-character-matching
 
--- right-sidebar: Match paths based on conditional statements
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Match paths based on conditional statements
+link: #match-paths-based-on-conditional-statements
 
--- right-sidebar: Loggings
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Loggings
+link: #loggings
 
--- right-sidebar: Existing login connection
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Existing login connection
+link: #existing-login-connection
 
--- right-sidebar: Choosing a connection when creating a project
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Choosing a connection when creating a project
+link: #choosing-a-connection-when-creating-a-project
 
--- right-sidebar: Known limitations
-link: #create-edge-mioddleware
+-- right-sidebar-lists: Known limitations
+link: #known-limitations
 
 -- end: right-subtitle
