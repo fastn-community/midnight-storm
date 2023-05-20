@@ -17,17 +17,22 @@ $processor$: pr.sitemap
 
 -- integer $width: 1180
 
--- page:
+-- page: Documentation
 cta-text: Button
 brand-name: Fastn
-heading: Documentation
 list-of-footer-logo: $list-of-footer-logo
 
-bodylllll
+-- page.right-sidebar:
 
--- sidenav:
+-- sidebar-links:
 
--- col:
+-- end: page.right-sidebar
+
+-- page.body:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 -- h1: Edge Middleware
 
@@ -245,11 +250,6 @@ Our suite of products are open source and available on Github. You are free to d
 
 We enable teams to iterate quickly and develop, preview, and ship delightful user experiences. Fastn has zero-configuration support for 35+ frontend frameworks and integrates with your headless content, commerce, or database of choice.
 
--- end: col
-
--- right-sidebar:
-
-
 -- end: page
 
 
@@ -263,6 +263,9 @@ We enable teams to iterate quickly and develop, preview, and ship delightful use
 
 -- component page:
 optional caption title:
+optional string document-title:
+optional string document-description:
+optional ftd.raw-image-src document-image: 
 optional body body:
 children wrapper:
 ftd.type-data types: $typo.types
@@ -275,10 +278,19 @@ optional pr.toc-item current-page: $sitemap.current-page
 pr.toc-item list toc: $sitemap.toc
 optional string cta-placeholder:
 string brand-name:
-string heading:
 string cta-text:
 optional boolean show-search: false
 footer-logo-record list list-of-footer-logo:
+ftd.ui list right-sidebar:
+
+-- ftd.document:
+title if { page.document-title != NULL }: $page.document-title
+title: $page.title
+og-title if { page.document-title != NULL }: $page.document-title
+og-title: $page.title
+description if {$page.document-description != NULL }: $page.document-description
+og-image: $page.document-image
+description: $page.title
 
 -- ftd.column:
 width: fill-container
@@ -287,7 +299,6 @@ background.solid: $inherited.colors.background.base
 -- dark-mode-switcher-float:
 
 -- header: $page.brand-name
-heading: $page.heading
 cta-text: $page.cta-text
 sections: $page.sections
 sub-sections: $page.sub-sections
@@ -296,44 +307,15 @@ current-subsection: $page.current-subsection
 current-page: $page.current-page
 toc: $page.toc
 
--- ftd.row:
-if: { page.title != NULL }
+-- ftd.column:
 width: fill-container
-spacing: space-between
 padding-horizontal.px: 40
-padding-vertical.px: 50
-
--- ftd.row:
-width: fill-container
+padding-bottom.px: 50
 
 -- ftd.text: $page.title
 if: { page.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
-
--- end: ftd.row
-
--- ftd.row:
-align-self: end
-
--- ftd.text-input:
-if: { page.show-search }
-min-width.fixed.px: 375
-placeholder: $page.cta-placeholder
-background.solid: transparent
-border-color: $inherited.colors.cta-primary.base
-border-width.px: 1 
-border-radius.px: 6
-padding.px: 15
-color: $inherited.colors.text
-
--- end: ftd.row
-
--- end: ftd.row
-
--- ftd.column:
-background.solid: $inherited.colors.background.base
-width: fill-container
 
 -- ftd.text: 
 if: { page.body != NULL }
@@ -342,12 +324,50 @@ color: $inherited.colors.text
 
 $page.body
 
+-- end: ftd.column
+
+
+
+-- ftd.column:
+background.solid: $inherited.colors.background.base
+width: fill-container
+
 -- ftd.row:
 width: fill-container
-align-content: center
-align-self: center
+border-color: $inherited.colors.border
+border-top-width.px: 1 
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 30
+padding-horizontal.px: 36
+max-width.fixed.px: 320
+
+-- sidenav:
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
 children: $page.wrapper
 min-height.fixed.px: 300
+border-color: $inherited.colors.border
+border-left-width.px: 1
+border-right-width.px: 1
+padding-top.px: 40
+padding-horizontal.px: 50
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $page.right-sidebar
+padding-horizontal.px: 20
+padding-top.px: 56
+max-width.fixed.px: 370
+spacing.fixed.px: 12
+
+-- end: ftd.column
 
 -- end: ftd.row
 
@@ -395,6 +415,8 @@ link5: Footer Link 05
 
 -- end: ftd.column
 
+-- end: ftd.document
+
 -- end: page
 
 
@@ -409,7 +431,6 @@ link5: Footer Link 05
 -- component header:
 caption brand-name: 
 string cta-text:
-string heading:
 pr.toc-item list sections: 
 pr.toc-item list sub-sections: 
 pr.toc-item list toc: 
@@ -472,10 +493,6 @@ is-active: $obj.is-active
 url: $obj.url
 
 -- end: ftd.row
-
--- ftd.text: $header.heading
-role: $inherited.types.heading-hero
-color: $inherited.colors.text
 
 -- end: ftd.column
 
@@ -899,12 +916,6 @@ sidebar list links: $subtitle
 
 -- ftd.column:
 width: fill-container
-margin-top.px: 50
-padding-vertical.px: 30
-padding-horizontal.px: 36
-border-color: $inherited.colors.border
-border-top-width.px: 1 
-max-width.fixed.px: 320
 
 -- navbar-list: $obj
 $loop$: $sidenav.links as $obj
@@ -997,25 +1008,19 @@ opacity: 0.60
 
 
 
--- component right-sidebar:
+-- component sidebar-links:
 right-sidebar-lists list links: $right-subtitle
 
 -- ftd.column:
 width: fill-container
-padding-horizontal.px: 20
-margin-top.px: 50
 spacing.fixed.px: 12
-padding-top.px: 56
-border-color: $inherited.colors.border
-border-top-width.px: 1 
-max-width.fixed.px: 370
 
 -- right-navbar-list: $obj
-$loop$: $right-sidebar.links as $obj
+$loop$: $sidebar-links.links as $obj
 
 -- end: ftd.column
 
--- end: right-sidebar
+-- end: sidebar-links
 
 
 
