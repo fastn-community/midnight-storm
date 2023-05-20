@@ -1,51 +1,1463 @@
 -- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn/processors as pr
+
+
+-- string site-url: index.html
+
+-- pr.toc-item list sections:
+
+-- pr.toc-item list sub-sections:
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+-- integer $width: 1180
 
 
 
--- ds.page: Welcome to your [FASTN site](https://fastn.io/)
+-- page: Documentation
+cta-text: Button
+brand-name: Fastn
+list-of-footer-logo: $list-of-footer-logo
+
+
+-- page.right-sidebar:
+
+-- sidebar-links:
+
+-- end: page.right-sidebar
+
+-- page.body:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+-- h1: Edge Middleware
+
+Edge Middleware is code that executes before a request is processed on a site.
+Based on the request, you can modify the response. Because it runs before the
+cache, using Middleware is an effective way of providing personalization to
+statically generated content. Depending on the incoming request, you can
+execute custom logic, rewrite, redirect, add headers and more, before returning
+a response.
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+Middleware uses the Vercel Edge Runtime, which is built on the same
+high-performance V8 JavaScript and WebAssembly engine that is used by the
+Chrome browser. The Edge Runtime exposes and extends a subset of Web Standard
+APIs such FetchEvent, Response, and Request, to give you more control over how
+you manipulate and configure a response, based on the incoming requests. To
+learn more about writing Middleware, see the Middleware API guide.
+
+-- image:
+src: $assets.files.static.doc1.png
+width: fill-container
+
+-- markdown:
+
+As a developer, Edge Middleware gives you more control over the user experience,
+without adding additional size to the application, meaning better performance.
+For your end-users, they experience pre-rendered, personalized content with
+very low latency because it's running on the edge.
+
+Some common use-cases of Middleware are:
+
+-- list-item-bold: Authentication
+
+-- list-item-bold: Geolocation
+
+-- list-item-bold: Working with cookies
+
+-- list-item-bold: A/B testing
+
+-- list-item-bold: Bot protection
+
+-- list-item-bold: Rewrites
+
+-- markdown: 
+
+\.
+
+-- list-item-bold: Authentication
+
+-- list-item-bold: Geolocation
+
+-- list-item-bold: Working with cookies
+
+-- list-item-bold: A/B testing
+
+-- list-item-bold: Bot protection
+
+-- list-item-bold: Rewrites
+
+
+-- toast: Important
+
+Please note that some functionality (for example, anchor links) will not work in
+development. The functionality will work as expected in production.
+
+-- h1: Creating Edge Middleware
+id: create-edge-mioddleware
+
+You can use Edge Middleware with any framework. To add Middleware to your app,
+you need to create a middleware.ts or middleware.js file in the root of your
+project.
+
+If the Middleware function is a default export, it can be named anything you choose. If you choose to use a named export, it must be named middleware:
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- markdown:
+
+The following code snippet shows an example of rewriting a URL, using a matcher
+config.
+
+Next.js Middleware comes with built in helpers that are based upon the native
+Fetch Event, Response, and Request Objects.
+
+See the next/server documentation for more information.
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- markdown:
+
+Edge Middleware is code that executes before a request is processed on a site.
+Based on the request, you can modify the response. Because it runs before the
+cache, using Middleware is an effective way of providing personalization to
+statically generated content. Depending on the incoming request, you can
+execute custom logic, rewrite, redirect, add headers and more, before returning
+a response.
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+-- h2: Match Paths based on custom matcher config
+id: match-paths-based-on-customer-matcher-config
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+-- h2: Match a single path
+id: match-a-single-path
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Match multiple paths
+id: match-multiple-paths
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Match using regex
+id: match-using-regex
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+- Unordered lists are displayed with a preceding bullet point.
+
+- Lists can be nested as deeply as needed, and they may alternate between
+  ordered and unordered.
+
+- Lists should align with the font-size, font-weight, and line-height of
+  paragraphs, but are styled with bullets or numbers.
+
+- Lists can have similar children elements as paragraphs to provide emphasis on
+  a certain word or phrase.
+
+- You can switch between an unordered list and ordered list by changing the
+  component variant in the Design panel.
+
+- You can remove a list item from the default component by deleting it in the
+  Layers panel.
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Match based on character matching
+id: match-based-on-character-matching
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Match paths based on conditional statements
+id: match-paths-based-on-conditional-statements
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h1: Loggings
+id: loggings
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+-- image:
+src: $assets.files.static.doc2.png
+width: fill-container
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Existing login connection
+id: existing-login-connection
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Choosing a connection when creating a project
+id: choosing-a-connection-when-creating-a-project
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+-- image:
+src: $assets.files.static.doc3.png
+width: fill-container
+
+-- code:
+lang: ftd
+
+\-- FTD.ROW
+
+npx create-docusaurus@latest my-website classic
+
+-- h2: Known limitations
+id: know-limitations
+
+Our suite of products are open source and available on Github. You are free to
+download install and customize them to your needs.We’d love to hear your
+feedback and suggestions, and collectively make Documentation easier and better
+for everyone.
+
+We enable teams to iterate quickly and develop, preview, and ship delightful
+user experiences. Fastn has zero-configuration support for 35+ frontend
+frameworks and integrates with your headless content, commerce, or database of
+choice.
+
+
+
+
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
+-- component page:
+optional caption title:
+optional string document-title:
+optional string document-description:
+optional ftd.raw-image-src document-image: 
+optional body body:
+children wrapper:
+ftd.type-data types: $typo.types
+ftd.color-scheme colors: $cs.main
+pr.toc-item list sections: $sitemap.sections
+pr.toc-item list sub-sections: $sitemap.subsections
+optional pr.toc-item current-section: $sitemap.current-section
+optional pr.toc-item current-subsection: $sitemap.current-subsection
+optional pr.toc-item current-page: $sitemap.current-page
+pr.toc-item list toc: $sitemap.toc
+optional string cta-placeholder:
+string brand-name:
+string cta-text:
+optional boolean show-search: false
+footer-logo-record list list-of-footer-logo:
+ftd.ui list right-sidebar:
+
+-- ftd.document:
+title if { page.document-title != NULL }: $page.document-title
+title: $page.title
+og-title if { page.document-title != NULL }: $page.document-title
+og-title: $page.title
+description: $page.document-description
+og-image: $page.document-image
 
 -- ftd.column:
-align-self: center
+width: fill-container
+background.solid: $inherited.colors.background.base
 
--- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
+-- dark-mode-switcher-float:
 
--- ds.markdown: 
+-- header: $page.brand-name
+cta-text: $page.cta-text
+sections: $page.sections
+sub-sections: $page.sub-sections
+current-section: $page.current-section
+current-subsection: $page.current-subsection
+current-page: $page.current-page
+toc: $page.toc
 
-You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 40
+padding-bottom.px: 50
 
--- end: chat.message-left
+-- ftd.text: $page.title
+if: { page.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
 
--- chat.message-right:  😊 Liking this chat component?
+-- ftd.text: 
+if: { page.body != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
--- ds.markdown:
-
-[Click here to learn more](https://fifthtry.github.io/bling/chat/)
-👍
-
--- end: chat.message-right
+$page.body
 
 -- end: ftd.column
 
--- ds.h1: How to use?
-
-It's very simple like making a sandwich. Create new `.ftd` file and just say:
-
--- ds.code: `-- ds.page` 
-lang: ftd
-
-\-- ds.page: Your page title goes here
-
-Your page content goes here.
 
 
--- ds.h1: Need sidebar at right side of page?
+-- ftd.column:
+background.solid: $inherited.colors.background.base
+width: fill-container
 
-Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
+-- ftd.row:
+width: fill-container
+border-color: $inherited.colors.border
+border-top-width.px: 1 
+
+-- sidenav:
+
+-- ftd.column:
+width: fill-container
+children: $page.wrapper
+min-height.fixed.px: 300
+border-color: $inherited.colors.border
+border-left-width.px: 1
+border-right-width.px: 1
+padding-top.px: 40
+padding-horizontal.px: 50
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $page.right-sidebar
+padding-horizontal.px: 20
+padding-top.px: 56
+max-width.fixed.px: 370
+spacing.fixed.px: 12
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- footer: Fastn
+list-of-footer-logo: $page.list-of-footer-logo
+bg-color: $inherited.colors.background.base
+
+Copyright ©2022. Fastn Inc. 
+
+-- footer-links-wrapper:
+
+-- footer-links: HEADING
+link1: Footer Link 01
+link2: Footer Link 02
+link3: Footer Link 03
+link4: Footer Link 04
+link5: Footer Link 05
+
+-- footer-links: HEADING
+link1: Footer Link 01
+link2: Footer Link 02
+link3: Footer Link 03
+link4: Footer Link 04
+link5: Footer Link 05
+
+-- footer-links: HEADING
+link1: Footer Link 01
+link2: Footer Link 02
+link3: Footer Link 03
+link4: Footer Link 04
+link5: Footer Link 05
+
+-- footer-links: HEADING
+link1: Footer Link 01
+link2: Footer Link 02
+link3: Footer Link 03
+link4: Footer Link 04
+link5: Footer Link 05
+
+-- end: footer-links-wrapper
+
+-- end: footer
+
+-- end: ftd.column
+
+-- end: ftd.document
+
+-- end: page
 
 
--- ds.h1: 👀 Learn FTD and become a pro?
 
-You are one click away, just check [our documentation](https://fastn.dev/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
--- end: ds.page
+
+
+
+
+
+
+-- component header:
+caption brand-name: 
+string cta-text:
+pr.toc-item list sections: 
+pr.toc-item list sub-sections: 
+pr.toc-item list toc: 
+optional pr.toc-item current-section: 
+optional pr.toc-item current-subsection: 
+optional pr.toc-item current-page:
+integer width: $width
+
+-- ftd.column: 
+width: fill-container
+background.solid: $inherited.colors.background.base
+align-content: center
+padding-top.px: 40
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 40
+min-height.fixed.px: 112
+align-content: center
+max-width.fixed.px: 1440
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+
+-- ftd.text: $header.brand-name
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 32
+
+-- section-loop: $obj.title
+$loop$: $header.sections as $obj
+url: $obj.url
+is-active: $obj.is-active
+
+-- end: ftd.row
+
+-- cta-button: $header.cta-text
+role: primary
+link: /
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.background.base
+
+-- ftd.row:
+width: fill-container
+padding-vertical.px: 50
+
+-- subsections-links: $obj.title
+$loop$: $header.sections as $obj
+item: $obj.children
+is-active: $obj.is-active
+url: $obj.url
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: header
+
+
+
+
+
+
+
+
+
+
+-- component section-loop:
+caption title:
+string url:
+boolean is-active:
+boolean $hover: false
+
+-- ftd.column:
+
+-- ftd.text: $section-loop.title
+role: $inherited.types.copy-regular
+link: $section-loop.url
+color: $inherited.colors.text-strong
+color if { section-loop.is-active }: $inherited.colors.text
+style if { section-loop.is-active }: bold
+style if { section-loop.hover }: bold
+color if { section-loop.hover }: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $section-loop.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $section-loop.hover, v = false)
+
+-- end: ftd.column
+
+-- end: section-loop
+
+
+
+
+
+
+
+
+
+
+-- component subsections-links:
+caption title:
+optional boolean is-active:
+optional string url: 
+boolean $hover: false
+pr.toc-item list item:
+
+-- ftd.row:
+spacing.fixed.px: 14
+padding-horizontal.px: 8
+
+-- ftd.text: $subsections-links.title
+color: $inherited.colors.text-strong
+color if { subsections-links.is-active }: $inherited.colors.shadow
+role: $inherited.types.label-large
+white-space: nowrap
+link: $subsections-links.url
+color if { subsections-links.hover }: $inherited.colors.shadow
+$on-mouse-enter$: $ftd.set-bool($a = $subsections-links.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $subsections-links.hover, v = false)
+
+-- ftd.image:
+src: $assets.files.static.right.svg
+align-self: center
+
+-- end: ftd.row
+
+-- end: subsections-links
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+caption title:
+body body:
+footer-logo-record list list-of-footer-logo:
+children footer-wrap:
+optional ftd.color bg-color:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background.solid if { footer.bg-color != NULL }: $footer.bg-color
+
+-- ftd.column:
+width: fill-container
+align-content: center
+children: $footer.footer-wrap
+
+-- end: ftd.column
+
+-- footer-links-wrapper:
+
+-- end: footer-links-wrapper
+
+-- footer-copyright: $footer.title
+list-of-footer-logo: $footer.list-of-footer-logo
+
+$footer.body
+
+-- end: footer-copyright
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component footer-links:
+caption title:
+string link1:
+string link2:
+string link3:
+string link4:
+string link5:
+
+-- ftd.column:
+color: $inherited.colors.shadow
+spacing.fixed.px: 7
+
+-- ftd.text: $footer-links.title
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $footer-links.link1
+role: $inherited.types.copy-large
+
+-- ftd.text: $footer-links.link2
+role: $inherited.types.copy-large
+
+-- ftd.text: $footer-links.link3
+role: $inherited.types.copy-large
+
+-- ftd.text: $footer-links.link4
+role: $inherited.types.copy-large
+
+-- ftd.text: $footer-links.link5
+role: $inherited.types.copy-large
+
+-- end: ftd.column
+
+-- end: footer-links
+
+
+
+
+
+
+
+
+
+
+-- component footer-links-wrapper:
+integer width: $width
+children footer-child:
+
+-- ftd.row:
+margin-top.px: 54
+spacing: space-between
+width: fill-container
+max-width.fixed.px: $footer-links-wrapper.width
+children: $footer-links-wrapper.footer-child
+
+-- end: ftd.row
+
+-- end: footer-links-wrapper
+
+
+
+
+
+
+
+
+
+
+-- component footer-copyright:
+caption title:
+body body:
+footer-logo-record list list-of-footer-logo:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+margin-bottom.px: 54
+
+-- ftd.text: $footer-copyright.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.row:
+padding-vertical.px: 24
+
+-- ftd.image:
+$loop$: $footer-copyright.list-of-footer-logo as $item
+src: $item.src
+margin-horizontal.px: 12
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+$footer-copyright.body
+
+-- end: ftd.column
+
+-- end: footer-copyright
+
+
+
+
+
+
+
+
+
+
+-- component markdown:
+body body:
+
+-- ftd.column:
+margin-vertical.px: 20
+
+-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+opacity: 0.60
+
+$markdown.body
+
+-- end: ftd.column
+
+-- end: markdown
+
+
+
+
+
+
+
+
+
+
+-- component page-wrapper:
+integer width: 1440
+children child:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+width: fill-container
+children: $page-wrapper.child
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: page-wrapper
+
+
+
+
+
+
+
+
+
+
+-- component h2:
+caption title:
+optional body body:
+optional string id:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 24
+spacing.fixed.px: 18
+id if { h2.id != NULL }: $h2.id
+region: h2
+
+-- ftd.text: $h2.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.text:
+if: { h2.body != NULL }
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+opacity: 0.60
+
+$h2.body
+
+-- end: ftd.column
+
+-- end: h2
+
+
+
+
+
+
+
+
+
+
+-- component sidenav:
+sidebar list links: $subtitle
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 30
+padding-horizontal.px: 36
+max-width.fixed.px: 320
+
+-- navbar-list: $obj
+$loop$: $sidenav.links as $obj
+
+-- end: ftd.column
+
+-- end: sidenav
+
+
+
+
+
+
+
+
+
+
+-- component navbar-list:
+caption sidebar item:
+boolean $show-sub-nav: true
+
+-- ftd.column:
+width: fill-container
+margin-top.px: 30
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+spacing.fixed.px: 15
+align-content: center
+$on-click$: $ftd.toggle($a= $navbar-list.show-sub-nav)
+
+-- ftd.image:
+if: { navbar-list.item.arrow && !navbar-list.show-sub-nav }
+src: $assets.files.static.right.svg
+
+-- ftd.image:
+if: { navbar-list.item.arrow && navbar-list.show-sub-nav }
+src: $assets.files.static.down.svg
+
+-- ftd.text: $navbar-list.item.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- sub-nav: $obj
+if: { navbar-list.show-sub-nav }
+$loop$: $navbar-list.item.sub-nav as $obj
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: navbar-list
+
+
+
+
+
+
+
+
+
+
+-- component sub-nav:
+caption sidebar item:
+
+-- ftd.column:
+width: fill-container
+padding-left.px: 35
+padding-top.px: 24
+
+-- ftd.text: $sub-nav.item.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text
+opacity: 0.60
+
+-- end: ftd.column
+
+-- end: sub-nav
+
+
+
+
+
+
+
+
+
+
+-- component sidebar-links:
+right-sidebar-lists list links: $right-subtitle
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 12
+
+-- right-navbar-list: $obj
+$loop$: $sidebar-links.links as $obj
+
+-- end: ftd.column
+
+-- end: sidebar-links
+
+
+
+
+
+
+
+
+
+
+-- component right-navbar-list:
+caption right-sidebar-lists item:
+boolean $active: false
+boolean $hover: false
+
+-- ftd.column:
+width: fill-container
+$on-click$: $ftd.set-bool($a= $right-navbar-list.active, v = true)
+
+-- ftd.text: $right-navbar-list.item.title
+role: $inherited.types.link
+role if { right-navbar-list.active }: $inherited.types.button-medium
+style if { right-navbar-list.active }: bold
+style if { right-navbar-list.hover }: bold
+color: $inherited.colors.text
+color if { right-navbar-list.active}: $inherited.colors.shadow
+color if { right-navbar-list.hover}: $inherited.colors.shadow
+link: $right-navbar-list.item.link
+opacity if { !right-navbar-list.active && !right-navbar-list.hover }: 0.60
+$on-mouse-enter$: $ftd.set-bool($a = $right-navbar-list.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $right-navbar-list.hover, v = false)
+
+-- end: ftd.column
+
+-- end: right-navbar-list
+
+
+
+
+
+
+
+
+
+
+-- component list-item-bold:
+caption title:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 8
+margin-bottom.px: 8
+
+-- ftd.text: &#x2022;
+role: $inherited.types.label-large
+style: bold
+color: $inherited.colors.shadow
+
+-- ftd.text: $list-item-bold.title
+role: $inherited.types.label-large
+style: bold
+color: $inherited.colors.shadow
+
+-- end: ftd.row
+
+-- end: list-item-bold
+
+
+
+
+
+
+
+
+
+
+-- component dark-mode-switcher-float:
+
+-- ftd.row:
+anchor: window
+right.px: 50
+bottom.px: 50
+padding.px: 10
+background.solid: $inherited.colors.background.base
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 4
+z-index: 99999999999999
+
+-- ftd.row:
+if: { ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-light-mode()
+
+-- ftd.image:
+src: https://raw.githubusercontent.com/FifthTry/dark-mode-switcher/main/static/system-mode-active-dark.png
+height.fixed.px: 18
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-dark-mode()
+
+-- ftd.image:
+src: https://raw.githubusercontent.com/FifthTry/dark-mode-switcher/main/static/light-mode-active-dark.png
+height.fixed.px: 18
+align-self: center
+
+-- end: ftd.row
+
+
+-- ftd.row:
+if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-system-mode()
+
+-- ftd.image:
+src: https://raw.githubusercontent.com/FifthTry/dark-mode-switcher/main/static/dark-mode-active-dark.png
+height.fixed.px: 18
+align-self: center
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: dark-mode-switcher-float
+
+
+
+
+
+
+
+
+
+-- component h1:
+caption title:
+body body:
+optional string id: 
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+padding-vertical.px: 14
+id if { h1.id != NULL }: $h1.id
+region: h1
+
+-- ftd.text: $h1.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.60
+
+$h1.body
+
+-- end: ftd.column
+
+-- end: h1
+
+
+
+
+
+
+
+
+
+
+-- component code:
+optional caption caption:
+body body:
+string lang:
+boolean copy: true
+optional ftd.resizing max-height:
+optional ftd.resizing max-width:
+optional string download:
+
+-- cb.code:
+caption: $code.caption
+lang: $code.lang
+max-height: $code.max-height
+max-width: $code.max-width
+copy: $code.copy
+download: $code.download
+
+$code.body
+
+-- end: code
+
+
+
+
+
+
+
+
+
+-- component image:
+optional caption caption:
+optional body body:
+optional string link:
+ftd.image-src src:
+optional ftd.align alignment: center
+optional ftd.resizing width:
+optional ftd.resizing height:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+height: $image.height
+
+-- ftd.image:
+src: $image.src
+width: auto
+width if { image.width != NULL }: $image.width
+max-width: fill-container
+height: auto
+align-self: center
+
+-- ftd.text:
+if: { image.caption != NULL }
+text: $image.caption
+color: $inherited.colors.text
+role: $inherited.types.label-large
+border-bottom-left-radius.px: 5
+border-bottom-right-radius.px: 5
+background.solid: $inherited.colors.background.step-1
+padding-vertical.rem: 0.5
+padding-horizontal.rem: 1.25
+text-align: center
+
+-- ftd.column:
+if: { image.body != NULL }
+margin-top.px: 20
+align-self: start
+
+-- tf.markdown:
+body: $image.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: image
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component toast:
+caption title:
+body body:
+
+-- ftd.column:
+background.solid: $inherited.colors.info.text
+padding-vertical.px: 12
+border-radius.px: 8
+padding-right.px: 8
+margin-top.px: 20
+margin-bottom.px: 50
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.static.info-icon.svg
+padding-right.px: 8
+padding-left.px: 16
+align-self: center
+
+-- ftd.column:
+spacing.fixed.px: 4
+
+-- ftd.text: $toast.title
+role: $fonts.copy-large
+color: $inherited.colors.text
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$toast.body
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: toast
+
+
+
+
+
+
+
+
+
+
+-- component col:
+children child:
+
+-- ftd.column:
+margin-top.px: 50
+padding-top.px: 40
+padding-horizontal.px: 50
+border-color: $inherited.colors.border
+border-top-width.px: 1 
+border-left-width.px: 1
+border-right-width.px: 1
+width: fill-container
+
+-- ftd.column:
+children: $col.child
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: col
+
+
+
+
+
+
+
+
+
+
+-- record footer-logo-record:
+ftd.image-src src:
+
+-- footer-logo-record list list-of-footer-logo:
+
+-- footer-logo-record: 
+src: $assets.files.static.fb.png
+
+-- footer-logo-record: 
+src: $assets.files.static.figma.png
+
+-- footer-logo-record: 
+src: $assets.files.static.google.png
+
+-- footer-logo-record: 
+src: $assets.files.static.chat.png
+
+-- footer-logo-record: 
+src: $assets.files.static.social.png
+
+-- end: list-of-footer-logo
+
+
+
+
+
+
+
+
+
+
+-- record sidebar:
+caption title:
+boolean arrow: false
+sidebar list sub-nav:
+
+-- sidebar list subtitle:
+
+-- sidebar: Home
+arrow: true
+
+-- sidebar: Pocket
+arrow: true
+
+-- sidebar: History
+arrow: true
+
+-- sidebar: Service
+arrow: true
+
+-- sidebar.sub-nav: 
+
+-- sidebar: Credit
+
+-- sidebar: Transfer
+
+-- sidebar: Cash
+
+-- sidebar: My Bills
+
+-- end: sidebar.sub-nav
+
+-- sidebar: Saved
+arrow: true
+
+-- end: subtitle
+
+
+
+
+
+
+
+
+
+
+-- record right-sidebar-lists:
+caption title:
+string link: 
+
+-- right-sidebar-lists list right-subtitle:
+
+-- right-sidebar-lists: Create Edge Middleware
+link: #create-edge-mioddleware
+
+-- right-sidebar-lists: Match Paths based on custom matcher config
+link: #match-paths-based-on-customer-matcher-config
+
+-- right-sidebar-lists: Match a single path
+link: #match-a-single-path
+
+-- right-sidebar-lists: Match multiple paths
+link: #match-multiple-paths
+
+-- right-sidebar-lists: Match using regex
+link: #match-using-regex
+
+-- right-sidebar-lists: Match based on character matching
+link: #match-based-on-character-matching
+
+-- right-sidebar-lists: Match paths based on conditional statements
+link: #match-paths-based-on-conditional-statements
+
+-- right-sidebar-lists: Loggings
+link: #loggings
+
+-- right-sidebar-lists: Existing login connection
+link: #existing-login-connection
+
+-- right-sidebar-lists: Choosing a connection when creating a project
+link: #choosing-a-connection-when-creating-a-project
+
+-- right-sidebar-lists: Known limitations
+link: #known-limitations
+
+-- end: right-subtitle
