@@ -6,6 +6,10 @@
 light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
+-- integer logo-width: 200
+
+-- integer logo-height: 32
+
 -- boolean show-footer: true
 
 -- string $site-name: Fastn
@@ -29,11 +33,25 @@ $processor$: pr.sitemap
 $processor$: pr.fastn-apps
 
 -- page: Documentation
-login-button: true
 sidebar: true
 show-footer: true
+login-button: true
+
+-- page.footer:
+
+-- footer:
+site-name: $site-name
+site-url: $site-url
+logo-width: $logo-width
+logo-height: $logo-height
+footer-links: $footer-links
+social-links: $social-links
+
+-- end: page.footer
 
 -- page.right-sidebar:
+
+-- toc-title: On this page
 
 -- link-group: Create Edge Middleware
 cta: #create-edge-middleware
@@ -69,16 +87,6 @@ cta: #choosing-a-connection-when-creating-a-project
 cta: #known-limitations
 
 -- end: page.right-sidebar
-
--- page.footer:
-
--- footer:
-site-name: $site-name
-site-url: $site-url
-footer-links: $footer-links
-social-links: $social-links
-
--- end: page.footer
 
 -- page.body:
 
@@ -390,6 +398,8 @@ optional string document-description:
 optional ftd.raw-image-src document-image: 
 optional body body:
 optional ftd.image-src site-logo:
+integer logo-width: $logo-width
+integer logo-height: $logo-height
 optional string $site-url: $site-url
 optional string site-name: $site-name
 children wrapper:
@@ -404,13 +414,13 @@ optional pr.toc-item current-section: $sitemap.current-section
 optional pr.toc-item current-subsection: $sitemap.current-subsection
 optional pr.toc-item current-page: $sitemap.current-page
 pr.toc-item list toc: $sitemap.toc
-pr.toc-item list footer-links: $footer-links
-social-link list social-links: $social-links
-string copyright: Copyright ©2022. Fastn Inc.
 ftd.ui list right-sidebar:
 boolean sidebar: false
-boolean show-footer:
+boolean show-footer: $show-footer
 ftd.ui list footer:
+boolean full-width: false
+boolean show-banner: false
+ftd.ui list banner:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -418,15 +428,24 @@ title: $page.title
 og-title if { page.document-title != NULL }: $page.document-title
 og-title: $page.title
 description: $page.document-description
+description if { page.document-description == NULL }: $page.title
 og-image: $page.document-image
 
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.background.base
 
+-- ftd.column:
+if: { page.show-banner}
+width: fill-container
+children: $page.banner
+align-content: center
+
+-- end: ftd.column
+
 -- ftd.desktop:
 
--- page-desktop: $page.title
+-- doc-page-desktop: $page.title
 toc: $page.toc
 wrapper: $page.wrapper
 sections: $page.sections
@@ -435,6 +454,8 @@ current-subsection: $page.current-subsection
 current-page: $page.current-page
 sub-sections: $page.sub-sections
 body: $page.body
+logo-height: $page.logo-height
+logo-width: $page.logo-width
 login-btn-txt: $page.login-btn-txt
 login-btn-url: $page.login-btn-url
 login-button: $page.login-button
@@ -448,7 +469,7 @@ right-sidebar: $page.right-sidebar
 
 -- ftd.mobile:
 
--- page-mobile: $page.title
+-- doc-page-mobile: $page.title
 wrapper: $page.wrapper
 toc: $page.toc
 sections: $page.sections
@@ -489,7 +510,7 @@ align-content: center
 
 
 
--- component page-desktop:
+-- component doc-page-desktop:
 optional caption title:
 optional body body:
 pr.toc-item list toc:
@@ -502,6 +523,8 @@ optional pr.toc-item current-section:
 optional pr.toc-item current-page:
 optional pr.toc-item current-subsection:
 children wrapper:
+optional integer logo-width: 
+optional integer logo-height:
 optional string login-btn-txt: Login
 optional string login-btn-url: index.html
 boolean login-button: false
@@ -512,18 +535,20 @@ ftd.ui list right-sidebar:
 width: fill-container
 
 -- header:
-sections: $page-desktop.sections
-sub-sections: $page-desktop.sub-sections
-current-section: $page-desktop.current-section
-current-subsection: $page-desktop.current-subsection
-current-page: $page-desktop.current-page
-toc: $page-desktop.toc
-login-button: $page-desktop.login-button
-login-btn-txt: $page-desktop.login-btn-txt
-login-btn-url: $page-desktop.login-btn-url
-site-logo: $page-desktop.site-logo
-site-url: $page-desktop.site-url
-site-name: $page-desktop.site-name
+sections: $doc-page-desktop.sections
+sub-sections: $doc-page-desktop.sub-sections
+current-section: $doc-page-desktop.current-section
+current-subsection: $doc-page-desktop.current-subsection
+current-page: $doc-page-desktop.current-page
+toc: $doc-page-desktop.toc
+login-button: $doc-page-desktop.login-button
+login-btn-txt: $doc-page-desktop.login-btn-txt
+login-btn-url: $doc-page-desktop.login-btn-url
+logo-height: $doc-page-desktop.logo-height
+logo-width: $doc-page-desktop.logo-width
+site-logo: $doc-page-desktop.site-logo
+site-url: $doc-page-desktop.site-url
+site-name: $doc-page-desktop.site-name
 menu-icon: $assets.files.static.hamburger.svg
 
 -- ftd.column:
@@ -531,17 +556,17 @@ width: fill-container
 padding-horizontal.px: 40
 padding-bottom.px: 50
 
--- ftd.text: $page-desktop.title
-if: { page-desktop.title != NULL }
+-- ftd.text: $doc-page-desktop.title
+if: { doc-page-desktop.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 
 -- ftd.text: 
-if: { page-desktop.body != NULL }
+if: { doc-page-desktop.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$page-desktop.body
+$doc-page-desktop.body
 
 -- end: ftd.column
 
@@ -550,14 +575,14 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-align-content if { ftd.is_empty(page-desktop.toc) }: center
+align-content if { ftd.is_empty(doc-page-desktop.toc) }: center
 border-top-width.px: 1
 border-color: $inherited.colors.border
 margin-bottom.rem: 3.15
 
 -- render-toc:
-if: { !ftd.is_empty(page-desktop.toc) }
-toc-obj: $page-desktop.toc
+if: { !ftd.is_empty(doc-page-desktop.toc) }
+toc-obj: $doc-page-desktop.toc
 
 -- ftd.column:
 border-color: $inherited.colors.border
@@ -566,17 +591,17 @@ border-right-width.px: 1
 padding-top.px: 48
 padding-horizontal.px: 50
 align-content: top-left
-min-height.fixed.calc if { !ftd.is_empty(page-desktop.toc) }: 100vh
+min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
 min-height.fixed.calc: 100vh - 135px
-children: $page-desktop.wrapper
+children: $doc-page-desktop.wrapper
 width: fill-container
 spacing.fixed.px: 20
 
 -- end: ftd.column
 
 -- right-sidebar:
-if: { page-desktop.sidebar}
-right-sidebar: $page-desktop.right-sidebar
+if: { doc-page-desktop.sidebar}
+right-sidebar: $doc-page-desktop.right-sidebar
 
 -- end: ftd.row
 
@@ -584,7 +609,7 @@ right-sidebar: $page-desktop.right-sidebar
 
 -- end: ftd.column
 
--- end: page-desktop
+-- end: doc-page-desktop
 
 
 
@@ -595,7 +620,7 @@ right-sidebar: $page-desktop.right-sidebar
 
 
 
--- component page-mobile:
+-- component doc-page-mobile:
 optional caption title:
 optional body body:
 optional string site-name:
@@ -609,7 +634,6 @@ optional pr.toc-item current-section:
 optional pr.toc-item current-page:
 optional pr.toc-item current-subsection:
 ftd.ui list right-sidebar:
-ftd.ui list footer:
 children wrapper:
 
 -- ftd.column:
@@ -617,15 +641,15 @@ width: fill-container
 background.solid: $inherited.colors.background.base
 
 -- header:
-sections: $page-mobile.sections
-sub-sections: $page-mobile.sub-sections
-toc: $page-mobile.toc
-current-section: $page-mobile.current-section
-current-subsection: $page-mobile.current-subsection
-current-page: $page-mobile.current-page
-site-logo: $page-mobile.site-logo
-site-url: $page-mobile.site-url
-site-name: $page-mobile.site-name
+sections: $doc-page-mobile.sections
+sub-sections: $doc-page-mobile.sub-sections
+toc: $doc-page-mobile.toc
+current-section: $doc-page-mobile.current-section
+current-subsection: $doc-page-mobile.current-subsection
+current-page: $doc-page-mobile.current-page
+site-logo: $doc-page-mobile.site-logo
+site-url: $doc-page-mobile.site-url
+site-name: $doc-page-mobile.site-name
 logo-height: 38
 menu-icon: $assets.files.static.hamburger.svg
 
@@ -639,29 +663,29 @@ min-height.fixed.calc: 100vh
 -- ftd.row:
 width: fill-container
 
--- ftd.text: $page-mobile.title
-if: { page-mobile.title != NULL }
+-- ftd.text: $doc-page-mobile.title
+if: { doc-page-mobile.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 
 -- end: ftd.row
 
 -- ftd.text: 
-if: { page-mobile.body != NULL }
+if: { doc-page-mobile.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$page-mobile.body
+$doc-page-mobile.body
 
 -- ftd.column:
-children: $page-mobile.wrapper
+children: $doc-page-mobile.wrapper
 spacing.fixed.px: 32
 width.fixed.percent: 100
 
 -- end: ftd.column
 
 -- ftd.column:
-if: { page-mobile.open-right-sidebar-info }
+if: { doc-page-mobile.open-right-sidebar-info }
 anchor: parent
 top.px: 0
 bottom.px: 0
@@ -671,7 +695,7 @@ background.solid: $inherited.colors.background.overlay
 z-index: 1
 width: fill-container
 height.fixed.calc: 100% - 0px
-$on-click$: $ftd.set-bool($a = $page-mobile.open-right-sidebar-info, v = false)
+$on-click$: $ftd.set-bool($a = $doc-page-mobile.open-right-sidebar-info, v = false)
 
 -- ftd.image:
 src: $assets.files.static.cross-dark.svg
@@ -679,12 +703,12 @@ height.fixed.px: 16
 width: auto
 margin-top.px: 30
 margin-left.px: 16
-$on-click$: $ftd.toggle($a = $page-mobile.open-right-sidebar-info)
+$on-click$: $ftd.toggle($a = $doc-page-mobile.open-right-sidebar-info)
 
 -- end: ftd.column
 
 -- ftd.column:
-if: { page-mobile.open-right-sidebar-info }
+if: { doc-page-mobile.open-right-sidebar-info }
 width.fixed.calc: 100% - 48px
 height.fixed.calc: 100% - 0px
 overflow-y: auto
@@ -702,7 +726,7 @@ padding-horizontal.px: 24
 
 -- end: ftd.column
 
--- end: page-mobile
+-- end: doc-page-mobile
 
 
 
@@ -923,7 +947,7 @@ site-name: $header-desktop.site-name
 align-self: center
 spacing.fixed.px: 32
 
--- section-loop: $obj.title
+-- header-item: $obj.title
 $loop$: $header-desktop.sections as $obj
 link: $obj.url
 is-active: $obj.is-active
@@ -1134,29 +1158,37 @@ color: $inherited.colors.text
 
 
 
--- component section-loop:
+-- component header-item:
 caption title:
-string link:
-boolean is-active:
-boolean $hover: false
+optional ftd.image-src icon:
+optional string link:
+boolean is-active: 
+boolean $open: false
 
 -- ftd.row: 
 align-self: center
 
--- ftd.text: $section-loop.title
+-- ftd.text: $header-item.title
+if: { !header-item.is-active }
 role: $inherited.types.copy-regular
-link: $section-loop.link
-color: $inherited.colors.text-strong
-color if { section-loop.is-active }: $inherited.colors.text
-style if { section-loop.is-active }: bold
-style if { section-loop.hover }: bold
-color if { section-loop.hover }: $inherited.colors.text
-$on-mouse-enter$: $ftd.set-bool($a = $section-loop.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $section-loop.hover, v = false)
+link if { header-item.link != NULL}: $header-item.link
+white-space: nowrap
+color: $inherited.colors.text
+padding-top.rem: 0.4
+opacity: 0.60
+
+-- ftd.text: $header-item.title
+if: { header-item.is-active }
+role: $inherited.types.copy-regular
+white-space: nowrap
+link if { header-item.link != NULL }: $header-item.link
+color: $inherited.colors.text
+padding-top.rem: 0.4
+style: bold
 
 -- end: ftd.row
 
--- end: section-loop
+-- end: header-item
 
 
 
@@ -1170,8 +1202,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $section-loop.hover, v = false)
 -- component subsections-links:
 caption title:
 optional boolean is-active:
-optional string url: 
-boolean $hover: false
+optional string url:
 pr.toc-item list item:
 
 -- ftd.row:
@@ -1180,12 +1211,10 @@ padding-horizontal.px: 8
 
 -- ftd.text: $subsections-links.title
 color: $inherited.colors.text
-role: $inherited.types.label-large
+role: $inherited.types.button-medium
 white-space: nowrap
 link: $subsections-links.url
-color if { subsections-links.hover }: $inherited.colors.shadow
-$on-mouse-enter$: $ftd.set-bool($a = $subsections-links.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $subsections-links.hover, v = false)
+opacity if { !subsections-links.is-active }: 0.60
 
 -- end: ftd.row
 
@@ -1858,10 +1887,10 @@ pr.toc-item list toc-obj:
 min-width.fixed.percent: 20
 min-height.fixed.calc: 100vh - 0px
 height: fill-container
-width.fixed.percent: 28
+width.fixed.percent: 28.5
 padding-horizontal.px: 26
 padding-top.px: 50
-spacing.fixed.px: 44
+spacing.fixed.rem: 1.5
 
 -- toc-instance:
 $loop$: $render-toc.toc-obj as $obj
@@ -2352,8 +2381,12 @@ margin-top.rem: 2
 
 -- component footer:
 optional ftd.image-src site-logo:
+integer logo-width: $logo-width
+integer logo-height: $logo-height
 optional string site-url: $site-url
 optional string site-name: $site-name
+pr.toc-item list footer-links: $footer-links
+social-link list social-links: $social-links
 pr.toc-item list footer-links: $footer-links
 social-link list social-links: $social-links
 string copyright: Copyright ©2022. Fastn Inc.
@@ -2366,6 +2399,8 @@ width: fill-container
 -- footer-desktop:
 copyright: $footer.copyright
 site-logo: $footer.site-logo
+logo-width: $footer.logo-width
+logo-height: $footer.logo-height
 site-url: $footer.site-url
 site-name: $footer.site-name
 footer-links: $footer.footer-links
@@ -2382,6 +2417,8 @@ site-url: $footer.site-url
 site-name: $footer.site-name
 footer-links: $footer.footer-links
 social-links: $footer.social-links
+logo-width: $footer.logo-width
+logo-height: $footer.logo-height
 
 -- end: ftd.mobile
 
@@ -2403,6 +2440,8 @@ string copyright:
 optional ftd.image-src site-logo: 
 optional string site-url: 
 optional string site-name:
+integer logo-width: 
+integer logo-height: 
 pr.toc-item list footer-links: 
 social-link list social-links:
 
@@ -2438,8 +2477,8 @@ align-content: center
 -- ftd.image:
 if: { footer-desktop.site-logo != NULL }
 src: $footer-desktop.site-logo
-width.fixed.px: 200
-height.fixed.px: 32
+width.fixed.px: $footer-desktop.logo-width
+height.fixed.px: $footer-desktop.logo-height
 align-self: center
 
 -- ftd.text: $footer-desktop.site-name
@@ -2487,6 +2526,8 @@ opacity: 0.70
 string copyright: 
 optional ftd.image-src site-logo: 
 optional string site-url: 
+integer logo-width: 
+integer logo-height:
 optional string site-name: 
 pr.toc-item list footer-links: 
 social-link list social-links:
@@ -2513,8 +2554,8 @@ margin-vertical.rem: 1.5
 -- ftd.image:
 if: { footer-mobile.site-logo != NULL }
 src: $footer-mobile.site-logo
-width.fixed.px: 200
-height.fixed.px: 33
+width.fixed.px: $footer-mobile.logo-width
+height.fixed.px: $footer-mobile.logo-height
 align-self: center
 
 -- ftd.text: $footer-mobile.site-name
