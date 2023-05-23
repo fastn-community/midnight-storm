@@ -154,7 +154,7 @@ Please note that some functionality (for example, anchor links) will not work in
 development. The functionality will work as expected in production.
 
 -- h1: Creating Edge Middleware
-id: create-edge-mioddleware
+id: create-edge-middleware
 
 You can use Edge Middleware with any framework. To add Middleware to your app,
 you need to create a middleware.ts or middleware.js file in the root of your
