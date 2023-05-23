@@ -1259,6 +1259,7 @@ align-self: center
 -- fallback-title:
 if: { header-mobile.site-logo == NULL }
 site-name: $header-mobile.site-name
+
 -- end: ftd.row
 
 -- end: ftd.row
@@ -1275,7 +1276,7 @@ align-self: start
 
 -- ftd.text: $header-mobile.current-section.title
 if: { header-mobile.current-section != NULL }
-role: $inherited.types.label-small
+role: $inherited.types.label-large
 color: $inherited.colors.cta-tertiary.text
 link: $header-mobile.current-section.url
 background.solid: $inherited.colors.cta-tertiary.base
@@ -1312,11 +1313,11 @@ $on-click$: $ftd.toggle($a = $header-mobile.show-section, v=true)
 -- ftd.row:
 width: fill-container
 padding-vertical.px: 16
-spacing.fixed.px: 4
+spacing.fixed.px: 6
 
 -- ftd.text: $header-mobile.current-subsection.title
 if: { header-mobile.current-subsection != NULL }
-role: $inherited.types.label-small
+role: $inherited.types.label-large
 color: $inherited.colors.text
 white-space: nowrap
 
@@ -1333,7 +1334,7 @@ if: { header-mobile.current-subsection != NULL }
 if: { header-mobile.current-page != NULL }
 
 -- ftd.text: ->
-role: $inherited.types.label-small
+role: $inherited.types.label-large
 color: $inherited.colors.text
 white-space: nowrap
 
@@ -1343,7 +1344,7 @@ white-space: nowrap
 
 -- ftd.text: $header-mobile.current-page.title 
 if: { header-mobile.current-page != NULL }
-role: $inherited.types.label-small
+role: $inherited.types.label-large
 color: $inherited.colors.text
 white-space: nowrap
 
