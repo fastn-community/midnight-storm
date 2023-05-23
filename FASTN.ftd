@@ -8,6 +8,8 @@
 
 -- fastn.dependency: fastn-community.github.io/playfair-display-font
 
+-- fastn.dependency: fastn-community.github.io/poppins-font
+
 -- fastn.dependency: fastn-community.github.io/source-code-pro-font
 
 -- fastn.dependency: fastn-community.github.io/set-2-cs as cs
@@ -32,7 +34,23 @@ exposing: h0, h1, h2, h3, markdown
 
 -- fastn.sitemap:
 
-# Label: /
+# Home: /
+
+## Child 1: /
+
+- Service: /
+  - Documentation: /
+  - Transfer: /
+  - Cash: /
+  - My Bills: /
+
+- Home: /
+
+- Pocket: /
+
+- History: /
+
+## Child 1: /
 
 # Label: /
 

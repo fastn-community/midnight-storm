@@ -1,6 +1,10 @@
 -- import: fastn-community.github.io/inter-font/assets as inter-font-assets
+
 -- import: fastn-community.github.io/playfair-display-font/assets as playfair-display-font-assets
+
 -- import: fastn-community.github.io/source-code-pro-font/assets as source-code-pro-font-assets
+
+-- import: fastn-community.github.io/poppins-font/assets as poppins-font-assets
 
 
 
@@ -57,3 +61,21 @@ weight: 700
 -- ftd.responsive-type copy-medium:
 desktop: $copy-medium-desktop
 mobile: $copy-medium-mobile
+
+-- ftd.type link-mobile:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+weight: 400
+font-family: $poppins-font-assets.fonts.Poppins
+
+-- ftd.type link-desktop:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+font-family: $poppins-font-assets.fonts.Poppins
+weight: 400
+
+-- ftd.responsive-type link:
+desktop: $link-desktop
+mobile: $link-mobile
