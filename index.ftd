@@ -6,6 +6,8 @@
 light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
+-- boolean show-footer: true
+
 -- string $site-name: Fastn
 
 -- string $site-url: index.html
@@ -28,12 +30,43 @@ $processor$: pr.fastn-apps
 
 -- page: Documentation
 login-button: true
-login-btn-txt: Login
-login-btn-url: https://fastn.com/
+sidebar: true
+show-footer: true
 
 -- page.right-sidebar:
 
--- sidebar-links:
+-- link-group: Create Edge Middleware
+cta: #create-edge-middleware
+
+-- link-group: Match Paths based on custom matcher config
+cta: #match-paths-based-on-customer-matcher-config
+
+-- link-group: Match a single path
+cta: #match-a-single-path
+
+-- link-group: Match multiple paths
+cta: #match-multiple-paths
+
+-- link-group: Match using regex
+cta: #match-using-regex
+
+-- link-group: Match based on character matching
+cta: #match-based-on-character-matching
+
+-- link-group: Match paths based on conditional statements
+cta: #match-paths-based-on-conditional-statements
+
+-- link-group: Loggings
+cta: #loggings
+
+-- link-group: Existing login connection
+cta: #existing-login-connection
+
+-- link-group: Choosing a connection when creating a project
+cta: #choosing-a-connection-when-creating-a-project
+
+-- link-group: Known limitations
+cta: #known-limitations
 
 -- end: page.right-sidebar
 
@@ -115,7 +148,7 @@ Some common use-cases of Middleware are:
 
 -- list-item-bold: Rewrites
 
--- toast: Important
+-- tip:
 
 Please note that some functionality (for example, anchor links) will not work in
 development. The functionality will work as expected in production.
@@ -375,6 +408,8 @@ pr.toc-item list footer-links: $footer-links
 social-link list social-links: $social-links
 string copyright: Copyright ©2022. Fastn Inc.
 ftd.ui list right-sidebar:
+boolean sidebar: false
+boolean show-footer:
 ftd.ui list footer:
 
 -- ftd.document:
@@ -400,13 +435,13 @@ current-subsection: $page.current-subsection
 current-page: $page.current-page
 sub-sections: $page.sub-sections
 body: $page.body
-footer: $page.footer
 login-btn-txt: $page.login-btn-txt
 login-btn-url: $page.login-btn-url
 login-button: $page.login-button
 site-name: $page.site-name
 site-logo: $page.site-logo
 site-url: $page.site-url
+sidebar: $page.sidebar
 right-sidebar: $page.right-sidebar
 
 -- end: ftd.desktop
@@ -426,15 +461,16 @@ site-name: $page.site-name
 site-logo: $page.site-logo
 site-url: $page.site-url
 right-sidebar: $page.right-sidebar
-footer: $page.footer
 
 -- end: ftd.mobile
 
 -- dark-mode-switcher-float:
 
 -- ftd.column:
+if: { page.show-footer}
 width: fill-container
 children: $page.footer
+align-content: center
 
 -- end: ftd.column
 
@@ -469,8 +505,8 @@ children wrapper:
 optional string login-btn-txt: Login
 optional string login-btn-url: index.html
 boolean login-button: false
+boolean sidebar: false
 ftd.ui list right-sidebar:
-ftd.ui list footer:
 
 -- ftd.column:
 width: fill-container
@@ -538,15 +574,9 @@ spacing.fixed.px: 20
 
 -- end: ftd.column
 
--- ftd.column:
-width: fill-container
-children: $page-desktop.right-sidebar
-padding-horizontal.px: 20
-padding-top.px: 56
-max-width.fixed.px: 370
-spacing.fixed.px: 12
-
--- end: ftd.column
+-- right-sidebar:
+if: { page-desktop.sidebar}
+right-sidebar: $page-desktop.right-sidebar
 
 -- end: ftd.row
 
@@ -584,7 +614,7 @@ children wrapper:
 
 -- ftd.column:
 width: fill-container
-background.solid:$inherited.colors.background.base
+background.solid: $inherited.colors.background.base
 
 -- header:
 sections: $page-mobile.sections
@@ -673,7 +703,6 @@ padding-horizontal.px: 24
 -- end: ftd.column
 
 -- end: page-mobile
-
 
 
 
@@ -839,8 +868,6 @@ logo-height: $header.logo-height
 
 
 
-
-
 -- component header-desktop:
 optional ftd.image-src site-logo:
 string site-url: 
@@ -944,7 +971,7 @@ white-space: nowrap
 align-self: center
 
 -- ftd.image:
-if: { header-desktop.current-page != NULL &&  header-desktop.current-subsection != NULL }
+if: { header-desktop.current-page != NULL && header-desktop.current-subsection != NULL }
 src: $assets.files.static.right.svg
 align-self: center
 
@@ -1225,7 +1252,7 @@ height.fixed.px: 44
 -- ftd.text: $header-mobile.site-name
 if: { header-mobile.site-name != NULL }
 role: $inherited.types.copy-large
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 white-space: nowrap
 align-self: center
 
@@ -1290,7 +1317,7 @@ spacing.fixed.px: 4
 -- ftd.text: $header-mobile.current-subsection.title
 if: { header-mobile.current-subsection != NULL }
 role: $inherited.types.label-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 white-space: nowrap
 
 -- ftd.text: Menu
@@ -1307,7 +1334,7 @@ if: { header-mobile.current-page != NULL }
 
 -- ftd.text: ->
 role: $inherited.types.label-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 white-space: nowrap
 
 -- end: ftd.row
@@ -1315,9 +1342,9 @@ white-space: nowrap
 -- end: ftd.row
 
 -- ftd.text: $header-mobile.current-page.title 
-if:  { header-mobile.current-page != NULL }
+if: { header-mobile.current-page != NULL }
 role: $inherited.types.label-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 white-space: nowrap
 
 -- end: ftd.row
@@ -1487,7 +1514,7 @@ top.px: 0
 bottom.px: 0
 left.px: 0
 right.px: 0
-background.solid:  $inherited.colors.background.overlay
+background.solid: $inherited.colors.background.overlay
 z-index: 1
 $on-click$: $ftd.toggle($a = $mobile-sidebar.sidebar-open)
 
@@ -1616,7 +1643,7 @@ width: fill-container
 -- ftd.text: $header-item-mobile.title 
 role: $inherited.types.copy-regular
 link: $header-item-mobile.link
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 color if { header-item-mobile.is-active }: $inherited.colors.cta-primary.base
 $on-click$: $ftd.set-bool($a = $header-item-mobile.show-section, v = true)
 padding-top.px: 24
@@ -1639,6 +1666,26 @@ children: $header-item-mobile.children
 
 
 
+
+
+
+
+
+
+
+-- component right-sidebar:
+ftd.ui list right-sidebar:
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 20
+margin-top.px: 50
+max-width.fixed.percent: 20
+children: $right-sidebar.right-sidebar
+
+-- end: ftd.column
+
+-- end: right-sidebar
 
 
 
@@ -1674,6 +1721,125 @@ align-self: center
 white-space: nowrap
 
 -- end: site-url
+
+
+
+
+
+
+
+
+
+
+-- component toc-title:
+caption title:
+
+-- ftd.row:
+align-content: center
+spacing.fixed.rem: 1.2
+margin-bottom.rem: 1.2
+
+-- ftd.image:
+src: $assets.files.static.hamburger.svg
+
+-- ftd.text: $toc-title.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text
+style: bold
+
+-- end: ftd.row
+
+-- end: toc-title
+
+
+
+
+
+
+
+
+
+
+-- component link:
+caption title:
+string cta:
+children wrapper:
+boolean $active: false
+
+-- ftd.column:
+$on-click$: $ftd.set-bool($a= $link.active, v = true)
+spacing.fixed.rem: 0.81
+
+-- ftd.text: $link.title
+role: $inherited.types.button-small
+color: $inherited.colors.text
+color if { link.active}: $inherited.colors.accent.primary
+link: $link.cta
+opacity if { !link.active}: 0.6
+style: regular
+
+-- ftd.column:
+width: fill-container
+children: $link.wrapper
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: link
+
+
+
+
+
+
+
+
+-- component link-group:
+caption title:
+string cta:
+children wrapper:
+boolean $active: false
+
+-- ftd.column:
+$on-click$: $ftd.set-bool($a= $link-group.active, v = true)
+spacing.fixed.rem: 0.81
+
+-- ftd.column:
+if: { link-group.active }
+
+-- ftd.text: $link-group.title
+role: $inherited.types.button-medium
+color: $inherited.colors.accent.primary
+link: $link-group.cta
+style: bold
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { !link-group.active }
+
+-- ftd.text: $link-group.title
+role: $inherited.types.button-small
+color: $inherited.colors.text
+link: $link-group.cta
+opacity: 0.6
+style: bold
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $link-group.wrapper
+margin-left.rem: 1.8
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: link-group
+
+
 
 
 
@@ -1770,28 +1936,68 @@ toc: $obj
 pr.toc-item toc:
 
 -- ftd.column:
-
--- ftd.row:
 width: fill-container
-spacing.fixed.px: 8
 
 -- ftd.text:
 link if { childrens.toc.url != NULL }: $childrens.toc.url
 text: $childrens.toc.title
-role: $inherited.types.button-medium
+role: $fonts.button-medium
 color: $inherited.colors.text
 opacity: 0.60
 
--- end: ftd.row
+-- ftd.column:
+if: {!ftd.is_empty(childrens.toc.children) }
+width: fill-container
+margin-top.px: 24
+spacing.fixed.px: 24
 
--- childrens:
-if: { !ftd.is_empty(childrens.toc.children) }
+-- child-of-childrens:
 $loop$: $childrens.toc.children as $obj
 toc: $obj
 
 -- end: ftd.column
 
+-- end: ftd.column
+
 -- end: childrens
+
+
+
+
+
+
+
+
+
+
+-- component child-of-childrens:
+pr.toc-item toc:
+
+-- ftd.column:
+width: fill-container
+padding-left.px: 10
+spacing.fixed.px: 24
+
+-- ftd.text:
+link if { child-of-childrens.toc.url != NULL }: $child-of-childrens.toc.url
+text: $child-of-childrens.toc.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+color if { child-of-childrens.toc.is-active }: $inherited.colors.text-strong
+
+-- ftd.column:
+if: { !ftd.is_empty(child-of-childrens.toc.children) }
+width: fill-container
+
+-- child-of-childrens:
+$loop$: $child-of-childrens.toc.children as $obj
+toc: $obj
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: child-of-childrens
 
 
 
@@ -1808,9 +2014,9 @@ body body:
 optional string id: 
 
 -- ftd.column:
+id if { h1.id != NULL }: $h1.id
 width: fill-container
 spacing.fixed.px: 20
-id if { h1.id != NULL }: $h1.id
 region: h1
 
 -- ftd.text: $h1.title
@@ -2018,19 +2224,18 @@ body: $image.body
 
 
 
--- component toast:
-caption title:
+-- component tip:
+caption title: Important
 body body:
 
--- ftd.column:
+-- ftd.row:
 background.solid: $inherited.colors.info.text
 padding-vertical.px: 12
 border-radius.px: 8
 padding-right.px: 8
 margin-top.px: 20
-margin-bottom.px: 40
-
--- ftd.row:
+margin-bottom.px: 50
+margin-bottom.px if { ftd.device == "mobile" }: 16
 
 -- ftd.image:
 src: $assets.files.static.info-icon.svg
@@ -2040,8 +2245,9 @@ align-self: center
 
 -- ftd.column:
 spacing.fixed.px: 4
+color: $inherited.colors.text
 
--- ftd.text: $toast.title
+-- ftd.text: $tip.title
 role: $fonts.copy-large
 color: $inherited.colors.text
 
@@ -2049,15 +2255,13 @@ color: $inherited.colors.text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$toast.body
+$tip.body
 
 -- end: ftd.column
 
 -- end: ftd.row
 
--- end: ftd.column
-
--- end: toast
+-- end: tip
 
 
 
@@ -2068,51 +2272,73 @@ $toast.body
 
 
 
--- component sidebar-links:
-right-sidebar-lists list links: $right-subtitle
+-- component cards:
+children wrapper:
+
+-- ftd.row:
+spacing: space-between
+children: $cards.wrapper
+width: fill-container
+
+-- end: ftd.row
+
+-- end: cards
+
+
+
+
+
+
+
+
+
+
+-- component card:
+caption title:
+body body:
+ftd.image-src src: $assets.files.static.dollar.svg
+string cta-label: Button
+string cta-url: /
 
 -- ftd.column:
-width: fill-container
-spacing.fixed.px: 12
+padding-top.px: 40
+padding-bottom.px: 32
+padding-horizontal.px: 24
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 10
+width.fixed.percent: 46
 
--- right-navbar-list: $obj
-$loop$: $sidebar-links.links as $obj
+-- ftd.image:
+if: { card.src != NULL }
+src: $card.src
 
--- end: ftd.column
+-- ftd.text: $card.title
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+margin-top.rem: 1
 
--- end: sidebar-links
-
-
-
-
-
-
-
-
-
-
--- component right-navbar-list:
-caption right-sidebar-lists item:
-boolean $active: false
-boolean $hover: false
-
--- ftd.column:
-width: fill-container
-$on-click$: $ftd.set-bool($a= $right-navbar-list.active, v = true)
-
--- ftd.text: $right-navbar-list.item.title
-role: $fonts.link
-style if { right-navbar-list.active || right-navbar-list.hover }: bold
+-- ftd.text:
 color: $inherited.colors.text
-color if { right-navbar-list.active || right-navbar-list.hover }: $inherited.colors.shadow
-link: $right-navbar-list.item.link
-opacity if { !right-navbar-list.active && !right-navbar-list.hover }: 0.60
-$on-mouse-enter$: $ftd.set-bool($a = $right-navbar-list.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $right-navbar-list.hover, v = false)
+role: $inherited.types.copy-regular
+margin-top.rem: 1
+
+$card.body
+
+-- ftd.text: $card.cta-label
+role: $inherited.types.button-large
+color: $inherited.colors.cta-primary.text
+white-space: nowrap
+text-align: center
+padding-horizontal.rem: 1.37
+padding-vertical.rem: 0.37
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 4
+margin-top.rem: 2
 
 -- end: ftd.column
 
--- end: right-navbar-list
+-- end: card
+
 
 
 
@@ -2173,7 +2399,7 @@ social-links: $footer.social-links
 
 -- component footer-desktop:
 string copyright:
-optional ftd.image-src site-logo:  
+optional ftd.image-src site-logo: 
 optional string site-url: 
 optional string site-name:
 pr.toc-item list footer-links: 
@@ -2336,7 +2562,7 @@ text-align: center
 -- component footer-mobile-list:
 caption title:
 string url:
-boolean $shows-data:  false
+boolean $shows-data: false
 boolean is-active: false
 pr.toc-item list children: 
 
@@ -2446,11 +2672,6 @@ margin-bottom.px: 12
 
 
 
-
-
-
-
-
 -- component footer-list:
 caption title:
 optional string url:
@@ -2476,56 +2697,6 @@ $loop$: $footer-list.children as $obj
 -- end: ftd.column
 
 -- end: footer-list
-
-
-
-
-
-
-
-
-
-
--- record right-sidebar-lists:
-caption title:
-string link: 
-
--- right-sidebar-lists list right-subtitle:
-
--- right-sidebar-lists: Create Edge Middleware
-link: #create-edge-mioddleware
-
--- right-sidebar-lists: Match Paths based on custom matcher config
-link: #match-paths-based-on-customer-matcher-config
-
--- right-sidebar-lists: Match a single path
-link: #match-a-single-path
-
--- right-sidebar-lists: Match multiple paths
-link: #match-multiple-paths
-
--- right-sidebar-lists: Match using regex
-link: #match-using-regex
-
--- right-sidebar-lists: Match based on character matching
-link: #match-based-on-character-matching
-
--- right-sidebar-lists: Match paths based on conditional statements
-link: #match-paths-based-on-conditional-statements
-
--- right-sidebar-lists: Loggings
-link: #loggings
-
--- right-sidebar-lists: Existing login connection
-link: #existing-login-connection
-
--- right-sidebar-lists: Choosing a connection when creating a project
-link: #choosing-a-connection-when-creating-a-project
-
--- right-sidebar-lists: Known limitations
-link: #known-limitations
-
--- end: right-subtitle
 
 
 

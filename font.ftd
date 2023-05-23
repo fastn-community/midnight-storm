@@ -44,6 +44,25 @@ weight: 700
 desktop: $copy-large-desktop
 mobile: $copy-large-mobile
 
+-- ftd.type button-medium-mobile:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+weight: 400
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+
+-- ftd.type button-medium-desktop:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+weight: 400
+
+-- ftd.responsive-type button-medium:
+desktop: $button-medium-desktop
+mobile: $button-medium-mobile
+
+
 -- ftd.type copy-medium-mobile:
 line-height.px: 26
 size.px: 20
