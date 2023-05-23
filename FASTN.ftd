@@ -36,7 +36,7 @@ exposing: h0, h1, h2, h3, markdown
 
 # Home: /
 
-## Child 1: /
+## Home Child: /
 
 - Service: /
   - Documentation: /
@@ -50,7 +50,7 @@ exposing: h0, h1, h2, h3, markdown
 
 - History: /
 
-## Child 1: /
+## Home Child: /
 
 # Label: /
 
