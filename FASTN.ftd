@@ -14,8 +14,8 @@
 
 -- fastn.dependency: fastn-community.github.io/set-2-cs as cs
 
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 -- fastn.dependency: fastn-community.github.io/code-block
-
 -- fastn.dependency: fastn-community.github.io/typography
 
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
