@@ -1,0 +1,40 @@
+-- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/set-2-ds/assets
+
+
+
+
+-- ds.page: Adding Assets
+
+In this section, we will learn about adding assets like images into your `fastn`
+`set-2-ds` web site.
+
+To add assets into `set-2-ds` project add folder inside it. You can also keep
+your image assets into root directory. We recommend adding all your images into
+a seperate folder to maintain your images at one place.
+
+-- ds.h2: How to link image assets?
+
+Let's say you have created a folder name `<images>` into your fastn project. And
+you added a image `sample.jpg` inside it. 
+
+-- ds.code:
+lang: ftd
+
+\-- ds.image:
+src: $assets.files.images.sample.jpg
+
+-- ds.markdown:
+
+- In above code snippet `$assets.files` refers to your `fastn` project root
+  folder.
+
+- `.images` refers to your `<images>` folder you created inside your `fastn`
+  project.
+
+- `.sample.jpg` is the image inside `<images>` folder.
+
+You can add as many image assets into your `fastn` project you wish to and
+refers them as we seen above.
+
+-- end: ds.page

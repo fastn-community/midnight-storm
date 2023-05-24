@@ -2,8 +2,51 @@
 
 -- fastn.package: fastn-community.github.io/set-2-ds
 
--- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
+-- fastn.dependency: fastn-community.github.io/set-2-typography as typo
 
--- fastn.auto-import: bling/chat as chat
--- fastn.auto-import: ds
+-- fastn.dependency: fastn-community.github.io/inter-font
+
+-- fastn.dependency: fastn-community.github.io/playfair-display-font
+
+-- fastn.dependency: fastn-community.github.io/poppins-font
+
+-- fastn.dependency: fastn-community.github.io/source-code-pro-font
+
+-- fastn.dependency: fastn-community.github.io/set-2-cs as cs
+
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+-- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/typography
+-- fastn.dependency: fastn-community.github.io/footer
+
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
+exposing: code, rendered
+
+-- fastn.auto-import: fastn-community.github.io/typography as tf
+exposing: h0, h1, h2, h3, markdown
+
+-- fastn.auto-import: cs
+
+-- fastn.auto-import: typo
+
+-- fastn.auto-import: fastn-community.github.io/set-2-ds/assets
+-- fastn.auto-import: fastn-community.github.io/set-2-ds/FASTN/config as my-ds
+
+-- fastn.sitemap:
+
+# Home: /index.html
+
+- Overview: index.html
+- Getting Started: /getting-started/
+- Adding Favicon: /favicon/
+- Adding Logo & Sitename: /logo/
+- Changing Color Scheme: /cs/
+- Changing Typography: /types/
+- Creating A Page: /page/
+- Adding a image: /image/
+- Adding Assets: /assets/
+- Markdown Primer: /markdown/
+- Understanding Sitemap: /sitemap/
+- Adding Right Sidebar: /right-sidebar/
+- Adding Footer: /footer/
+- SEO: /seo/

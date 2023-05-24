@@ -1,0 +1,100 @@
+-- import: fastn-community.github.io/inter-font/assets as inter-font-assets
+
+-- import: fastn-community.github.io/playfair-display-font/assets as playfair-display-font-assets
+
+-- import: fastn-community.github.io/source-code-pro-font/assets as source-code-pro-font-assets
+
+-- import: fastn-community.github.io/poppins-font/assets as poppins-font-assets
+
+
+
+-- ftd.type copy-regular-mobile:
+line-height.px: 24
+size.px: 14
+letter-spacing.px: 0
+weight: 700
+font-family: $inter-font-assets.fonts.Inter
+
+-- ftd.type copy-regular-desktop:
+line-height.px: 30
+size.px: 14
+letter-spacing.px: 0
+font-family: $inter-font-assets.fonts.Inter
+weight: 700
+
+-- ftd.responsive-type copy-regular:
+desktop: $copy-regular-desktop
+mobile: $copy-regular-mobile
+
+-- ftd.type copy-large-mobile:
+line-height.px: 26
+size.px: 20
+letter-spacing.px: 0
+weight: 700
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+
+-- ftd.type copy-large-desktop:
+line-height.px: 26
+size.px: 20
+letter-spacing.px: 0
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+weight: 700
+
+-- ftd.responsive-type copy-large:
+desktop: $copy-large-desktop
+mobile: $copy-large-mobile
+
+-- ftd.type button-medium-mobile:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+weight: 400
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+
+-- ftd.type button-medium-desktop:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+weight: 400
+
+-- ftd.responsive-type button-medium:
+desktop: $button-medium-desktop
+mobile: $button-medium-mobile
+
+
+-- ftd.type copy-medium-mobile:
+line-height.px: 26
+size.px: 20
+letter-spacing.px: 0
+weight: 700
+font-family: $source-code-pro-font-assets.fonts.Source-Code-Pro
+
+-- ftd.type copy-medium-desktop:
+line-height.px: 26
+size.px: 20
+letter-spacing.px: 0
+font-family: $source-code-pro-font-assets.fonts.Source-Code-Pro
+weight: 700
+
+-- ftd.responsive-type copy-medium:
+desktop: $copy-medium-desktop
+mobile: $copy-medium-mobile
+
+-- ftd.type link-mobile:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+weight: 400
+font-family: $poppins-font-assets.fonts.Poppins
+
+-- ftd.type link-desktop:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+font-family: $poppins-font-assets.fonts.Poppins
+weight: 400
+
+-- ftd.responsive-type link:
+desktop: $link-desktop
+mobile: $link-mobile
