@@ -530,13 +530,12 @@ padding-bottom.px: 50
 -- ftd.text: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
 role: $inherited.types.heading-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 
 -- ftd.text: 
 if: { doc-page-desktop.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-opacity: 0.60
 
 $doc-page-desktop.body
 
@@ -795,7 +794,6 @@ if: { !link-group.active }
 role: $inherited.types.button-small
 color: $inherited.colors.text
 link: $link-group.cta
-opacity: 0.6
 style: bold
 
 -- end: ftd.column
@@ -915,7 +913,6 @@ link if { childrens.toc.url != NULL }: $childrens.toc.url
 text: $childrens.toc.title
 role: $fonts.button-medium
 color: $inherited.colors.text
-opacity: 0.60
 
 -- ftd.column:
 if: {!ftd.is_empty(childrens.toc.children) }
@@ -1244,7 +1241,6 @@ link: $obj.link
 -- ftd.text: $footer-desktop.copyright
 role: $inherited.types.fine-print
 color: $inherited.colors.text
-opacity: 0.70
 
 -- end: ftd.column
 
@@ -1434,7 +1430,7 @@ margin-bottom.px: 12
 -- ftd.text: $footer-list-toc.title
 if: { !footer-list-toc.show-subsections }
 color: $inherited.colors.text
-role: $inherited.types.button-medium
+role: $inherited.types.copy-regular
 link: $footer-list-toc.url
 width: fill-container
 white-space: nowrap
@@ -1502,7 +1498,6 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.accent.primary
 link: $footer-list-child.url
 width: fill-container
-opacity: 0.50
 
 -- footer-list-child: $obj.title
 if: { !ftd.is_empty(footer-list-child.children) }
