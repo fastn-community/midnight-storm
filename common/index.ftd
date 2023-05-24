@@ -19,9 +19,6 @@ $processor$: pr.sitemap
 -- pr.sitemap-data footer-toc:
 $processor$: pr.full-sitemap
 
--- pr.toc-item list footer-list:
-$processor$: pr.toc
-
 -- fastn.app-ui apps:
 $processor$: pr.fastn-apps
 

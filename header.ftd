@@ -28,6 +28,8 @@ boolean login-button: false
 integer logo-width: 120
 integer logo-height: 44
 boolean $sidebar-open: false
+boolean github-icon: false
+optional string github-url:
 
 -- ftd.column:
 width: fill-container
@@ -55,6 +57,8 @@ sections: $header.sections
 sub-sections: $header.sub-sections
 logo-width: $header.logo-width 
 logo-height: $header.logo-height 
+github-icon: $header.github-icon
+github-url: $header.github-url
 
 -- ftd.mobile:
 
@@ -72,6 +76,8 @@ current-page: $header.current-page
 current-subsection: $header.current-subsection
 logo-width: $header.logo-width 
 logo-height: $header.logo-height 
+github-icon: $header.github-icon
+github-url: $header.github-url
 
 -- end: ftd.mobile
 
@@ -91,6 +97,8 @@ login-btn-url: $header.login-btn-url
 login-button: $header.login-button
 logo-width: $header.logo-width 
 logo-height: $header.logo-height 
+github-icon: $header.github-icon
+github-url: $header.github-url
 
 -- end: ftd.desktop
 
@@ -121,6 +129,10 @@ optional string login-btn-url:
 boolean login-button: false
 integer logo-width: 120
 integer logo-height: 44
+boolean github-icon: false
+optional string github-url:
+boolean github-icon: false
+optional string github-url:
 
 -- ftd.column:
 width: fill-container
@@ -147,7 +159,7 @@ align-self: center
 -- ftd.text: $header-desktop.site-name
 if: { header-desktop.site-name != NULL }
 role: $inherited.types.heading-medium
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 margin-left.px if { header-desktop.site-logo != NULL }: 16
 white-space: nowrap
 align-self: center
@@ -192,7 +204,7 @@ spacing.fixed.px: 12
 -- ftd.text: $header-desktop.current-section.title
 if: { header-desktop.current-section.title != NULL }
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 link: $header-desktop.current-section.url
 align-self: center
 
@@ -204,7 +216,7 @@ align-self: center
 -- ftd.text: $header-desktop.current-subsection.title
 if: { header-desktop.current-subsection != NULL }
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 link: $header-desktop.current-subsection.url
 white-space: nowrap
 align-self: center
@@ -256,6 +268,7 @@ url: $obj.url
 optional string login:
 optional string login-btn-url: 
 ftd.image-src icon-github: $assets.files.static.icon-github.svg
+boolean $hover: false
 
 -- ftd.row:
 width: fill-container
@@ -266,6 +279,7 @@ width: fill-container
 login: $login-signup.login
 login-btn-url: $login-signup.login-btn-url
 icon-github: $login-signup.icon-github
+$hover: $login-signup.hover
 
 -- end: ftd.desktop
 
@@ -295,6 +309,7 @@ icon-github: $login-signup.icon-github
 optional string login:
 optional string login-btn-url: 
 optional ftd.image-src icon-github:
+boolean $hover: false
 
 -- ftd.row:
 width.fixed.px: 114
@@ -302,6 +317,9 @@ background.solid: $inherited.colors.cta-primary.base
 border-radius.px: 4
 height.fixed.px: 44
 align-content: center
+background.solid if { login-signup-desktop.hover }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $login-signup-desktop.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $login-signup-desktop.hover, v = false)
 
 -- ftd.text: $login-signup-desktop.login
 role: $inherited.types.copy-regular
@@ -390,14 +408,13 @@ link if { header-item.link != NULL}: $header-item.link
 white-space: nowrap
 color: $inherited.colors.text
 padding-top.rem: 0.4
-opacity: 0.60
 
 -- ftd.text: $header-item.title
 if: { header-item.is-active }
 role: $inherited.types.copy-regular
 white-space: nowrap
 link if { header-item.link != NULL }: $header-item.link
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 padding-top.rem: 0.4
 style: bold
 
@@ -459,6 +476,8 @@ optional pr.toc-item current-section:
 optional pr.toc-item current-page:
 integer logo-width: 120
 integer logo-height: 38
+boolean github-icon: false
+optional string github-url:
 
 -- ftd.column: 
 width: fill-container
@@ -496,7 +515,7 @@ height.fixed.px: 44
 -- ftd.text: $header-mobile.site-name
 if: { header-mobile.site-name != NULL }
 role: $inherited.types.copy-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 white-space: nowrap
 align-self: center
 
@@ -562,7 +581,7 @@ spacing.fixed.px: 6
 -- ftd.text: $header-mobile.current-subsection.title
 if: { header-mobile.current-subsection != NULL }
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 white-space: nowrap
 
 -- ftd.text: Menu
@@ -579,7 +598,7 @@ if: { header-mobile.current-page != NULL }
 
 -- ftd.text: ->
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 white-space: nowrap
 
 -- end: ftd.row
@@ -589,7 +608,7 @@ white-space: nowrap
 -- ftd.text: $header-mobile.current-page.title 
 if: { header-mobile.current-page != NULL }
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 white-space: nowrap
 
 -- end: ftd.row
@@ -794,6 +813,8 @@ boolean $show-section: false
 pr.toc-item list sub-sections:
 integer logo-width: 120
 integer logo-height: 44
+boolean github-icon: false
+optional string github-url:
 
 -- ftd.column:
 width.fixed.calc: 100% - 48px
@@ -888,7 +909,7 @@ width: fill-container
 -- ftd.text: $header-item-mobile.title 
 role: $inherited.types.copy-regular
 link: $header-item-mobile.link
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 color if { header-item-mobile.is-active }: $inherited.colors.cta-primary.base
 $on-click$: $ftd.set-bool($a = $header-item-mobile.show-section, v = true)
 padding-top.px: 24

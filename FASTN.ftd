@@ -24,8 +24,6 @@ exposing: code, rendered
 -- fastn.auto-import: fastn-community.github.io/typography as tf
 exposing: h0, h1, h2, h3, markdown
 
--- fastn.auto-import: ds
-
 -- fastn.auto-import: cs
 
 -- fastn.auto-import: typo

@@ -5,6 +5,9 @@
 -- import: fastn-community.github.io/set-2-ds/header as h
 -- import: fastn-community.github.io/set-2-ds/common/fonts as fonts
 
+
+
+
 -- page: Documentation
 sidebar: true
 show-footer: true
@@ -392,6 +395,8 @@ ftd.ui list footer:
 boolean full-width: false
 boolean show-banner: false
 ftd.ui list banner:
+boolean github-icon: false
+optional string github-url: 
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -435,6 +440,8 @@ site-logo: $page.site-logo
 site-url: $page.site-url
 sidebar: $page.sidebar
 right-sidebar: $page.right-sidebar
+github-icon: $page.github-icon
+github-url: $page.github-url
 
 -- end: ftd.desktop
 
@@ -453,6 +460,8 @@ site-name: $page.site-name
 site-logo: $page.site-logo
 site-url: $page.site-url
 right-sidebar: $page.right-sidebar
+github-icon: $page.github-icon
+github-url: $page.github-url
 
 -- end: ftd.mobile
 
@@ -501,6 +510,8 @@ optional string login-btn-url: index.html
 boolean login-button: false
 boolean sidebar: false
 ftd.ui list right-sidebar:
+boolean github-icon: false
+optional string github-url: 
 
 -- ftd.column:
 width: fill-container
@@ -521,6 +532,8 @@ site-logo: $doc-page-desktop.site-logo
 site-url: $doc-page-desktop.site-url
 site-name: $doc-page-desktop.site-name
 menu-icon: $assets.files.static.hamburger.svg
+github-icon: $doc-page-desktop.github-icon
+github-url: $doc-page-desktop.github-url
 
 -- ftd.column:
 width: fill-container
@@ -606,6 +619,8 @@ optional pr.toc-item current-page:
 optional pr.toc-item current-subsection:
 ftd.ui list right-sidebar:
 children wrapper:
+boolean github-icon: false
+optional string github-url: 
 
 -- ftd.column:
 width: fill-container
@@ -623,6 +638,8 @@ site-url: $doc-page-mobile.site-url
 site-name: $doc-page-mobile.site-name
 logo-height: 38
 menu-icon: $assets.files.static.hamburger.svg
+github-icon: $doc-page-mobile.github-icon
+github-url: $doc-page-mobile.github-url
 
 -- ftd.column:
 width: fill-container
@@ -867,10 +884,11 @@ src: $assets.files.static.right.svg
 src if { !toc-instance.toc-clone.is-open }: $assets.files.static.down.svg
 align-self: center
 
--- ftd.text: $toc-instance.toc.title
+-- ftd.text:
 link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
+text: $toc-instance.toc.title
 role: $inherited.types.button-medium
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 width: fill-container
 
 -- end: ftd.row
@@ -912,7 +930,8 @@ width: fill-container
 link if { childrens.toc.url != NULL }: $childrens.toc.url
 text: $childrens.toc.title
 role: $fonts.button-medium
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
+color if { childrens.toc.is-active }: $inherited.colors.text
 
 -- ftd.column:
 if: {!ftd.is_empty(childrens.toc.children) }
@@ -1216,7 +1235,7 @@ align-self: center
 -- ftd.text: $footer-desktop.site-name
 if: { footer-desktop.site-name != NULL }
 role: $inherited.types.heading-small
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 margin-left.px if { footer-desktop.site-logo != NULL }: 16
 white-space: nowrap
 align-self: center
@@ -1449,6 +1468,146 @@ margin-bottom.px: 12
 
 
 
+-- component link:
+caption title:
+string cta:
+children wrapper:
+boolean $active: false
+
+-- ftd.column:
+$on-click$: $ftd.set-bool($a= $link.active, v = true)
+spacing.fixed.rem: 0.81
+
+-- ftd.text: $link.title
+role: $inherited.types.button-small
+color: $inherited.colors.text
+color if { link.active}: $inherited.colors.accent.primary
+link: $link.cta
+opacity if { !link.active}: 0.6
+style: regular
+
+-- ftd.column:
+width: fill-container
+children: $link.wrapper
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: link
+
+
+
+
+
+
+
+
+
+
+-- component cards:
+children wrapper:
+
+-- ftd.row:
+spacing: space-between
+children: $cards.wrapper
+width: fill-container
+
+-- end: ftd.row
+
+-- end: cards
+
+
+
+
+
+
+
+
+
+
+-- component card:
+caption title:
+body body:
+ftd.image-src src:  $assets.files.static.dollar.svg
+string cta-label: Button
+string cta-url: /
+
+-- ftd.column:
+padding-top.px: 40
+padding-bottom.px: 32
+padding-horizontal.px: 24
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 10
+width.fixed.percent: 46
+
+-- ftd.image:
+src: $card.src
+
+-- ftd.text: $card.title
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+margin-top.rem: 1
+
+-- ftd.text:
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+margin-top.rem: 1
+
+$card.body
+
+-- ftd.text: $card.cta-label
+role: $inherited.types.button-large
+color: $inherited.colors.cta-primary.text
+white-space: nowrap
+text-align: center
+padding-horizontal.rem: 1.37
+padding-vertical.rem: 0.37
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 4
+margin-top.rem: 2
+
+-- end: ftd.column
+
+-- end: card
+
+
+
+
+
+
+
+
+
+
+-- component toc-title:
+caption title:
+
+-- ftd.row:
+align-content: center
+spacing.fixed.rem: 1.2
+margin-bottom.rem: 1.2
+
+-- ftd.image:
+src: $assets.files.static.hamburger.svg
+
+-- ftd.text: $toc-title.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text
+style: bold
+
+-- end: ftd.row
+
+-- end: toc-title
+
+
+
+
+
+
+
+
+
 -- component footer-list:
 caption title:
 optional string url:
@@ -1498,6 +1657,7 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.accent.primary
 link: $footer-list-child.url
 width: fill-container
+opacity: 0.5
 
 -- footer-list-child: $obj.title
 if: { !ftd.is_empty(footer-list-child.children) }
