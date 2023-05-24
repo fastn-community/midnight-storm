@@ -39,14 +39,14 @@ exposing: h0, h1, h2, h3, markdown
 - Overview: index.html
 - Getting Started: /getting-started/
 - Adding Favicon: /favicon/
-- Adding Logo & Sitename: /sitemap/
-- Changing Color Scheme: /color-scheme/
-- Changing Typography: /typography/
+- Adding Logo & Sitename: /logo/
+- Changing Color Scheme: /cs/
+- Changing Typography: /types/
 - Creating A Page: /page/
-- Adding a image: /add-image/
-- Adding Assets: /add-assets/
+- Adding a image: /image/
+- Adding Assets: /assets/
 - Markdown Primer: /markdown/
 - Understanding Sitemap: /sitemap/
 - Adding Right Sidebar: /right-sidebar/
-- Adding Footer: /add-footer/
+- Adding Footer: /footer/
 - SEO: /seo/

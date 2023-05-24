@@ -3,9 +3,9 @@
 
 -- my-ds.page: Changing Typography
 
-In this section, we will learn about changing typography of `doc-site`.
+In this section, we will learn about changing typography of `set-2-ds`.
 
-`doc-site` uses `fastn` default typography. If you wish to update it, 
+`set-2-ds` uses `fastn` default typography. If you wish to update it, 
 
 -- ds.h2: fastn Typography collection:
 
@@ -25,10 +25,10 @@ Add typography dependency into your `FASTN.ftd` file as shown in below example:
 -- ds.code:
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/doc-site
+\-- fastn.dependency: fastn-community.github.io/set-2-ds
 \-- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- ds.h3: How to create a global `my-ds` page module for `doc-site`?
+-- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -43,7 +43,7 @@ Here’s what your `my-ds.ftd` module would look like:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: fastn-community.github.io/doc-site as ds
+\-- import: fastn-community.github.io/set-2-ds as ds
 \-- import: fastn-community.github.io/roboto-typography
 
 \-- component page:
@@ -90,7 +90,7 @@ Then use `my-ds` component to create a new page using it.
 lang: ftd
 download: typography.ftd
 
-\-- import: fastn-community.github.io/doc-site as ds
+\-- import: fastn-community.github.io/set-2-ds as ds
 \-- import: <your fastn package name>/my-ds
 
 \-- my-ds.page: This is page title
@@ -114,7 +114,6 @@ This is heading level 3 optional body content.
 
 \-- end: my-ds.page
 
-
 -- ds.markdown:
 
 Click on download icon of above code-block. `typography.ftd` file will be
@@ -125,6 +124,5 @@ your localhost. Access your localhost in browser
 e.g.`http://127.0.0.1:8000/typography/` you will see page text with
 [roboto-typography](https://fastn-community.github.io/roboto-typography/) font
 sizes in [Roboto](https://fastn-community.github.io/roboto-font/) font.
-
 
 -- end: my-ds.page

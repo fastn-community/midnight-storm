@@ -15,14 +15,14 @@ export: code, rendered
 
 
 -- page: Overview
-document-title: fastn set-1-ds Template. Build Your Own Website with Ease
-document-description: Simple, easy-to-use set-1-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/set-1-ds/-/fastn-community.github.io/set-1-ds/static/set-1-ds-og-image.jpg
+document-title: fastn set-2-ds Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use set-2-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.github.io/set-2-ds/static/set-2-ds-og-image.jpg
 site-logo: $common.site-logo
-github-url: https://github.com/fastn-community/set-1-ds/
+github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
 
-⚡️ `set-1-ds` will help you create a beautiful documentation site in no time.
+⚡️ `set-2-ds` will help you create a beautiful documentation site in no time.
 
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
@@ -32,13 +32,13 @@ kind of site(personal website, blog, etc).
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
 
- [Click here](https://github.com/fastn-stack/fastn-template/) to use `set-1-ds`
+ [Click here](https://github.com/fastn-stack/fastn-template/) to use `set-2-ds`
 for your fastn project.
 
 -- h2: 🌟 Whats next?
 
 Create your first page. 
-[Click here to know more](https://fastn-community.github.io/set-1-ds/page/).
+[Click here to know more](https://fastn-community.github.io/set-2-ds/page/).
 
 -- h2: 👀 Want to learn more?
 
@@ -48,7 +48,7 @@ into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 -- h2: 🎯 Used by?
 
-Our all documentation sites uses this `set-1-ds` theme.
+Our all documentation sites uses this `set-2-ds` theme.
 
 - [fastn.com](https://fastn.com/home/)
 - [FifthTry.com](https://www.fifthtry.com/)
