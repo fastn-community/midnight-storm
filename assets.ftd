@@ -7,9 +7,9 @@
 -- ds.page: Adding Assets
 
 In this section, we will learn about adding assets like images into your `fastn`
-`set-1-ds` web site.
+`set-2-ds` web site.
 
-To add assets into `set-1-ds` project add folder inside it. You can also keep
+To add assets into `set-2-ds` project add folder inside it. You can also keep
 your image assets into root directory. We recommend adding all your images into
 a seperate folder to maintain your images at one place.
 
