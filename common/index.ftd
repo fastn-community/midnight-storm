@@ -3,7 +3,7 @@
 
 -- boolean show-footer: true
 
--- string $site-name: Fastn
+-- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
 
 -- integer logo-width: 200
 

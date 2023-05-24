@@ -131,8 +131,8 @@ integer logo-width: 120
 integer logo-height: 44
 boolean github-icon: false
 optional string github-url:
-boolean github-icon: false
-optional string github-url:
+boolean github-icon: 
+optional string github-url: 
 
 -- ftd.column:
 width: fill-container
@@ -190,6 +190,10 @@ login-btn-url: $header-desktop.login-btn-url
 
 -- end: ftd.row
 
+-- github-button:
+if: { header-desktop.github-icon }
+github-url: $header-desktop.github-url
+
 -- end: ftd.row
 
 -- ftd.row:
@@ -198,6 +202,7 @@ padding-vertical.px: 50
 align-content: center
 
 -- ftd.row:
+if: { header-desktop.current-section != NULL }
 width: fill-container
 spacing.fixed.px: 12
 
@@ -813,8 +818,8 @@ boolean $show-section: false
 pr.toc-item list sub-sections:
 integer logo-width: 120
 integer logo-height: 44
-boolean github-icon: false
-optional string github-url:
+boolean github-icon: 
+optional string github-url: 
 
 -- ftd.column:
 width.fixed.calc: 100% - 48px
@@ -839,6 +844,14 @@ children: $obj.children
 is-active: $obj.is-active
 link: $obj.url
 $show-section: $menu-mobile.show-section
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { menu-mobile.github-icon }
+
+-- github-button:
+github-url: $menu-mobile.github-url
 
 -- end: ftd.column
 
@@ -929,3 +942,42 @@ children: $header-item-mobile.children
 -- end: ftd.column
 
 -- end: header-item-mobile
+
+
+
+
+
+
+
+
+
+
+-- component github-button:
+string github-url:
+ftd.image-src icon-github: $assets.files.static.icon-github.svg 
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- ftd.image:
+src: $github-button.icon-github
+height.fixed.px: 22
+link: $github-button.github-url
+margin-left.px: 10
+align-self: center
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.image:
+src: $github-button.icon-github
+height.fixed.px: 22
+link: $github-button.github-url
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: github-button
