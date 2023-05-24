@@ -132,7 +132,7 @@ Some common use-cases of Middleware are:
 Please note that some functionality (for example, anchor links) will not work in
 development. The functionality will work as expected in production.
 
--- h1: Creating Edge Middleware
+-- h2: Creating Edge Middleware
 id: create-edge-middleware
 
 You can use Edge Middleware with any framework. To add Middleware to your app,
@@ -180,7 +180,7 @@ user experiences. Fastn has zero-configuration support for 35+ frontend
 frameworks and integrates with your headless content, commerce, or database of
 choice.
 
--- h2: Match Paths based on custom matcher config
+-- h3: Match Paths based on custom matcher config
 id: match-paths-based-on-customer-matcher-config
 
 We enable teams to iterate quickly and develop, preview, and ship delightful
@@ -188,7 +188,7 @@ user experiences. Fastn has zero-configuration support for 35+ frontend
 frameworks and integrates with your headless content, commerce, or database of
 choice.
 
--- h2: Match a single path
+-- h3: Match a single path
 id: match-a-single-path
 
 -- code:
@@ -198,7 +198,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h2: Match multiple paths
+-- h3: Match multiple paths
 id: match-multiple-paths
 
 -- code:
@@ -208,7 +208,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h2: Match using regex
+-- h3: Match using regex
 id: match-using-regex
 
 Our suite of products are open source and available on Github. You are free to
@@ -240,7 +240,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h2: Match based on character matching
+-- h3: Match based on character matching
 id: match-based-on-character-matching
 
 Our suite of products are open source and available on Github. You are free to
@@ -255,7 +255,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h2: Match paths based on conditional statements
+-- h3: Match paths based on conditional statements
 id: match-paths-based-on-conditional-statements
 
 Our suite of products are open source and available on Github. You are free to
@@ -270,7 +270,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h1: Loggings
+-- h2: Loggings
 id: loggings
 
 Our suite of products are open source and available on Github. You are free to
@@ -294,7 +294,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h2: Existing login connection
+-- h3: Existing login connection
 id: existing-login-connection
 
 Our suite of products are open source and available on Github. You are free to
@@ -314,7 +314,7 @@ lang: ftd
 
 npx create-docusaurus@latest my-website classic
 
--- h2: Choosing a connection when creating a project
+-- h3: Choosing a connection when creating a project
 id: choosing-a-connection-when-creating-a-project
 
 Our suite of products are open source and available on Github. You are free to
