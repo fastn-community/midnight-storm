@@ -1,0 +1,75 @@
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/set-2-ds/assets
+
+-- boolean show-footer: true
+
+-- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
+
+-- integer logo-width: 200
+
+-- integer logo-height: 32
+
+-- string $site-url: index.html
+
+-- integer $width: 1320
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+-- pr.sitemap-data footer-toc:
+$processor$: pr.full-sitemap
+
+-- fastn.app-ui apps:
+$processor$: pr.fastn-apps
+
+-- record social-media:
+ftd.image-src src:
+string link: /
+
+-- social-media list social-links:
+
+-- social-media:
+link: /
+src: $assets.files.static.fb.png
+
+-- social-media: 
+link: /
+src: $assets.files.static.figma.png
+
+-- social-media:
+link: /
+src: $assets.files.static.google.png
+
+-- social-media: 
+link: /
+src: $assets.files.static.chat.png
+
+-- social-media: 
+link: /
+src: $assets.files.static.social.png
+
+-- end: social-links
+
+-- pr.toc-item list footer-links:
+$processor$: pr.toc
+
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
