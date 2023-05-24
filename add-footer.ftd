@@ -1,10 +1,10 @@
--- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/doc-site as ds
 
 
 -- my-ds.page: Adding Footer
 
 In this section, we will learn about adding footer into your pages in
-`set-1-ds`.
+`doc-site`.
 
 `page` component has `show-footer` boolean type property. You can add different
 footers using `show-footer: true` property.
@@ -23,7 +23,7 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/footer
 
--- ds.h3: How to create a global `my-ds` page module for `set-1-ds`?
+-- ds.h3: How to create a global `my-ds` page module for `doc-site`?
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -38,8 +38,8 @@ Here’s what your `my-ds.ftd` module would look like:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: fastn-community.github.io/set-1-ds as ds
-\-- import: fastn-community.github.io/set-1-ds/common
+\-- import: fastn-community.github.io/doc-site as ds
+\-- import: fastn-community.github.io/doc-site/common
 \-- import: fastn-community.github.io/footer
 
 \-- component page:
@@ -89,7 +89,7 @@ Use `my-ds` component to create a new page using it.
 lang: ftd
 download: footer.ftd
 
-\-- import: fastn-community.github.io/set-1-ds as ds
+\-- import: fastn-community.github.io/doc-site as ds
 \-- import: <your fastn package name>/my-ds
 
 \-- my-ds.page: This is page title
