@@ -1,33 +1,20 @@
--- import: fastn-community.github.io/doc-site as ds
+-- import: fastn-community.github.io/set-2-ds as ds
 
 
 -- my-ds.page: Markdown Primer
 
-`doc-site` supports markdown. If you want to use it you can use `--
+`set-1-ds` supports markdown. If you want to use it you can use `--
 ds.mardkdown` for inline anchor links etc.
 
-`doc-site` comes with inbuit `-- ds.markdown` component.
+`set-1-ds` comes with inbuit `-- ds.markdown` component.
 
-
--- ds.rendered: Markdown
-
--- ds.rendered.input:
+-- ds.code:
+lang: ftd
 
 \-- ds.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 tempor incididunt.
-
--- ds.rendered.output:
-
--- ds.markdown:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt.
-
--- end: ds.rendered.output
-
--- end: ds.rendered
 
 -- ds.rendered: Inline links
 
@@ -35,14 +22,14 @@ tempor incididunt.
 
 \-- ds.markdown:
 
-Lorem ipsum [inline link](/docs/markup-support/) amet, consectetur adipiscing
+Lorem ipsum [dolor sit](/docs/markup-support/) amet, consectetur adipiscing
 elit, sed do eiusmod tempor incididunt.
 
 -- ds.rendered.output:
 
 -- ds.markdown:
 
-Lorem ipsum [inline link](/docs/markup-support/) amet, consectetur adipiscing
+Lorem ipsum [dolor sit](/docs/markup-support/) amet, consectetur adipiscing
 elit, sed do eiusmod tempor incididunt.
 
 -- end: ds.rendered.output
@@ -103,15 +90,15 @@ elit, sed do eiusmod tempor incididunt.
 
 \-- ds.markdown:
 
-**Bold Text** dolor sit amet, *Italic text* elit, sed do eiusmod tempor
-  incididunt.
+**Lorem ipsum** dolor sit amet, *consectetur adipiscing* elit, sed do
+eiusmod tempor incididunt.
 
 -- ds.rendered.output:
 
 -- ds.markdown:
 
-**Bold Text** dolor sit amet, *Italic text* elit, sed do eiusmod tempor
-  incididunt.
+**Lorem ipsum** dolor sit amet, *consectetur adipiscing* elit, sed do eiusmod
+  tempor incididunt.
 
 -- end: ds.rendered.output
 

@@ -1,5 +1,4 @@
--- import: fastn-community.github.io/doc-site as ds
--- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/set-2-ds as ds
 
 
 -- my-ds.page: Changing Typography
@@ -126,5 +125,6 @@ your localhost. Access your localhost in browser
 e.g.`http://127.0.0.1:8000/typography/` you will see page text with
 [roboto-typography](https://fastn-community.github.io/roboto-typography/) font
 sizes in [Roboto](https://fastn-community.github.io/roboto-font/) font.
+
 
 -- end: my-ds.page
