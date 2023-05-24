@@ -5,16 +5,6 @@
 -- import: fastn-community.github.io/set-2-ds/header as h
 -- import: fastn-community.github.io/set-2-ds/common/fonts as fonts
 
-
-
-
-
-
-
-
-
-
-
 -- page: Documentation
 sidebar: true
 show-footer: true
@@ -155,7 +145,7 @@ choose. If you choose to use a named export, it must be named middleware:
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -172,7 +162,7 @@ See the next/server documentation for more information.
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -204,7 +194,7 @@ id: match-a-single-path
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -214,7 +204,7 @@ id: match-multiple-paths
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -246,7 +236,7 @@ for everyone.
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -261,7 +251,7 @@ for everyone.
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -276,7 +266,7 @@ for everyone.
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -300,7 +290,7 @@ width: fill-container
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -320,7 +310,7 @@ choice.
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -344,7 +334,7 @@ width: fill-container
 -- code:
 lang: ftd
 
-\-- FTD.ROW
+\-- ftd.row
 
 npx create-docusaurus@latest my-website classic
 
@@ -546,6 +536,7 @@ color: $inherited.colors.text
 if: { doc-page-desktop.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+opacity: 0.60
 
 $doc-page-desktop.body
 
@@ -989,104 +980,6 @@ toc: $obj
 
 
 
--- component h1:
-caption title:
-body body:
-optional string id: 
-
--- ftd.column:
-id if { h1.id != NULL }: $h1.id
-width: fill-container
-spacing.fixed.px: 20
-region: h1
-
--- ftd.text: $h1.title
-role: $inherited.types.heading-large
-color: $inherited.colors.text
-
--- ftd.text:
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-opacity: 0.60
-
-$h1.body
-
--- end: ftd.column
-
--- end: h1
-
-
-
-
-
-
-
-
-
-
--- component h2:
-caption title:
-optional body body:
-optional string id:
-
--- ftd.column:
-id if { h2.id != NULL }: $h2.id
-width: fill-container
-padding-vertical.px: 24
-spacing.fixed.px: 18
-region: h2
-
--- ftd.text: $h2.title
-role: $inherited.types.heading-small
-color: $inherited.colors.text
-
--- ftd.text:
-if: { h2.body != NULL }
-role: $inherited.types.copy-large
-color: $inherited.colors.text
-opacity: 0.60
-
-$h2.body
-
--- end: ftd.column
-
--- end: h2
-
-
-
-
-
-
-
-
-
-
--- component markdown:
-body body:
-
--- ftd.column:
-margin-bottom.px: 20
-
--- ftd.text:
-role: $inherited.types.copy-large
-color: $inherited.colors.text
-opacity: 0.60
-
-$markdown.body
-
--- end: ftd.column
-
--- end: markdown
-
-
-
-
-
-
-
-
-
-
 -- component list-item-bold:
 caption title:
 
@@ -1108,36 +1001,6 @@ color: $inherited.colors.shadow
 -- end: ftd.row
 
 -- end: list-item-bold
-
-
-
-
-
-
-
-
-
-
--- component code:
-optional caption caption:
-body body:
-string lang:
-boolean copy: true
-optional ftd.resizing max-height:
-optional ftd.resizing max-width:
-optional string download:
-
--- cb.code:
-caption: $code.caption
-lang: $code.lang
-max-height: $code.max-height
-max-width: $code.max-width
-copy: $code.copy
-download: $code.download
-
-$code.body
-
--- end: code
 
 
 
@@ -1601,11 +1464,12 @@ spacing.fixed.px: 7
 
 -- ftd.text: $footer-list.title
 role: $inherited.types.copy-regular
-color: $inherited.colors.shadow
+color: $inherited.colors.accent.primary
 link: $footer-list.url
 width: fill-container
+style: bold
 
--- footer-list: $obj.title
+-- footer-list-child: $obj.title
 if: { !ftd.is_empty(footer-list.children) }
 url: $obj.url
 is-active: $obj.is-active
@@ -1615,3 +1479,38 @@ $loop$: $footer-list.children as $obj
 -- end: ftd.column
 
 -- end: footer-list
+
+
+
+
+
+
+
+
+
+
+-- component footer-list-child:
+caption title:
+optional string url:
+boolean is-active:
+pr.toc-item list children:
+
+-- ftd.column:
+
+-- ftd.text: $footer-list-child.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.accent.primary
+link: $footer-list-child.url
+width: fill-container
+opacity: 0.50
+
+-- footer-list-child: $obj.title
+if: { !ftd.is_empty(footer-list-child.children) }
+url: $obj.url
+is-active: $obj.is-active
+children: $obj.children
+$loop$: $footer-list-child.children as $obj
+
+-- end: ftd.column
+
+-- end: footer-list-child
