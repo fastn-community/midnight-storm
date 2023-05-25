@@ -271,11 +271,10 @@ padding-bottom.px: 50
 if: { doc-page-desktop.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+margin-bottom.rem: 1.32
 
--- ftd.text: 
-if: { doc-page-desktop.body != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
+-- tf.markdown:
+if: {doc-page-desktop.body != NULL}
 
 $doc-page-desktop.body
 
@@ -618,6 +617,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.button-medium
 color: $inherited.colors.text-strong
+color if { !toc-instance.toc.is-active  }: $inherited.colors.text
 width: fill-container
 
 -- end: ftd.row
