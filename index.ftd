@@ -21,13 +21,35 @@ document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.git
 site-logo: $common.site-logo
 github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
+sidebar: true
+
+-- page.right-sidebar:
+
+-- link-group: Fast Track
+cta: #fast-track
+
+-- link-group: Whats next?
+cta: #whats-next
+
+-- link-group: Want to learn more?
+cta: #want-to-learn-more
+
+-- link-group: Used by?
+cta: #used-by
+
+-- end: page.right-sidebar
+
+
+-- page.body:
 
 ⚡️ `set-2-ds` will help you create a beautiful documentation site in no time.
 
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
 
+
 -- h2: 🚀 Fast Track 
+id: fast-track
 
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
@@ -36,17 +58,19 @@ project in just 5 minutes!
 for your fastn project.
 
 -- h2: 🌟 Whats next?
+id: whats-next
 
 Create your first page. 
 [Click here to know more](https://fastn-community.github.io/set-2-ds/page/).
 
 -- h2: 👀 Want to learn more?
+id: want-to-learn-more
 
 Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
-
 -- h2: 🎯 Used by?
+id: used-by
 
 Our all documentation sites uses this `set-2-ds` theme.
 
@@ -579,6 +603,7 @@ spacing.fixed.px: 15
 $on-click$: $ftd.toggle($a = $toc-instance.toc-clone.is-open)
 
 -- ftd.image:
+if: { toc-instance.toc.font-icon != NULL }
 src: $assets.files.static.right.svg
 src if { !toc-instance.toc-clone.is-open }: $assets.files.static.down.svg
 align-self: center
@@ -587,7 +612,8 @@ align-self: center
 link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.button-medium
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
+color if { toc-instance.toc.is-active }: $inherited.colors.cta-primary.base
 width: fill-container
 
 -- end: ftd.row
@@ -836,7 +862,7 @@ optional ftd.image-src site-logo:
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 optional string site-url: $common.site-url
-optional string site-name: $common.site-name
+optional string site-name:
 pr.toc-item list footer-links: $common.footer-toc.sections
 common.social-media list social-links: $common.social-links
 string copyright: Copyright ©2022. Fastn Inc.

@@ -1,19 +1,31 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
-
 -- my-ds.page: Changing Color Scheme
+
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: How to add color scheme?
+cta: cs/#how-to-add-color-scheme
+
+-- ds.link-group: How to create a global my-ds page module for set-2-ds?
+cta: cs/#how-to-create-a-global-my-ds-page-module-for-set-2-ds
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
 
 In this section, we will learn about changing color scheme of `set-2-ds`.
 
 `set-2-ds` uses `fastn` default color scheme. If you wish to update color
-scheme, choose a color scheme from our 
-[fastn-community](https://fastn.com/featured/cs/) color schemes.
+scheme, choose a color scheme from our[fastn-community]
+(https://fastn.com/featured/cs/) color schemes.
 
-To choose one of featured color scheme, visit our 
-[featured color schemes](https://fastn.com/featured/cs/)
+To choose one of featured color scheme, visit our[featured color schemes]
+(https://fastn.com/featured/cs/)
 
 -- ds.h2: How to add color scheme?
+id: how-to-add-color-scheme
 
 To add color scheme to your fastn web sites. Edit your `FASTN.ftd` file and add
 color scheme dependency into it.
@@ -31,6 +43,7 @@ lang: ftd
 \-- fastn.dependency: fastn-community.github.io/set-2-cs
 
 -- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
+id: how-to-create-a-global-my-ds-page-module-for-set-2-ds
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -116,14 +129,13 @@ This is heading level 3 optional body content.
 
 \-- end: my-ds.page
 
-
 -- ds.markdown:
 
 Click on download icon of above code-block. `cs.ftd` file will be downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/cs/` you will see page colors with
-[SET 2 CS](https://fastn-community.github.io/set-2-cs/)
+e.g.`http://127.0.0.1:8000/cs/` you will see page colors with[SET 2 CS]
+(https://fastn-community.github.io/set-2-cs/)
 
 -- end: my-ds.page
