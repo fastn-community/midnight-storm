@@ -1,78 +1,71 @@
 -- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/common
 
--- my-ds.page: Adding Site-logo and Site-name
+-- my-ds.page: Changing Typography
 
-In this section, we will learn about adding `site-logo` and `site-name` to your
-`fastn` web site.
+In this section, we will learn about changing typography of `set-2-ds`.
 
--- ds.h2: `site-logo` and `site-name` logic
+`set-2-ds` uses `fastn` default typography. If you wish to update it, 
 
-`set-2-ds` has provision of adding `site-logo` and `site-name`.
+-- ds.h2: fastn Typography collection:
 
-Below is the logic of adding logo and site name:
+Choose a typography of font of your choice from our fastn-community.
+[Click here to search](https://github.com/orgs/fastn-community/repositories?q=typography&type=all&sort=).
 
-- if you add `site-name: NULL` and `site-logo: <your-logo-image-file-path>`
-  properties to `-- ds.page` component then it shows logo only.
-- if you add `site-name: Your Site Name` property to `-- ds.page` component then
-  shows `site-name` only.
+-- ds.h2: How to add a typography?
 
--- ds.h2: Adding logo or site-name 
+To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
+typography dependency into it.
 
-`page` component has `site-logo` and `site-name` properties. You can pass these
-properties to `-- ds.page` component.
+In below example we are using https://fastn-community.github.io/set-2-typography/
+typography.
 
--- ds.code: Adding site-logo
+Add typography dependency into your `FASTN.ftd` file as shown in below example:
+
+-- ds.code:
 lang: ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- fastn.dependency: fastn-community.github.io/set-2-ds
+\-- fastn.dependency: fastn-community.github.io/set-2-typography
 
-\-- ds.page: Page title
-site-logo: $assets.files.static.ipsum-logo.svg
-site-name: NULL
+-- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
 
-Some body content of the page.
+You can create a `my-ds.ftd` module inside your `fastn` package and create your
+custom `my-ds` page component.
 
-\-- end: ds.page 
-
--- ds.code: Adding site-name
-lang: ftd
-
-\-- import: fastn-community.github.io/set-2-ds as ds
-
-\-- ds.page: Page title
-site-name: fastn
-
-Some body content of the page.
-
-\-- end: ds.page 
-
--- ds.markdown:
-
-We recommond creating a global module which helps you to keep all your global
-properties and configurations in one `.ftd` file.
-
-Let's learn how to create a global module:
+Let's learn how to create a module:
 
 Create a new file let’s say `my-ds.ftd`. 
 
 Here’s what your `my-ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module with logo only
+-- cb.code: my-ds.ftd module
 lang: ftd
 download: my-ds.ftd
 
 \-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/set-2-typography
 
 \-- component page:
 children wrapper:
 optional caption title:
 optional body body:
+boolean sidebar: false
 
 \-- ds.page: $page.title
-site-logo: $assets.files.static.ipsum-logo.svg
-site-name: NULL
+site-logo: $fastn-assets.files.images.fastn.svg
 body: $page.body
+sidebar: $page.sidebar
+types: $set-2-typography.types
+
+\-- end: ds.page.banner
+
+\-- ds.page.extra-headers:
+
+\-- ds.h3: Heading in sidebar
+
+`<You can add any component like this inside sidebar.>`
+
+\-- end: ds.page.extra-headers
 
 \-- ftd.column:
 spacing.fixed.em: 0.8
@@ -87,14 +80,14 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `my-ds.ftd` file will be downloaded.
-Import this file inside your new `.ftd`.
+Click on download icon of above code-block. `my-ds.ftd` file will be
+downloaded. Import this file inside your new `.ftd` file.
 
-Use `my-ds` component to create a new page using it.
+Then use `my-ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
-download: logo.ftd
+download: typography.ftd
 
 \-- import: fastn-community.github.io/set-2-ds as ds
 \-- import: <your fastn package name>/my-ds
@@ -120,17 +113,16 @@ This is heading level 3 optional body content.
 
 \-- end: my-ds.page
 
+
 -- ds.markdown:
 
-Click on download icon of above code-block. `logo.ftd` file will be
+Click on download icon of above code-block. `typography.ftd` file will be
 downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/logo/` you will see page with logo.
-
-Change `site-name` with your site-name into `my-ds.ftd` file `string
-site-name: my fastn site` and refresh e.g.`http://127.0.0.1:8000/logo/` page,
-you will see site-name only.
+e.g.`http://127.0.0.1:8000/typography/` you will see page text with
+[set-2-typography](https://fastn-community.github.io/set-2-typography/) font
+sizes in [Roboto](https://fastn-community.github.io/roboto-font/) font.
 
 -- end: my-ds.page
