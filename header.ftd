@@ -205,6 +205,7 @@ align-content: center
 if: { header-desktop.current-section != NULL }
 width: fill-container
 spacing.fixed.px: 12
+align-self: center
 
 -- ftd.text: $header-desktop.current-section.title
 if: { header-desktop.current-section.title != NULL }
@@ -214,7 +215,6 @@ link: $header-desktop.current-section.url
 align-self: center
 
 -- ftd.image:
-if: { header-desktop.current-subsection != NULL }
 src: $assets.files.static.right.svg
 align-self: center
 
@@ -235,7 +235,6 @@ align-self: center
 if: { header-desktop.current-page != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.shadow
-style: semi-bold
 link: $header-desktop.current-page.url 
 white-space: nowrap
 align-self: center
