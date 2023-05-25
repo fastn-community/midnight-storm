@@ -205,10 +205,12 @@ align-self: center
 
 -- ftd.text: $header-desktop.current-section.title
 if: { header-desktop.current-section.title != NULL }
-role: $inherited.types.label-large
+role: $inherited.types.link
 color: $inherited.colors.text-strong
+color if { header-desktop.current-subsection == NULL }: $inherited.colors.accent.primary
 link: $header-desktop.current-section.url
 align-self: center
+style: regular
 
 -- ftd.image:
 if: { header-desktop.current-subsection != NULL }
