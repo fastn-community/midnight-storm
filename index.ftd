@@ -21,6 +21,37 @@ document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.git
 site-logo: $common.site-logo
 github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
+sidebar: true
+
+-- page.right-sidebar:
+
+-- link-group: Fast Track
+cta: #fast-track
+
+-- link-group: Whats next?
+cta: #whats-next
+
+-- link-group: Want to learn more?
+cta: #want-to-learn-more
+
+-- link-group: Used by?
+cta: #used-by
+
+-- end: page.right-sidebar
+
+-- page.footer:
+
+-- footer:
+site-logo: $common.site-logo
+site-url: $common.site-url
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+social-links: $common.social-links
+
+-- end: page.footer
+
+-- page.body:
 
 ⚡️ `set-2-ds` will help you create a beautiful documentation site in no time.
 
