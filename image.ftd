@@ -1,12 +1,21 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
-
 -- my-ds.page: Adding Image
+
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: How to add image?
+cta: image/#how-to-add-image
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
 
 In this section, we will learn about adding image inside `page` of your `fastn`
 web site.
 
 -- ds.h2: How to add image?
+id: how-to-add-image
 
 To add image inside your `page` component just use `ds.image` as shown below:
 

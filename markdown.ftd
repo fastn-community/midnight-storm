@@ -3,10 +3,22 @@
 
 -- my-ds.page: Markdown Primer
 
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: Markdown
+cta: markdown/#markdown
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
+
 `set-2-ds` supports markdown. If you want to use it you can use `--
 ds.mardkdown` for inline anchor links etc.
 
 `set-2-ds` comes with inbuit `-- ds.markdown` component.
+
+-- ds.h2: Markdown
+id: markdown
 
 -- ds.code:
 lang: ftd

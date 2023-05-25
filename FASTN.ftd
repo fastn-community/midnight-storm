@@ -4,13 +4,11 @@
 
 -- fastn.dependency: fastn-community.github.io/set-2-typography as typo
 
--- fastn.dependency: fastn-community.github.io/inter-font
-
 -- fastn.dependency: fastn-community.github.io/playfair-display-font
 
--- fastn.dependency: fastn-community.github.io/poppins-font
+-- fastn.dependency: fastn-community.github.io/inter-font
 
--- fastn.dependency: fastn-community.github.io/source-code-pro-font
+-- fastn.dependency: fastn-community.github.io/poppins-font
 
 -- fastn.dependency: fastn-community.github.io/set-2-cs as cs
 
@@ -50,3 +48,5 @@ exposing: h0, h1, h2, h3, markdown
 - Adding Right Sidebar: /right-sidebar/
 - Adding Footer: /footer/
 - SEO: /seo/
+
+- Blog 🚧: /blog/
