@@ -13,8 +13,11 @@
 -- fastn.dependency: fastn-community.github.io/set-2-cs as cs
 
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+
 -- fastn.dependency: fastn-community.github.io/code-block
+
 -- fastn.dependency: fastn-community.github.io/typography
+
 -- fastn.dependency: fastn-community.github.io/footer
 
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
@@ -28,6 +31,7 @@ exposing: h0, h1, h2, h3, markdown
 -- fastn.auto-import: typo
 
 -- fastn.auto-import: fastn-community.github.io/set-2-ds/assets
+
 -- fastn.auto-import: fastn-community.github.io/set-2-ds/FASTN/config as my-ds
 
 -- fastn.sitemap:
@@ -48,4 +52,5 @@ exposing: h0, h1, h2, h3, markdown
 - Adding Right Sidebar: /right-sidebar/
 - Adding Footer: /footer/
 - SEO: /seo/
-- Blog  🚧: /blog/
+
+# Blog 🚧: /blog/

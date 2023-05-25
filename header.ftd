@@ -11,6 +11,7 @@
 
 
 
+
 -- component header:
 optional ftd.image-src site-logo:
 string site-url: /
@@ -76,8 +77,6 @@ current-page: $header.current-page
 current-subsection: $header.current-subsection
 logo-width: $header.logo-width 
 logo-height: $header.logo-height 
-github-icon: $header.github-icon
-github-url: $header.github-url
 
 -- end: ftd.mobile
 
@@ -129,8 +128,6 @@ optional string login-btn-url:
 boolean login-button: false
 integer logo-width: 120
 integer logo-height: 44
-boolean github-icon: false
-optional string github-url:
 boolean github-icon: 
 optional string github-url: 
 
@@ -154,7 +151,6 @@ if: { header-desktop.site-logo != NULL }
 src: $header-desktop.site-logo
 width.fixed.px: $header-desktop.logo-width
 height.fixed.px: $header-desktop.logo-height
-align-self: center
 
 -- ftd.text: $header-desktop.site-name
 if: { header-desktop.site-name != NULL }
@@ -215,6 +211,7 @@ link: $header-desktop.current-section.url
 align-self: center
 
 -- ftd.image:
+if: { header-desktop.current-subsection != NULL }
 src: $assets.files.static.right.svg
 align-self: center
 
