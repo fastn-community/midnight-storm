@@ -124,6 +124,6 @@ Click on download icon of above code-block. `cs.ftd` file will be downloaded.
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in browser
 e.g.`http://127.0.0.1:8000/cs/` you will see page colors with
-[SET 1 CS](https://fastn-community.github.io/set-2-cs/)
+[SET 2 CS](https://fastn-community.github.io/set-2-cs/)
 
 -- end: my-ds.page
