@@ -266,12 +266,12 @@ github-url: $doc-page-desktop.github-url
 width: fill-container
 padding-horizontal.px: 40
 padding-bottom.px: 50
+spacing.fixed.rem: 1.32
 
 -- ftd.text: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
-margin-bottom.rem: 1.32
 
 -- tf.markdown:
 if: {doc-page-desktop.body != NULL}
@@ -617,7 +617,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.button-medium
 color: $inherited.colors.text-strong
-color if { !toc-instance.toc.is-active  }: $inherited.colors.text
+color if { toc-instance.toc.is-active  }: $inherited.colors.text
 width: fill-container
 
 -- end: ftd.row
