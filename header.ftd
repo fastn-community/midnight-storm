@@ -224,7 +224,7 @@ white-space: nowrap
 align-self: center
 
 -- ftd.image:
-if: { header-desktop.current-page != NULL && header-desktop.current-subsection != NULL }
+if: { header-desktop.current-page != NULL }
 src: $assets.files.static.right.svg
 align-self: center
 
