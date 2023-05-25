@@ -11,9 +11,6 @@ export: h0, h1, h2, h3, markdown
 -- import: fastn-community.github.io/code-block as cb
 export: code, rendered
 
-
-
-
 -- page: Overview
 document-title: fastn set-2-ds Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use set-2-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -63,7 +60,7 @@ kind of site(personal website, blog, etc).
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
 
- [Click here](https://github.com/fastn-stack/fastn-template/) to use `set-2-ds`
+[Click here](https://github.com/fastn-stack/fastn-template/) to use `set-2-ds`
 for your fastn project.
 
 -- h2: 🌟 Whats next?
@@ -576,6 +573,7 @@ min-height.fixed.calc: 100vh - 0px
 height: fill-container
 width.fixed.percent: 28.5
 padding-horizontal.px: 26
+padding-left.px: 41
 padding-top.px: 50
 spacing.fixed.rem: 1.5
 
