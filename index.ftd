@@ -19,9 +19,22 @@ document-title: fastn set-2-ds Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use set-2-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.github.io/set-2-ds/static/set-2-ds-og-image.jpg
 site-logo: $common.site-logo
+show-footer: true
 github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
 sidebar: true
+
+-- page.footer:
+
+-- footer:
+site-logo: $common.site-logo
+site-url: $common.site-url
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+social-links: $common.social-links
+
+-- end: page.footer
 
 -- page.right-sidebar:
 
@@ -267,11 +280,10 @@ padding-bottom.px: 50
 if: { doc-page-desktop.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+margin-bottom.rem: 1.3
 
--- ftd.text: 
-if: { doc-page-desktop.body != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
+-- tf.markdown:
+if: {doc-page-desktop.body != NULL}
 
 $doc-page-desktop.body
 
@@ -531,10 +543,9 @@ style: bold
 if: { !link-group.active }
 
 -- ftd.text: $link-group.title
-role: $inherited.types.button-small
+role: $fonts.button-small
 color: $inherited.colors.text
 link: $link-group.cta
-style: bold
 
 -- end: ftd.column
 
@@ -613,7 +624,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.button-medium
 color: $inherited.colors.text
-color if { toc-instance.toc.is-active }: $inherited.colors.cta-primary.base
+color if { toc-instance.toc.is-active }: $inherited.colors.text-strong
 width: fill-container
 
 -- end: ftd.row

@@ -6,6 +6,41 @@
 
 -- import: fastn-community.github.io/poppins-font/assets as poppins-font-assets
 
+-- ftd.type button-small-mobile:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+weight: 400
+font-family: $poppins-font-assets.fonts.Poppins
+
+-- ftd.type button-small-desktop:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+font-family: $poppins-font-assets.fonts.Poppins
+weight: 400
+
+-- ftd.responsive-type button-small:
+desktop: $button-small-desktop
+mobile: $button-small-mobile
+
+-- ftd.type copy-regular-mobile:
+line-height.px: 30
+size.px: 18
+letter-spacing.px: 0
+weight: 700
+font-family: $inter-font-assets.fonts.Inter
+
+-- ftd.type copy-regular-desktop:
+line-height.px: 30
+size.px: 18
+letter-spacing.px: 0
+font-family: $inter-font-assets.fonts.Inter
+weight: 700
+
+-- ftd.responsive-type copy-regular:
+desktop: $copy-regular-desktop
+mobile: $copy-regular-mobile
 
 -- ftd.type copy-large-mobile:
 line-height.px: 26
