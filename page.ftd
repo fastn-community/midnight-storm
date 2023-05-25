@@ -3,13 +3,22 @@
 
 -- my-ds.page: Creating A Page
 
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: How to create a new page?
+cta: page/#how-to-create-a-new-page
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
+
 In this section, we will learn about creating pages in `set-2-ds`.
 
 The `page` component empowers you to create **one-off standalone pages**. You can
 use other fastn components, or markdown.
 
-
 -- ds.h3: 💡 How to create a new page?
+id: how-to-create-a-new-page
 
 Create a new `.ftd` file into your `fastn` project. Add `page` component inside
 `.ftd` file as shown below.

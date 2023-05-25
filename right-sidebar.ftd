@@ -1,14 +1,16 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
-
-
-
-
--- my-ds.page: Right Sidebar 👉🏻
+-- my-ds.page: Right Sidebar
 sidebar: true
 
 -- my-ds.page.right-sidebar:
+
+-- ds.link-group: How to create a global my-ds page module for set-2-ds?
+cta: right-sidebar/#how-to-create-a-global-my-ds-page-module-for-set-2-DS
+
+-- ds.link-group: How to enable right-sidebar without adding my-ds module?
+cta: right-sidebar/#how-to-enable-right-sidebar-without-adding-my-ds-module
 
 -- ds.h3: Heading in sidebar
 
@@ -16,9 +18,9 @@ You can call any component inside sidebar
 
 -- ds.compact-text: Quick links:
 
-- [Install `fastn`](install/)
-- [Create `fastn` package](create-fastn-package/)
-- [Expander Crash Course](expander/)
+- [Install `fastn`](https://fastn.com/install/)
+- [Create `fastn` package](https://fastn.com/create-fastn-package)
+- [Expander Crash Course](https://fastn.com/expander/)
 
 -- ds.compact-text: Join us:
 
@@ -40,6 +42,7 @@ is same for all pages then, we recommond creating a global module which helps
 you to keep all your global properties and configurations in one `.ftd` file.
 
 -- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
+id: how-to-create-a-global-my-ds-page-module-for-set-2-DS
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -138,8 +141,8 @@ Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in browser
 e.g.`http://127.0.0.1:8000/sidebar/` you will see page with right-sidebar.
 
-
 -- ds.h3: How to enable right-sidebar without adding `my-ds` module?
+id: how-to-enable-right-sidebar-without-adding-my-ds-module
 
 To enable right-sidebar add `sidebar: true` property to `ds.page` component.
 

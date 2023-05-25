@@ -2,6 +2,18 @@
 
 -- my-ds.page: Understanding Sitemap
 
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: How to create clean URL using sitemap
+cta: sitemap/#how-to-create-clean-url-using-sitemap
+
+-- ds.link-group: Sample fastn.sitemap code snippet
+cta: sitemap/#sample-fastn-sitemap-code-snippet
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
+
 `set-2-ds` page component has inbuilt header. Just using `page` header will
 appear on your page.
 
@@ -21,6 +33,7 @@ To learn more how to implement `fastn.sitemap` go through this
 
 
 -- ds.h3: How to create clean URL using sitemap
+id: how-to-create-clean-url-using-sitemap
 
 In sitemap, you can clean the URLs and give custom URLs by using the sitemap 
 feature: `document`.
@@ -34,6 +47,7 @@ To learn more how to implement `fastn.sitemap` go through this
 [video tutorial](https://fastn.com/clean-urls/).
 
 -- ds.h3: Sample `fastn.sitemap` code snippet
+id: sample-fastn-sitemap-code-snippet
 
 Below is a set of simple sitemap links which you will see on header and
 toc-sidebar in your `set-2-ds` project.
