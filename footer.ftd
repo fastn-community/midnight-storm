@@ -1,7 +1,15 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
-
 -- my-ds.page: Adding Footer
+
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: How to create a global my-ds page module for set-2-ds?
+cta: footer/#how-to-create-a-global-my-ds-page-Module-for-set-2-ds
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
 
 In this section, we will learn about adding footer into your pages in
 `set-2-ds`.
@@ -13,8 +21,8 @@ We have created few footer components for you. Please, [visit our footer
 package](https://fastn-community.github.io/footer/), you can choose footer of
 your choice from there. 
 
-In below example we are using `basic-footer` from [footer
- package](https://fastn-community.github.io/footer/basic-footer/).
+In below example we are using `basic-footer` from [footer package]
+(https://fastn-community.github.io/footer/basic-footer/).
 
 Add footer dependency inside your `FASTN.ftd` file.
 
@@ -24,6 +32,7 @@ lang: ftd
 \-- fastn.dependency: fastn-community.github.io/footer
 
 -- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
+id: how-to-create-a-global-my-ds-page-Module-for-set-2-ds
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
