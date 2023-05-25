@@ -1,5 +1,11 @@
 # Set-2-ds Change Log
 
+## May 25, 2023
+
+- [added screenshot and updated documentation](https://github.com/fastn-community/set-2-ds/commit/daad2077a7dfda3984132c4bd75f944274ae83cd)
+- [removed 404 links](https://github.com/fastn-community/set-2-ds/commit/a6deaa63dd7a13167bcb46c1c7bd5e4e1a4a36fc)
+- [added right sidebar links](https://github.com/fastn-community/set-2-ds/commit/7d2d5384f965189be52f0842b7cc16fa3b2544ac)
+
 ## May 24, 2023
 
 - [added all documentation page](https://github.com/fastn-community/set-2-ds/pull/1/commits/dd4af8a94f42c7e9b88c2555abff570660aacf16)
