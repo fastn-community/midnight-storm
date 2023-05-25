@@ -867,7 +867,7 @@ optional ftd.image-src site-logo:
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 optional string site-url: $common.site-url
-optional string site-name: $common.site-name
+optional string site-name:
 pr.toc-item list footer-links: $common.footer-toc.sections
 common.social-media list social-links: $common.social-links
 string copyright: Copyright ©2022. Fastn Inc.
