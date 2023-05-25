@@ -4,13 +4,7 @@
 
 -- fastn.dependency: fastn-community.github.io/set-2-typography as typo
 
--- fastn.dependency: fastn-community.github.io/inter-font
-
 -- fastn.dependency: fastn-community.github.io/playfair-display-font
-
--- fastn.dependency: fastn-community.github.io/poppins-font
-
--- fastn.dependency: fastn-community.github.io/source-code-pro-font
 
 -- fastn.dependency: fastn-community.github.io/set-2-cs as cs
 
