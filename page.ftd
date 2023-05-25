@@ -3,7 +3,7 @@
 
 -- my-ds.page: Creating A Page
 
-In this section, we will learn about creating pages in `set-1-ds`.
+In this section, we will learn about creating pages in `set-2-ds`.
 
 The `page` component empowers you to create **one-off standalone pages**. You can
 use other fastn components, or markdown.
