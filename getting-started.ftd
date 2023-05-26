@@ -22,7 +22,7 @@ You can create your documentation web-sites using `set-2-ds`. `set-2-ds` also
 helps authors, entrepreneurs, corporate groups and bloggers to create their own
 fastn web project.
 
--- ds.h2: 🎨 Creating fastn web-site using `set-2-ds`
+-- ds.h3: 🎨 Creating fastn web-site using `set-2-ds`
 id: creating-fastn-web-site-using-set-2-ds
 
 Please, refer [this documentation](https://fastn.com/github-pages/) to
@@ -42,7 +42,7 @@ v: tsHB2Vrhb2c
 
 - [Fastn Template](https://github.com/fastn-stack/fastn-template) 
 
--- ds.h2: 🌟 Whats next?
+-- ds.h3: 🌟 Whats next?
 id: what-next
 
 `-- page` component comes with inbuit navbar, sidebar and body content area.

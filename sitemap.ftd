@@ -20,7 +20,6 @@ appear on your page.
 Header is built using [header](https://fastn-community.github.io/header) component.
 Header uses `fastn.sitemap` which can be added insite your `FASTN.ftd` file. 
 
-
 -- ds.youtube:
 v: IIBk8zmspkA
 
@@ -28,9 +27,6 @@ v: IIBk8zmspkA
 
 To learn more how to implement `fastn.sitemap` go through this 
 [video tutorial](https://fastn.com/understanding-sitemap/).
-
-
-
 
 -- ds.h3: How to create clean URL using sitemap
 id: how-to-create-clean-url-using-sitemap

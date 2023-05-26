@@ -1,6 +1,5 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
-
 -- my-ds.page: Creating A Page
 
 -- my-ds.page.right-sidebar:
@@ -14,8 +13,8 @@ cta: page/#how-to-create-a-new-page
 
 In this section, we will learn about creating pages in `set-2-ds`.
 
-The `page` component empowers you to create **one-off standalone pages**. You can
-use other fastn components, or markdown.
+The `page` component empowers you to create **one-off standalone pages**. You
+can use other fastn components, or markdown.
 
 -- ds.h3: 💡 How to create a new page?
 id: how-to-create-a-new-page
