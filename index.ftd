@@ -285,7 +285,6 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-align-content if { ftd.is_empty(doc-page-desktop.toc) }: center
 border-top-width.px: 1
 border-color: $inherited.colors.border
 margin-bottom.rem: 3.15
@@ -616,8 +615,8 @@ align-self: center
 link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.button-medium
-color: $inherited.colors.text-strong
-color if { toc-instance.toc.is-active  }: $inherited.colors.text
+color: $inherited.colors.text
+color if { toc-instance.toc.is-active  }: $inherited.colors.text-strong
 width: fill-container
 
 -- end: ftd.row
