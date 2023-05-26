@@ -22,6 +22,24 @@ weight: 400
 desktop: $button-small-desktop
 mobile: $button-small-mobile
 
+-- ftd.type button-large-mobile:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+weight: 700
+font-family: $poppins-font-assets.fonts.Poppins
+
+-- ftd.type button-large-desktop:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+font-family: $poppins-font-assets.fonts.Poppins
+weight: 700
+
+-- ftd.responsive-type button-large:
+desktop: $button-large-desktop
+mobile: $button-large-mobile
+
 -- ftd.type copy-regular-mobile:
 line-height.px: 30
 size.px: 18

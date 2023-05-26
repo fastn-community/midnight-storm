@@ -44,4 +44,4 @@ src: $assets.files.images.sample.jpg
 You can add as many image assets into your `fastn` project you wish to and
 refers them as we seen above.
 
--- end:  my-ds.page
+-- end: my-ds.page
