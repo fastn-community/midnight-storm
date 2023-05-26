@@ -1,0 +1,23 @@
+-- import: fastn-community.github.io/set-2-ds as ds
+
+-- my-ds.page: Author
+
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: Coming Soon 🚧
+cta: blog-authors/amitu/#Coming-soon
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
+
+Write some information of this category here. Change the title according to the
+category of your blog.
+
+-- ds.h2: Coming Soon 🚧
+id: Coming-soon 
+
+This page is under constuction. We are preparing something amazing and
+exciting for you.
+
+-- end: my-ds.page
