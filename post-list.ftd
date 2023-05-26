@@ -1,0 +1,23 @@
+-- import: fastn-community.github.io/set-2-ds as ds
+
+-- my-ds.page: Post List
+
+-- my-ds.page.right-sidebar:
+
+-- ds.link-group: Coming Soon 🚧
+cta: post-list/#coming
+
+-- end: my-ds.page.right-sidebar
+
+-- my-ds.page.body:
+
+In this section, we will learn about creating blog article listing page using
+`set-2-ds` blog features.
+
+-- ds.h2: Coming Soon 🚧
+id: coming
+
+This page is under constuction. We are preparing something amazing and
+exciting for you.
+
+-- end: my-ds.page
