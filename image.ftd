@@ -34,7 +34,7 @@ width: fill-container
 
 \-- ds.image: This is image caption
 link: https://fastn.com
-src: https://fastn.com/-/fastn.com/images/github-pages.png
+src: $assets.files.static.image-placeholder.jpg
 
 This is addition body content for above image
 
@@ -42,7 +42,7 @@ This is addition body content for above image
 
 -- ds.image: This is image caption
 link: https://fastn.com
-src: https://fastn.com/-/fastn.com/images/github-pages.png
+src: $assets.files.static.image-placeholder.jpg
 
 This is addition body content for above image.
 
