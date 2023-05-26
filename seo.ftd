@@ -25,7 +25,7 @@ web site.
 -- ds.youtube:
 v: 72N7f9on8iw
 
--- ds.h2: How to customize document title?
+-- ds.h3: How to customize document title?
 id: how-to-customize-document-title
 
 💡 If you want to add different title than `page` title then add `document-title`
@@ -47,7 +47,7 @@ lang: ftd
 \-- ds.page: This is page title
 document-title: Custom SEO title
 
--- ds.h2: How to add page description?
+-- ds.h3: How to add page description?
 id: how-to-add-page-description
 
 To add page description use below example code.
@@ -61,7 +61,7 @@ lang: ftd
 \-- ds.page: This is page title
 document-description: Custom SEO description
 
--- ds.h2: How to add page document-image?
+-- ds.h3: How to add page document-image?
 id: how-to-add-pade-document-image
 
 To add page document-image use below example code.

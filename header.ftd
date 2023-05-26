@@ -140,7 +140,7 @@ padding-horizontal.px: 40
 -- ftd.row:
 width: fill-container
 spacing: space-between
-padding-vertical.px: 40
+padding-vertical.px: 20
 
 -- ftd.row:
 link: $header-desktop.site-url
@@ -194,7 +194,8 @@ github-url: $header-desktop.github-url
 
 -- ftd.row:
 width: fill-container
-padding-vertical.px: 50
+padding-top.px: 20
+padding-bottom.px: 42
 align-content: center
 
 -- ftd.row:
@@ -407,7 +408,7 @@ align-self: center
 -- ftd.text: $header-item.title
 if: { !header-item.is-active }
 role: $inherited.types.copy-regular
-link if { header-item.link != NULL}: $header-item.link
+link if { header-item.link != NULL }: $header-item.link
 white-space: nowrap
 color: $inherited.colors.text
 
@@ -440,11 +441,10 @@ pr.toc-item list item:
 
 -- ftd.column:
 
-
 -- ftd.text: $subsections-links.title
 if: { !subsections-links.is-active }
 role: $inherited.types.copy-regular
-link if { subsections-links.url != NULL}: $subsections-links.url
+link if { subsections-links.url != NULL }: $subsections-links.url
 white-space: nowrap
 color: $inherited.colors.text
 
@@ -579,7 +579,7 @@ if: { !ftd.is_empty($header-mobile.toc) }
 width: fill-container
 background.solid: $inherited.colors.background.step-2
 padding-horizontal.px: 20
-$on-click$: $ftd.toggle($a = $header-mobile.show-section, v=true)
+$on-click$: $ftd.toggle($a = $header-mobile.show-section, v = true)
 
 -- ftd.row:
 width: fill-container

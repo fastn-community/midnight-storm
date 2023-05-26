@@ -55,7 +55,7 @@ social-links: $common.social-links
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
 
--- h2: 🚀 Fast Track 
+-- h3: 🚀 Fast Track 
 id: fast-track
 
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
@@ -64,20 +64,19 @@ project in just 5 minutes!
 [Click here](https://github.com/fastn-stack/fastn-template/) to use `set-2-ds`
 for your fastn project.
 
--- h2: 🌟 Whats next?
+-- h3: 🌟 Whats next?
 id: whats-next
 
 Create your first page. 
 [Click here to know more](https://fastn-community.github.io/set-2-ds/page/).
 
--- h2: 👀 Want to learn more?
+-- h3: 👀 Want to learn more?
 id: want-to-learn-more
 
 Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
-
--- h2: 🎯 Used by?
+-- h3: 🎯 Used by?
 id: used-by
 
 Our all documentation sites uses this `set-2-ds` theme.
@@ -143,7 +142,7 @@ width: fill-container
 background.solid: $inherited.colors.background.base
 
 -- ftd.column:
-if: { page.show-banner}
+if: { page.show-banner }
 width: fill-container
 children: $page.banner
 align-content: center
@@ -199,7 +198,7 @@ github-url: $page.github-url
 -- dms.dark-mode-switcher-float:
 
 -- ftd.column:
-if: { page.show-footer}
+if: { page.show-footer }
 width: fill-container
 children: $page.footer
 align-content: center
@@ -278,7 +277,7 @@ role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- tf.markdown:
-if: {doc-page-desktop.body != NULL}
+if: { doc-page-desktop.body != NULL }
 
 $doc-page-desktop.body
 
@@ -291,7 +290,6 @@ width: fill-container
 width: fill-container
 border-top-width.px: 1
 border-color: $inherited.colors.border
-margin-bottom.rem: 3.15
 
 -- render-toc:
 if: { !ftd.is_empty(doc-page-desktop.toc) }
@@ -301,11 +299,11 @@ toc-obj: $doc-page-desktop.toc
 border-color: $inherited.colors.border
 border-left-width.px: 1
 border-right-width.px: 1
-padding-top.px: 48
+padding-vertical.px: 48
 padding-horizontal.px: 50
 align-content: top-left
-min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
-min-height.fixed.calc: 100vh - 135px
+;;min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
+min-height: fill-container
 children: $doc-page-desktop.wrapper
 width: fill-container
 spacing.fixed.px: 20
@@ -313,7 +311,7 @@ spacing.fixed.px: 20
 -- end: ftd.column
 
 -- right-sidebar:
-if: { doc-page-desktop.sidebar}
+if: { doc-page-desktop.sidebar }
 right-sidebar: $doc-page-desktop.right-sidebar
 
 -- end: ftd.row
@@ -474,6 +472,9 @@ children: $right-sidebar.right-sidebar
 
 
 
+
+
+
 -- component site-link:
 caption title: 
 
@@ -526,7 +527,7 @@ spacing.fixed.rem: 0.81
 if: { link-group.active }
 
 -- ftd.text: $link-group.title
-role: $inherited.types.button-medium
+role: $fonts.button-large
 color: $inherited.colors.accent.primary
 link: $link-group.cta
 style: bold
@@ -537,10 +538,9 @@ style: bold
 if: { !link-group.active }
 
 -- ftd.text: $link-group.title
-role: $inherited.types.button-small
+role: $fonts.button-small
 color: $inherited.colors.text
 link: $link-group.cta
-style: bold
 
 -- end: ftd.column
 
@@ -564,8 +564,6 @@ margin-left.rem: 1.8
 
 
 
-
-
 -- component render-toc:
 pr.toc-item list toc-obj:
 
@@ -576,7 +574,7 @@ height: fill-container
 width.fixed.percent: 28.5
 padding-horizontal.px: 26
 padding-left.px: 41
-padding-top.px: 50
+padding-vertical.px: 50
 spacing.fixed.rem: 1.5
 
 -- toc-instance:
@@ -620,7 +618,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.button-medium
 color: $inherited.colors.text
-color if { toc-instance.toc.is-active  }: $inherited.colors.text-strong
+color if { toc-instance.toc.is-active }: $inherited.colors.text-strong
 width: fill-container
 
 -- end: ftd.row
@@ -931,7 +929,9 @@ common.social-media list social-links:
 -- ftd.column:
 background.solid: $inherited.colors.background.base
 width: fill-container
-padding-top.px: 102
+padding-top.px: 42
+border-top-width.px: 1
+border-color: $inherited.colors.border
 align-content: center
 align-self: center
 spacing.fixed.px: 7
@@ -1213,9 +1213,9 @@ spacing.fixed.rem: 0.81
 -- ftd.text: $link.title
 role: $inherited.types.button-small
 color: $inherited.colors.text
-color if { link.active}: $inherited.colors.accent.primary
+color if { link.active }: $inherited.colors.accent.primary
 link: $link.cta
-opacity if { !link.active}: 0.6
+opacity if { !link.active }: 0.6
 style: regular
 
 -- ftd.column:
@@ -1261,7 +1261,7 @@ width: fill-container
 -- component card:
 caption title:
 body body:
-ftd.image-src src:  $assets.files.static.dollar.svg
+ftd.image-src src: $assets.files.static.dollar.svg
 string cta-label: Button
 string cta-url: /
 
@@ -1452,7 +1452,6 @@ region: h4
 
 -- ftd.column:
 width: fill-container
-;; margin-bottom.px if { compact-text.body != NULL }: -26
 
 -- ftd.text:
 if: { compact-text.body != NULL }

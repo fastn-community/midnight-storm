@@ -24,7 +24,7 @@ scheme, choose a color scheme from our[fastn-community]
 To choose one of featured color scheme, visit our[featured color schemes]
 (https://fastn.com/featured/cs/)
 
--- ds.h2: How to add color scheme?
+-- ds.h3: How to add color scheme?
 id: how-to-add-color-scheme
 
 To add color scheme to your fastn web sites. Edit your `FASTN.ftd` file and add

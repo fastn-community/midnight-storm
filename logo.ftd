@@ -1,6 +1,5 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
-
 -- my-ds.page: Adding Site-logo and Site-name
 
 -- my-ds.page.right-sidebar:
@@ -18,7 +17,7 @@ cta: logo/#adding-logo-or-site-name
 In this section, we will learn about adding `site-logo` and `site-name` to your
 `fastn` web site.
 
--- ds.h2: `site-logo` and `site-name` logic
+-- ds.h3: `site-logo` and `site-name` logic
 id: site-logo-and-site-name-logic
 
 `set-2-ds` has provision of adding `site-logo` and `site-name`.
@@ -30,7 +29,7 @@ Below is the logic of adding logo and site name:
 - if you add `site-name: Your Site Name` property to `-- ds.page` component then
   shows `site-name` only.
 
--- ds.h2: Adding logo or site-name 
+-- ds.h3: Adding logo or site-name 
 id: adding-logo-or-site-name
 
 `page` component has `site-logo` and `site-name` properties. You can pass these
