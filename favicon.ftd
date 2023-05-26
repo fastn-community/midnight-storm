@@ -17,7 +17,7 @@ A favicon (short for "favorite icon") is a small icon that is associated with a
 website or web page. It typically appears in the web browser's address bar,
 next to the page title, and in the bookmarks or favorites list.
 
--- ds.h2: How to add favicon?
+-- ds.h3: How to add favicon?
 id: how-to-add-favicon
 
 To add favicon to your fastn web sites. Edit your `FASTN.ftd` file and add it as

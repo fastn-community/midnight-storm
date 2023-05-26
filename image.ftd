@@ -14,7 +14,7 @@ cta: image/#how-to-add-image
 In this section, we will learn about adding image inside `page` of your `fastn`
 web site.
 
--- ds.h2: How to add image?
+-- ds.h3: How to add image?
 id: how-to-add-image
 
 To add image inside your `page` component just use `ds.image` as shown below:

@@ -21,13 +21,13 @@ In this section, we will learn about changing typography of `set-2-ds`.
 
 `set-2-ds` uses `fastn` default typography. If you wish to update it, 
 
--- ds.h2: fastn Typography collection:
+-- ds.h3: fastn Typography collection:
 id: fastn-typography-collection
 
 Choose a typography of font of your choice from our fastn-community.
 [Click here to search](https://github.com/orgs/fastn-community/repositories?q=typography&type=all&sort=).
 
--- ds.h2: How to add a typography?
+-- ds.h3: How to add a typography?
 id: how-to-add-a-typography
 
 To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
