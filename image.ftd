@@ -14,7 +14,7 @@ cta: image/#how-to-add-image
 In this section, we will learn about adding image inside `page` of your `fastn`
 web site.
 
--- ds.h3: How to add image?
+-- ds.h2: How to add image?
 id: how-to-add-image
 
 To add image inside your `page` component just use `ds.image` as shown below:
@@ -34,7 +34,7 @@ width: fill-container
 
 \-- ds.image: This is image caption
 link: https://fastn.com
-src: https://fastn.com/-/fastn.com/images/github-pages.png
+src: https://i0.wp.com/theperfectroundgolf.com/wp-content/uploads/2022/04/placeholder.png?fit=1200%2C800&ssl=1
 
 This is addition body content for above image
 
@@ -42,7 +42,7 @@ This is addition body content for above image
 
 -- ds.image: This is image caption
 link: https://fastn.com
-src: https://fastn.com/-/fastn.com/images/github-pages.png
+src: https://i0.wp.com/theperfectroundgolf.com/wp-content/uploads/2022/04/placeholder.png?fit=1200%2C800&ssl=1
 
 This is addition body content for above image.
 
