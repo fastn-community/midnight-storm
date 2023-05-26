@@ -53,10 +53,6 @@ exposing: h0, h1, h2, h3, markdown
 - Adding Footer: /footer/
 - SEO: /seo/
 
-# Blog 🚧: /blog/
-  
-- Adding a new blog post 🚧: /post/
-- Post List 🚧: /post-list/
-- Adding Author Details 🚧: /author/
-- Sample Post 🚧: /blog-articles/category-1/sample-post-2/
-- Sample Author Bio 🚧: /blog-authors/amitu/
+# Blog  🚧: /blog/
+
+- Overview 🚧: /blog/
