@@ -56,6 +56,7 @@ It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
 
 -- h2: 🚀 Fast Track 
+id: fast-track
 
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
@@ -64,17 +65,20 @@ project in just 5 minutes!
 for your fastn project.
 
 -- h2: 🌟 Whats next?
+id: whats-next
 
 Create your first page. 
 [Click here to know more](https://fastn-community.github.io/set-2-ds/page/).
 
 -- h2: 👀 Want to learn more?
+id: want-to-learn-more
 
 Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
 -- h2: 🎯 Used by?
+id: used-by
 
 Our all documentation sites uses this `set-2-ds` theme.
 
