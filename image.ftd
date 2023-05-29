@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/set-2-ds/assets
 
 -- my-ds.page: Adding Image
 
@@ -33,16 +34,16 @@ width: fill-container
 -- ds.rendered.input:
 
 \-- ds.image: This is image caption
-link: https://fastn.com
-src: https://fastn.com/-/fastn.com/images/github-pages.png
+link: https://fastn-community.github.io/set-2-ds/image
+src: $assets.files.static.image-placeholder.jpg
 
 This is addition body content for above image
 
 -- ds.rendered.output:
 
 -- ds.image: This is image caption
-link: https://fastn.com
-src: https://fastn.com/-/fastn.com/images/github-pages.png
+link: https://fastn-community.github.io/set-2-ds/image
+src: $assets.files.static.image-placeholder.jpg
 
 This is addition body content for above image.
 

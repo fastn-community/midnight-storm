@@ -11,17 +11,17 @@ cta: footer/#how-to-create-a-global-my-ds-page-Module-for-set-2-ds
 
 -- my-ds.page.body:
 
-In this section, we will learn about adding footer into your pages in
+In this section, we will learn about adding a footer into your pages in
 `set-2-ds`.
 
-`page` component has `show-footer` boolean type property. You can add different
-footers using `show-footer: true` property.
+The `page` component has a `show-footer` boolean type property. You can add
+different footers using `show-footer: true` property.
 
-We have created few footer components for you. Please, [visit our footer
-package](https://fastn-community.github.io/footer/), you can choose footer of
-your choice from there. 
+We have created a few footer components for you. Please, [visit our footer
+package](https://fastn-community.github.io/footer/), you can choose the footer
+of your choice from there.
 
-In below example we are using `basic-footer` from [footer package]
+In the below example we are using `basic-footer` from [footer package]
 (https://fastn-community.github.io/footer/basic-footer/).
 
 Add footer dependency inside your `FASTN.ftd` file.
@@ -128,7 +128,7 @@ Click on download icon of above code-block. `footer.ftd` file will be
 downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/footer/` you will see page with footer.
+your localhost. Access your localhost in the browser
+e.g.`http://127.0.0.1:8000/footer/` you will see the page with a footer.
 
 -- end: my-ds.page

@@ -14,7 +14,7 @@ cta: right-sidebar/#how-to-enable-right-sidebar-without-adding-my-ds-module
 
 -- ds.h3: Heading in sidebar
 
-You can call any component inside sidebar
+You can call any component inside the sidebar.
 
 -- ds.compact-text: Quick links:
 
@@ -34,11 +34,12 @@ would be possible without your support. We would love to hear from you.
 
 -- my-ds.page.body:
 
-In this section, we will learn adding right-sidebar in `set-2-ds`.
+In this section, we will learn to add the right-sidebar in `set-2-ds`.
 
-If you want to show right-sidebar on all pages and content of your right-sidebar
-is same for all pages then, we recommond creating a global module which helps
-you to keep all your global properties and configurations in one `.ftd` file.
+If you want to show the right-sidebar on all pages and the content of your
+right-sidebar is the same for all pages then, we recommend creating a global
+module that helps you to keep all your global properties and configurations in
+one `.ftd` file.
 
 -- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
 id: how-to-create-a-global-my-ds-page-module-for-set-2-DS
@@ -97,9 +98,9 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `my-ds.ftd` file will be downloaded.
-Import this file inside your new `.ftd` or download below given `sidebar.ftd`
-file.
+Click on the download icon of the above code-block. `my-ds.ftd` file will be
+downloaded. Import this file inside your new `.ftd` or download below given
+`sidebar.ftd` file.
 
 Use `my-ds` component to create a new page using it.
 
@@ -133,22 +134,23 @@ This is heading level 3 optional body content.
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `sidebar.ftd` file will be
+Click on the download icon of the above code-block. `sidebar.ftd` file will be
 downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/sidebar/` you will see page with right-sidebar.
+your localhost. Access your localhost in the browser
+e.g.`http://127.0.0.1:8000/sidebar/` you will see a page with a right-sidebar.
 
 -- ds.h3: How to enable right-sidebar without adding `my-ds` module?
 id: how-to-enable-right-sidebar-without-adding-my-ds-module
 
-To enable right-sidebar add `sidebar: true` property to `ds.page` component.
+To enable the right-sidebar add the `sidebar: true` property to `ds.page`
+component.
 
-- Click on download icon of below code-block. `right-sidebar.ftd` file will be
-downloaded. 
+- Click on the download icon of the below code-block. `right-sidebar.ftd` file will be
+downloaded.
 
-- Add this file inside your `fastn` project. 
+- Add this file to your `fastn` project. 
 
 - deploy or run `fastn serve` on your localhost. Access your localhost in
   browser e.g.`http://127.0.0.1:8000/right-sidebar/`.
