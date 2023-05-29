@@ -11,7 +11,7 @@ cta: blog/#coming-soon
 
 -- my-ds.page.body:
 
-In this section, we will learn about creating blog article page in `set-2-ds`.
+In this section, we will learn about creating a blog article page in `set-2-ds`.
 
 -- ds.h3: Coming Soon 🚧
 id: coming-soon 
