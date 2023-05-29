@@ -296,17 +296,21 @@ if: { !ftd.is_empty(doc-page-desktop.toc) }
 toc-obj: $doc-page-desktop.toc
 
 -- ftd.column:
-border-color: $inherited.colors.border
-border-left-width.px: 1
+padding-horizontal.rem: 3.12
+padding-top.rem: 2.85
+padding-bottom.px: 50
 border-right-width.px: 1
-padding-vertical.px: 48
-padding-horizontal.px: 50
+border-color: $inherited.colors.border
 align-content: top-left
-;;min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
-min-height: fill-container
 children: $doc-page-desktop.wrapper
+spacing.fixed.em: 0.8
+border-left-width.px: 1
+min-height: fill-container
+max-width.fixed.px if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.full-width && !doc-page-desktop.sidebar }: 800
+max-width if { doc-page-desktop.full-width }: fill-container
 width: fill-container
-spacing.fixed.px: 20
+width if { doc-page-desktop.full-width }: fill-container
+border-top-width.px: 1
 
 -- end: ftd.column
 
