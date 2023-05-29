@@ -172,6 +172,7 @@ sidebar: $page.sidebar
 right-sidebar: $page.right-sidebar
 github-icon: $page.github-icon
 github-url: $page.github-url
+full-width: $page.full-width
 
 -- end: ftd.desktop
 
@@ -242,6 +243,7 @@ boolean sidebar: false
 ftd.ui list right-sidebar:
 boolean github-icon: false
 optional string github-url: 
+boolean full-width:
 
 -- ftd.column:
 width: fill-container
