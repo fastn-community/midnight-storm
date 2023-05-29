@@ -268,10 +268,9 @@ github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
 
 -- ftd.column:
+padding-horizontal.rem: 2.5
+margin-bottom.rem: 3.12
 width: fill-container
-padding-horizontal.px: 40
-padding-bottom.px: 50
-spacing.fixed.rem: 1.32
 
 -- ftd.text: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
@@ -291,6 +290,7 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 border-top-width.px: 1
+align-content if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.sidebar }: center
 border-color: $inherited.colors.border
 
 -- render-toc:
