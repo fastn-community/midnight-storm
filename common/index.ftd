@@ -73,3 +73,38 @@ $processor$: pr.toc
   - Footer Link 01: /
   - Footer Link 01: /
   - Footer Link 01: /
+
+
+
+
+
+
+
+
+
+
+-- record author-meta:
+optional caption title:
+optional string profile:
+optional string company:
+optional string bio-url:
+optional ftd.image-src avatar:
+optional body body:
+
+
+
+
+
+-- record post-meta:
+optional caption title:
+optional string published-on:
+optional ftd.image-src post-image:
+optional body body:
+optional string post-url:
+optional author-meta author:
+optional string info:
+optional string cta-text: 
+optional string cta-text1: 
+optional string cta-link1:
+optional string cta-text2: 
+optional string cta-link2:

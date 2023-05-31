@@ -56,4 +56,5 @@ exposing: h0, h1, h2, h3, markdown
 
 # Blog 🚧: /blog/
 
-- Overview 🚧: /blog/
+## Blog Details: /blog-details/
+
