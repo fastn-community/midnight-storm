@@ -1,21 +1,10 @@
 -- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/blog-articles/category-1/sample-post-1
+-- import: fastn-community.github.io/set-2-ds/blog-articles/sample-post-1
 -- import: fastn-community.github.io/set-2-ds/common
 
--- ds.page: Blog
+-- my-ds.page: Blog
 blog: true
-
--- ds.page.footer:
-
--- ds.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-social-links: $common.social-links
-
--- end: ds.page.footer
+sidebar: false
 
 -- ds.posts:
 
@@ -41,30 +30,29 @@ post-data: $sample-post-1.meta3
 post-data: $sample-post-1.meta4
 
 -- ds.post-card:
-post-data: $sample-post-1.meta1
+post-data: $sample-post-1.meta5
 
 -- ds.post-card:
-post-data: $sample-post-1.meta2
+post-data: $sample-post-1.meta6
 
 -- ds.post-card:
-post-data: $sample-post-1.meta3
+post-data: $sample-post-1.meta7
 
 -- ds.post-card:
-post-data: $sample-post-1.meta4
+post-data: $sample-post-1.meta8
 
 -- ds.post-card:
-post-data: $sample-post-1.meta1
+post-data: $sample-post-1.meta9
 
 -- ds.post-card:
-post-data: $sample-post-1.meta2
+post-data: $sample-post-1.meta10
 
 -- ds.post-card:
-post-data: $sample-post-1.meta3
+post-data: $sample-post-1.meta11
 
 -- ds.post-card:
-post-data: $sample-post-1.meta4
+post-data: $sample-post-1.meta12
 
 -- end: ds.posts
 
-
--- end: ds.page
+-- end: my-ds.page

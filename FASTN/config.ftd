@@ -1,5 +1,4 @@
 -- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/set-2-ds/common
 
 -- ftd.image-src fastn-logo:
@@ -24,18 +23,22 @@ ftd.ui list right-sidebar:
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
-optional ftd.image-src site-logo: $common.site-logo
+optional string site-name: NULL
+boolean full-width: false
+boolean blog: false
 
 -- ds.page: $page.title
-site-logo: $page.site-logo
+site-name: $page.site-name
 body: $page.body
 show-footer: true
 right-sidebar: $page.right-sidebar
 sidebar: $page.sidebar
+full-width: $page.full-width
+blog: $page.blog
 document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
-github-url: https://github.com/fastn-community/set-2-ds/
+github-url: https://github.com/fastn-community/set-1-ds/
 github-icon: true
 
 -- ds.page.footer:

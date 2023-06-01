@@ -1,0 +1,103 @@
+-- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/set-2-ds/common
+-- import: fastn-community.github.io/set-2-ds/blog-authors/patrica as author
+
+-- common.post-meta meta: We Transform ideas into digital outcomes.
+post-image: $assets.files.static.featured.svg
+info: Small Incidental Text.
+cta-text1: Button
+cta-link1: /
+cta-text2: Button
+cta-link2: /
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore 
+
+-- common.post-meta meta1:
+post-image: $assets.files.static.post1.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta2:
+post-image: $assets.files.static.post2.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta3:
+post-image: $assets.files.static.post3.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta4:
+post-image: $assets.files.static.post4.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta5:
+post-image: $assets.files.static.post5.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta6:
+post-image: $assets.files.static.post6.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta7:
+post-image: $assets.files.static.post7.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta8:
+post-image: $assets.files.static.post8.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta9:
+post-image: $assets.files.static.post9.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta10:
+post-image: $assets.files.static.post10.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta11:
+post-image: $assets.files.static.post11.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta12:
+post-image: $assets.files.static.post12.svg
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta13: Bringing the world together through live experiences.
+avatar: $assets.files.static.patrica.jpg
+author: $author.patrica

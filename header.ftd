@@ -1,4 +1,3 @@
--- import: fastn
 -- import: fastn/processors as pr
 -- import: fastn-community.github.io/set-2-ds/assets
 -- import: fastn-community.github.io/set-2-ds/common/fonts as fonts

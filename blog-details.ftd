@@ -1,26 +1,14 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/common
--- import: fastn-community.github.io/set-2-ds/blog-authors/amitu as author
--- import: fastn-community.github.io/set-2-ds/blog-articles/category-1/sample-post-1
+-- import: fastn-community.github.io/set-2-ds/blog-articles/sample-post-1
 
 
--- ds.page:
-blog: true
-
--- ds.page.footer:
-
--- ds.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-social-links: $common.social-links
-
--- end: ds.page.footer
+-- my-ds.page:
+full-width: true
+sidebar: false
 
 -- ds.featured-post:
-post-data: $sample-post-1.meta5
+post-data: $sample-post-1.meta13
 
 -- ds.row-container:
 
@@ -94,12 +82,12 @@ they can influence what people do without them even realizing it. Once you know
 how to push people’s buttons, you can play them like a piano.
 
 -- ds.image: Bringing the world together through live experiences.
-src: $assets.files.static.card3.svg
+src: $assets.files.static.card2.svg
 alignment: center
 width: fill-container
 
 -- ds.image: Bringing the world together through live experiences.
-src: $assets.files.static.card2.svg
+src: $assets.files.static.card3.svg
 alignment: center
 width: fill-container
 
@@ -140,7 +128,7 @@ they can influence what people do without them even realizing it. Once you know
 how to push people’s buttons, you can play them like a piano.
 
 -- ds.image: Bringing the world together through live experiences.
-src: $assets.files.static.card3.svg
+src: $assets.files.static.card4.svg
 alignment: center
 width: fill-container
 
@@ -165,10 +153,9 @@ I learned to think this way when I was a magician. Magicians start by looking
 for blind spots, edges, 
 
 -- ds.image: Bringing the world together through live experiences.
-src: $assets.files.static.card1.svg
+src: $assets.files.static.card5.svg
 alignment: center
 width: fill-container
-
 
 -- ds.h3: Bringing the world together through live experiences.
 
@@ -221,4 +208,4 @@ getting hijacked.
 When using technology, we often focus optimistically on all the things it does
 for us. But I want to show you where it might do the opposite.
 
--- end: ds.page
+-- end: my-ds.page
