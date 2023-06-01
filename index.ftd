@@ -1863,25 +1863,43 @@ padding-top.px: 16
 align-self: start
 width: fill-container
 
--- ftd.text: $featured-post-meta-desktop.cta-text1
+-- ftd.row:
 if: { featured-post-meta-desktop.cta-text1 != NULL }
-role: $inherited.types.button-large
-color: $inherited.colors.background.base
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
+spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
+
+-- ftd.text: $featured-post-meta-desktop.cta-text1
+role: $inherited.types.button-large
+color: $inherited.colors.background.base
 link: $featured-post-meta-desktop.cta-link1
 
--- ftd.text: $featured-post-meta-desktop.cta-text2
+-- ftd.image:
+src: $assets.files.static.tick.svg
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
 if: { featured-post-meta-desktop.cta-text2 != NULL }
-role: $inherited.types.button-large
-color: $inherited.colors.background.base
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
+spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
+
+-- ftd.text: $featured-post-meta-desktop.cta-text2
+role: $inherited.types.button-large
+color: $inherited.colors.background.base
 link: $featured-post-meta-desktop.cta-link2
+
+-- ftd.image:
+src: $assets.files.static.tick.svg
+align-self: center
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -1953,25 +1971,43 @@ spacing.fixed.px: 16
 align-content: center
 width: fill-container
 
--- ftd.text: $featured-post-meta-mobile.cta-text1
+-- ftd.row:
 if: { featured-post-meta-mobile.cta-text1 != NULL }
-role: $inherited.types.button-large
-color: $inherited.colors.background.base
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
-padding-horizontal.px: 50
+spacing.fixed.px: 16
+padding-horizontal.px: 28
 padding-vertical.px: 16
+
+-- ftd.text: $featured-post-meta-mobile.cta-text1
+role: $inherited.types.button-large
+color: $inherited.colors.background.base
 link: $featured-post-meta-mobile.cta-link1
 
--- ftd.text: $featured-post-meta-mobile.cta-text2
+-- ftd.image:
+src: $assets.files.static.tick.svg
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
 if: { featured-post-meta-mobile.cta-text2 != NULL }
-role: $inherited.types.button-large
-color: $inherited.colors.background.base
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
-padding-horizontal.px: 50
+spacing.fixed.px: 16
+padding-horizontal.px: 28
 padding-vertical.px: 16
+
+-- ftd.text: $featured-post-meta-mobile.cta-text2
+role: $inherited.types.button-large
+color: $inherited.colors.background.base
 link: $featured-post-meta-mobile.cta-link2
+
+-- ftd.image:
+src: $assets.files.static.tick.svg
+align-self: center
+
+-- end: ftd.row
 
 -- end: ftd.row
 
