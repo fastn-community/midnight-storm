@@ -2,8 +2,9 @@
 -- import: fastn-community.github.io/set-2-ds/common
 -- import: fastn-community.github.io/set-2-ds/blog-articles/sample-post-1
 
+
 -- my-ds.page:
-full-width: true
+blog: true
 sidebar: false
 
 -- ds.featured-post:

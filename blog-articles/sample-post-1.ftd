@@ -7,9 +7,10 @@
 post-image: $assets.files.static.featured.svg
 info: Small Incidental Text.
 cta-text1: Button
-cta-link1: /
+cta-link1: /blog-articles/sample-post/
 cta-text2: Button
-cta-link2: /
+cta-link2: /blog-articles/sample-post/
+post-url: /blog-articles/sample-post/
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore 
@@ -18,6 +19,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 post-image: $assets.files.static.post1.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -25,6 +27,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post2.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -32,6 +35,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post3.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -39,6 +43,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post4.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -46,6 +51,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post5.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -53,6 +59,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post6.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -60,6 +67,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post7.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -67,6 +75,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post8.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -74,6 +83,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post9.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -81,6 +91,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post10.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -88,6 +99,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post11.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -95,6 +107,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post12.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
+post-url: /blog-articles/sample-post/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 

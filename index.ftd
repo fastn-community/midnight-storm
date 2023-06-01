@@ -1697,7 +1697,6 @@ spacing.fixed.px: 16
 common.post-meta post-data:
 
 -- ftd.column:
-width: fill-container
 
 -- featured-post-card: $featured-post.post-data.title
 timestamp: $featured-post.post-data.published-on
@@ -1810,10 +1809,10 @@ if: { featured-post-meta-desktop.image != NULL }
 src: $featured-post-meta-desktop.image
 width: fill-container
 height: auto
+link: $featured-post-meta-desktop.url
 
 -- ftd.column:
 width: fill-container
-link: $featured-post-meta-desktop.url
 spacing.fixed.px: 24
 align-content: center
 align-self: center
@@ -1840,6 +1839,7 @@ spacing.fixed.px: 4
 if: { featured-post-meta-desktop.author.title != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
+link: $featured-post-meta-desktop.author.bio-url
 
 -- ftd.text: $featured-post-meta-desktop.author.profile
 if: { $featured-post-meta-desktop.author.profile != NULL }
@@ -1941,7 +1941,6 @@ optional string cta-link2:
 
 -- ftd.column:
 width: fill-container
-link: $featured-post-meta-mobile.url
 spacing.fixed.px: 24
 padding-bottom.px: 24
 
@@ -1953,6 +1952,7 @@ color: $inherited.colors.text-strong
 if: { featured-post-meta-mobile.image != NULL }
 src: $featured-post-meta-mobile.image
 width.fixed.px: 365
+link: $featured-post-meta-mobile.url
 
 -- ftd.text:
 if: { featured-post-meta-mobile.body != NULL }
@@ -2111,9 +2111,9 @@ spacing.fixed.px: 12
 src: $post-card-ui-desktop.image
 width: fill-container
 height: hug-content
+link: $post-card-ui-desktop.url
 
 -- ftd.column:
-link: $post-card-ui-desktop.url
 padding-vertical.px: 24
 padding-horizontal.px: 24
 
@@ -2139,6 +2139,7 @@ spacing.fixed.px: 4
 -- ftd.text: $post-card-ui-desktop.author.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
+link: $post-card-ui-desktop.author.bio-url
 
 -- ftd.text: $post-card-ui-desktop.author.profile
 if: { $post-card-ui-desktop.author.profile != NULL }
@@ -2266,4 +2267,188 @@ wrap: $row-container.wrap
 
 
 
+
+-- component author-bio:
+common.author-meta author:
+
+-- ftd.column:
+
+-- author-bio-card: $author-bio.author.title
+profile: $author-bio.author.profile
+company: $author-bio.author.company
+avatar: $author-bio.author.avatar
+
+$author-bio.author.body
+
+-- end: ftd.column
+
+-- end: author-bio
+
+
+
+
+
+
+
+
+
+
+-- component author-bio-card:
+caption title:
+string profile:
+optional string company:
+ftd.image-src avatar:
+body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 24
+margin.px if { ftd.device != "mobile" }: 12
+
+-- ftd.desktop:
+
+-- author-bio-desktop: $author-bio-card.title
+profile: $author-bio-card.profile
+company: $author-bio-card.company
+avatar: $author-bio-card.avatar
+body: $author-bio-card.body
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- author-bio-mobile: $author-bio-card.title
+profile: $author-bio-card.profile
+company: $author-bio-card.company
+avatar: $author-bio-card.avatar
+body: $author-bio-card.body
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: author-bio-card
+
+
+
+
+
+
+
+
+
+
+-- component author-bio-desktop:
+caption title:
+string profile:
+optional string company:
+ftd.image-src avatar:
+body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 32
+margin-top.px: 12
+margin-bottom.px: 12
+margin-left.px: 12
+margin-right.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.column:
+width.fixed.px: 152
+
+-- ftd.image:
+src: $author-bio-desktop.avatar
+width: fill-container
+height: fill-container
+border-radius.px: 500
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+align-content: left
+
+-- ftd.text: $author-bio-desktop.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+margin-bottom.px: 16
+
+-- ftd.text: $author-bio-desktop.profile
+role: $inherited.types.copy-small
+margin-bottom.px: 4
+
+-- ftd.text: $author-bio-desktop.company
+role: $inherited.types.copy-small
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.text:
+text: $author-bio-desktop.body
+role: $inherited.types.copy-regular
+
+
+
+-- end: ftd.column
+
+-- end: author-bio-desktop
+
+
+
+
+
+
+
+
+
+-- component author-bio-mobile:
+caption title:
+string profile:
+optional string company:
+ftd.image-src avatar:
+body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 16
+margin-top.px: 12
+margin-bottom.px: 12
+align-content: center
+
+-- ftd.image:
+src: $author-bio-mobile.avatar
+width.fixed.px: 132
+height.fixed.px: 132
+border-radius.px: 500
+;;align-content: center
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $author-bio-mobile.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+-- ftd.text: $author-bio-mobile.profile
+role: $inherited.types.copy-small
+
+-- ftd.text: $author-bio-mobile.company
+role: $inherited.types.copy-small
+
+-- end: ftd.column
+
+-- ftd.text:
+text: $author-bio-mobile.body
+role: $inherited.types.fine-print
+
+-- end: ftd.column
+
+-- end: author-bio-mobile
 
