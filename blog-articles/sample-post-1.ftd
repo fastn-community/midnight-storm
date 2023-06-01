@@ -7,10 +7,10 @@
 post-image: $assets.files.static.featured.svg
 info: Small Incidental Text.
 cta-text1: Button
-cta-link1: /blog-articles/sample-post/
+cta-link1: /blog-articles/sample-post-1/
 cta-text2: Button
-cta-link2: /blog-articles/sample-post/
-post-url: /blog-articles/sample-post/
+cta-link2: /blog-articles/sample-post-1/
+post-url: /blog-articles/sample-post-1/
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore 
@@ -19,7 +19,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 post-image: $assets.files.static.post1.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
-post-url: /blog-articles/sample-post/
+post-url: /blog-articles/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -27,90 +27,218 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post2.svg
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
-post-url: /blog-articles/sample-post/
+post-url: /blog-articles/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
--- common.post-meta meta3:
-post-image: $assets.files.static.post3.svg
+-- common.post-meta meta3: Bringing the world together through live experiences.
 avatar: $assets.files.static.patrica.jpg
 author: $author.patrica
-post-url: /blog-articles/sample-post/
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
--- common.post-meta meta4:
-post-image: $assets.files.static.post4.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
--- common.post-meta meta5:
-post-image: $assets.files.static.post5.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
--- common.post-meta meta6:
-post-image: $assets.files.static.post6.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
--- common.post-meta meta7:
-post-image: $assets.files.static.post7.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
--- common.post-meta meta8:
-post-image: $assets.files.static.post8.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
+-- my-ds.page:
+blog: true
+sidebar: false
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+-- ds.featured-post:
+post-data: $meta3
 
--- common.post-meta meta9:
-post-image: $assets.files.static.post9.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
+-- ds.image:
+src: $assets.files.static.blog.svg
+width: auto
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+-- ds.h3: Bringing the world together through live experiences.
 
--- common.post-meta meta10:
-post-image: $assets.files.static.post10.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
+-- ds.markdown:
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked. When using technology, we often focus optimistically on all
+the things it does for us. But I want to show you where it might do the
+opposite.
 
--- common.post-meta meta11:
-post-image: $assets.files.static.post11.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
+Where does technology exploit our minds’ weaknesses?
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+I learned to think this way when I was a magician. Magicians start by looking
+for blind spots, edges, vulnerabilities and limits of people’s perception, so
+they can influence what people do without them even realizing it. Once you know
+how to push people’s buttons, you can play them like a piano.
 
--- common.post-meta meta12:
-post-image: $assets.files.static.post12.svg
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
-post-url: /blog-articles/sample-post/
+-- ds.image: Bringing the world together through live experiences.
+src: $assets.files.static.card1.svg
+alignment: center
+width: fill-container
 
-Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+-- ds.h3: Bringing the world together through live experiences.
 
--- common.post-meta meta13: Bringing the world together through live experiences.
-avatar: $assets.files.static.patrica.jpg
-author: $author.patrica
+-- ds.markdown:
+
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked.
+
+When using technology, we often focus optimistically on all the things it does
+for us. But I want to show you where it might do the opposite.
+
+And this is exactly what product designers do to your mind. They play your
+psychological vulnerabilities (consciously and unconsciously) against you in
+the race to grab your attention.Western Culture is built around ideals of
+individual choice and freedom. Millions of us fiercely defend our right to
+make “free” choices, while we ignore how those choices are manipulated upstream
+by menus we didn’t choose in the first place.
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between
+  ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of
+  paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on
+  a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the
+  component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the
+  Layers panel.
+
+I learned to think this way when I was a magician. Magicians start by looking
+for blind spots, edges, vulnerabilities and limits of people’s perception, so
+they can influence what people do without them even realizing it. Once you know
+how to push people’s buttons, you can play them like a piano.
+
+-- ds.image: Bringing the world together through live experiences.
+src: $assets.files.static.card2.svg
+alignment: center
+width: fill-container
+
+-- ds.image: Bringing the world together through live experiences.
+src: $assets.files.static.card3.svg
+alignment: center
+width: fill-container
+
+-- ds.h3: Bringing the world together through live experiences.
+
+-- ds.markdown:
+
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked.
+
+When using technology, we often focus optimistically on all the things it does
+for us. But I want to show you where it might do the opposite.
+
+And this is exactly what product designers do to your mind. They play your
+psychological vulnerabilities (consciously and unconsciously) against you in
+the race to grab your attention.Western Culture is built around ideals of
+individual choice and freedom. Millions of us fiercely defend our right to
+make “free” choices, while we ignore how those choices are manipulated upstream
+by menus we didn’t choose in the first place.
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between
+  ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of
+  paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on
+  a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the
+  component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the
+  Layers panel.
+
+I learned to think this way when I was a magician. Magicians start by looking
+for blind spots, edges, vulnerabilities and limits of people’s perception, so
+they can influence what people do without them even realizing it. Once you know
+how to push people’s buttons, you can play them like a piano.
+
+-- ds.image: Bringing the world together through live experiences.
+src: $assets.files.static.card4.svg
+alignment: center
+width: fill-container
+
+-- ds.h3: Bringing the world together through live experiences.
+
+-- ds.markdown:
+
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked.
+
+When using technology, we often focus optimistically on all the things it does
+for us. But I want to show you where it might do the opposite.
+
+I learned to think this way when I was a magician. Magicians start by looking
+for blind spots, edges, vulnerabilities and limits of people’s perception, so
+they can influence what people do without them even realizing it. Once you know
+how to push people’s buttons, you can play them like a piano.
+
+I learned to think this way when I was a magician. Magicians start by looking
+for blind spots, edges, 
+
+-- ds.image: Bringing the world together through live experiences.
+src: $assets.files.static.card5.svg
+alignment: center
+width: fill-container
+
+-- ds.h3: Bringing the world together through live experiences.
+
+-- ds.markdown:
+
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked.
+
+When using technology, we often focus optimistically on all the things it does
+for us. But I want to show you where it might do the opposite.
+
+And this is exactly what product designers do to your mind. They play your
+psychological vulnerabilities (consciously and unconsciously) against you in
+the race to grab your attention.Western Culture is built around ideals of
+individual choice and freedom. Millions of us fiercely defend our right to
+make “free” choices, while we ignore how those choices are manipulated upstream
+by menus we didn’t choose in the first place.
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between
+  ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of
+  paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on
+  a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the
+  component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the
+  Layers panel.
+
+-- ds.h3: Bringing the world together through live experiences.
+
+-- ds.markdown:
+
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked.
+
+When using technology, we often focus optimistically on all the things it does
+for us. But I want to show you where it might do the opposite.
+
+I’m an expert on how technology hijacks our psychological vulnerabilities.
+That’s why I spent the last three years as a Design Ethicist at Google caring
+about how to design things in a way that defends a billion people’s minds from
+getting hijacked.
+
+When using technology, we often focus optimistically on all the things it does
+for us. But I want to show you where it might do the opposite.
+
+-- end: my-ds.page

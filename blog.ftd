@@ -3,7 +3,7 @@
 -- import: fastn-community.github.io/set-2-ds/common
 
 -- my-ds.page: Blog
-blog: true
+full-width: true
 sidebar: false
 
 -- ds.posts:
@@ -15,7 +15,8 @@ post-data: $sample-post-1.meta
 
 -- markdown:
 
-Sed nec pharetra felis, in ultrices neque. Phasellus varius semper tellus, ac imperdiet erat commodo id. Aenean lobortis justo et velit ornare malesuada.
+Sed nec pharetra felis, in ultrices neque. Phasellus varius semper tellus, ac
+imperdiet erat commodo id. Aenean lobortis justo et velit ornare malesuada.
 
 -- ds.post-card:
 post-data: $sample-post-1.meta1
@@ -24,35 +25,25 @@ post-data: $sample-post-1.meta1
 post-data: $sample-post-1.meta2
 
 -- ds.post-card:
-post-data: $sample-post-1.meta3
+post-data: $sample-post-1.meta1
 
 -- ds.post-card:
-post-data: $sample-post-1.meta4
+post-data: $sample-post-1.meta2
 
 -- ds.post-card:
-post-data: $sample-post-1.meta5
+post-data: $sample-post-1.meta1
 
 -- ds.post-card:
-post-data: $sample-post-1.meta6
+post-data: $sample-post-1.meta2
 
 -- ds.post-card:
-post-data: $sample-post-1.meta7
+post-data: $sample-post-1.meta1
 
 -- ds.post-card:
-post-data: $sample-post-1.meta8
+post-data: $sample-post-1.meta2
 
 -- ds.post-card:
-post-data: $sample-post-1.meta9
-
--- ds.post-card:
-post-data: $sample-post-1.meta10
-
--- ds.post-card:
-post-data: $sample-post-1.meta11
-
--- ds.post-card:
-post-data: $sample-post-1.meta12
-
+post-data: $sample-post-1.meta1
 -- end: ds.posts
 
 -- end: my-ds.page

@@ -5,7 +5,7 @@
 
 -- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
 
--- integer logo-width: 200
+-- integer logo-width: 180
 
 -- string site-name: SET 2 DS
 
