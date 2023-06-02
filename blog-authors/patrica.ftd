@@ -1,0 +1,24 @@
+-- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/set-2-ds/common 
+
+
+
+
+
+-- common.author-meta patrica: Patrica AVA
+profile: UI Designer
+bio-url: blog-authors/patrica/
+image: $assets.files.static.avatar.svg
+company: XYZ Pvt. Ltd.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+-- my-ds.page: 
+full-width: true
+sidebar: false
+
+-- ds.author-bio: 
+author: $patrica
+
+-- end: my-ds.page
