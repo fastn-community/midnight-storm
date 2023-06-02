@@ -12,7 +12,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 
 -- common.post-meta meta1:
 post-image: $assets.files.static.post1.svg
-image: $assets.files.static.patrica.jpg
+image: $assets.files.static.avatar.svg
 author: $author.patrica
 post-url: /blog-articles/sample-post-1/
 
@@ -20,14 +20,14 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta2:
 post-image: $assets.files.static.post2.svg
-image: $assets.files.static.patrica.jpg
+image: $assets.files.static.avatar.svg
 author: $author.patrica
 post-url: /blog-articles/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta3: Bringing the world together through live experiences.
-image: $assets.files.static.patrica.jpg
+image: $assets.files.static.avatar.svg
 author: $author.patrica
 
 

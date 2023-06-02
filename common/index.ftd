@@ -82,16 +82,13 @@ $processor$: pr.toc
 
 
 
-
-
-
-
 -- tags-list list topic:
 
 -- tags-list: Design Inspiration
 tag-link: blog/
 
 -- end: topic
+
 
 
 
@@ -121,11 +118,6 @@ tag-link: blog/
 tag-link: blog/
 
 -- end: tags
-
-
-
-
-
 
 
 
