@@ -5,7 +5,9 @@
 
 -- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
 
--- integer logo-width: 200
+-- integer logo-width: 180
+
+-- string site-name: SET 2 DS
 
 -- integer logo-height: 44
 
@@ -25,6 +27,8 @@ $processor$: pr.fastn-apps
 -- record social-media:
 ftd.image-src src:
 string link: /
+
+-- social-media list share:
 
 -- social-media list social-links:
 
@@ -73,3 +77,70 @@ $processor$: pr.toc
   - Footer Link 01: /
   - Footer Link 01: /
   - Footer Link 01: /
+
+
+
+
+
+-- tags-list list topic:
+
+-- tags-list: Design Inspiration
+tag-link: blog/
+
+-- end: topic
+
+
+
+
+
+-- record tags-list:
+caption title:
+string tag-link:
+
+-- tags-list list tags:
+
+-- tags-list: Programming
+tag-link: blog/
+
+-- tags-list: Data Science
+tag-link: blog/
+
+-- tags-list: Technology
+tag-link: blog/
+
+-- tags-list: Writing
+tag-link: blog/
+
+-- tags-list: AI/ML
+tag-link: blog/
+
+-- tags-list: UI/UX
+tag-link: blog/
+
+-- end: tags
+
+
+
+
+
+-- record author-meta:
+optional caption title:
+optional string profile:
+optional string company:
+optional string bio-url:
+optional ftd.image-src image:
+optional body body:
+
+
+
+
+
+-- record post-meta:
+optional caption title:
+optional string published-on:
+optional ftd.image-src post-image:
+optional body body:
+optional string post-url:
+optional author-meta author:
+social-media list social-list:
+tags-list list tags:
