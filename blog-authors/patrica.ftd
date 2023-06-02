@@ -9,8 +9,8 @@
 -- common.author-meta patrica: Patrica AVA
 profile: UI Designer
 bio-url: blog-authors/patrica/
-avatar: $assets.files.static.avatar.svg
-company: XVY Pvt. Ltd.
+image: $assets.files.static.avatar.svg
+company: XYZ Pvt. Ltd.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 

@@ -28,6 +28,8 @@ $processor$: pr.fastn-apps
 ftd.image-src src:
 string link: /
 
+-- social-media list share:
+
 -- social-media list social-links:
 
 -- social-media:
@@ -90,7 +92,7 @@ optional caption title:
 optional string profile:
 optional string company:
 optional string bio-url:
-optional ftd.image-src avatar:
+optional ftd.image-src image:
 optional body body:
 
 
@@ -104,9 +106,10 @@ optional ftd.image-src post-image:
 optional body body:
 optional string post-url:
 optional author-meta author:
-optional string info:
-optional string cta-text: 
-optional string cta-text1: 
-optional string cta-link1:
-optional string cta-text2: 
-optional string cta-link2:
+optional string info: 
+optional string cta-txt1: 
+optional string cta-url1:
+optional string cta-txt2: 
+optional string cta-url2:
+social-media list share:
+optional string tag:

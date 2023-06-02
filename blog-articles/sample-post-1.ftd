@@ -6,10 +6,10 @@
 -- common.post-meta meta: We Transform ideas into digital outcomes.
 post-image: $assets.files.static.featured.svg
 info: Small Incidental Text.
-cta-text1: Button
-cta-link1: /blog-articles/sample-post-1/
-cta-text2: Button
-cta-link2: /blog-articles/sample-post-1/
+cta-txt1: Button
+cta-url1: /blog-articles/sample-post-1/
+cta-txt2: Button
+cta-url2: /blog-articles/sample-post-1/
 post-url: /blog-articles/sample-post-1/
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
@@ -17,7 +17,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 
 -- common.post-meta meta1:
 post-image: $assets.files.static.post1.svg
-avatar: $assets.files.static.patrica.jpg
+image: $assets.files.static.patrica.jpg
 author: $author.patrica
 post-url: /blog-articles/sample-post-1/
 
@@ -25,14 +25,14 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta2:
 post-image: $assets.files.static.post2.svg
-avatar: $assets.files.static.patrica.jpg
+image: $assets.files.static.patrica.jpg
 author: $author.patrica
 post-url: /blog-articles/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta3: Bringing the world together through live experiences.
-avatar: $assets.files.static.patrica.jpg
+image: $assets.files.static.patrica.jpg
 author: $author.patrica
 
 
@@ -45,11 +45,11 @@ author: $author.patrica
 
 
 -- my-ds.page:
-blog: true
+full-width: true
 sidebar: false
 
--- ds.featured-post:
-post-data: $meta3
+-- ds.post:
+meta: $meta3
 
 -- ds.image:
 src: $assets.files.static.blog.svg
