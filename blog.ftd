@@ -3,10 +3,10 @@
 -- import: fastn-community.github.io/set-2-ds/common
 
 -- my-ds.page: Blog
-full-width: true
 sidebar: false
+blog: true
 
--- ds.posts:
+-- my-ds.page.hero:
 
 -- ds.featured-post:
 post-data: $sample-post-1.meta
@@ -16,9 +16,13 @@ cta-primary-url: /blog-articles/sample-post-1/
 cta-secondary: Button
 cta-secondary-url: /blog-articles/sample-post-1/
 
+-- end: my-ds.page.hero
+
+-- ds.posts:
+
 -- ds.h2: Latest blog
 
--- markdown:
+-- ds.markdown:
 
 Sed nec pharetra felis, in ultrices neque. Phasellus varius semper tellus, ac
 imperdiet erat commodo id. Aenean lobortis justo et velit ornare malesuada.

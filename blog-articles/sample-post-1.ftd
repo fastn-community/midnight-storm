@@ -40,6 +40,7 @@ author: $author.patrica
 
 
 -- my-ds.page:
+blog: true
 full-width: true
 sidebar: false
 

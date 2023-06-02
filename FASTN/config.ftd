@@ -24,10 +24,13 @@ optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name: NULL
+ftd.image-src site-logo: $common.site-logo 
 boolean full-width: false
+boolean blog: false
+ftd.ui list hero:
 
 -- ds.page: $page.title
-site-name: $page.site-name
+site-logo: $page.site-logo
 body: $page.body
 show-footer: true
 right-sidebar: $page.right-sidebar
@@ -36,6 +39,8 @@ full-width: $page.full-width
 document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
+blog: $page.blog
+hero: $page.hero
 github-url: https://github.com/fastn-community/set-1-ds/
 github-icon: true
 
