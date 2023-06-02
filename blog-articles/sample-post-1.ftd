@@ -5,11 +5,6 @@
 
 -- common.post-meta meta: We Transform ideas into digital outcomes.
 post-image: $assets.files.static.featured.svg
-info: Small Incidental Text.
-cta-txt1: Button
-cta-url1: /blog-articles/sample-post-1/
-cta-txt2: Button
-cta-url2: /blog-articles/sample-post-1/
 post-url: /blog-articles/sample-post-1/
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 

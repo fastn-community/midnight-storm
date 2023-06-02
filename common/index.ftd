@@ -106,10 +106,5 @@ optional ftd.image-src post-image:
 optional body body:
 optional string post-url:
 optional author-meta author:
-optional string info: 
-optional string cta-txt1: 
-optional string cta-url1:
-optional string cta-txt2: 
-optional string cta-url2:
-social-media list share:
+social-media list social-list:
 optional string tag:

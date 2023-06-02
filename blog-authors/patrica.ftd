@@ -15,7 +15,7 @@ company: XYZ Pvt. Ltd.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 -- my-ds.page: 
-blog: true
+full-width: true
 sidebar: false
 
 -- ds.author-bio: 

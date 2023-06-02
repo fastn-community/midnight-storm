@@ -1704,6 +1704,12 @@ spacing.fixed.px: 16
 
 -- component featured-post:
 common.post-meta post-data:
+optional string cta-primary: 
+optional string cta-primary-url:
+optional string cta-secondary: 
+optional string cta-secondary-url:
+optional string extra-text:
+
 
 -- ftd.column:
 
@@ -1713,11 +1719,11 @@ author: $featured-post.post-data.author
 image: $featured-post.post-data.post-image
 url: $featured-post.post-data.post-url
 body: $featured-post.post-data.body
-info: $featured-post.post-data.info
-cta-txt1: $featured-post.post-data.cta-txt1
-cta-url1: $featured-post.post-data.cta-url1
-cta-txt2: $featured-post.post-data.cta-txt2
-cta-url2: $featured-post.post-data.cta-url2
+extra-text: $featured-post.extra-text
+cta-primary: $featured-post.cta-primary
+cta-primary-url: $featured-post.cta-primary-url
+cta-secondary: $featured-post.cta-secondary
+cta-secondary-url: $featured-post.cta-secondary-url
 
 -- end: ftd.column
 
@@ -1739,44 +1745,44 @@ optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
 optional body body:
-optional string info:
-optional string cta-txt1: 
-optional string cta-url1:
-optional string cta-txt2: 
-optional string cta-url2:
+optional string extra-text:
+optional string cta-primary: 
+optional string cta-primary-url:
+optional string cta-secondary: 
+optional string cta-secondary-url:
 
 -- ftd.column:
 width: fill-container
 
 -- ftd.desktop:
 
--- featured-post-meta-desktop: $featured-post-card.title
+-- featured-post-card-desktop: $featured-post-card.title
 timestamp: $featured-post-card.timestamp
 author: $featured-post-card.author
 image: $featured-post-card.image
 url: $featured-post-card.url
 body: $featured-post-card.body
-info: $featured-post-card.info
-cta-txt1: $featured-post-card.cta-txt1
-cta-url1: $featured-post-card.cta-url1
-cta-txt2: $featured-post-card.cta-txt2
-cta-url2: $featured-post-card.cta-url2
+extra-text: $featured-post-card.extra-text
+cta-primary: $featured-post-card.cta-primary
+cta-primary-url: $featured-post-card.cta-primary-url
+cta-secondary: $featured-post-card.cta-secondary
+cta-secondary-url: $featured-post-card.cta-secondary-url
 
 -- end: ftd.desktop
 
 -- ftd.mobile:
 
--- featured-post-meta-mobile: $featured-post-card.title
+-- featured-post-card-mobile: $featured-post-card.title
 timestamp: $featured-post-card.timestamp
 author: $featured-post-card.author
 image: $featured-post-card.image
 url: $featured-post-card.url
 body: $featured-post-card.body
-info: $featured-post-card.info
-cta-txt1: $featured-post-card.cta-txt1
-cta-url1: $featured-post-card.cta-url1
-cta-txt2: $featured-post-card.cta-txt2
-cta-url2: $featured-post-card.cta-url2
+extra-text: $featured-post-card.extra-text
+cta-primary: $featured-post-card.cta-primary
+cta-primary-url: $featured-post-card.cta-primary-url
+cta-secondary: $featured-post-card.cta-secondary
+cta-secondary-url: $featured-post-card.cta-secondary-url
 
 -- end: ftd.mobile
 
@@ -1793,29 +1799,29 @@ cta-url2: $featured-post-card.cta-url2
 
 
 
--- component featured-post-meta-desktop:
+-- component featured-post-card-desktop:
 caption title:
 optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
 optional body body:
-optional string info:
-optional string cta-txt1: 
-optional string cta-url1:
-optional string cta-txt2: 
-optional string cta-url2:
+optional string extra-text:
+optional string cta-primary: 
+optional string cta-primary-url:
+optional string cta-secondary: 
+optional string cta-secondary-url:
 
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 125
 
 -- ftd.image:
-if: { featured-post-meta-desktop.image != NULL }
-src: $featured-post-meta-desktop.image
+if: { featured-post-card-desktop.image != NULL }
+src: $featured-post-card-desktop.image
 width: fill-container
 height: auto
-link: $featured-post-meta-desktop.url
+link: $featured-post-card-desktop.url
 
 -- ftd.column:
 width: fill-container
@@ -1823,32 +1829,32 @@ spacing.fixed.px: 24
 align-content: center
 align-self: center
 
--- ftd.text: $featured-post-meta-desktop.title
+-- ftd.text: $featured-post-card-desktop.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- ftd.row:
-if: { featured-post-meta-desktop.author != NULL }
+if: { featured-post-card-desktop.author != NULL }
 padding-top.px: 24
 align-content: center
 spacing.fixed.px: 16
 
 -- ftd.image:
-if: { featured-post-meta-desktop.author.image != NULL }
-src: $featured-post-meta-desktop.author.image
+if: { featured-post-card-desktop.author.image != NULL }
+src: $featured-post-card-desktop.author.image
 width.fixed.px: 44
 
 -- ftd.column:
 spacing.fixed.px: 4
 
--- ftd.text: $featured-post-meta-desktop.author.title
-if: { featured-post-meta-desktop.author.title != NULL }
+-- ftd.text: $featured-post-card-desktop.author.title
+if: { featured-post-card-desktop.author.title != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
-link: $featured-post-meta-desktop.author.bio-url
+link: $featured-post-card-desktop.author.bio-url
 
--- ftd.text: $featured-post-meta-desktop.author.profile
-if: { $featured-post-meta-desktop.author.profile != NULL }
+-- ftd.text: $featured-post-card-desktop.author.profile
+if: { $featured-post-card-desktop.author.profile != NULL }
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 
@@ -1857,11 +1863,11 @@ color: $inherited.colors.text
 -- end: ftd.row
 
 -- ftd.text:
-if: { featured-post-meta-desktop.body != NULL}
+if: { featured-post-card-desktop.body != NULL}
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$featured-post-meta-desktop.body
+$featured-post-card-desktop.body
 
 -- ftd.row:
 spacing.fixed.px: 16
@@ -1870,17 +1876,17 @@ align-self: start
 width: fill-container
 
 -- ftd.row:
-if: { featured-post-meta-desktop.cta-txt1 != NULL }
+if: { featured-post-card-desktop.cta-primary != NULL }
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
 spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
 
--- ftd.text: $featured-post-meta-desktop.cta-txt1
+-- ftd.text: $featured-post-card-desktop.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $featured-post-meta-desktop.cta-url1
+link: $featured-post-card-desktop.cta-primary-url
 
 -- ftd.image:
 src: $assets.files.static.tick.svg
@@ -1889,17 +1895,17 @@ align-self: center
 -- end: ftd.row
 
 -- ftd.row:
-if: { featured-post-meta-desktop.cta-txt2 != NULL }
+if: { featured-post-card-desktop.cta-secondary != NULL }
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
 spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
 
--- ftd.text: $featured-post-meta-desktop.cta-txt2
+-- ftd.text: $featured-post-card-desktop.cta-secondary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $featured-post-meta-desktop.cta-url2
+link: $featured-post-card-desktop.cta-secondary-url
 
 -- ftd.image:
 src: $assets.files.static.tick.svg
@@ -1909,8 +1915,8 @@ align-self: center
 
 -- end: ftd.row
 
--- ftd.text: $featured-post-meta-desktop.info
-if: { featured-post-meta-desktop.info != NULL }
+-- ftd.text: $featured-post-card-desktop.extra-text
+if: { featured-post-card-desktop.extra-text != NULL }
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 text-align: start
@@ -1920,7 +1926,7 @@ width: fill-container
 
 -- end: ftd.row
 
--- end: featured-post-meta-desktop
+-- end: featured-post-card-desktop
 
 
 
@@ -1931,18 +1937,18 @@ width: fill-container
 
 
 
--- component featured-post-meta-mobile:
+-- component featured-post-card-mobile:
 caption title:
 optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
 optional body body:
-optional string info:
-optional string cta-txt1: 
-optional string cta-url1:
-optional string cta-txt2: 
-optional string cta-url2:
+optional string extra-text:
+optional string cta-primary: 
+optional string cta-primary-url:
+optional string cta-secondary: 
+optional string cta-secondary-url:
 
 
 -- ftd.column:
@@ -1950,25 +1956,25 @@ width: fill-container
 spacing.fixed.px: 24
 padding-bottom.px: 24
 
--- ftd.text: $featured-post-meta-mobile.title
+-- ftd.text: $featured-post-card-mobile.title
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 
 -- ftd.image:
-if: { featured-post-meta-mobile.image != NULL }
-src: $featured-post-meta-mobile.image
+if: { featured-post-card-mobile.image != NULL }
+src: $featured-post-card-mobile.image
 width.fixed.px: 365
-link: $featured-post-meta-mobile.url
+link: $featured-post-card-mobile.url
 
 -- ftd.text:
-if: { featured-post-meta-mobile.body != NULL }
+if: { featured-post-card-mobile.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$featured-post-meta-mobile.body
+$featured-post-card-mobile.body
 
--- ftd.text: $featured-post-meta-mobile.info
-if: { featured-post-meta-mobile.info != NULL }
+-- ftd.text: $featured-post-card-mobile.extra-text
+if: { featured-post-card-mobile.extra-text != NULL }
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 
@@ -1978,17 +1984,17 @@ align-content: center
 width: fill-container
 
 -- ftd.row:
-if: { featured-post-meta-mobile.cta-txt1 != NULL }
+if: { featured-post-card-mobile.cta-primary != NULL }
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
 spacing.fixed.px: 16
 padding-horizontal.px: 28
 padding-vertical.px: 16
 
--- ftd.text: $featured-post-meta-mobile.cta-txt1
+-- ftd.text: $featured-post-card-mobile.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $featured-post-meta-mobile.cta-url1
+link: $featured-post-card-mobile.cta-primary-url
 
 -- ftd.image:
 src: $assets.files.static.tick.svg
@@ -1997,17 +2003,17 @@ align-self: center
 -- end: ftd.row
 
 -- ftd.row:
-if: { featured-post-meta-mobile.cta-txt2 != NULL }
+if: { featured-post-card-mobile.cta-secondary != NULL }
 border-radius.px: 4
 background.solid: $inherited.colors.shadow
 spacing.fixed.px: 16
 padding-horizontal.px: 28
 padding-vertical.px: 16
 
--- ftd.text: $featured-post-meta-mobile.cta-txt2
+-- ftd.text: $featured-post-card-mobile.cta-secondary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $featured-post-meta-mobile.cta-url2
+link: $featured-post-card-mobile.cta-secondary-url
 
 -- ftd.image:
 src: $assets.files.static.tick.svg
@@ -2019,7 +2025,7 @@ align-self: center
 
 -- end: ftd.column
 
--- end: featured-post-meta-mobile
+-- end: featured-post-card-mobile
 
 
 
