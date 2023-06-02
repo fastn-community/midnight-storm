@@ -2203,9 +2203,9 @@ spacing.fixed.px: 12
 -- ftd.image:
 src: $post-card-ui-mobile.image
 width.fixed.px: 360
+link: $post-card-ui-mobile.url
 
 -- ftd.column:
-link: $post-card-ui-mobile.url
 padding-vertical.px: 16
 padding-horizontal.px: 24
 
@@ -2231,6 +2231,7 @@ spacing.fixed.px: 4
 -- ftd.text: $post-card-ui-mobile.author.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
+link: $post-card-ui-mobile.author.bio-url
 
 -- ftd.text: $post-card-ui-mobile.author.profile
 if: { $post-card-ui-mobile.author.profile != NULL }
