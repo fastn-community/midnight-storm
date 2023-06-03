@@ -11,7 +11,7 @@ export: h0, h1, h2, h3, markdown
 -- import: fastn-community.github.io/code-block as cb
 export: code, rendered
 
--- page:
+-- page: Overview
 document-title: fastn set-2-ds Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use set-2-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.github.io/set-2-ds/static/set-2-ds-og-image.jpg
@@ -19,6 +19,11 @@ site-logo: $common.site-logo
 github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
 sidebar: true
+
+
+-- page.body:
+
+Hello
 
 -- page.right-sidebar:
 
@@ -280,23 +285,6 @@ github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
 
 -- ftd.column:
-padding-horizontal.rem: 2.5
-margin-bottom.rem: 3.12
-width: fill-container
-
--- ftd.text: $doc-page-desktop.title
-if: { doc-page-desktop.title != NULL }
-role: $inherited.types.heading-large
-color: $inherited.colors.text-strong
-
--- tf.markdown:
-if: { doc-page-desktop.body != NULL }
-
-$doc-page-desktop.body
-
--- end: ftd.column
-
--- ftd.column:
 children: $doc-page-desktop.hero
 width: fill-container
 
@@ -305,6 +293,7 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 align-content if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.sidebar }: center
+margin-top.px: 24
 
 -- ftd.column:
 if: { !doc-page-desktop.blog }
@@ -326,7 +315,6 @@ padding-bottom.px: 50
 border-right-width.px if { !ftd.is_empty(doc-page-desktop.toc) && doc-page-desktop.sidebar }: 1
 border-color: $inherited.colors.border
 align-content: top-left
-children: $doc-page-desktop.wrapper
 spacing.fixed.em: 0.8
 border-left-width.px if {  !doc-page-desktop.blog && !ftd.is_empty(doc-page-desktop.toc)  }: 1
 min-height: fill-container
@@ -336,6 +324,28 @@ width: fill-container
 width if { doc-page-desktop.full-width }: fill-container
 max-width if { doc-page-desktop.blog }: fill-container
 border-top-width.px if { !ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.blog || doc-page-desktop.sidebar }: 1
+
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $doc-page-desktop.title
+if: { doc-page-desktop.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- tf.markdown:
+if: { doc-page-desktop.body != NULL }
+
+$doc-page-desktop.body
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $doc-page-desktop.wrapper
+
+-- end: ftd.column
 
 -- end: ftd.column
 
