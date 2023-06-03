@@ -1,7 +1,7 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
--- my-ds.page: Right Sidebar
+-- my-ds.page:
 sidebar: true
 
 -- my-ds.page.right-sidebar:
@@ -32,7 +32,7 @@ would be possible without your support. We would love to hear from you.
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Right Sidebar
 
 In this section, we will learn to add the right-sidebar in `set-2-ds`.
 

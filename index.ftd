@@ -11,7 +11,7 @@ export: h0, h1, h2, h3, markdown
 -- import: fastn-community.github.io/code-block as cb
 export: code, rendered
 
--- page: Overview
+-- page:
 document-title: fastn set-2-ds Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use set-2-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.github.io/set-2-ds/static/set-2-ds-og-image.jpg
@@ -48,7 +48,7 @@ social-links: $common.social-links
 
 -- end: page.footer
 
--- page.body:
+-- h2: Overview
 
 `set-2-ds` will help you create a beautiful documentation site in no time.
 
@@ -396,6 +396,7 @@ logo-height: 38
 menu-icon: $assets.files.static.hamburger.svg
 github-icon: $doc-page-mobile.github-icon
 github-url: $doc-page-mobile.github-url
+blog: $doc-page-mobile.blog
 
 -- ftd.column:
 width: fill-container
@@ -420,6 +421,12 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 $doc-page-mobile.body
+
+-- ftd.column:
+children: $doc-page-mobile.hero
+width: fill-container
+
+-- end: ftd.column
 
 -- ftd.column:
 children: $doc-page-mobile.wrapper

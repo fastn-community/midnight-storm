@@ -1,7 +1,7 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
--- my-ds.page: Changing Color Scheme
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -13,7 +13,7 @@ cta: cs/#how-to-create-a-global-my-ds-page-module-for-set-2-ds
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Changing Color Scheme
 
 In this section, we will learn about changing the color scheme of `set-2-ds`.
 

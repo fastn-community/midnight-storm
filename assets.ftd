@@ -1,7 +1,7 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
--- my-ds.page: Adding Assets
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -10,7 +10,7 @@ cta: assets/#how-to-link-image-assets
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Adding Assets
 
 In this section, we will learn about adding assets like images into your `fastn`
 `set-2-ds` website.

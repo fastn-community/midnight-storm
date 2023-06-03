@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: SEO
+-- my-ds.page:
 document-description: Custom SEO description
 document-image: https://fastn.com/-/fastn.com/images/featured/set-2-ds.png
 
@@ -17,7 +17,7 @@ cta: seo/#how-to-add-page-document-image
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: SEO
 
 In this section, we will learn about `set-2-ds` SEO features for your `fastn`
 website.

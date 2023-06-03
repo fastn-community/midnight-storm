@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: Changing Typography
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -15,7 +15,7 @@ cta: types/#how-to-create-a-global-my-ds-page-module-for-Set-2-ds
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Changing Typography
 
 In this section, we will learn about changing the typography of `set-2-ds`.
 

@@ -1,7 +1,7 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
--- my-ds.page: Getting Started
+-- my-ds.page: 
 
 -- my-ds.page.right-sidebar:
 
@@ -16,7 +16,7 @@ cta: getting-started/#what-next
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Getting Started
 
 You can create your documentation web-sites using `set-2-ds`. `set-2-ds` also
 helps authors, entrepreneurs, corporate groups and bloggers to create their own

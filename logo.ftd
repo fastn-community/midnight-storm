@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: Adding Site-logo and Site-name
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -12,7 +12,7 @@ cta: logo/#adding-logo-or-site-name
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Adding Site-logo and Site-name
 
 In this section, we will learn about adding `site-logo` and `site-name` to your
 `fastn` web site.

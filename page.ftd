@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: Creating A Page
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -9,7 +9,7 @@ cta: page/#how-to-create-a-new-page
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Creating A Page
 
 In this section, we will learn about creating pages in `set-2-ds`.
 

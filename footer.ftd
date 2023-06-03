@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: Adding Footer
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -9,7 +9,7 @@ cta: footer/#how-to-create-a-global-my-ds-page-Module-for-set-2-ds
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Adding Footer
 
 In this section, we will learn about adding a footer into your pages in
 `set-2-ds`.

@@ -1,7 +1,7 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: fastn-community.github.io/set-2-ds/assets
 
--- my-ds.page: Adding Image
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -10,7 +10,7 @@ cta: image/#how-to-add-image
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Adding Image
 
 In this section, we will learn about adding image inside `page` of your `fastn`
 web site.

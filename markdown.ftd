@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: Markdown Primer
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -9,7 +9,7 @@ cta: markdown/#markdown
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Markdown Primer
 
 `set-2-ds` supports markdown. If you want to use it you can use `--
 ds.mardkdown` for inline anchor links etc.

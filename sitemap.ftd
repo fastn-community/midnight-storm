@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
--- my-ds.page: Understanding Sitemap
+-- my-ds.page:
 
 -- my-ds.page.right-sidebar:
 
@@ -12,7 +12,7 @@ cta: sitemap/#sample-fastn-sitemap-code-snippet
 
 -- end: my-ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.h2: Understanding Sitemap
 
 The `set-2-ds` page component has an inbuilt header. Just using the `page`
 header will appear on your page.
