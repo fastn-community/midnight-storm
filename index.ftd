@@ -291,7 +291,7 @@ align-content if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.sideb
 margin-top.px: 24
 
 -- ftd.column:
-if: { !doc-page-desktop.blog }
+if: { !doc-page-desktop.blog && doc-page-desktop.sidebar }
 min-width.fixed.percent: 20
 min-height.fixed.calc: 100vh - 200px
 height: fill-container
@@ -307,11 +307,9 @@ toc-obj: $doc-page-desktop.toc
 padding-horizontal.rem: 3.12
 padding-top.rem: 1.5
 padding-bottom.px: 50
-border-right-width.px if { !ftd.is_empty(doc-page-desktop.toc) && doc-page-desktop.sidebar }: 1
 border-color: $inherited.colors.border
 align-content: top-left
 spacing.fixed.em: 0.8
-border-left-width.px if {  !doc-page-desktop.blog && !ftd.is_empty(doc-page-desktop.toc)  }: 1
 min-height: fill-container
 max-width.fixed.px if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.full-width && !doc-page-desktop.sidebar }: 800
 max-width if { doc-page-desktop.full-width }: fill-container
@@ -980,8 +978,6 @@ common.social-media list social-links:
 background.solid: $inherited.colors.background.base
 width: fill-container
 padding-top.px: 42
-border-top-width.px: 1
-border-color: $inherited.colors.border
 align-content: center
 align-self: center
 spacing.fixed.px: 7
