@@ -30,6 +30,7 @@ integer logo-height: 44
 boolean $sidebar-open: false
 boolean github-icon: false
 optional string github-url:
+boolean blog: false
 
 -- ftd.column:
 width: fill-container
@@ -76,6 +77,7 @@ current-page: $header.current-page
 current-subsection: $header.current-subsection
 logo-width: $header.logo-width 
 logo-height: $header.logo-height 
+blog: $header.blog
 
 -- end: ftd.mobile
 
@@ -194,7 +196,7 @@ github-url: $header-desktop.github-url
 -- ftd.row:
 width: fill-container
 padding-top.px: 20
-padding-bottom.px: 42
+padding-bottom.px: 32
 align-content: center
 
 -- ftd.row:
@@ -485,6 +487,7 @@ integer logo-width: 120
 integer logo-height: 38
 boolean github-icon: false
 optional string github-url:
+boolean blog: false
 
 -- ftd.column: 
 width: fill-container

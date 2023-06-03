@@ -20,10 +20,12 @@ github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
 sidebar: true
 
-
 -- page.body:
 
-Hello
+`set-2-ds` will help you create a beautiful documentation site in no time.
+
+It provides out-of-the-box documentation features that can be used to create any
+kind of site(personal website, blog, etc).
 
 -- page.right-sidebar:
 
@@ -52,13 +54,6 @@ footer-links: $common.footer-links
 social-links: $common.social-links
 
 -- end: page.footer
-
--- h2: Overview
-
-`set-2-ds` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
 
 -- h3: 🚀 Fast Track 
 id: fast-track
