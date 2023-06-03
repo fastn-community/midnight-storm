@@ -20,6 +20,13 @@ github-url: https://github.com/fastn-community/set-2-ds/
 github-icon: true
 sidebar: true
 
+-- page.body:
+
+`set-2-ds` will help you create a beautiful documentation site in no time.
+
+It provides out-of-the-box documentation features that can be used to create any
+kind of site(personal website, blog, etc).
+
 -- page.right-sidebar:
 
 -- link-group: Fast Track
@@ -47,13 +54,6 @@ footer-links: $common.footer-links
 social-links: $common.social-links
 
 -- end: page.footer
-
--- page.body:
-
-`set-2-ds` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
 
 -- h3: 🚀 Fast Track 
 id: fast-track
@@ -280,23 +280,6 @@ github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
 
 -- ftd.column:
-padding-horizontal.rem: 2.5
-margin-bottom.rem: 3.12
-width: fill-container
-
--- ftd.text: $doc-page-desktop.title
-if: { doc-page-desktop.title != NULL }
-role: $inherited.types.heading-large
-color: $inherited.colors.text-strong
-
--- tf.markdown:
-if: { doc-page-desktop.body != NULL }
-
-$doc-page-desktop.body
-
--- end: ftd.column
-
--- ftd.column:
 children: $doc-page-desktop.hero
 width: fill-container
 
@@ -305,6 +288,7 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 align-content if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.sidebar }: center
+margin-top.px: 24
 
 -- ftd.column:
 if: { !doc-page-desktop.blog }
@@ -321,12 +305,11 @@ toc-obj: $doc-page-desktop.toc
 
 -- ftd.column:
 padding-horizontal.rem: 3.12
-padding-top.rem: 2.85
+padding-top.rem: 1.5
 padding-bottom.px: 50
 border-right-width.px if { !ftd.is_empty(doc-page-desktop.toc) && doc-page-desktop.sidebar }: 1
 border-color: $inherited.colors.border
 align-content: top-left
-children: $doc-page-desktop.wrapper
 spacing.fixed.em: 0.8
 border-left-width.px if {  !doc-page-desktop.blog && !ftd.is_empty(doc-page-desktop.toc)  }: 1
 min-height: fill-container
@@ -336,6 +319,27 @@ width: fill-container
 width if { doc-page-desktop.full-width }: fill-container
 max-width if { doc-page-desktop.blog }: fill-container
 border-top-width.px if { !ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.blog || doc-page-desktop.sidebar }: 1
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $doc-page-desktop.title
+if: { doc-page-desktop.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- tf.markdown:
+if: { doc-page-desktop.body != NULL }
+
+$doc-page-desktop.body
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $doc-page-desktop.wrapper
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -396,6 +400,7 @@ logo-height: 38
 menu-icon: $assets.files.static.hamburger.svg
 github-icon: $doc-page-mobile.github-icon
 github-url: $doc-page-mobile.github-url
+blog: $doc-page-mobile.blog
 
 -- ftd.column:
 width: fill-container
@@ -420,6 +425,12 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 $doc-page-mobile.body
+
+-- ftd.column:
+children: $doc-page-mobile.hero
+width: fill-container
+
+-- end: ftd.column
 
 -- ftd.column:
 children: $doc-page-mobile.wrapper
