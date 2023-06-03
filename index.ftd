@@ -321,7 +321,7 @@ toc-obj: $doc-page-desktop.toc
 
 -- ftd.column:
 padding-horizontal.rem: 3.12
-padding-top.rem: 2.85
+padding-top.rem: 1.5
 padding-bottom.px: 50
 border-right-width.px if { !ftd.is_empty(doc-page-desktop.toc) && doc-page-desktop.sidebar }: 1
 border-color: $inherited.colors.border
