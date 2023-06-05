@@ -148,7 +148,7 @@ if: { page.show-banner }
 width: fill-container
 children: $page.banner
 align-content: center
-max-width.fixed.px: 1320
+max-width.fixed.px: $common.max-width
 
 -- end: ftd.column
 
@@ -210,7 +210,7 @@ if: { page.show-footer }
 width: fill-container
 children: $page.footer
 align-self: center
-max-width.fixed.px: 1320
+max-width.fixed.px: $common.max-width
 
 -- end: ftd.column
 
@@ -257,7 +257,7 @@ ftd.ui list hero:
 
 -- ftd.column:
 align-self: center
-max-width.fixed.px: 1320
+max-width.fixed.px: $common.max-width
 width: fill-container
 
 -- h.header:
