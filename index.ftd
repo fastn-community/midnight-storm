@@ -811,6 +811,8 @@ ftd.image-src src:
 optional ftd.align alignment: center
 optional ftd.resizing width:
 optional ftd.resizing height:
+optional ftd.image-src right-img:
+optional boolean blog: false
 
 -- ftd.column:
 padding-bottom.px: 24
