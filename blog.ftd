@@ -10,11 +10,12 @@ blog: true
 
 -- ds.featured-post:
 post-data: $sample-post-1.meta
-extra-text: Small Incidental Text.
+info: Small Incidental Text.
 cta-primary: Button
 cta-primary-url: /blog-articles/sample-post-1/
 cta-secondary: Button
 cta-secondary-url: /blog-articles/sample-post-1/
+url-link: /blog-articles/sample-post-1/
 
 -- end: my-ds.page.hero
 
