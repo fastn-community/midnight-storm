@@ -1699,6 +1699,7 @@ height: hug-content
 optional caption title:
 optional body body:
 children container:
+optional string sub-heading:
 common.tags-list list topics:
 
 -- ftd.column:
@@ -1785,6 +1786,7 @@ optional string cta-primary:
 optional string cta-primary-url:
 optional string cta-secondary: 
 optional string cta-secondary-url:
+optional boolean $cta-hover: false
 
 -- ftd.column:
 width: fill-container
@@ -2700,13 +2702,19 @@ color: $inherited.colors.text-strong
 -- component topic:
 caption title:
 string tag-link:
+boolean active: false
+boolean $hover: false
 
 -- ftd.text: $topic.title
-color: $inherited.colors.cta-primary.base
 role: $inherited.types.button-small
+color if { !topic.active && topic.hover }: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.base
+background.solid if { !topic.active && topic.hover }: $inherited.colors.cta-primary.base
 background.solid: rgba(36, 176, 126, 0.4)
 padding-horizontal.px: 10
 padding-vertical.px: 5
 link: $topic.tag-link
+$on-mouse-enter$: $ftd.set-bool($a = $topic.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $topic.hover, v = false)
 
 -- end: topic

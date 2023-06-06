@@ -49,7 +49,7 @@ cta-link: index.html
 Welcome Studio gives you all the tools you need to create and host virtual
 experiences that look awesome and put your brand centerstage.
 
---  hero-with-image: Experiences
+-- hero-with-image: Experiences
 image: $assets.files.static.landing.svg
 right-align: true
 
@@ -92,6 +92,7 @@ cta-link: index.html
 
 
 
+
 -- component hero-with-image:
 caption title:
 body body:
@@ -101,6 +102,8 @@ optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
 optional boolean right-align: false
+optional boolean $mouse-in: false
+optional boolean $mouse-enter: false
 
 -- ftd.column:
 align-content if { !hero-with-image.right-align }: center
@@ -127,15 +130,32 @@ $hero-with-image.body
 -- end: ftd.column
 
 -- ftd.row:
+if: { !hero-with-image.right-align }
 align-self: center
 spacing.fixed.px: 16
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-primary.base
+background.solid if { hero-with-image.mouse-in }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-with-image.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-with-image.mouse-in, v = false)
+padding-horizontal.px: 28
+padding-vertical.px: 10
 
 -- ftd.text: $hero-with-image.cta-primary
 if: { hero-with-image.cta-primary != NULL }
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
 link: $hero-with-image.cta-primary-link
-background.solid: $inherited.colors.shadow
+
+-- end: ftd.row
+
+-- ftd.row:
+border-color: $inherited.colors.shadow
+border-width.px: 1
+background.solid if { hero-with-image.mouse-enter }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-with-image.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-with-image.mouse-enter, v = false)
 padding-horizontal.px: 28
 padding-vertical.px: 10
 
@@ -143,11 +163,10 @@ padding-vertical.px: 10
 if: { hero-with-image.cta-secondary != NULL }
 role: $inherited.types.button-large
 color: $inherited.colors.shadow
+color if { hero-with-image.mouse-enter }: $inherited.colors.background.step-1
 link: $hero-with-image.cta-secondary-link
-border-color: $inherited.colors.shadow
-border-width.px: 1
-padding-horizontal.px: 28
-padding-vertical.px: 10
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -243,6 +262,7 @@ link: $logo-lists.link
 
 
 
+
 -- component content:
 caption title:
 body body:
@@ -289,11 +309,14 @@ $content.body
 
 
 
+
+
 -- component hero-image-left: 
 caption title:
 ftd.image-src image:
 optional string cta-primary:
 optional string cta-link:
+optional boolean $mouse-in: false
 body body:
 
 -- ftd.row:
@@ -320,16 +343,19 @@ color: $inherited.colors.text
 $hero-image-left.body
 
 -- ftd.row:
-padding-top.px: 20
+align-content: center
 spacing.fixed.px: 16
+background.solid: $inherited.colors.cta-primary.base
+padding-horizontal.px: 28
+padding-vertical.px: 10
+background.solid if { hero-image-left.mouse-in }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-image-left.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-image-left.mouse-in, v = false)
 
 -- ftd.text: $hero-image-left.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
 link: $hero-image-left.cta-link
-background.solid: $inherited.colors.shadow
-padding-horizontal.px: 28
-padding-vertical.px: 10
 
 -- ftd.image:
 src: $assets.files.static.arrow-to-right.svg
@@ -356,6 +382,7 @@ caption title:
 ftd.image-src image:
 optional string cta-primary:
 optional string cta-link:
+optional boolean $mouse-in: false
 body body:
 
 -- ftd.row:
@@ -378,16 +405,19 @@ color: $inherited.colors.text
 $hero-image-right.body
 
 -- ftd.row:
-padding-top.px: 20
+align-content: center
+background.solid: $inherited.colors.shadow
+background.solid if { hero-image-right.mouse-in }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-image-right.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-image-right.mouse-in, v = false)
+padding-horizontal.px: 28
+padding-vertical.px: 10
 spacing.fixed.px: 16
 
 -- ftd.text: $hero-image-right.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
 link: $hero-image-right.cta-link
-background.solid: $inherited.colors.shadow
-padding-horizontal.px: 28
-padding-vertical.px: 10
 
 -- ftd.image:
 src: $assets.files.static.arrow-to-right.svg
@@ -494,6 +524,7 @@ $banner-card-list.body
 
 
 
+
 -- component testimonials-card:
 caption title:
 testimonial list testimonials:
@@ -515,6 +546,43 @@ user: $obj.user
 designation: $obj.designation
 avatar: $obj.avatar
 body: $obj.body
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.column:
+width.fixed.px: 10
+height.fixed.px: 10
+background.solid: $inherited.colors.shadow
+border-radius.px: 100
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 10
+height.fixed.px: 10
+background.solid: $inherited.colors.shadow
+border-radius.px: 100
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 10
+height.fixed.px: 10
+background.solid: $inherited.colors.shadow
+border-radius.px: 100
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 10
+height.fixed.px: 10
+background.solid: $inherited.colors.shadow
+border-radius.px: 100
+
+-- end: ftd.column
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -594,7 +662,6 @@ feature list features:
 width: fill-container
 padding-vertical.px: 100
 align-content: center
-
 
 -- ftd.column:
 align-content: center
@@ -737,6 +804,7 @@ body: $obj.body
 caption title: 
 optional body body:
 ftd.image-src icon:
+optional boolean $toggle-down: false
 
 -- ftd.column:
 width: fill-container
@@ -756,11 +824,12 @@ color: $inherited.colors.text-strong
 -- ftd.image:
 src: $faqs-list-detail.icon
 width: auto
+$on-click$: $ftd.toggle($a = $faqs-list-detail.toggle-down)
 
 -- end: ftd.row
 
 -- ftd.text:
-if: { $faqs-list-detail.body != NULL }
+if: { $faqs-list-detail.body != NULL && faqs-list-detail.toggle-down }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
@@ -779,88 +848,10 @@ $faqs-list-detail.body
 
 
 
-
-
-
--- record faq:
-caption title: 
-optional body body:
-ftd.image-src icon:
-
--- faq list list-of-faqs:
-
--- faq: How long does it take to ship my order?
-icon: $assets.files.static.downArrow.svg
-
-Orders are usually shipped within 1-2 business days after placing the order.
-
--- faq: What shipping options do you have?
-icon: $assets.files.static.downArrow.svg
-
--- faq: What shipping options do you have?
-icon: $assets.files.static.downArrow.svg
-
--- faq: What shipping options do you have?
-icon: $assets.files.static.downArrow.svg
-
--- faq: What shipping options do you have?
-icon: $assets.files.static.downArrow.svg
-
--- end: list-of-faqs
-
-
-
-
-
-
-
-
-
--- record feature:
-caption title: 
-ftd.image-src icon:
-body body:
-
--- feature list list-of-features:
-
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
-
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
-
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
-
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
-
--- end: list-of-features
-
-
-
-
-
-
-
-
-
-
 -- component search-card: 
 caption title:
 string label-text:
+optional boolean $mouse-in: false
 string cta:
 string cta-link:
 
@@ -912,6 +903,9 @@ right.px: 12
 min-width.fixed.px: 87
 border-radius.px: 4
 background.solid: $inherited.colors.cta-primary.base
+background.solid if { search-card.mouse-in }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $search-card.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $search-card.mouse-in, v = false)
 padding-vertical.rem: 0.78
 white-space: nowrap
 align-content: center
@@ -946,6 +940,89 @@ width: auto
 
 
 
+-- record faq:
+caption title: 
+optional body body:
+ftd.image-src icon:
+
+-- faq list list-of-faqs:
+
+-- faq: How long does it take to ship my order?
+icon: $assets.files.static.downArrow.svg
+
+Orders are usually shipped within 1-2 business days after placing the order.
+
+-- faq: What shipping options do you have?
+icon: $assets.files.static.downArrow.svg
+
+Orders are usually shipped within 1-2 business days after placing the order.
+
+-- faq: What shipping options do you have?
+icon: $assets.files.static.downArrow.svg
+
+Orders are usually shipped within 1-2 business days after placing the order.
+
+-- faq: What shipping options do you have?
+icon: $assets.files.static.downArrow.svg
+
+Orders are usually shipped within 1-2 business days after placing the order.
+
+-- faq: What shipping options do you have?
+icon: $assets.files.static.downArrow.svg
+
+Orders are usually shipped within 1-2 business days after placing the order.
+
+-- end: list-of-faqs
+
+
+
+
+
+
+
+
+
+
+-- record feature:
+caption title: 
+ftd.image-src icon:
+body body:
+
+-- feature list list-of-features:
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.static.strategy.svg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.static.strategy.svg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.static.strategy.svg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- feature: Strategy and Consultancy
+icon: $assets.files.static.strategy.svg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- end: list-of-features
+
+
+
+
+
+
+
+
 
 
 -- record testimonial:
@@ -957,7 +1034,7 @@ body body:
 
 -- testimonial list list-of-testimonials:
 
--- testimonial: fastn is powerful
+-- testimonial: Fastn
 user: Patrica AVA
 designation: UI Designer
 avatar: $assets.files.static.avatar.svg
@@ -967,6 +1044,9 @@ for specific methods that work.It is a long established fact that a reader will
 be distracted by the readable content of a page when looking at its layout.
 
 -- end: list-of-testimonials
+
+
+
 
 
 
@@ -995,6 +1075,14 @@ attendee conversion rate at Interfolio
 -- end: list-of-info-cards
 
 
+
+
+
+
+
+
+
+
 -- record logos:
 ftd.image-src logo:
 string link:
@@ -1018,10 +1106,3 @@ logo: $assets.files.static.img2.svg
 link: /
 
 -- end: list-of-logos
-
-
-
-
-
-
-
