@@ -68,22 +68,9 @@ info-cards: $list-of-info-cards
 Use our calculator to see how many days we can free up in cash flow for your
 business.
 
--- testimonials-card: Fastn
+-- testimonials-card:
 testimonials: $list-of-testimonials
-
--- testimonial-btn-wrapper:
-
--- testimonial-nav:
-$active: true
-index: 1
-
--- testimonial-nav:
-index: 2
-
--- testimonial-nav:
-index: 3
-
--- end: testimonial-btn-wrapper
+nav: $navs
 
 -- features-card: We Transform ideas into digital outcomes
 features: $list-of-features
@@ -1214,8 +1201,9 @@ $banner-card-list.body
 
 
 -- component testimonials-card:
-caption title:
+optional caption title:
 testimonial list testimonials:
+testimonial-nav list nav:
 
 -- ftd.column:
 width: fill-container
@@ -1224,6 +1212,7 @@ width: fill-container
 
 -- testimonials-card-desktop: $testimonials-card.title
 testimonials: $testimonials-card.testimonials
+nav: $testimonials-card.nav
 
 -- end: ftd.desktop
 
@@ -1248,8 +1237,9 @@ testimonials: $testimonials-card.testimonials
 
 
 -- component testimonials-card-desktop:
-caption title:
+optional caption title:
 testimonial list testimonials:
+testimonial-nav list nav:
 
 -- ftd.column:
 padding-vertical.px: 50
@@ -1259,6 +1249,7 @@ align-content: center
 background.solid: $inherited.colors.custom.one
 
 -- ftd.text: $testimonials-card-desktop.title
+if: { testimonials-card-desktop.title != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 
@@ -1270,7 +1261,15 @@ designation: $obj.designation
 avatar: $obj.avatar
 body: $obj.body
 index: $obj.index
-reset: $obj.reset
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- nav-lists:
+$loop$: $testimonials-card-desktop.nav as $obj
+index: $obj.index
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -1285,7 +1284,7 @@ reset: $obj.reset
 
 
 
--- component testimonial-nav:
+-- component nav-lists:
 integer index: 1
 boolean $active: false
 
@@ -1294,14 +1293,14 @@ width.fixed.px: 13
 height.fixed.px: 13
 border-radius.px: 10
 border-width.px: 1
-$on-click$: $ftd.toggle($a = $testimonial-nav.active)
-$on-click$: $ftd.set-integer($a = $current-slide, v = $testimonial-nav.index)
-background.solid if { testimonial-nav.active }: $inherited.colors.custom.one
-background.solid: $inherited.colors.shadow
+$on-click$: $ftd.toggle($a = $nav-lists.active, v = false)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
+background.solid if { nav-lists.active }: $inherited.colors.cta-primary.base
+background.solid: $inherited.colors.custom.one
 
 -- end: ftd.row
 
--- end: testimonial-nav
+-- end: nav-lists
 
 
 
@@ -1309,26 +1308,11 @@ background.solid: $inherited.colors.shadow
 
 
 
-
-
-
--- component testimonial-btn-wrapper:
-children testimonial-nav:
-
--- ftd.row:
-width: fill-container
-align-content: center
-spacing.fixed.px: 10
-children: $testimonial-btn-wrapper.testimonial-nav
-
--- end: ftd.row
-
--- end: testimonial-btn-wrapper
 
 
 
 -- component testimonials-card-mobile:
-caption title:
+optional caption title:
 testimonial list testimonials:
 
 -- ftd.column:
@@ -1337,6 +1321,7 @@ spacing.fixed.px: 32
 align-content: center
 
 -- ftd.text: $testimonials-card-mobile.title
+if: { testimonials-card-mobile.title != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 
@@ -1348,7 +1333,6 @@ designation: $obj.designation
 avatar: $obj.avatar
 body: $obj.body
 index: $obj.index
-reset: $obj.reset
 
 -- end: ftd.column
 
@@ -1370,14 +1354,17 @@ string designation:
 ftd.image-src avatar:
 body body:
 optional integer index:
-optional integer reset:
 
 -- ftd.column:
-if: { testimonials-card-details.index == testimonials-card-details.reset }
+if: { testimonials-card-details.index == current-slide }
 width.fixed.px: 830
 width if { ftd.device == "mobile"}: fill-container
 spacing.fixed.px: 32
 align-content: center
+
+-- ftd.text: $testimonials-card-details.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
 
 -- ftd.text:
 role: $inherited.types.copy-large
@@ -1639,7 +1626,7 @@ width: fill-container
 align-content: center
 spacing.fixed.px: 56
 padding-vertical.px: 80
-background.solid: $inherited.colors.custom.one
+background.solid if { ftd.device != "mobile" }: $inherited.colors.custom.one
 
 -- ftd.column:
 width if { ftd.device == "mobile"}: fill-container
@@ -1654,6 +1641,7 @@ text-align: center
 
 -- ftd.row:
 width.fixed.px: 730
+width.fixed.px if { ftd.device == "mobile" }: 400
 spacing.fixed.px: 8
 align-content: center
 
@@ -1811,6 +1799,30 @@ services and help you create outstanding digital products.
 
 
 
+-- record testimonial-nav:
+integer index: 1
+boolean active: false
+
+-- testimonial-nav list navs:
+
+-- testimonial-nav:
+active: true
+index: 1
+
+-- testimonial-nav:
+index: 2
+
+-- testimonial-nav:
+index: 3
+
+-- end: navs
+
+
+
+
+
+
+
 -- record testimonial:
 caption title:
 string user: 
@@ -1818,7 +1830,6 @@ string designation:
 ftd.image-src avatar:
 body body:
 optional integer index:
-optional integer reset:
 
 -- testimonial list list-of-testimonials:
 
@@ -1827,7 +1838,6 @@ user: Patrica AVA
 designation: UI Designer
 avatar: $assets.files.static.avatar.svg
 index: 1
-reset: $current-slide
 
 A design approach is a general philosophy that may or may not include a guide
 for specific methods that work.It is a long established fact that a reader will
@@ -1838,7 +1848,16 @@ user: Meenu
 designation: UI Designer
 avatar: $assets.files.static.avatar.svg
 index: 2
-reset: $current-slide
+
+A design approach is a general philosophy that may or may not include a guide
+for specific methods that work.It is a long established fact that a reader will
+be distracted by the readable content of a page when looking at its layout.
+
+-- testimonial: Fastn is best
+user: Priyanka
+designation: UI Designer
+avatar: $assets.files.static.avatar.svg
+index: 3
 
 A design approach is a general philosophy that may or may not include a guide
 for specific methods that work.It is a long established fact that a reader will
