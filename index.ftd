@@ -304,7 +304,7 @@ toc-obj: $doc-page-desktop.toc
 -- end: ftd.column
 
 -- ftd.column:
-padding-horizontal.px: 50
+padding-horizontal.px: 40
 padding-top.px: 24
 padding-bottom.px: 50
 border-color: $inherited.colors.border

@@ -1,5 +1,7 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 
+-- integer $current-slide: 1
+
 -- my-ds.page:
 full-width: true
 sidebar: false
@@ -7,9 +9,9 @@ sidebar: false
 -- hero-with-image: We transform ideas into digital outcomes.
 url: landing/
 cta-primary: Demo
-cta-primary-link: /
+cta-primary-link: landing/
 cta-secondary: How it works
-cta-secondary-link: /
+cta-secondary-link: landing/
 image: $assets.files.static.landing.svg
 
 We are an award-winning strategic design company that provides consultancy
@@ -69,6 +71,20 @@ business.
 -- testimonials-card: Fastn
 testimonials: $list-of-testimonials
 
+-- testimonial-btn-wrapper:
+
+-- testimonial-nav:
+$active: true
+index: 1
+
+-- testimonial-nav:
+index: 2
+
+-- testimonial-nav:
+index: 3
+
+-- end: testimonial-btn-wrapper
+
 -- features-card: We Transform ideas into digital outcomes
 features: $list-of-features
 tag: KICKER
@@ -85,9 +101,22 @@ platform, seamlessly across all digital channels.
 -- search-card: We transform ideas into digital outcomes to elevate the connection between the brand and their users.
 label-text: Label
 cta: Button
-cta-link: index.html
+cta-link: landing/
 
 -- end: my-ds.page
+
+
+
+
+
+
+
+
+
+
+-- ftd.background-image bg-image: 
+src: $assets.files.static.background.svg
+repeat: no-repeat
 
 
 
@@ -172,9 +201,23 @@ width: fill-container
 spacing.fixed.px: 45
 spacing.fixed.px if { hero-with-image-desktop.right-align }: 24
 
+-- ftd.row:
+if: { hero-with-image-desktop.right-align }
+background.image: $bg-image
+align-content: right
+height.fixed.px: 250
+width.fixed.px: 250
+anchor: parent
+top.px: -128
+right.px: -19
+z-index: 0
+
+-- end: ftd.row
+
 -- ftd.column:
 spacing.fixed.px: 24
 width.fixed.percent if { !hero-with-image-desktop.right-align }: 70
+z-index: 5
 
 -- ftd.text: $hero-with-image-desktop.title
 role: $inherited.types.heading-large
@@ -235,6 +278,7 @@ link: $hero-with-image-desktop.cta-secondary-link
 src: $hero-with-image-desktop.image
 width.fixed.px: 1240
 link: $hero-with-image-desktop.url
+z-index: 5
 
 -- end: ftd.column
 
@@ -391,8 +435,10 @@ logos list logo-list:
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 130
-padding-top.px: 126
+spacing.fixed.px: 80
+padding-vertical.px: 111
+padding-horizontal.px: 50
+background.solid: $inherited.colors.custom.one
 
 -- ftd.column:
 spacing.fixed.px: 17
@@ -411,7 +457,7 @@ $logo-cloud-desktop.body
 -- end: ftd.column
 
 -- ftd.row:
-margin-top.px: 15
+width: fill-container
 wrap: true
 spacing.fixed.px: 10
 
@@ -490,7 +536,7 @@ ftd.image-src logo:
 string link:
 
 -- ftd.row:
-width.fixed.percent: 45
+width.fixed.px: 261
 width if { ftd.device == "mobile"}: fill-container
 align-content: center
 
@@ -515,7 +561,6 @@ link: $logo-lists.link
 -- component content:
 caption title:
 body body:
-ftd.background-image bg-image: $assets.files.static.background.svg
 
 -- ftd.column:
 width: fill-container
@@ -524,7 +569,6 @@ width: fill-container
 
 -- content-desktop: $content.title
 body: $content.body
-bg-image: $content.bg-image
 
 -- end: ftd.desktop
 
@@ -532,7 +576,6 @@ bg-image: $content.bg-image
 
 -- content-mobile: $content.title
 body: $content.body
-bg-image: $content.bg-image
 
 -- end: ftd.mobile
 
@@ -551,14 +594,13 @@ bg-image: $content.bg-image
 
 -- component content-desktop:
 caption title:
-body body:
-ftd.background-image bg-image: 
+body body: 
 
 -- ftd.column:
 padding-vertical.px: 100
 
 -- ftd.row:
-background.image: $content-desktop.bg-image
+background.image: $bg-image
 width: fill-container
 height.fixed.px: 250
 anchor: parent
@@ -600,13 +642,12 @@ $content-desktop.body
 -- component content-mobile:
 caption title:
 body body:
-ftd.background-image bg-image: 
 
 -- ftd.column:
 padding-vertical.px: 80
 
 -- ftd.row:
-background.image: $content-mobile.bg-image
+background.image: $bg-image
 width: fill-container
 height.fixed.px: 150
 anchor: parent
@@ -1215,6 +1256,7 @@ padding-vertical.px: 50
 width: fill-container
 spacing.fixed.px: 32
 align-content: center
+background.solid: $inherited.colors.custom.one
 
 -- ftd.text: $testimonials-card-desktop.title
 role: $inherited.types.heading-small
@@ -1227,43 +1269,8 @@ user: $obj.user
 designation: $obj.designation
 avatar: $obj.avatar
 body: $obj.body
-
--- ftd.row:
-spacing.fixed.px: 8
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- end: ftd.row
+index: $obj.index
+reset: $obj.reset
 
 -- end: ftd.column
 
@@ -1275,6 +1282,48 @@ border-radius.px: 100
 
 
 
+
+
+
+-- component testimonial-nav:
+integer index: 1
+boolean $active: false
+
+-- ftd.row:
+width.fixed.px: 13
+height.fixed.px: 13
+border-radius.px: 10
+border-width.px: 1
+$on-click$: $ftd.toggle($a = $testimonial-nav.active)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $testimonial-nav.index)
+background.solid if { testimonial-nav.active }: $inherited.colors.custom.one
+background.solid: $inherited.colors.shadow
+
+-- end: ftd.row
+
+-- end: testimonial-nav
+
+
+
+
+
+
+
+
+
+
+-- component testimonial-btn-wrapper:
+children testimonial-nav:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+spacing.fixed.px: 10
+children: $testimonial-btn-wrapper.testimonial-nav
+
+-- end: ftd.row
+
+-- end: testimonial-btn-wrapper
 
 
 
@@ -1298,43 +1347,8 @@ user: $obj.user
 designation: $obj.designation
 avatar: $obj.avatar
 body: $obj.body
-
--- ftd.row:
-spacing.fixed.px: 8
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 10
-height.fixed.px: 10
-background.solid: $inherited.colors.shadow
-border-radius.px: 100
-
--- end: ftd.column
-
--- end: ftd.row
+index: $obj.index
+reset: $obj.reset
 
 -- end: ftd.column
 
@@ -1355,8 +1369,11 @@ string user:
 string designation:
 ftd.image-src avatar:
 body body:
+optional integer index:
+optional integer reset:
 
 -- ftd.column:
+if: { testimonials-card-details.index == testimonials-card-details.reset }
 width.fixed.px: 830
 width if { ftd.device == "mobile"}: fill-container
 spacing.fixed.px: 32
@@ -1519,6 +1536,7 @@ faq list faqs-list:
 
 -- ftd.column:
 padding-top.px if {ftd.device != "mobile"}: 50
+padding-bottom.px if {ftd.device != "mobile"}: 70
 width: fill-container
 align-content: center
 spacing.fixed.px: 29
@@ -1620,7 +1638,8 @@ string cta-link:
 width: fill-container
 align-content: center
 spacing.fixed.px: 56
-padding-top.px: 80
+padding-vertical.px: 80
+background.solid: $inherited.colors.custom.one
 
 -- ftd.column:
 width if { ftd.device == "mobile"}: fill-container
@@ -1798,6 +1817,8 @@ string user:
 string designation:
 ftd.image-src avatar:
 body body:
+optional integer index:
+optional integer reset:
 
 -- testimonial list list-of-testimonials:
 
@@ -1805,6 +1826,19 @@ body body:
 user: Patrica AVA
 designation: UI Designer
 avatar: $assets.files.static.avatar.svg
+index: 1
+reset: $current-slide
+
+A design approach is a general philosophy that may or may not include a guide
+for specific methods that work.It is a long established fact that a reader will
+be distracted by the readable content of a page when looking at its layout.
+
+-- testimonial: Fastn is power
+user: Meenu
+designation: UI Designer
+avatar: $assets.files.static.avatar.svg
+index: 2
+reset: $current-slide
 
 A design approach is a general philosophy that may or may not include a guide
 for specific methods that work.It is a long established fact that a reader will
@@ -1858,18 +1892,18 @@ string link:
 
 -- logos: 
 logo: $assets.files.static.img1.svg
-link: /
+link: landing/
 
 -- logos: 
 logo: $assets.files.static.img2.svg
-link: /
+link: landing/
 
 -- logos: 
 logo: $assets.files.static.img1.svg
-link: /
+link: landing/
 
 -- logos: 
 logo: $assets.files.static.img2.svg
-link: /
+link: landing/
 
 -- end: list-of-logos
