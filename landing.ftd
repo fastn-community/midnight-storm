@@ -1734,18 +1734,18 @@ icon: $assets.files.static.downArrow.svg
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
 in luctus rutrum. Sed eu orci mi
 
--- faq: What shipping options do you have?
+-- faq: Phasellus varius lectus eu ipsum finibus, a bibendum eros?
 icon: $assets.files.static.downArrow.svg
 
 Cras sit amet ligula vitae enim interdum ultrices. Sed a ultrices purus, nec
 faucibus justo. Nulla ut lacus quis odio aliquet faucibus.
 
--- faq: What shipping options do you have?
+-- faq: Lorem ipsum dolor sit amet, consectetur?
 icon: $assets.files.static.downArrow.svg
 
 Suspendisse potenti. Vestibulum auctor dui ut enim viverra consectetur.
 
--- faq: What shipping options do you have?
+-- faq: Nulla ut lacus quis odio aliquet faucibus?
 icon: $assets.files.static.downArrow.svg
 
 Suspendisse sagittis elit nec turpis viverra feugiat.
