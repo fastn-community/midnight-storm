@@ -1862,23 +1862,25 @@ be distracted by the readable content of a page when looking at its layout.
 
 -- testimonial: Fastn is power
 user: Meenu
-designation: UI Designer
+designation: Fastn Builder
 avatar: $assets.files.static.avatar.svg
 index: 2
 
-A design approach is a general philosophy that may or may not include a guide
-for specific methods that work.It is a long established fact that a reader will
-be distracted by the readable content of a page when looking at its layout.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
+ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
+aliquet faucibus.
 
 -- testimonial: Fastn is best
 user: Priyanka
-designation: UI Designer
+designation: Fastn Builder
 avatar: $assets.files.static.avatar.svg
 index: 3
 
-A design approach is a general philosophy that may or may not include a guide
-for specific methods that work.It is a long established fact that a reader will
-be distracted by the readable content of a page when looking at its layout.
+Nam lacinia nisi sed mauris luctus, id vestibulum enim luctus. Integer iaculis
+est a turpis consequat, id sagittis tellus aliquam. Suspendisse sagittis elit
+nec turpis viverra feugiat. Morbi fermentum convallis magna, eu sagittis ligula
+faucibus at.
 
 -- end: list-of-testimonials
 
