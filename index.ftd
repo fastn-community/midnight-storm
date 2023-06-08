@@ -920,7 +920,6 @@ optional string site-url: $common.site-url
 optional string site-name:
 optional body bio:
 boolean social: false
-optional ftd.color background-color: $inherited.colors.background.step-1
 pr.toc-item list footer-list:
 pr.toc-item list footer-links: $common.footer-toc.sections
 common.social-media list social-links: $common.social-links
