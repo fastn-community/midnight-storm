@@ -987,6 +987,8 @@ padding-top.px: 42
 align-content: center
 align-self: center
 spacing.fixed.px: 7
+border-top-width.px: 1
+border-color: $inherited.colors.border
 
 -- ftd.row:
 width.fixed.percent: 70
@@ -1441,7 +1443,7 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.accent.primary
 link: $footer-list-child.url
 width: fill-container
-opacity: 0.5
+opacity: 0.8
 
 -- footer-list-child: $obj.title
 if: { !ftd.is_empty(footer-list-child.children) }
@@ -1752,7 +1754,7 @@ optional string cta-primary-url:
 optional string cta-secondary: 
 optional string cta-secondary-url:
 optional string info:
-optional string url-link:
+optional string link:
 
 -- ftd.column:
 
@@ -1767,7 +1769,7 @@ cta-primary: $featured-post.cta-primary
 cta-primary-url: $featured-post.cta-primary-url
 cta-secondary: $featured-post.cta-secondary
 cta-secondary-url: $featured-post.cta-secondary-url
-url-link: $featured-post.url-link
+link: $featured-post.link
 
 -- end: ftd.column
 
@@ -1787,7 +1789,7 @@ caption title:
 optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
-optional string url-link:
+optional string link:
 optional body body:
 optional string info:
 optional string cta-primary: 
@@ -1806,7 +1808,7 @@ width: fill-container
 timestamp: $featured-post-card.timestamp
 author: $featured-post-card.author
 image: $featured-post-card.image
-url-link: $featured-post-card.url-link
+link: $featured-post-card.link
 body: $featured-post-card.body
 info: $featured-post-card.info
 cta-primary: $featured-post-card.cta-primary
@@ -1823,7 +1825,7 @@ url: $featured-post-card.url
 timestamp: $featured-post-card.timestamp
 author: $featured-post-card.author
 image: $featured-post-card.image
-url-link: $featured-post-card.url-link
+link: $featured-post-card.link
 body: $featured-post-card.body
 info: $featured-post-card.info
 cta-primary: $featured-post-card.cta-primary
@@ -1852,8 +1854,10 @@ caption title:
 optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
-optional string url-link:
+optional string link:
 optional body body:
+optional boolean $mouse-in: false
+optional boolean $mouse-enter: false
 optional string info:
 optional string cta-primary: 
 optional string cta-primary-url:
@@ -1883,7 +1887,7 @@ align-self: center
 -- ftd.text: $featured-post-card-desktop.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
-link: $featured-post-card-desktop.url-link
+link: $featured-post-card-desktop.link
 
 -- ftd.row:
 if: { featured-post-card-desktop.author != NULL }
@@ -1934,6 +1938,9 @@ background.solid: $inherited.colors.shadow
 spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
+background.solid if { featured-post-card-desktop.mouse-in }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-in, v = false)
 
 -- ftd.text: $featured-post-card-desktop.cta-primary
 role: $inherited.types.button-large
@@ -1953,6 +1960,9 @@ background.solid: $inherited.colors.shadow
 spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
+background.solid if { featured-post-card-desktop.mouse-enter }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-enter, v = false)
 
 -- ftd.text: $featured-post-card-desktop.cta-secondary
 role: $inherited.types.button-large
@@ -1994,7 +2004,7 @@ caption title:
 optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
-optional string url-link:
+optional string link:
 optional body body:
 optional string info:
 optional string cta-primary: 
@@ -2011,7 +2021,7 @@ padding-bottom.px: 24
 -- ftd.text: $featured-post-card-mobile.title
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
-link: $featured-post-card-mobile.url-link
+link: $featured-post-card-mobile.link
 
 -- ftd.image:
 if: { featured-post-card-mobile.image != NULL }

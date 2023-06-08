@@ -15,7 +15,7 @@ cta-primary: Button
 cta-primary-url: /blog-articles/sample-post-1/
 cta-secondary: Button
 cta-secondary-url: /blog-articles/sample-post-1/
-url-link: /blog-articles/sample-post-1/
+link: /blog-articles/sample-post-1/
 
 -- end: my-ds.page.hero
 

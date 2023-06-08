@@ -7,7 +7,7 @@ full-width: true
 sidebar: false
 
 -- hero-with-image: We transform ideas into digital outcomes.
-url: landing/
+link: landing/
 cta-primary: Demo
 cta-primary-link: landing/
 cta-secondary: How it works
@@ -30,7 +30,7 @@ and grow together.
 
 -- hero-image-left: Create
 image: $assets.files.static.left-img1.svg
-url: landing/
+link: landing/
 cta-primary: Sign me up
 cta-link: index.html
 
@@ -39,7 +39,7 @@ experiences that look awesome and put your brand centerstage.
 
 -- hero-image-right: Engage
 image: $assets.files.static.right-img.svg
-url: landing/
+link: landing/
 cta-primary: Sign me up
 cta-link: index.html
 
@@ -48,7 +48,7 @@ experiences that look awesome and put your brand centerstage.
 
 -- hero-image-left: Analyze
 image: $assets.files.static.left-img2.svg
-url: landing/
+link: landing/
 cta-primary: Sign me up
 cta-link: index.html
 
@@ -57,8 +57,8 @@ experiences that look awesome and put your brand centerstage.
 
 -- hero-with-image: Experiences
 image: $assets.files.static.landing.svg
-right-align: true
-url: landing/
+align-right: true
+link: landing/
 
 Lorem ipsum dolor sit amet
 
@@ -86,7 +86,7 @@ Flex is the only saas business platform that lets you run your business on one
 platform, seamlessly across all digital channels.
 
 -- search-card: We transform ideas into digital outcomes to elevate the connection between the brand and their users.
-label-text: Label
+label: Label
 cta: Button
 cta-link: landing/
 
@@ -118,12 +118,12 @@ repeat: no-repeat
 caption title:
 body body:
 ftd.image-src image:
-optional string url:
+optional string link:
 optional string cta-primary:
 optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
-optional boolean right-align: false
+optional boolean align-right: false
 
 -- ftd.column:
 width: fill-container
@@ -132,13 +132,13 @@ width: fill-container
 
 -- hero-with-image-desktop: $hero-with-image.title
 body: $hero-with-image.body
-url: $hero-with-image.url
+link: $hero-with-image.link
 image: $hero-with-image.image
 cta-primary: $hero-with-image.cta-primary
 cta-primary-link: $hero-with-image.cta-primary-link
 cta-secondary: $hero-with-image.cta-secondary
 cta-secondary-link: $hero-with-image.cta-secondary-link
-right-align: $hero-with-image.right-align
+align-right: $hero-with-image.align-right
 
 -- end: ftd.desktop
 
@@ -146,13 +146,13 @@ right-align: $hero-with-image.right-align
 
 -- hero-with-image-mobile: $hero-with-image.title
 body: $hero-with-image.body
-url: $hero-with-image.url
+link: $hero-with-image.link
 image: $hero-with-image.image
 cta-primary: $hero-with-image.cta-primary
 cta-primary-link: $hero-with-image.cta-primary-link
 cta-secondary: $hero-with-image.cta-secondary
 cta-secondary-link: $hero-with-image.cta-secondary-link
-right-align: $hero-with-image.right-align
+align-right: $hero-with-image.align-right
 
 -- end: ftd.mobile
 
@@ -173,23 +173,23 @@ right-align: $hero-with-image.right-align
 caption title:
 body body:
 ftd.image-src image:
-optional string url:
+optional string link:
 optional string cta-primary:
 optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
-optional boolean right-align:
+optional boolean align-right:
 optional boolean $mouse-in: false
 optional boolean $mouse-enter: false
 
 -- ftd.column:
-align-content if { !hero-with-image-desktop.right-align }: center
+align-content if { !hero-with-image-desktop.align-right }: center
 width: fill-container
 spacing.fixed.px: 45
-spacing.fixed.px if { hero-with-image-desktop.right-align }: 24
+spacing.fixed.px if { hero-with-image-desktop.align-right }: 24
 
 -- ftd.row:
-if: { hero-with-image-desktop.right-align }
+if: { hero-with-image-desktop.align-right }
 background.image: $bg-image
 align-content: right
 height.fixed.px: 250
@@ -203,7 +203,7 @@ z-index: 0
 
 -- ftd.column:
 spacing.fixed.px: 24
-width.fixed.percent if { !hero-with-image-desktop.right-align }: 70
+width.fixed.percent if { !hero-with-image-desktop.align-right }: 70
 z-index: 5
 
 -- ftd.text: $hero-with-image-desktop.title
@@ -221,7 +221,7 @@ $hero-with-image-desktop.body
 -- end: ftd.column
 
 -- ftd.row:
-if: { !hero-with-image-desktop.right-align }
+if: { !hero-with-image-desktop.align-right }
 align-self: center
 spacing.fixed.px: 16
 
@@ -264,7 +264,7 @@ link: $hero-with-image-desktop.cta-secondary-link
 -- ftd.image:
 src: $hero-with-image-desktop.image
 width.fixed.px: 1240
-link: $hero-with-image-desktop.url
+link: $hero-with-image-desktop.link
 z-index: 5
 
 -- end: ftd.column
@@ -284,24 +284,24 @@ z-index: 5
 caption title:
 body body:
 ftd.image-src image:
-optional string url:
+optional string link:
 optional string cta-primary:
 optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
-optional boolean right-align:
+optional boolean align-right:
 optional boolean $mouse-in: false
 optional boolean $mouse-enter: false
 
 -- ftd.column:
-align-content if { !hero-with-image-mobile.right-align }: center
+align-content if { !hero-with-image-mobile.align-right }: center
 width: fill-container
 spacing.fixed.px: 45
-spacing.fixed.px if { hero-with-image-mobile.right-align }: 24
+spacing.fixed.px if { hero-with-image-mobile.align-right }: 24
 
 -- ftd.column:
 spacing.fixed.px: 24
-width.fixed.percent if { !hero-with-image-mobile.right-align }: 70
+width.fixed.percent if { !hero-with-image-mobile.align-right }: 70
 
 -- ftd.text: $hero-with-image-mobile.title
 role: $inherited.types.heading-medium
@@ -318,7 +318,7 @@ $hero-with-image-mobile.body
 -- end: ftd.column
 
 -- ftd.row:
-if: { !hero-with-image-mobile.right-align }
+if: { !hero-with-image-mobile.align-right }
 align-self: center
 spacing.fixed.px: 16
 
@@ -361,7 +361,7 @@ link: $hero-with-image-mobile.cta-secondary-link
 -- ftd.image:
 src: $hero-with-image-mobile.image
 width.fixed.px: 380
-link: $hero-with-image-mobile.url
+link: $hero-with-image-mobile.link
 
 -- end: ftd.column
 
@@ -677,7 +677,7 @@ caption title:
 ftd.image-src image:
 optional string cta-primary:
 optional string cta-link:
-optional string url:
+optional string link:
 body body:
 
 -- ftd.column:
@@ -690,7 +690,7 @@ image: $hero-image-left.image
 cta-primary: $hero-image-left.cta-primary
 cta-link: $hero-image-left.cta-link
 body: $hero-image-left.body
-url: $hero-image-left.url
+link: $hero-image-left.link
 
 -- end: ftd.desktop
 
@@ -701,7 +701,7 @@ image: $hero-image-left.image
 cta-primary: $hero-image-left.cta-primary
 cta-link: $hero-image-left.cta-link
 body: $hero-image-left.body
-url: $hero-image-left.url
+link: $hero-image-left.link
 
 -- end: ftd.mobile
 
@@ -725,7 +725,7 @@ optional string cta-primary:
 optional string cta-link:
 optional boolean $mouse-in: false
 body body:
-optional string url:
+optional string link:
 
 -- ftd.row:
 width: fill-container
@@ -735,7 +735,7 @@ padding-bottom.px: 116
 -- ftd.image:
 src: $hero-image-left-desktop.image
 width: auto
-link: $hero-image-left-desktop.url
+link: $hero-image-left-desktop.link
 
 -- ftd.column:
 padding-top.px: 100
@@ -793,7 +793,7 @@ optional string cta-primary:
 optional string cta-link:
 optional boolean $mouse-in: false
 body body:
-optional string url:
+optional string link:
 
 -- ftd.column:
 width: fill-container
@@ -838,7 +838,7 @@ src: $assets.files.static.arrow-to-right.svg
 -- ftd.image:
 src: $hero-image-left-mobile.image
 width: fill-container
-link: $hero-image-left-mobile.url
+link: $hero-image-left-mobile.link
 
 -- end: ftd.column
 
@@ -858,7 +858,7 @@ ftd.image-src image:
 optional string cta-primary:
 optional string cta-link:
 body body:
-optional string url:
+optional string link:
 
 -- ftd.column:
 width: fill-container
@@ -870,7 +870,7 @@ image: $hero-image-right.image
 cta-primary: $hero-image-right.cta-primary
 cta-link: $hero-image-right.cta-link
 body: $hero-image-right.body
-url: $hero-image-right.url
+link: $hero-image-right.link
 
 -- end: ftd.desktop
 
@@ -881,7 +881,7 @@ image: $hero-image-right.image
 cta-primary: $hero-image-right.cta-primary
 cta-link: $hero-image-right.cta-link
 body: $hero-image-right.body
-url: $hero-image-right.url
+link: $hero-image-right.link
 
 -- end: ftd.mobile
 
@@ -905,7 +905,7 @@ optional string cta-primary:
 optional string cta-link:
 optional boolean $mouse-in: false
 body body:
-optional string url:
+optional string link:
 
 -- ftd.row:
 width: fill-container
@@ -951,7 +951,7 @@ src: $assets.files.static.arrow-to-right.svg
 -- ftd.image:
 src: $hero-image-right-desktop.image
 width: auto
-link: $hero-image-right-desktop.url
+link: $hero-image-right-desktop.link
 
 -- end: ftd.row
 
@@ -973,7 +973,7 @@ optional string cta-primary:
 optional string cta-link:
 optional boolean $mouse-in: false
 body body:
-optional string url:
+optional string link:
 
 -- ftd.column:
 width: fill-container
@@ -1018,7 +1018,7 @@ src: $assets.files.static.arrow-to-right.svg
 -- ftd.image:
 src: $hero-image-right-mobile.image
 width: fill-container
-link: $hero-image-right-mobile.url
+link: $hero-image-right-mobile.link
 
 -- end: ftd.column
 
@@ -1456,7 +1456,7 @@ $loop$: $features-card.features as $obj
 title: $obj.title
 icon: $obj.icon
 body: $obj.body
-url: $obj.url
+link: $obj.link
 
 -- end: ftd.row
 
@@ -1477,7 +1477,7 @@ url: $obj.url
 caption title: 
 ftd.image-src icon:
 body body:
-optional string url:
+optional string link:
 
 -- ftd.row:
 width.fixed.px: 495
@@ -1491,7 +1491,7 @@ width: auto
 spacing.fixed.px: 8
 
 -- ftd.text: $features-card-details.title
-link: $features-card-details.url
+link: $features-card-details.link
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
@@ -1566,12 +1566,13 @@ body: $obj.body
 caption title: 
 optional body body:
 ftd.image-src icon:
-optional boolean $toggle-down: false
+optional boolean $toggle: false
 
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.background.step-2
-padding-vertical.px: 40
+padding-top.px: 40
+padding-bottom.px: 20
 padding-horizontal.px: 40
 spacing.fixed.px: 20
 
@@ -1581,6 +1582,7 @@ width if { ftd.device == "mobile"}: fill-container
 align-self: center
 spacing: space-between
 spacing.fixed.px if { ftd.device == "mobile"}: 25
+$on-click$: $ftd.toggle($a = $faqs-list-detail.toggle)
 
 -- ftd.text: $faqs-list-detail.title
 role: $inherited.types.heading-tiny
@@ -1590,17 +1592,20 @@ color: $inherited.colors.text-strong
 src: $faqs-list-detail.icon
 height.fixed.px: 35
 width.fixed.px: 35
-$on-click$: $ftd.toggle($a = $faqs-list-detail.toggle-down)
 
 -- end: ftd.row
 
+-- ftd.column:
+width.fixed.px: 620
+
 -- ftd.text:
-if: { $faqs-list-detail.body != NULL && faqs-list-detail.toggle-down }
+if: { $faqs-list-detail.body != NULL && faqs-list-detail.toggle }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
 $faqs-list-detail.body
 
+-- end: ftd.column
 -- end: ftd.column
 
 -- end: faqs-list-detail
@@ -1616,7 +1621,7 @@ $faqs-list-detail.body
 
 -- component search-card: 
 caption title:
-string label-text:
+string label:
 optional boolean $mouse-in: false
 string cta:
 string cta-link:
@@ -1650,7 +1655,7 @@ spacing: space-between
 align-content: center
 
 -- ftd.text-input:
-placeholder: $search-card.label-text
+placeholder: $search-card.label
 padding-vertical.px: 15
 background.solid: $inherited.colors.background.base
 border-color: $inherited.colors.cta-primary.base
@@ -1724,22 +1729,24 @@ Orders are usually shipped within 1-2 business days after placing the order.
 -- faq: What shipping options do you have?
 icon: $assets.files.static.downArrow.svg
 
-Orders are usually shipped within 1-2 business days after placing the order.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Sed eu orci mi
 
 -- faq: What shipping options do you have?
 icon: $assets.files.static.downArrow.svg
 
-Orders are usually shipped within 1-2 business days after placing the order.
+Cras sit amet ligula vitae enim interdum ultrices. Sed a ultrices purus, nec
+faucibus justo. Nulla ut lacus quis odio aliquet faucibus.
 
 -- faq: What shipping options do you have?
 icon: $assets.files.static.downArrow.svg
 
-Orders are usually shipped within 1-2 business days after placing the order.
+Suspendisse potenti. Vestibulum auctor dui ut enim viverra consectetur.
 
 -- faq: What shipping options do you have?
 icon: $assets.files.static.downArrow.svg
 
-Orders are usually shipped within 1-2 business days after placing the order.
+Suspendisse sagittis elit nec turpis viverra feugiat.
 
 -- end: list-of-faqs
 
@@ -1756,34 +1763,34 @@ Orders are usually shipped within 1-2 business days after placing the order.
 caption title: 
 ftd.image-src icon:
 body body:
-optional string url:
+optional string link:
 
 -- feature list list-of-features:
 
 -- feature: Strategy and Consultancy
 icon: $assets.files.static.strategy.svg
-url: landing/
+link: landing/
 
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
 
 -- feature: Strategy and Consultancy
 icon: $assets.files.static.strategy.svg
-url: landing/
+link: landing/
 
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
 
 -- feature: Strategy and Consultancy
 icon: $assets.files.static.strategy.svg
-url: landing/
+link: landing/
 
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
 
 -- feature: Strategy and Consultancy
 icon: $assets.files.static.strategy.svg
-url: landing/
+link: landing/
 
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
