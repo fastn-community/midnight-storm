@@ -227,6 +227,8 @@ spacing.fixed.px: 16
 
 -- ftd.row:
 background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
+border-width.px: 1
 background.solid if { hero-with-image-desktop.mouse-in }: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-with-image-desktop.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-with-image-desktop.mouse-in, v = false)
