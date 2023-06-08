@@ -245,7 +245,7 @@ align-self: center
 -- ftd.row:
 width: hug-content
 align-content: center
-spacing.fixed.rem: 2
+spacing.fixed.px: 32
 
 -- subsections-links: $obj.title
 $loop$: $header-desktop.sub-sections as $obj
