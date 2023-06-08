@@ -1465,6 +1465,26 @@ $loop$: $footer-list-child.children as $obj
 
 
 
+-- component iframe:
+string src:
+
+-- ftd.iframe:
+src: $iframe.src
+height.fixed.px: 400
+width: fill-container
+margin-bottom.px: 32
+
+-- end: iframe
+
+
+
+
+
+
+
+
+
+
 -- component youtube:
 caption v:
 

@@ -1591,7 +1591,14 @@ role: $inherited.types.heading-tiny
 color: $inherited.colors.text-strong
 
 -- ftd.image:
+if: {!faqs-list-detail.toggle}
 src: $faqs-list-detail.icon
+height.fixed.px: 35
+width.fixed.px: 35
+
+-- ftd.image:
+if: {faqs-list-detail.toggle}
+src: $assets.files.static.upArrow.svg
 height.fixed.px: 35
 width.fixed.px: 35
 
@@ -1608,6 +1615,7 @@ color: $inherited.colors.text-strong
 $faqs-list-detail.body
 
 -- end: ftd.column
+
 -- end: ftd.column
 
 -- end: faqs-list-detail

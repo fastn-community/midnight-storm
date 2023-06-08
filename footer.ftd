@@ -22,7 +22,7 @@ package](https://fastn-community.github.io/footer/), you can choose the footer
 of your choice from there.
 
 In the below example we are using `basic-footer` from [footer package]
-(https://fastn-community.github.io/footer/basic-footer/).
+(https://fastn-community.github.io/footer/docs/).
 
 Add footer dependency inside your `FASTN.ftd` file.
 
