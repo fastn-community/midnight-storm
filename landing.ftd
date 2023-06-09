@@ -1541,6 +1541,7 @@ color: $inherited.colors.text
 $faqs.body
 
 -- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
 spacing.fixed.px: 30
 
 -- faqs-list-detail:
@@ -1606,6 +1607,7 @@ width.fixed.px: 35
 
 -- ftd.column:
 width.fixed.px: 620
+width if { ftd.device == "mobile" }: fill-container
 
 -- ftd.text:
 if: { $faqs-list-detail.body != NULL && faqs-list-detail.toggle }
