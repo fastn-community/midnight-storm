@@ -1651,7 +1651,9 @@ optional ftd.image-src info-icon: $assets.files.static.check-circle.svg
 width: fill-container
 align-content: center
 spacing.fixed.px: 56
-padding-vertical.px: 80
+padding-vertical.px if { ftd.device != "mobile" }: 80
+padding-top.px if { ftd.device == "mobile" }: 80
+padding-bottom.px if { ftd.device == "mobile" }: 24
 background.solid if { ftd.device != "mobile" }: $inherited.colors.custom.one
 
 -- ftd.column:
@@ -1909,7 +1911,6 @@ caption title:
 body body:
 optional boolean is-first: false
 optional boolean is-last: false
-
 
 -- info-card list list-of-info-cards:
 
