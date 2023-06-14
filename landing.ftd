@@ -1340,7 +1340,7 @@ border-width.px: 1
 $on-click$: $ftd.toggle($a = $nav-lists.active, v = false)
 $on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
 background.solid if { nav-lists.active }: $inherited.colors.cta-primary.base
-background.solid: $inherited.colors.custom.one
+background.solid: $inherited.colors.info.base
 
 -- end: ftd.row
 
