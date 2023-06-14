@@ -293,8 +293,6 @@ optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
 optional boolean align-right:
-optional boolean $mouse-in: false
-optional boolean $mouse-enter: false
 
 -- ftd.column:
 align-content if { !hero-with-image-mobile.align-right }: center
@@ -327,9 +325,6 @@ spacing.fixed.px: 16
 
 -- ftd.row:
 background.solid: $inherited.colors.cta-primary.base
-background.solid if { hero-with-image-mobile.mouse-in }: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-in, v = false)
 padding-horizontal.px: 28
 padding-vertical.px: 10
 
@@ -344,9 +339,6 @@ link: $hero-with-image-mobile.cta-primary-link
 -- ftd.row:
 border-color: $inherited.colors.shadow
 border-width.px: 1
-background.solid if { hero-with-image-mobile.mouse-enter }: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-enter, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-enter, v = false)
 padding-horizontal.px: 28
 padding-vertical.px: 10
 
@@ -354,7 +346,6 @@ padding-vertical.px: 10
 if: { hero-with-image-mobile.cta-secondary != NULL }
 role: $inherited.types.button-large
 color: $inherited.colors.shadow
-color if { hero-with-image-mobile.mouse-enter }: $inherited.colors.background.step-1
 link: $hero-with-image-mobile.cta-secondary-link
 
 -- end: ftd.row
@@ -363,7 +354,7 @@ link: $hero-with-image-mobile.cta-secondary-link
 
 -- ftd.image:
 src: $hero-with-image-mobile.image
-width.fixed.px: 380
+width: fill-container
 link: $hero-with-image-mobile.link
 
 -- end: ftd.column
@@ -1227,6 +1218,7 @@ nav: $testimonials-card.nav
 
 -- testimonials-card-mobile: $testimonials-card.title
 testimonials: $testimonials-card.testimonials
+nav: $testimonials-card.nav
 
 -- end: ftd.mobile
 
@@ -1291,36 +1283,10 @@ index: $obj.index
 
 
 
--- component nav-lists:
-integer index: 1
-boolean $active: false
-
--- ftd.row:
-width.fixed.px: 13
-height.fixed.px: 13
-border-radius.px: 10
-border-width.px: 1
-$on-click$: $ftd.toggle($a = $nav-lists.active, v = false)
-$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
-background.solid if { nav-lists.active }: $inherited.colors.cta-primary.base
-background.solid: $inherited.colors.custom.one
-
--- end: ftd.row
-
--- end: nav-lists
-
-
-
-
-
-
-
-
-
-
 -- component testimonials-card-mobile:
 optional caption title:
 testimonial list testimonials:
+testimonial-nav list nav:
 
 -- ftd.column:
 width: fill-container
@@ -1341,9 +1307,44 @@ avatar: $obj.avatar
 body: $obj.body
 index: $obj.index
 
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- nav-lists:
+$loop$: $testimonials-card-mobile.nav as $obj
+index: $obj.index
+
+-- end: ftd.row
+
 -- end: ftd.column
 
 -- end: testimonials-card-mobile
+
+
+
+
+
+
+
+
+
+-- component nav-lists:
+integer index: 1
+boolean $active: false
+
+-- ftd.row:
+width.fixed.px: 13
+height.fixed.px: 13
+border-radius.px: 10
+border-width.px: 1
+$on-click$: $ftd.toggle($a = $nav-lists.active, v = false)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
+background.solid if { nav-lists.active }: $inherited.colors.cta-primary.base
+background.solid: $inherited.colors.custom.one
+
+-- end: ftd.row
+
+-- end: nav-lists
 
 
 
@@ -1651,6 +1652,7 @@ optional ftd.image-src info-icon: $assets.files.static.check-circle.svg
 width: fill-container
 align-content: center
 spacing.fixed.px: 56
+padding-horizontal.px: 40
 padding-vertical.px if { ftd.device != "mobile" }: 80
 padding-top.px if { ftd.device == "mobile" }: 80
 padding-bottom.px if { ftd.device == "mobile" }: 24
@@ -1669,7 +1671,7 @@ text-align: center
 
 -- ftd.row:
 width.fixed.px: 730
-width.fixed.px if { ftd.device == "mobile" }: 400
+width.fixed.px if { ftd.device == "mobile" }: 350
 spacing.fixed.px: 8
 align-content: center
 
