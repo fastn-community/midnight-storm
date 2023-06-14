@@ -32,7 +32,7 @@ and grow together.
 image: $assets.files.static.left-img1.svg
 link: landing/
 cta-primary: Sign me up
-cta-link: index.html
+cta-primary-link: index.html
 
 Welcome Studio gives you all the tools you need to create and host virtual
 experiences that look awesome and put your brand centerstage.
@@ -41,7 +41,7 @@ experiences that look awesome and put your brand centerstage.
 image: $assets.files.static.right-img.svg
 link: landing/
 cta-primary: Sign me up
-cta-link: index.html
+cta-primary-link: index.html
 
 Welcome Studio gives you all the tools you need to create and host virtual
 experiences that look awesome and put your brand centerstage.
@@ -50,7 +50,7 @@ experiences that look awesome and put your brand centerstage.
 image: $assets.files.static.left-img2.svg
 link: landing/
 cta-primary: Sign me up
-cta-link: index.html
+cta-primary-link: index.html
 
 Welcome Studio gives you all the tools you need to create and host virtual
 experiences that look awesome and put your brand centerstage.
@@ -87,8 +87,8 @@ platform, seamlessly across all digital channels.
 
 -- search-card: We transform ideas into digital outcomes to elevate the connection between the brand and their users.
 label: Label
-cta: Button
-cta-link: landing/
+cta-primary: Button
+cta-primary-link: landing/
 
 -- end: my-ds.page
 
@@ -119,6 +119,7 @@ caption title:
 body body:
 ftd.image-src image:
 optional string link:
+optional string input-placeholder:
 optional string cta-primary:
 optional string cta-primary-link:
 optional string cta-secondary:
@@ -292,8 +293,6 @@ optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
 optional boolean align-right:
-optional boolean $mouse-in: false
-optional boolean $mouse-enter: false
 
 -- ftd.column:
 align-content if { !hero-with-image-mobile.align-right }: center
@@ -326,9 +325,6 @@ spacing.fixed.px: 16
 
 -- ftd.row:
 background.solid: $inherited.colors.cta-primary.base
-background.solid if { hero-with-image-mobile.mouse-in }: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-in, v = false)
 padding-horizontal.px: 28
 padding-vertical.px: 10
 
@@ -343,9 +339,6 @@ link: $hero-with-image-mobile.cta-primary-link
 -- ftd.row:
 border-color: $inherited.colors.shadow
 border-width.px: 1
-background.solid if { hero-with-image-mobile.mouse-enter }: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-enter, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $hero-with-image-mobile.mouse-enter, v = false)
 padding-horizontal.px: 28
 padding-vertical.px: 10
 
@@ -353,7 +346,6 @@ padding-vertical.px: 10
 if: { hero-with-image-mobile.cta-secondary != NULL }
 role: $inherited.types.button-large
 color: $inherited.colors.shadow
-color if { hero-with-image-mobile.mouse-enter }: $inherited.colors.background.step-1
 link: $hero-with-image-mobile.cta-secondary-link
 
 -- end: ftd.row
@@ -362,7 +354,7 @@ link: $hero-with-image-mobile.cta-secondary-link
 
 -- ftd.image:
 src: $hero-with-image-mobile.image
-width.fixed.px: 380
+width: fill-container
 link: $hero-with-image-mobile.link
 
 -- end: ftd.column
@@ -550,6 +542,8 @@ link: $logo-lists.link
 -- component content:
 caption title:
 body body:
+optional ftd.image-src image:
+optional ftd.background-image bg-image: $assets.files.static.background.svg
 
 -- ftd.column:
 width: fill-container
@@ -678,7 +672,7 @@ $content-mobile.body
 caption title:
 ftd.image-src image:
 optional string cta-primary:
-optional string cta-link:
+optional string cta-primary-link:
 optional string link:
 body body:
 
@@ -690,7 +684,7 @@ width: fill-container
 -- hero-image-left-desktop: $hero-image-left.title
 image: $hero-image-left.image
 cta-primary: $hero-image-left.cta-primary
-cta-link: $hero-image-left.cta-link
+cta-primary-link: $hero-image-left.cta-primary-link
 body: $hero-image-left.body
 link: $hero-image-left.link
 
@@ -701,7 +695,7 @@ link: $hero-image-left.link
 -- hero-image-left-mobile: $hero-image-left.title
 image: $hero-image-left.image
 cta-primary: $hero-image-left.cta-primary
-cta-link: $hero-image-left.cta-link
+cta-primary-link: $hero-image-left.cta-primary-link
 body: $hero-image-left.body
 link: $hero-image-left.link
 
@@ -724,7 +718,7 @@ link: $hero-image-left.link
 caption title:
 ftd.image-src image:
 optional string cta-primary:
-optional string cta-link:
+optional string cta-primary-link:
 optional boolean $mouse-in: false
 body body:
 optional string link:
@@ -766,7 +760,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $hero-image-left-desktop.mouse-in, v = fals
 -- ftd.text: $hero-image-left-desktop.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $hero-image-left-desktop.cta-link
+link: $hero-image-left-desktop.cta-primary-link
 
 -- ftd.image:
 src: $assets.files.static.arrow-to-right.svg
@@ -792,7 +786,7 @@ src: $assets.files.static.arrow-to-right.svg
 caption title:
 ftd.image-src image:
 optional string cta-primary:
-optional string cta-link:
+optional string cta-primary-link:
 optional boolean $mouse-in: false
 body body:
 optional string link:
@@ -828,7 +822,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $hero-image-left-mobile.mouse-in, v = false
 -- ftd.text: $hero-image-left-mobile.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $hero-image-left-mobile.cta-link
+link: $hero-image-left-mobile.cta-primary-link
 
 -- ftd.image:
 src: $assets.files.static.arrow-to-right.svg
@@ -858,7 +852,7 @@ link: $hero-image-left-mobile.link
 caption title:
 ftd.image-src image:
 optional string cta-primary:
-optional string cta-link:
+optional string cta-primary-link:
 body body:
 optional string link:
 
@@ -870,7 +864,7 @@ width: fill-container
 -- hero-image-right-desktop: $hero-image-right.title
 image: $hero-image-right.image
 cta-primary: $hero-image-right.cta-primary
-cta-link: $hero-image-right.cta-link
+cta-primary-link: $hero-image-right.cta-primary-link
 body: $hero-image-right.body
 link: $hero-image-right.link
 
@@ -881,7 +875,7 @@ link: $hero-image-right.link
 -- hero-image-right-mobile: $hero-image-right.title
 image: $hero-image-right.image
 cta-primary: $hero-image-right.cta-primary
-cta-link: $hero-image-right.cta-link
+cta-primary-link: $hero-image-right.cta-primary-link
 body: $hero-image-right.body
 link: $hero-image-right.link
 
@@ -904,7 +898,7 @@ link: $hero-image-right.link
 caption title:
 ftd.image-src image:
 optional string cta-primary:
-optional string cta-link:
+optional string cta-primary-link:
 optional boolean $mouse-in: false
 body body:
 optional string link:
@@ -941,7 +935,7 @@ spacing.fixed.px: 16
 -- ftd.text: $hero-image-right-desktop.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $hero-image-right-desktop.cta-link
+link: $hero-image-right-desktop.cta-primary-link
 
 -- ftd.image:
 src: $assets.files.static.arrow-to-right.svg
@@ -972,7 +966,7 @@ link: $hero-image-right-desktop.link
 caption title:
 ftd.image-src image:
 optional string cta-primary:
-optional string cta-link:
+optional string cta-primary-link:
 optional boolean $mouse-in: false
 body body:
 optional string link:
@@ -1008,7 +1002,7 @@ spacing.fixed.px: 16
 -- ftd.text: $hero-image-right-mobile.cta-primary
 role: $inherited.types.button-large
 color: $inherited.colors.background.base
-link: $hero-image-right-mobile.cta-link
+link: $hero-image-right-mobile.cta-primary-link
 
 -- ftd.image:
 src: $assets.files.static.arrow-to-right.svg
@@ -1174,6 +1168,8 @@ body: $obj.body
 -- component banner-card-list:
 caption title:
 body body:
+optional boolean is-first:
+optional boolean is-last:
 
 -- ftd.column:
 width: fill-container
@@ -1222,6 +1218,7 @@ nav: $testimonials-card.nav
 
 -- testimonials-card-mobile: $testimonials-card.title
 testimonials: $testimonials-card.testimonials
+nav: $testimonials-card.nav
 
 -- end: ftd.mobile
 
@@ -1286,36 +1283,10 @@ index: $obj.index
 
 
 
--- component nav-lists:
-integer index: 1
-boolean $active: false
-
--- ftd.row:
-width.fixed.px: 13
-height.fixed.px: 13
-border-radius.px: 10
-border-width.px: 1
-$on-click$: $ftd.toggle($a = $nav-lists.active, v = false)
-$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
-background.solid if { nav-lists.active }: $inherited.colors.cta-primary.base
-background.solid: $inherited.colors.custom.one
-
--- end: ftd.row
-
--- end: nav-lists
-
-
-
-
-
-
-
-
-
-
 -- component testimonials-card-mobile:
 optional caption title:
 testimonial list testimonials:
+testimonial-nav list nav:
 
 -- ftd.column:
 width: fill-container
@@ -1336,9 +1307,44 @@ avatar: $obj.avatar
 body: $obj.body
 index: $obj.index
 
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- nav-lists:
+$loop$: $testimonials-card-mobile.nav as $obj
+index: $obj.index
+
+-- end: ftd.row
+
 -- end: ftd.column
 
 -- end: testimonials-card-mobile
+
+
+
+
+
+
+
+
+
+-- component nav-lists:
+integer index: 1
+boolean $active: false
+
+-- ftd.row:
+width.fixed.px: 13
+height.fixed.px: 13
+border-radius.px: 10
+border-width.px: 1
+$on-click$: $ftd.toggle($a = $nav-lists.active, v = false)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
+background.solid if { nav-lists.active }: $inherited.colors.cta-primary.base
+background.solid: $inherited.colors.info.base
+
+-- end: ftd.row
+
+-- end: nav-lists
 
 
 
@@ -1635,14 +1641,21 @@ $faqs-list-detail.body
 caption title:
 string label:
 optional boolean $mouse-in: false
-string cta:
-string cta-link:
+string cta-primary:
+string cta-primary-link:
+optional string input-placeholder: Enter your work email...
+optional body body:
+optional ftd.image-src cta-icon:
+optional ftd.image-src info-icon: $assets.files.static.check-circle.svg
 
 -- ftd.column:
 width: fill-container
 align-content: center
 spacing.fixed.px: 56
-padding-vertical.px: 80
+padding-horizontal.px: 40
+padding-vertical.px if { ftd.device != "mobile" }: 80
+padding-top.px if { ftd.device == "mobile" }: 80
+padding-bottom.px if { ftd.device == "mobile" }: 24
 background.solid if { ftd.device != "mobile" }: $inherited.colors.custom.one
 
 -- ftd.column:
@@ -1658,7 +1671,7 @@ text-align: center
 
 -- ftd.row:
 width.fixed.px: 730
-width.fixed.px if { ftd.device == "mobile" }: 400
+width.fixed.px if { ftd.device == "mobile" }: 350
 spacing.fixed.px: 8
 align-content: center
 
@@ -1698,11 +1711,11 @@ align-content: center
 spacing.fixed.px: 8
 padding-horizontal.px: 28
 
--- ftd.text: $search-card.cta
+-- ftd.text: $search-card.cta-primary
 role: $inherited.types.button-large
 text-align: center
 color: $inherited.colors.cta-primary.text
-link if { search-card.cta-link != NULL }: $search-card.cta-link
+link if { search-card.cta-primary-link != NULL }: $search-card.cta-primary-link
 
 
 -- ftd.image:
@@ -1898,6 +1911,8 @@ faucibus at.
 -- record info-card:
 caption title:
 body body:
+optional boolean is-first: false
+optional boolean is-last: false
 
 -- info-card list list-of-info-cards:
 
