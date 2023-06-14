@@ -1171,14 +1171,14 @@ link: $footer-mobile-list.url
 -- ftd.image:
 if: { footer-mobile-list.shows-data }
 src: $assets.files.static.up-arrow.svg
-width.fixed.px: 16
+width.fixed.px: 12
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
 
 -- ftd.image:
 if: { !footer-mobile-list.shows-data }
 src: $assets.files.static.down-arrow.svg
-width.fixed.px: 16
+width.fixed.px: 12
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
 
