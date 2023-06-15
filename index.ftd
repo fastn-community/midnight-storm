@@ -1073,7 +1073,7 @@ common.social-media list social-links:
 
 -- ftd.column:
 width: fill-container
-padding-top.px: 112
+padding-top.px: 64
 padding-bottom.px: 64
 color: $inherited.colors.text
 align-content: center
@@ -1170,14 +1170,14 @@ link: $footer-mobile-list.url
 -- ftd.image:
 if: { footer-mobile-list.shows-data }
 src: $assets.files.static.up-arrow.svg
-width.fixed.px: 16
+width.fixed.px: 12
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
 
 -- ftd.image:
 if: { !footer-mobile-list.shows-data }
 src: $assets.files.static.down-arrow.svg
-width.fixed.px: 16
+width.fixed.px: 12
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
 
@@ -1229,7 +1229,7 @@ role: $inherited.types.copy-regular
 link: $footer-list-toc.url
 width: fill-container
 white-space: nowrap
-margin-bottom.px: 12
+margin-bottom.px if { ftd.device != "mobile" }: 12
 
 -- ftd.text: $footer-list-toc.title
 if: { !footer-list-toc.show-subsections }
@@ -1238,7 +1238,7 @@ role: $inherited.types.copy-regular
 link: $footer-list-toc.url
 width: fill-container
 white-space: nowrap
-margin-bottom.px: 12
+margin-bottom.px if { ftd.device != "mobile" }: 12
 
 -- end: ftd.column
 
