@@ -7,7 +7,7 @@ sidebar: true
 -- my-ds.page.right-sidebar:
 
 -- ds.link-group: How to create a global my-ds page module for midnight-storm?
-cta: right-sidebar/#how-to-create-a-global-my-ds-page-module-for-set-2-DS
+cta: right-sidebar/#how-to-create-a-global-my-ds-page-module-for-midnight-storm-DS
 
 -- ds.link-group: How to enable right-sidebar without adding my-ds module?
 cta: right-sidebar/#how-to-enable-right-sidebar-without-adding-my-ds-module
@@ -42,7 +42,7 @@ module that helps you to keep all your global properties and configurations in
 one `.ftd` file.
 
 -- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
-id: how-to-create-a-global-my-ds-page-module-for-set-2-DS
+id: how-to-create-a-global-my-ds-page-module-for-midnight-storm-DS
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.

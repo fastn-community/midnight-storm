@@ -3,7 +3,7 @@
 -- fastn.package: fastn-community.github.io/midnight-storm
 favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/favicon.svg
 
--- fastn.dependency: fastn-community.github.io/set-2-typography as typo
+-- fastn.dependency: fastn-community.github.io/midnight-storm-typography as typo
 
 -- fastn.dependency: fastn-community.github.io/playfair-display-font
 
@@ -11,7 +11,7 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 
 -- fastn.dependency: fastn-community.github.io/poppins-font
 
--- fastn.dependency: fastn-community.github.io/set-2-cs as cs
+-- fastn.dependency: fastn-community.github.io/midnight-storm-cs as cs
 
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 

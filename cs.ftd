@@ -29,7 +29,7 @@ id: how-to-add-color-scheme
 To add color scheme to your fastn web sites. Edit your `FASTN.ftd` file and add
 color scheme dependency into it.
 
-In the below example we are using https://fastn-community.github.io/set-2-cs/
+In the below example we are using https://fastn-community.github.io/midnight-storm-cs/
 color scheme.
 
 Add color scheme dependency into your `FASTN.ftd` file as shown below
@@ -39,7 +39,7 @@ example:
 lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/midnight-storm
-\-- fastn.dependency: fastn-community.github.io/set-2-cs
+\-- fastn.dependency: fastn-community.github.io/midnight-storm-cs
 
 -- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
 id: how-to-create-a-global-my-ds-page-module-for-midnight-storm
@@ -58,7 +58,7 @@ lang: ftd
 download: my-ds.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
-\-- import: fastn-community.github.io/set-2-cs
+\-- import: fastn-community.github.io/midnight-storm-cs
 
 \-- component page:
 children wrapper:
@@ -70,7 +70,7 @@ boolean sidebar: false
 site-logo: $fastn-assets.files.images.fastn.svg
 body: $page.body
 sidebar: $page.sidebar
-colors: $set-2-cs.main
+colors: $midnight-storm-cs.main
 
 \-- end: ds.page.banner
 
@@ -135,7 +135,7 @@ downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
-e.g.`http://127.0.0.1:8000/cs/` you will see page colors with[SET 2 CS]
-(https://fastn-community.github.io/set-2-cs/)
+e.g.`http://127.0.0.1:8000/cs/` you will see page colors with[MIDNIGHT STROM CS]
+(https://fastn-community.github.io/midnight-storm-cs/)
 
 -- end: my-ds.page
