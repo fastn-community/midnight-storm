@@ -1,9 +1,9 @@
--- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/midnight-storm/assets
 -- import: fastn/processors as pr
--- import: fastn-community.github.io/set-2-ds/common
+-- import: fastn-community.github.io/midnight-storm/common
 -- import: fastn-community.github.io/dark-mode-switcher as dms
--- import: fastn-community.github.io/set-2-ds/header as h
--- import: fastn-community.github.io/set-2-ds/common/fonts as fonts
+-- import: fastn-community.github.io/midnight-storm/header as h
+-- import: fastn-community.github.io/midnight-storm/common/fonts as fonts
 
 -- import: fastn-community.github.io/typography as tf
 export: h0, h1, h2, h3, markdown
@@ -12,17 +12,17 @@ export: h0, h1, h2, h3, markdown
 export: code, rendered
 
 -- page: Overview
-document-title: fastn set-2-ds Template. Build Your Own Website with Ease
-document-description: Simple, easy-to-use set-2-ds template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/set-2-ds/-/fastn-community.github.io/set-2-ds/static/set-2-ds-og-image.jpg
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 site-logo: $common.site-logo
-github-url: https://github.com/fastn-community/set-2-ds/
+github-url: https://github.com/fastn-community/midnight-storm/
 github-icon: true
 sidebar: true
 
 -- page.body:
 
-`set-2-ds` will help you create a beautiful documentation site in no time.
+`midnight-storm` will help you create a beautiful documentation site in no time.
 
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
@@ -61,14 +61,14 @@ id: fast-track
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
 
-[Click here](https://github.com/fastn-stack/fastn-template/) to use `set-2-ds`
+[Click here](https://github.com/fastn-stack/fastn-template/) to use `midnight-storm`
 for your fastn project.
 
 -- h3: 🌟 Whats next?
 id: whats-next
 
 Create your first page. 
-[Click here to know more](https://fastn-community.github.io/set-2-ds/page/).
+[Click here to know more](https://fastn-community.github.io/midnight-storm/page/).
 
 -- h3: 👀 Want to learn more?
 id: want-to-learn-more
@@ -79,7 +79,7 @@ into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 -- h3: 🎯 Used by?
 id: used-by
 
-Our all documentation sites uses this `set-2-ds` theme.
+Our all documentation sites uses this `midnight-storm` theme.
 
 - [fastn.com](https://fastn.com/home/)
 - [FifthTry.com](https://www.fifthtry.com/)

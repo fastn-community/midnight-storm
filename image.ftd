@@ -1,5 +1,5 @@
--- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/midnight-storm as ds
+-- import: fastn-community.github.io/midnight-storm/assets
 
 -- my-ds.page: Adding Image
 
@@ -34,7 +34,7 @@ width: fill-container
 -- ds.rendered.input:
 
 \-- ds.image: This is image caption
-link: https://fastn-community.github.io/set-2-ds/image
+link: https://fastn-community.github.io/midnight-storm/image
 src: $assets.files.static.image-placeholder.jpg
 
 This is addition body content for above image
@@ -42,7 +42,7 @@ This is addition body content for above image
 -- ds.rendered.output:
 
 -- ds.image: This is image caption
-link: https://fastn-community.github.io/set-2-ds/image
+link: https://fastn-community.github.io/midnight-storm/image
 src: $assets.files.static.image-placeholder.jpg
 
 This is addition body content for above image.
