@@ -1,0 +1,63 @@
+-- import: fastn-community.github.io/midnight-storm as ds
+
+
+
+
+-- my-ds.page: Contribute to midnight-storm
+document-description: Contribute to midnight-storm development and documentation
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+
+-- my-ds.page.right-sidebar:
+
+-- ds.toc-title: On this page
+
+-- ds.link-group: Code of Conduct
+cta: contribute/#code-of-conduct
+
+-- ds.link-group: Get Involved
+cta: contribute/#get-involved
+
+-- ds.link-group: Join our Discord Channel
+cta: contribute/#join-our-discord-channel
+
+-- end: my-ds.page.right-sidebar
+
+--  my-ds.page.body:
+
+`midnight-storm` is an [open source](https://opensource.guide/) fastn documentation
+site. It's built using [fastn](https://github.com/fastn-stack/fastn).
+
+`midnight-storm` is part of [fastn-community](https://github.com/fastn-community/) and
+built one contribution at a time by community members just like you. You can
+contribute for `midnight-storm` in many forms beyond just writing code, from
+reporting an issue or suggesting a new feature to improving documentation or
+providing feedback on proposed changes.
+
+-- ds.h2: Code of Conduct
+id: code-of-conduct
+
+fastn has adopted a [Code of Conduct](https://github.com/fastn-stack/.github/blob/main/CODE_OF_CONDUCT.md) 
+that we expect participants to adhere to. 
+
+-- ds.h2: Get Involved
+id: get-involved
+
+- How do I? – [Github Discussion -> Q&A](https://github.com/fastn-community/midnight-storm/discussions/categories/q-a)
+- I got this error, why? – [Github Discussion -> Q&A](https://github.com/fastn-community/midnight-storm/discussions/categories/q-a)
+- I got this error and I’m sure it’s a bug – [file an issue](https://github.com/fastn-community/midnight-storm/issues)!
+- I have an idea/request – [Github Discussion -> Ideas & RFCs](https://github.com/fastn-community/midnight-storm/discussions/categories/ideas-rfcs)!
+- Why do you? – [Github Discussion](https://github.com/fastn-community/midnight-storm/discussions)
+- When will you? – [Github Discussion](https://github.com/fastn-community/midnight-storm/discussions)
+- You’re awesome – aw shucks! ([Give us a star](https://github.com/fastn-community/midnight-storm)!, and come hang out with us on [Discord](https://discord.gg/a7eBUeutWD))
+- You Like Reddit? Join us at [/r/fastn](https://reddit.com/r/fastn)!
+- You want to meet up with other fastn enthusiasts? Join our [meetup group](https://www.meetup.com/fastn-io/).
+- Follow us on Twitter: [@fastn_stack](https://twitter.com/fastn_stack)
+
+-- ds.h3: Join our Discord Channel
+id: join-our-discord-channel
+
+- [🎉 | #start-here](https://discord.gg/6JD7BRUjTe)
+- [💼 | #Share-your-work](https://discord.gg/Um6KX3VYnh)
+- [💡 | #ideas-and-feedback](https://discord.gg/7hwRSsxJUt)
+
+-- end: my-ds.page

@@ -1,13 +1,13 @@
--- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/midnight-storm as ds
+-- import: fastn-community.github.io/midnight-storm/assets
 
 -- my-ds.page: Right Sidebar
 sidebar: true
 
 -- my-ds.page.right-sidebar:
 
--- ds.link-group: How to create a global my-ds page module for set-2-ds?
-cta: right-sidebar/#how-to-create-a-global-my-ds-page-module-for-set-2-DS
+-- ds.link-group: How to create a global my-ds page module for midnight-storm?
+cta: right-sidebar/#how-to-create-a-global-my-ds-page-module-for-midnight-storm-DS
 
 -- ds.link-group: How to enable right-sidebar without adding my-ds module?
 cta: right-sidebar/#how-to-enable-right-sidebar-without-adding-my-ds-module
@@ -34,15 +34,15 @@ would be possible without your support. We would love to hear from you.
 
 -- my-ds.page.body:
 
-In this section, we will learn to add the right-sidebar in `set-2-ds`.
+In this section, we will learn to add the right-sidebar in `midnight-storm`.
 
 If you want to show the right-sidebar on all pages and the content of your
 right-sidebar is the same for all pages then, we recommend creating a global
 module that helps you to keep all your global properties and configurations in
 one `.ftd` file.
 
--- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
-id: how-to-create-a-global-my-ds-page-module-for-set-2-DS
+-- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
+id: how-to-create-a-global-my-ds-page-module-for-midnight-storm-DS
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -57,7 +57,7 @@ Here’s what your `my-ds.ftd` module would look like:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/midnight-storm as ds
 
 \-- component page:
 children wrapper:
@@ -108,7 +108,7 @@ Use `my-ds` component to create a new page using it.
 lang: ftd
 download: sidebar.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/midnight-storm as ds
 \-- import: <your fastn package name>/my-ds
 
 \-- my-ds.page: This is page title
@@ -159,7 +159,7 @@ downloaded.
 lang: ftd
 download: right-sidebar.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/midnight-storm as ds
 
 \-- ds.page: Right Sidebar 👉🏻
 sidebar: true

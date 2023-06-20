@@ -1,0 +1,93 @@
+-- import: fastn-community.github.io/midnight-storm as ds
+
+
+
+
+
+-- my-ds.page: Post List
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+
+In this section, we will learn about creating a blog article listing page using
+`midnight-storm` blog features.
+
+-- ds.h2: Creating posts list page
+
+It's very common to display a list of top/latest posts as a blog home page. Our
+`midnight-storm` blog feature helps you to create your favorite blog posts list home 
+page.
+
+It's very simple to create your top/latest featured posts using `-- ds.posts` which
+can be added inside `-- ds.page`.
+
+Let's learn how to create it.
+
+-- ds.code: Example of how to use `-- ds.posts`
+lang: ftd
+download: post-list.ftd
+
+\-- import: fastn-community.github.io/midnight-storm as ds
+\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-1/sample-post-1
+\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-1/sample-post-2 
+\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-2/sample-post-3 
+\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-2/sample-post-4
+
+\-- ds.page:
+
+\-- ds.posts:
+
+\-- ds.featured-post:
+post-data: $sample-post-2.meta
+
+\-- ds.image-first:
+post-data: $sample-post-1.meta
+
+\-- ds.image-in-between:
+post-data: $sample-post-3.meta
+
+\-- ds.without-image:
+post-data: $sample-post-4.meta
+
+\-- ds.image-first:
+post-data: $sample-post-1.meta
+
+\-- ds.image-in-between:
+post-data: $sample-post-3.meta
+
+\-- end: ds.posts
+
+\-- end: ds.page
+
+-- ds.h3: Let's understand above code snippet:
+
+`-- import: fastn-community.github.io/midnight-storm as ds` : imports midnight-storm and all its
+components into your `featured-post.ftd` page. 
+
+`\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-1/sample-post-1` 
+: imports `sample-post-1` and its all details from `/blog-articles/category-1/` 
+folder. You can add more posts imports into `featured-post.ftd` like shown in 
+above code snippet.
+
+{ds.yellowmarker: e.g. -- ds.page, --- ds.posts} and all components mentioned in 
+above components.
+
+`--- ds.posts:` : This line imports the `ds.posts` component which helps to create
+featured list page ui.
+
+`--- ds.featured-post:` : This line imports the `ds.featured-post` component which 
+comes with featured post UI. [see our blog page](blog/)
+
+`--- ds.image-first:` : The `ds.image-first` component shows your post image at the 
+top then shows the title of the post and other post details. [see our blog page](blog/)
+
+`--- ds.image-in-between:` : The `ds.image-in-between` component shows your post 
+image after the title and post metadata then shows other post details. [see our blog page](blog/)
+
+`--- ds.without-image:` : The `ds.without-image` component shows your post without
+image in case your post does not contain the featured image. It shows only the title and post
+metadata then shows other post details. [see our blog page](blog/)
+
+Category pages are similar to the featured posts page. You can add category related
+details into the body part of the `-- ds.page` page.
+
+-- end: my-ds.page

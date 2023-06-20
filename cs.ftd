@@ -1,5 +1,5 @@
--- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/midnight-storm as ds
+-- import: fastn-community.github.io/midnight-storm/assets
 
 -- my-ds.page: Changing Color Scheme
 
@@ -8,16 +8,16 @@
 -- ds.link-group: How to add color scheme?
 cta: cs/#how-to-add-color-scheme
 
--- ds.link-group: How to create a global my-ds page module for set-2-ds?
-cta: cs/#how-to-create-a-global-my-ds-page-module-for-set-2-ds
+-- ds.link-group: How to create a global my-ds page module for midnight-storm?
+cta: cs/#how-to-create-a-global-my-ds-page-module-for-midnight-storm
 
 -- end: my-ds.page.right-sidebar
 
 -- my-ds.page.body:
 
-In this section, we will learn about changing the color scheme of `set-2-ds`.
+In this section, we will learn about changing the color scheme of `midnight-storm`.
 
-`set-2-ds` uses `fastn` default color scheme. If you wish to update the color
+`midnight-storm` uses `fastn` default color scheme. If you wish to update the color
 scheme, choose a color scheme from our[fastn-community](https://fastn.com/featured/cs/) color schemes.
 
 To choose one of the featured color schemes, visit our[featured color schemes]
@@ -29,7 +29,7 @@ id: how-to-add-color-scheme
 To add color scheme to your fastn web sites. Edit your `FASTN.ftd` file and add
 color scheme dependency into it.
 
-In the below example we are using https://fastn-community.github.io/set-2-cs/
+In the below example we are using https://fastn-community.github.io/midnight-storm-cs/
 color scheme.
 
 Add color scheme dependency into your `FASTN.ftd` file as shown below
@@ -38,11 +38,11 @@ example:
 -- ds.code:
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/set-2-ds
-\-- fastn.dependency: fastn-community.github.io/set-2-cs
+\-- fastn.dependency: fastn-community.github.io/midnight-storm
+\-- fastn.dependency: fastn-community.github.io/midnight-storm-cs
 
--- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
-id: how-to-create-a-global-my-ds-page-module-for-set-2-ds
+-- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
+id: how-to-create-a-global-my-ds-page-module-for-midnight-storm
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -57,8 +57,8 @@ Here’s what your `my-ds.ftd` module would look like:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
-\-- import: fastn-community.github.io/set-2-cs
+\-- import: fastn-community.github.io/midnight-storm as ds
+\-- import: fastn-community.github.io/midnight-storm-cs
 
 \-- component page:
 children wrapper:
@@ -70,7 +70,7 @@ boolean sidebar: false
 site-logo: $fastn-assets.files.images.fastn.svg
 body: $page.body
 sidebar: $page.sidebar
-colors: $set-2-cs.main
+colors: $midnight-storm-cs.main
 
 \-- end: ds.page.banner
 
@@ -104,7 +104,7 @@ Then use `my-ds` component to create a new page using it.
 lang: ftd
 download: cs.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/midnight-storm as ds
 \-- import: <your fastn package name>/my-ds
 
 \-- my-ds.page: This is page title
@@ -135,7 +135,7 @@ downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
-e.g.`http://127.0.0.1:8000/cs/` you will see page colors with[SET 2 CS]
-(https://fastn-community.github.io/set-2-cs/)
+e.g.`http://127.0.0.1:8000/cs/` you will see page colors with[MIDNIGHT STROM CS]
+(https://fastn-community.github.io/midnight-storm-cs/)
 
 -- end: my-ds.page
