@@ -1,6 +1,6 @@
--- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/blog-articles/sample-post-1
--- import: fastn-community.github.io/set-2-ds/common
+-- import: fastn-community.github.io/midnight-storm as ds
+-- import: fastn-community.github.io/midnight-storm/blog-articles/sample-post-1
+-- import: fastn-community.github.io/midnight-storm/common
 
 -- my-ds.page: Blog
 sidebar: false

@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/midnight-storm as ds
 
 -- my-ds.page: Changing Typography
 
@@ -10,16 +10,16 @@ cta: types/#fastn-typography-collection
 -- ds.link-group: How to add typography?
 cta: types/#how-to-add-a-typography
 
--- ds.link-group: How to create a global my-ds page module for set-2-ds?
-cta: types/#how-to-create-a-global-my-ds-page-module-for-Set-2-ds
+-- ds.link-group: How to create a global my-ds page module for midnight-storm?
+cta: types/#how-to-create-a-global-my-ds-page-module-for-Midnight-storm-ds
 
 -- end: my-ds.page.right-sidebar
 
 -- my-ds.page.body:
 
-In this section, we will learn about changing the typography of `set-2-ds`.
+In this section, we will learn about changing the typography of `midnight-storm`.
 
-`set-2-ds` uses `fastn` default typography. If you wish to update it. 
+`midnight-storm` uses `fastn` default typography. If you wish to update it. 
 
 -- ds.h3: fastn Typography collection:
 id: fastn-typography-collection
@@ -33,7 +33,7 @@ id: how-to-add-a-typography
 To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
 typography dependency into it.
 
-In the below example we are using https://fastn-community.github.io/set-2-typography/
+In the below example we are using https://fastn-community.github.io/midnight-storm-typography/
 typography.
 
 Add typography dependency into your `FASTN.ftd` file as shown in below example:
@@ -41,11 +41,11 @@ Add typography dependency into your `FASTN.ftd` file as shown in below example:
 -- ds.code:
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/set-2-ds
-\-- fastn.dependency: fastn-community.github.io/set-2-typography
+\-- fastn.dependency: fastn-community.github.io/midnight-storm
+\-- fastn.dependency: fastn-community.github.io/midnight-storm-typography
 
--- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
-id: how-to-create-a-global-my-ds-page-module-for-Set-2-ds
+-- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
+id: how-to-create-a-global-my-ds-page-module-for-Midnight-storm-ds
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -60,8 +60,8 @@ Here’s what your `my-ds.ftd` module would look like:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
-\-- import: fastn-community.github.io/set-2-typography
+\-- import: fastn-community.github.io/midnight-storm as ds
+\-- import: fastn-community.github.io/midnight-storm-typography
 
 \-- component page:
 children wrapper:
@@ -73,7 +73,7 @@ boolean sidebar: false
 site-logo: $fastn-assets.files.images.fastn.svg
 body: $page.body
 sidebar: $page.sidebar
-types: $set-2-typography.types
+types: $midnight-storm-typography.types
 
 \-- end: ds.page.banner
 
@@ -107,7 +107,7 @@ Then use the `my-ds` component to create a new page using it.
 lang: ftd
 download: typography.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/midnight-storm as ds
 \-- import: <your fastn package name>/my-ds
 
 \-- my-ds.page: This is page title
@@ -139,7 +139,7 @@ be downloaded.
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/typography/` you will see page text with
-[set-2-typography](https://fastn-community.github.io/set-2-typography/) font
+[midnight-storm-typography](https://fastn-community.github.io/midnight-storm-typography/) font
 sizes in [Lato](https://fastn-community.github.io/lato-font/) and 
 [Source-Code-Pro](https://fastn-community.github.io/source-code-pro-font/) font.
 

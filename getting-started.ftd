@@ -1,12 +1,12 @@
--- import: fastn-community.github.io/set-2-ds as ds
--- import: fastn-community.github.io/set-2-ds/assets
+-- import: fastn-community.github.io/midnight-storm as ds
+-- import: fastn-community.github.io/midnight-storm/assets
 
 -- my-ds.page: Getting Started
 
 -- my-ds.page.right-sidebar:
 
--- ds.link-group: Creating fastn web-site using set-2-ds
-cta: getting-started/#creating-fastn-web-site-using-set-2-ds
+-- ds.link-group: Creating fastn web-site using midnight-storm
+cta: getting-started/#creating-fastn-web-site-using-midnight-storm
 
 -- ds.link-group: How to publish a package?
 cta: getting-started/#how-to-publish-a-package
@@ -18,12 +18,12 @@ cta: getting-started/#what-next
 
 -- my-ds.page.body:
 
-You can create your documentation web-sites using `set-2-ds`. `set-2-ds` also
+You can create your documentation web-sites using `midnight-storm`. `midnight-storm` also
 helps authors, entrepreneurs, corporate groups and bloggers to create their own
 fastn web project.
 
--- ds.h3: 🎨 Creating fastn web-site using `set-2-ds`
-id: creating-fastn-web-site-using-set-2-ds
+-- ds.h3: 🎨 Creating fastn web-site using `midnight-storm`
+id: creating-fastn-web-site-using-midnight-storm
 
 Please, refer [this documentation](https://fastn.com/github-pages/) to
 understand how to create fastn website repository on GitHub.
@@ -46,25 +46,25 @@ v: tsHB2Vrhb2c
 id: what-next
 
 `-- page` component comes with inbuit navbar, sidebar and body content area.
-Start creating new `.ftd` files inside your project and use `set-2-ds` `page`
+Start creating new `.ftd` files inside your project and use `midnight-storm` `page`
 component to write your documentation, blog posts etc.
 
-✨ [Click here](https://fastn-community.github.io/set-2-ds/page/) to know more
+✨ [Click here](https://fastn-community.github.io/midnight-storm/page/) to know more
 details of `page` component.
 
-✨ [Click here](https://fastn-community.github.io/set-2-ds/sitemap/) to learn how
+✨ [Click here](https://fastn-community.github.io/midnight-storm/sitemap/) to learn how
 to generate better `sitemap` for navigation.
 
-✨ [Click here](https://fastn-community.github.io/set-2-ds/types/) to know
+✨ [Click here](https://fastn-community.github.io/midnight-storm/types/) to know
 more details of inbuit `typography`.
 
-✨ [Click here](https://fastn-community.github.io/set-2-ds/markdown/) to know
+✨ [Click here](https://fastn-community.github.io/midnight-storm/markdown/) to know
 about markdown.
 
-✨ [Click here](https://fastn-community.github.io/set-2-ds/seo/) to know about
+✨ [Click here](https://fastn-community.github.io/midnight-storm/seo/) to know about
 SEO support.
 
-✨ [Click here](https://fastn-community.github.io/set-2-ds/assets/) to know about
+✨ [Click here](https://fastn-community.github.io/midnight-storm/assets/) to know about
 Static Assets.
 
 -- end: my-ds.page

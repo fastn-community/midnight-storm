@@ -1,0 +1,89 @@
+-- import: fastn-community.github.io/midnight-storm as ds
+-- import: fastn-community.github.io/midnight-storm/assets
+
+
+
+
+
+-- my-ds.page: Adding a new blog post
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+
+In this section, we will learn about creating a blog post in `midnight-storm`.
+
+-- ds.h2: Writing a post 
+
+To write a post/article add your post meta and post details. Below code snippet
+shows how to write a post meta and create your post. 
+
+[see sample post](blog-articles/category-1/sample-post-2/)
+
+-- ds.code: Example of how to create blog post 
+lang: ftd
+
+\-- import: fastn-community.github.io/midnight-storm as ds
+\-- import: fastn-community.github.io/midnight-storm/assets
+\-- import: fastn-community.github.io/midnight-storm/common
+\-- import: fastn-community.github.io/midnight-storm/blog-authors/amitu as author
+
+\-- common.post-meta meta: A day in a city of dreams
+published-on: July 22, 2014 at 10:02 pm
+post-image: $assets.files.static.image-placeholder.png
+post-url: blog-articles/category-1/sample-post-1/
+author: $author.amitu
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+
+-- ds.h3: Let's understand above code snippet:
+
+✨ `-- import: fastn-community.github.io/midnight-storm as ds` : imports midnight-storm and
+all its components into your `.ftd` page. 
+
+✨ `-- import: fastn-community.github.io/midnight-storm/assets`: helps to import
+assets from `midnight-storm`. For ex., this assets import helps you to add images into
+your `.ftd` pages.
+
+✨ `-- import: fastn-community.github.io/midnight-storm/common`: helps to import
+common properties and blog-related records from `midnight-storm`. These blog property
+and records help you to add `post-meta` and `author-meta` records into your
+`.ftd` pages.
+
+✨ `-- import: fastn-community.github.io/midnight-storm/blog-authors/amitu as author`
+import author metadata. You can add author details into `blog-authors/`. 
+
+In the above example, we have added `amitu` which links to `amitu.ftd` file from 
+`blog-authors/` folder.
+
+✨ `-- common.post-meta meta`: helps you to add details of your blog post. 
+
+✨ Using the `published-on` property you can add your post timestamp.
+
+✨ fastn uses a specific format to add image assets you see in the above
+`post-image` property. `$assets.files.static.image-placeholder.png` in this
+`$assets.files.` is default.
+
+fastn format to add an asset. `static` is a folder name, which you can see in
+your `midnight-storm` folder structure. `image-placeholder.png` image file name, in
+this case we have added a `png` format image. 
+
+You can add any image format to it. e.g. `image-placeholder.jpg` or 
+`image-placeholder.jpeg` or `image-placeholder.gif` etc.
+
+✨ The `post-url` property will help you to add your `post.ftd` file. In this
+case `/blog-articles/category-1/sample-post-1/` is the path of our sample post
+`.ftd` file `sample-post-1.ftd` which is stored inside `/blog-articles/` is
+folder and `category-1` is a category folder. You can rename it with your
+desired name.
+
+✨ The `author` attribute helps to add author details. `$author.amitu` in this
+`$author` is imported via `-- import:
+fastn-community.github.io/midnight-storm/blog-authors/amitu as author` line into your
+blog post. `amitu` is a record type inside the `amitu.ftd` file which contains
+author details.
+
+✨ At the last of the above code snippet, you can add a few lines from your post.
+This is called the body of the post in fastn. These lines will be added as
+featured text inside the `post-list` page.
+
+-- end: my-ds.page

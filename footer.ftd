@@ -1,18 +1,18 @@
--- import: fastn-community.github.io/set-2-ds as ds
+-- import: fastn-community.github.io/midnight-storm as ds
 
 -- my-ds.page: Adding Footer
 
 -- my-ds.page.right-sidebar:
 
--- ds.link-group: How to create a global my-ds page module for set-2-ds?
-cta: footer/#how-to-create-a-global-my-ds-page-Module-for-set-2-ds
+-- ds.link-group: How to create a global my-ds page module for midnight-storm?
+cta: footer/#how-to-create-a-global-my-ds-page-Module-for-midnight-storm
 
 -- end: my-ds.page.right-sidebar
 
 -- my-ds.page.body:
 
 In this section, we will learn about adding a footer into your pages in
-`set-2-ds`.
+`midnight-storm`.
 
 The `page` component has a `show-footer` boolean type property. You can add
 different footers using `show-footer: true` property.
@@ -31,8 +31,8 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/footer
 
--- ds.h3: How to create a global `my-ds` page module for `set-2-ds`?
-id: how-to-create-a-global-my-ds-page-Module-for-set-2-ds
+-- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
+id: how-to-create-a-global-my-ds-page-Module-for-midnight-storm
 
 You can create a `my-ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
@@ -47,8 +47,8 @@ Here’s what your `my-ds.ftd` module would look like:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
-\-- import: fastn-community.github.io/set-2-ds/common
+\-- import: fastn-community.github.io/midnight-storm as ds
+\-- import: fastn-community.github.io/midnight-storm/common
 \-- import: fastn-community.github.io/footer
 
 \-- component page:
@@ -98,7 +98,7 @@ Use `my-ds` component to create a new page using it.
 lang: ftd
 download: footer.ftd
 
-\-- import: fastn-community.github.io/set-2-ds as ds
+\-- import: fastn-community.github.io/midnight-storm as ds
 \-- import: <your fastn package name>/my-ds
 
 \-- my-ds.page: This is page title
