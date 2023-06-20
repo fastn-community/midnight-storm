@@ -1,5 +1,9 @@
 # Set-2-ds Change Log
 
+## June 20, 2023
+
+- [updated name](https://github.com/fastn-community/midnight-storm/commit/4bddd80494891d86bc59802396696b0a8640cb1f)
+
 ## May 25, 2023
 
 - [added screenshot and updated documentation](https://github.com/fastn-community/set-2-ds/commit/daad2077a7dfda3984132c4bd75f944274ae83cd)
