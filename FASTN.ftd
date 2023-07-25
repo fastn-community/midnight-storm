@@ -22,7 +22,6 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 -- fastn.dependency: fastn-community.github.io/typography
 
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
-exposing: code, rendered
 
 -- fastn.auto-import: fastn-community.github.io/typography as tf
 exposing: h0, h1, h2, h3, markdown
