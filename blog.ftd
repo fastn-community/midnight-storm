@@ -1,12 +1,10 @@
--- import: fastn-community.github.io/midnight-storm as ds
 -- import: fastn-community.github.io/midnight-storm/blog-articles/sample-post-1
--- import: fastn-community.github.io/midnight-storm/common
 
--- my-ds.page: Blog
+-- ds.page: Blog
 sidebar: false
 blog: true
 
--- my-ds.page.hero:
+-- ds.page.hero:
 
 -- ds.featured-post:
 post-data: $sample-post-1.meta
@@ -17,7 +15,7 @@ cta-secondary: Button
 cta-secondary-url: /blog-articles/sample-post-1/
 link: /blog-articles/sample-post-1/
 
--- end: my-ds.page.hero
+-- end: ds.page.hero
 
 -- ds.posts:
 
@@ -56,4 +54,4 @@ post-data: $sample-post-1.meta2
 post-data: $sample-post-1.meta1
 -- end: ds.posts
 
--- end: my-ds.page
+-- end: ds.page

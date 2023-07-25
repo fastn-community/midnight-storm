@@ -1,11 +1,4 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/common
-
-
-
-
-
--- my-ds.page: Adding Author Details
+-- ds.page: Adding Author Details
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 
@@ -49,4 +42,4 @@ name as a title. You can change `Amit Upadhyay` with your name.
 
 ✨ You can add the author bio as a body at the last of the above code snippet.
 
--- end: my-ds.page
+-- end: ds.page

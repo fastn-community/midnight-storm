@@ -1,24 +1,22 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/assets
--- import: fastn-community.github.io/midnight-storm/common 
-
-
-
-
-
--- common.author-meta patrica: Patrica AVA
-profile: UI Designer
-bio-url: blog-authors/patrica/
+-- common.author-meta patrica: Patrica Ava
+profile: Software Developer
+bio-url:  blog-authors/patrica/
 image: $assets.files.static.avatar.svg
 company: XYZ Pvt. Ltd.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+I’m a web/software developer who loves to build projects and share valuable ps 
+for programmers on this blog.
 
--- my-ds.page: 
-full-width: true
-sidebar: false
+Currently, building a new language FTD and its package manager FASTN day and night.
+
+
+
+
+
+
+-- ds.page: 
 
 -- ds.author-bio: 
 author: $patrica
 
--- end: my-ds.page
+-- end: ds.page

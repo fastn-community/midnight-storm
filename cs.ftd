@@ -1,19 +1,16 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/assets
+-- ds.page: Changing Color Scheme
 
--- my-ds.page: Changing Color Scheme
-
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.link-group: How to add color scheme?
 cta: cs/#how-to-add-color-scheme
 
--- ds.link-group: How to create a global my-ds page module for midnight-storm?
-cta: cs/#how-to-create-a-global-my-ds-page-module-for-midnight-storm
+-- ds.link-group: How to create a global ds page module for midnight-storm?
+cta: cs/#how-to-create-a-global-ds-page-module-for-midnight-storm
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 In this section, we will learn about changing the color scheme of `midnight-storm`.
 
@@ -41,21 +38,21 @@ lang: ftd
 \-- fastn.dependency: fastn-community.github.io/midnight-storm
 \-- fastn.dependency: fastn-community.github.io/midnight-storm-cs
 
--- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
-id: how-to-create-a-global-my-ds-page-module-for-midnight-storm
+-- ds.h3: How to create a global `ds` page module for `midnight-storm`?
+id: how-to-create-a-global-ds-page-module-for-midnight-storm
 
-You can create a `my-ds.ftd` module inside your `fastn` package and create your
-custom `my-ds` page component.
+You can create a `ds.ftd` module inside your `fastn` package and create your
+custom `ds` page component.
 
 Let's learn how to create a module:
 
-Create a new file let’s say `my-ds.ftd`. 
+Create a new file let’s say `ds.ftd`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
 \-- import: fastn-community.github.io/midnight-storm-cs
@@ -95,19 +92,19 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `my-ds.ftd` file will be
+Click on the download icon of the above code-block. `ds.ftd` file will be
 downloaded. Import this file inside your new `.ftd` file.
 
-Then use `my-ds` component to create a new page using it.
+Then use `ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
 download: cs.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
-\-- import: <your fastn package name>/my-ds
+\-- import: <your fastn package name>/ds
 
-\-- my-ds.page: This is page title
+\-- ds.page: This is page title
 
 This is body area. It contains multiple paragraphs.
 
@@ -126,7 +123,7 @@ This is heading level 2 optional body content.
 
 This is heading level 3 optional body content.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
 -- ds.markdown:
 
@@ -138,4 +135,4 @@ your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/cs/` you will see page colors with[MIDNIGHT STROM CS]
 (https://fastn-community.github.io/midnight-storm-cs/)
 
--- end: my-ds.page
+-- end: ds.page

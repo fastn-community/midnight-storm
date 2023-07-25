@@ -1,15 +1,13 @@
--- import: fastn-community.github.io/midnight-storm as ds
+-- ds.page: Adding Footer
 
--- my-ds.page: Adding Footer
+-- ds.page.right-sidebar:
 
--- my-ds.page.right-sidebar:
+-- ds.link-group: How to create a global ds page module for midnight-storm?
+cta: footer/#how-to-create-a-global-ds-page-Module-for-midnight-storm
 
--- ds.link-group: How to create a global my-ds page module for midnight-storm?
-cta: footer/#how-to-create-a-global-my-ds-page-Module-for-midnight-storm
+-- end: ds.page.right-sidebar
 
--- end: my-ds.page.right-sidebar
-
--- my-ds.page.body:
+-- ds.page.body:
 
 In this section, we will learn about adding a footer into your pages in
 `midnight-storm`.
@@ -31,21 +29,21 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/footer
 
--- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
-id: how-to-create-a-global-my-ds-page-Module-for-midnight-storm
+-- ds.h3: How to create a global `ds` page module for `midnight-storm`?
+id: how-to-create-a-global-ds-page-Module-for-midnight-storm
 
-You can create a `my-ds.ftd` module inside your `fastn` package and create your
-custom `my-ds` page component.
+You can create a `ds.ftd` module inside your `fastn` package and create your
+custom `ds` page component.
 
 Let's learn how to create a module:
 
-Create a new file let’s say `my-ds.ftd`. 
+Create a new file let’s say `ds.ftd`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
 \-- import: fastn-community.github.io/midnight-storm/common
@@ -88,20 +86,20 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `my-ds.ftd` file will be downloaded.
+Click on download icon of above code-block. `ds.ftd` file will be downloaded.
 Import this file inside your new `.ftd` or download below given `footer.ftd`
 file.
 
-Use `my-ds` component to create a new page using it.
+Use `ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
 download: footer.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
-\-- import: <your fastn package name>/my-ds
+\-- import: <your fastn package name>/ds
 
-\-- my-ds.page: This is page title
+\-- ds.page: This is page title
 
 This is body area. It contains multiple paragraphs.
 
@@ -120,7 +118,7 @@ This is heading level 2 optional body content.
 
 This is heading level 3 optional body content.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
 -- ds.markdown:
 
@@ -131,4 +129,4 @@ Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/footer/` you will see the page with a footer.
 
--- end: my-ds.page
+-- end: ds.page

@@ -1,11 +1,4 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/assets
-
-
-
-
-
--- my-ds.page: Adding a new blog post
+-- ds.page: Adding a new blog post
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 
@@ -86,4 +79,4 @@ author details.
 This is called the body of the post in fastn. These lines will be added as
 featured text inside the `post-list` page.
 
--- end: my-ds.page
+-- end: ds.page

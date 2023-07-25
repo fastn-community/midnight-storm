@@ -1,10 +1,4 @@
--- import: fastn-community.github.io/midnight-storm as ds
-
-
-
-
-
--- my-ds.page: Post List
+-- ds.page: Post List
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 
@@ -90,4 +84,4 @@ metadata then shows other post details. [see our blog page](blog/)
 Category pages are similar to the featured posts page. You can add category related
 details into the body part of the `-- ds.page` page.
 
--- end: my-ds.page
+-- end: ds.page
