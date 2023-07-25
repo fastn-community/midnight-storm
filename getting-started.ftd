@@ -1,9 +1,6 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/assets
+-- ds.page: Getting Started
 
--- my-ds.page: Getting Started
-
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.link-group: Creating fastn web-site using midnight-storm
 cta: getting-started/#creating-fastn-web-site-using-midnight-storm
@@ -14,9 +11,9 @@ cta: getting-started/#how-to-publish-a-package
 -- ds.link-group: Whats next?
 cta: getting-started/#what-next
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 You can create your documentation web-sites using `midnight-storm`. `midnight-storm` also
 helps authors, entrepreneurs, corporate groups and bloggers to create their own
@@ -67,4 +64,4 @@ SEO support.
 ✨ [Click here](https://fastn-community.github.io/midnight-storm/assets/) to know about
 Static Assets.
 
--- end: my-ds.page
+-- end: ds.page

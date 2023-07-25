@@ -1,16 +1,9 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/assets
-
-
-
-
-
--- my-ds.page: Configuring your site
+-- ds.page: Configuring your site
 document-title: fastn midnight-storm Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.toc-title: On this page
 
@@ -23,9 +16,9 @@ cta: domain-setup/#gitHub-repository
 -- ds.link-group: GitHub repository link to Godaddy website
 cta: domain-setup/#gitHub-repository-link-to-godaddy-website
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
---  my-ds.page.body:
+--  ds.page.body:
 
 In this section, we will learn about how to configure your domain and publish
 your fastn web site.
@@ -281,4 +274,4 @@ width: fill-container
 
 Congratulations! your `www.johnywalker.com` domain is now public live.
 
--- end: my-ds.page
+-- end: ds.page

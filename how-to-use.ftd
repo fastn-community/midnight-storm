@@ -1,21 +1,18 @@
--- import: fastn-community.github.io/midnight-storm as ds
-
-
--- my-ds.page:  How to use `midnight-storm` package?
+-- ds.page:  How to use `midnight-storm` package?
 document-title: fastn midnight-storm Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.toc-title: On this page
 
 -- ds.link-group: Invocation
 cta: how-to-use/#invocation
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 `midnight-storm` package is recommended to be used only for documentation, of your
 fastn project components.
@@ -51,4 +48,4 @@ typography: fastn-community.github.io/midnight-storm-cs
 Some body here is coming from `$page.body`
 
 
--- end: my-ds.page
+-- end: ds.page
