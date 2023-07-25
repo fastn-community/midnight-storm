@@ -1,7 +1,4 @@
--- import: fastn-community.github.io/midnight-storm/assets
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/common
--- import: fastn-community.github.io/midnight-storm/blog-authors/patrica as author
+-- import: fastn-community.github.io/midnight-storm/blog-authors/patrica
 
 -- common.post-meta meta: We Transform ideas into digital outcomes.
 post-image: $assets.files.static.featured.svg
@@ -13,7 +10,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 -- common.post-meta meta1:
 post-image: $assets.files.static.post1.svg
 image: $assets.files.static.avatar.svg
-author: $author.patrica
+author: $patrica.patrica
 post-url: /blog-articles/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
@@ -21,14 +18,14 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 -- common.post-meta meta2:
 post-image: $assets.files.static.post2.svg
 image: $assets.files.static.avatar.svg
-author: $author.patrica
+author: $patrica.patrica
 post-url: /blog-articles/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta3: Bringing the world together through live experiences.
 image: $assets.files.static.avatar.svg
-author: $author.patrica
+author: $patrica.patrica
 
 
 
@@ -39,7 +36,7 @@ author: $author.patrica
 
 
 
--- my-ds.page:
+-- ds.page:
 blog: true
 full-width: true
 sidebar: false
@@ -237,4 +234,4 @@ getting hijacked.
 When using technology, we often focus optimistically on all the things it does
 for us. But I want to show you where it might do the opposite.
 
--- end: my-ds.page
+-- end: ds.page

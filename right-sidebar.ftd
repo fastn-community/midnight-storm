@@ -1,16 +1,13 @@
--- import: fastn-community.github.io/midnight-storm as ds
--- import: fastn-community.github.io/midnight-storm/assets
-
--- my-ds.page: Right Sidebar
+-- ds.page: Right Sidebar
 sidebar: true
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
--- ds.link-group: How to create a global my-ds page module for midnight-storm?
-cta: right-sidebar/#how-to-create-a-global-my-ds-page-module-for-midnight-storm-DS
+-- ds.link-group: How to create a global ds page module for midnight-storm?
+cta: right-sidebar/#how-to-create-a-global-ds-page-module-for-midnight-storm-DS
 
--- ds.link-group: How to enable right-sidebar without adding my-ds module?
-cta: right-sidebar/#how-to-enable-right-sidebar-without-adding-my-ds-module
+-- ds.link-group: How to enable right-sidebar without adding ds module?
+cta: right-sidebar/#how-to-enable-right-sidebar-without-adding-ds-module
 
 -- ds.h3: Heading in sidebar
 
@@ -30,9 +27,9 @@ today.
 We are trying to create the language for human beings and we do not believe it
 would be possible without your support. We would love to hear from you.
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 In this section, we will learn to add the right-sidebar in `midnight-storm`.
 
@@ -41,21 +38,21 @@ right-sidebar is the same for all pages then, we recommend creating a global
 module that helps you to keep all your global properties and configurations in
 one `.ftd` file.
 
--- ds.h3: How to create a global `my-ds` page module for `midnight-storm`?
-id: how-to-create-a-global-my-ds-page-module-for-midnight-storm-DS
+-- ds.h3: How to create a global `ds` page module for `midnight-storm`?
+id: how-to-create-a-global-ds-page-module-for-midnight-storm-DS
 
-You can create a `my-ds.ftd` module inside your `fastn` package and create your
-custom `my-ds` page component.
+You can create a `ds.ftd` module inside your `fastn` package and create your
+custom `ds` page component.
 
 Let's learn how to create a module:
 
-Create a new file let’s say `my-ds.ftd`. 
+Create a new file let’s say `ds.ftd`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
 
@@ -70,7 +67,7 @@ body: $page.body
 show-footer: true
 sidebar: true
 
-\-- my-ds.page.right-sidebar:
+\-- ds.page.right-sidebar:
 
 \-- ds.h3: Heading in sidebar
 
@@ -83,7 +80,7 @@ lang: ftd
 
 \-- ftd.text: Hello World
 
-\-- end: my-ds.page.right-sidebar
+\-- end: ds.page.right-sidebar
 
 \-- ftd.column:
 spacing.fixed.em: 0.8
@@ -98,20 +95,20 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `my-ds.ftd` file will be
+Click on the download icon of the above code-block. `ds.ftd` file will be
 downloaded. Import this file inside your new `.ftd` or download below given
 `sidebar.ftd` file.
 
-Use `my-ds` component to create a new page using it.
+Use `ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
 download: sidebar.ftd
 
 \-- import: fastn-community.github.io/midnight-storm as ds
-\-- import: <your fastn package name>/my-ds
+\-- import: <your fastn package name>/ds
 
-\-- my-ds.page: This is page title
+\-- ds.page: This is page title
 
 This is body area. It contains multiple paragraphs.
 
@@ -130,7 +127,7 @@ This is heading level 2 optional body content.
 
 This is heading level 3 optional body content.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
 -- ds.markdown:
 
@@ -141,8 +138,8 @@ Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/sidebar/` you will see a page with a right-sidebar.
 
--- ds.h3: How to enable right-sidebar without adding `my-ds` module?
-id: how-to-enable-right-sidebar-without-adding-my-ds-module
+-- ds.h3: How to enable right-sidebar without adding `ds` module?
+id: how-to-enable-right-sidebar-without-adding-ds-module
 
 To enable the right-sidebar add the `sidebar: true` property to `ds.page`
 component.
@@ -182,4 +179,4 @@ Add your page body content here.
 
 \-- end: ds.page
 
--- end: my-ds.page
+-- end: ds.page

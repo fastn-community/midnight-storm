@@ -1,10 +1,8 @@
--- import: fastn-community.github.io/midnight-storm as ds
-
--- my-ds.page: SEO
+-- ds.page: SEO
 document-description: Custom SEO description
 document-image: https://fastn.com/-/fastn.com/images/featured/midnight-storm.png
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.link-group: How to customize the document title?
 cta: seo/#how-to-customize-document-title
@@ -15,9 +13,9 @@ cta: seo/#how-to-add-page-description
 -- ds.link-group: How to add a page document-image?
 cta: seo/#how-to-add-page-document-image
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 In this section, we will learn about `midnight-storm` SEO features for your `fastn`
 website.
@@ -77,4 +75,4 @@ lang: ftd
 \-- ds.page: This is page title
 document-image: https://fastn.com/-/fastn.com/images/featured/midnight-storm.png
 
--- end: my-ds.page
+-- end: ds.page

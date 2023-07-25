@@ -1,8 +1,6 @@
--- import: fastn-community.github.io/midnight-storm as ds
-
 -- integer $current-slide: 1
 
--- my-ds.page:
+-- ds.page:
 full-width: true
 sidebar: false
 
@@ -90,7 +88,7 @@ label: Label
 cta-primary: Button
 cta-primary-link: landing/
 
--- end: my-ds.page
+-- end: ds.page
 
 
 
