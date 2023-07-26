@@ -6,9 +6,9 @@
 
 
 -- ds.page: posts
-document-title: fastn misty-gray Template. Build Your Own Website with Ease
-document-description: Simple, easy-to-use misty-gray template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/misty-gray/-/fastn-community.github.io/misty-gray/static/misty-gray-og-image.jpg
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 sidebar: true
 
 -- ds.page.right-sidebar:
@@ -21,7 +21,7 @@ sidebar: true
 -- ds.h2: Creating posts list page
 
 It's very common to display a list of top/latest posts as a blog home page. Our
-`misty-gray` blog feature helps you to create your favorite blog posts list home 
+`midnight-storm` blog feature helps you to create your favorite blog posts list home 
 page.
 
 It's very simple to create your top/latest featured posts using `-- ds.posts` which
@@ -84,7 +84,7 @@ It imports `sample-post` and its all details from `/blog-articles/` and
 remove-gap: true
 info-right: Learn more: [`ds.page`](components/page/)
 
-Its misty-gray default page component.
+Its midnight-storm default page component.
 
 -- collapse.collapse: `-- ds.posts:`
 remove-gap: true

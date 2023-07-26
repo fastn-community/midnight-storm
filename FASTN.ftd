@@ -3,57 +3,42 @@
 -- fastn.package: fastn-community.github.io/midnight-storm
 favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/favicon.svg
 
--- fastn.dependency: fastn-community.github.io/midnight-storm-typography as typo
-
+-- fastn.dependency: fastn-community.github.io/midnight-storm-typography
 -- fastn.dependency: fastn-community.github.io/playfair-display-font
-
 -- fastn.dependency: fastn-community.github.io/inter-font
-
 -- fastn.dependency: fastn-community.github.io/poppins-font
-
--- fastn.dependency: fastn-community.github.io/midnight-storm-cs as cs
-
+-- fastn.dependency: fastn-community.github.io/midnight-storm-cs
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
-
 -- fastn.dependency: fastn-community.github.io/bling
-
+-- fastn.dependency: fastn-community.github.io/banner
 -- fastn.dependency: fastn-community.github.io/code-block
-
 -- fastn.dependency: fastn-community.github.io/typography
 
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
-
 -- fastn.auto-import: fastn-community.github.io/typography as tf
-exposing: h0, h1, h2, h3, markdown
-
--- fastn.auto-import: cs
-
--- fastn.auto-import: typo
-
 -- fastn.auto-import: fastn-community.github.io/midnight-storm/assets
-
 -- fastn.auto-import: fastn-community.github.io/midnight-storm/common
-
 -- fastn.auto-import: fastn-community.github.io/midnight-storm/FASTN/ds
 
 -- fastn.sitemap:
 
 # Home: /index.html
 
-- How to use: /how-to-use/
 - Overview: index.html
+- How to use: /how-to-use/
 - Getting Started: /getting-started/
 - Configuring your site: /domain-setup/
 - Adding Favicon: /favicon/
 - Adding Logo & Sitename: /logo/
 - Changing Color Scheme: /cs/
 - Changing Typography: /types/
+- Adding Banner: /banner/
 - Creating A Page: /page/
 - Adding a image: /image/
 - Markdown Primer: /markdown/
 - Understanding Sitemap: /sitemap/
 - Adding Right Sidebar: /right-sidebar/
-- Adding Footer: /footer/
+- Updating Footer: /footer/
 - SEO: /seo/
 - Contribute: /contribute/
 - Components: /components/
@@ -88,6 +73,8 @@ exposing: h0, h1, h2, h3, markdown
   - page: /components/page/
   skip: true
   - post: /components/post/
+  skip: true
+  - post-card: /components/post-card/
   skip: true
   - posts: /components/posts/
   skip: true
