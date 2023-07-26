@@ -129,39 +129,51 @@ download: ds.ftd
 \-- import: fastn-community.github.io/midnight-storm
 export: author-bio,code,compact-text,featured-post,h0,h1,h2,h3,iframe,image,image-first,image-in-between,link,link-group,markdown,not-found-1,not-found-2,output,post,posts,rendered,tip,without-image,youtube
 
-\-- component page:
+-- component page:
 children wrapper:
 optional caption title:
 optional body body:
 boolean sidebar: true
+ftd.ui list right-sidebar:
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
-optional string site-name: Midnight Storm
-optional ftd.image-src site-logo:
-boolean github-icon: true
-optional string github-url: https://github.com/fastn-community/midnight-storm/
+optional string site-name: $common.site-name
+optional ftd.image-src site-logo: $common.site-logo
 boolean full-width: false
-ftd.type-data types: $typo.types
-ftd.color-scheme colors: $ftd.default-colors
-integer logo-width: $common.logo-width
-integer logo-height: $common.logo-height
-boolean show-footer: true
-boolean show-banner: true
+boolean blog: false
+boolean show-banner: false
 ftd.ui list banner:
-fastn.app-ui apps: $common.apps
-boolean login-button: $common.login-button
-string site-url: $common.site-url
+ftd.ui list hero:
 
-\-- ftd.ui list page.footer:
+-- midnight-storm.page: $page.title
+site-logo: $page.site-logo
+body: $page.body
+show-footer: true
+right-sidebar: $page.right-sidebar
+sidebar: $page.sidebar
+document-title: $page.document-title
+document-description: $page.document-description
+document-image: $page.document-image
+github-url: https://github.com/fastn-community/midnight-storm/
+github-icon: true
+full-width: $page.full-width
+blog: $page.blog
+show-banner: $page.show-banner
+banner: $page.banner
+hero: $page.hero
 
-\-- footer.fastn-footer:
-copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
-site-logo: $common.fastn-logo
-powered-by-text: Powered by
-powered-by-link: https://fastn.com/
+-- midnight-storm.page.footer:
 
-\-- end: page.footer
+-- midnight-storm.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+social-links: $common.social-links
+
+-- end: midnight-storm.page.footer
 
 \-- ftd.ui list page.banner:
 
@@ -174,38 +186,14 @@ Also, follow us on [Twitter](https://twitter.com/FifthTryHQ),
 
 \-- end: page.banner
 
-\-- midnight-storm.page: $page.title
-site-logo: $page.site-logo
-body: $page.body
-colors: $page.colors
-sidebar: $page.sidebar
-full-width: $page.full-width
-types: $page.types
-show-banner: $page.show-banner
-show-footer: $page.show-footer
-site-name: $page.site-name
-logo-height: $page.logo-height
-logo-width: $page.logo-width
-github-icon: $page.github-icon
-github-url: $page.github-url
-right-sidebar: $page.right-sidebar
-footer: $page.footer
-banner: $page.banner
-document-title: $page.document-title
-document-description: $page.document-description
-document-image: $page.document-image
-apps: $page.apps
-login-button: $page.login-button
-site-url: $page.site-url
-
-\-- ftd.column:
+-- ftd.column:
 spacing.fixed.em: 0.8
 width: fill-container
 children: $page.wrapper
 
-\-- end: ftd.column
+-- end: ftd.column
 
-\-- end: midnight-storm.page
+-- end: midnight-storm.page
 
 \-- end: page
 
