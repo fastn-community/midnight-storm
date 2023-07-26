@@ -23,7 +23,7 @@ To use this package add below lines into your FASTN.ftd file:
 lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/midnight-storm
-\-- fastn.auto-import: fastn-community.github.io/midnight-storm as doc-page
+\-- fastn.auto-import: fastn-community.github.io/midnight-storm
 
 -- ds.h2: Invocation
 id: invocation
@@ -35,14 +35,14 @@ component inside it.
 -- cb.code:
 lang: ftd
 
-\-- doc-page.page: Welcome to your fastn powered website.
+\-- midnight-storm.page: Welcome to your fastn powered website.
 document-title: fastn midnight-storm Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 site-name: NULL
 github-url: https://github.com/fastn-community/midnight-storm/
 github-icon: true
-color-scheme: fastn-community.github.io/midnight-typography
+color-scheme: fastn-community.github.io/midnight-storm-typography
 typography: fastn-community.github.io/midnight-storm-cs
 
 Some body here is coming from `$page.body`
