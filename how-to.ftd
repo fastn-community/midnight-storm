@@ -5,8 +5,6 @@ document-image: https://fastn-community.github.io/midnight-storm/-/fastn-communi
 
 -- ds.page.right-sidebar:
 
--- ds.toc-title: On this page
-
 -- ds.link-group: Invocation
 cta: how-to-use/#invocation
 
