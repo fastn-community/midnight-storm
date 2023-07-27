@@ -2,9 +2,12 @@
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 -- import: fastn-community.github.io/midnight-storm/header as h
 -- import: fastn-community.github.io/midnight-storm/common/fonts as fonts
+-- import: fastn-community.github.io/midnight-storm-typography
+-- import: fastn-community.github.io/midnight-storm-cs
 
--- import: fastn-community.github.io/typography as tf
-export: h0, h1, h2, h3, markdown
+-- import: fastn-community.github.io/typography
+export: markdown,h0,h1,h2,h3
+exposing: h2, h3
 
 -- import: fastn-community.github.io/code-block as cb
 export: code, rendered
@@ -114,8 +117,8 @@ optional pr.toc-item current-section: $common.sitemap.current-section
 optional pr.toc-item current-subsection: $common.sitemap.current-subsection
 optional pr.toc-item current-page: $common.sitemap.current-page
 children wrapper:
-ftd.type-data types: $typo.types
-ftd.color-scheme colors: $cs.main
+ftd.type-data types: $midnight-storm-typography.types
+ftd.color-scheme colors: $midnight-storm-cs.main
 ftd.ui list right-sidebar:
 boolean sidebar: false
 boolean show-footer: $common.show-footer

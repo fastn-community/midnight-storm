@@ -2,9 +2,9 @@
 -- import: fastn-community.github.io/bling/collapse
 
 -- ds.page: page
-document-title: fastn misty-gray Template. Build Your Own Website with Ease
-document-description: Simple, easy-to-use misty-gray template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/misty-gray/-/fastn-community.github.io/misty-gray/static/misty-gray-og-image.jpg
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 sidebar: true
 
 -- ds.page.right-sidebar:
@@ -121,7 +121,7 @@ This is page body content area.
 remove-gap: true
 info-right: Learn more: [Changing typography](types/)
 
-It’s used to add change typography of misty-gray, you can change default
+It’s used to add change typography of midnight-storm, you can change default
 typography with typography you want. You need to edit `FASTN/ds.ftd` to change
 it. [roboto-typography](https://fastn-community.github.io/roboto-typography/) 
 is defaut typography.
@@ -132,7 +132,7 @@ To learn more [Click here](types/).
 remove-gap: true
 info-right: Learn more: [Changing Color Scheme](cs/)
 
-It’s used to add change color scheme of misty-gray, you can change default
+It’s used to add change color scheme of midnight-storm, you can change default
 color-scheme with color scheme of your choice. You need to edit `FASTN/ds.ftd`
 to change it.
 

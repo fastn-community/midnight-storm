@@ -2,9 +2,9 @@
 -- import: fastn-community.github.io/midnight-storm/blog-authors/patrica 
 
 -- ds.page: compact-text
-document-title: fastn misty-gray Template. Build Your Own Website with Ease
-document-description: Simple, easy-to-use misty-gray template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/misty-gray/-/fastn-community.github.io/misty-gray/static/misty-gray-og-image.jpg
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
 sidebar: true
 
 -- ds.page.right-sidebar:
