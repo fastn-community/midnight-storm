@@ -27,6 +27,8 @@ optional string site-name: $common.site-name
 optional ftd.image-src site-logo: $common.site-logo
 boolean full-width: false
 boolean blog: false
+boolean show-banner: false
+ftd.ui list banner:
 ftd.ui list hero:
 
 -- midnight-storm.page: $page.title
@@ -42,6 +44,8 @@ github-url: https://github.com/fastn-community/midnight-storm/
 github-icon: true
 full-width: $page.full-width
 blog: $page.blog
+show-banner: $page.show-banner
+banner: $page.banner
 hero: $page.hero
 
 -- midnight-storm.page.footer:

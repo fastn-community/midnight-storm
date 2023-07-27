@@ -131,6 +131,9 @@ link: components/page/
 -- ds.letter-data: post
 link: components/post/
 
+-- ds.letter-data: post-card
+link: components/post-card/
+
 -- ds.letter-data: posts
 link: components/posts/
 
@@ -231,6 +234,9 @@ cta: components/page/
 
 -- ds.link: ☞ post
 cta: components/post/
+
+-- ds.link: ☞ post-card
+cta: components/post-card/
 
 -- ds.link: ☞ posts
 cta: components/posts/
