@@ -33,7 +33,7 @@ component inside it.
 -- cb.code:
 lang: ftd
 
-\-- midnight-storm.page: Welcome to your fastn powered website.
+\-- ds.page: Welcome to your fastn powered website.
 document-title: fastn midnight-storm Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
