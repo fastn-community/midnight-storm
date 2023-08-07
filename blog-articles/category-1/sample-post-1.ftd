@@ -2,7 +2,7 @@
 
 -- common.post-meta meta: We Transform ideas into digital outcomes.
 post-image: $assets.files.static.featured.svg
-post-url: /blog-articles/sample-post-1/
+post-url: /blog-articles/category-1/sample-post-1/
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore 
@@ -11,7 +11,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 post-image: $assets.files.static.post1.svg
 image: $assets.files.static.avatar.svg
 author: $patrica.patrica
-post-url: /blog-articles/sample-post-1/
+post-url: /blog-articles/category-1/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
@@ -19,7 +19,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 post-image: $assets.files.static.post2.svg
 image: $assets.files.static.avatar.svg
 author: $patrica.patrica
-post-url: /blog-articles/sample-post-1/
+post-url: /blog-articles/category-1/sample-post-1/
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 

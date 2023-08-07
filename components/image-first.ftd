@@ -29,7 +29,8 @@ image-first layout. To see it in action - [Click here](blog/).
 post-image: $assets.files.static.post1.svg
 image: $assets.files.static.avatar.svg
 author: $patrica.patrica
-post-url: /blog-articles/sample-post-1/
+post-url: /blog-articles/category-1/sample-post-1/
+
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
