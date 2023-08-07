@@ -3,16 +3,18 @@
 -- fastn.package: fastn-community.github.io/midnight-storm
 favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/favicon.svg
 
+-- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/midnight-storm-typography
 -- fastn.dependency: fastn-community.github.io/playfair-display-font
 -- fastn.dependency: fastn-community.github.io/inter-font
+-- fastn.dependency: fastn-community.github.io/app-switcher
 -- fastn.dependency: fastn-community.github.io/poppins-font
 -- fastn.dependency: fastn-community.github.io/midnight-storm-cs
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 -- fastn.dependency: fastn-community.github.io/bling
 -- fastn.dependency: fastn-community.github.io/banner
--- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/typography
+-- fastn.dependency: gargajit.github.io/optimization
 
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/typography as tf
@@ -66,6 +68,8 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
   skip: true
   - post: /components/post/
   skip: true
+  - post-card: /components/post-card/
+  skip: true
   - posts: /components/posts/
   skip: true
   - rendered: /components/rendered/
@@ -84,13 +88,13 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 
 - Blog: /blog/
   - Post List: /post-list/
-  - Sample Post: /blog-articles/sample-post-1/
+  - Sample Post: /blog-articles/category-1/sample-post-1/
   - Sample Author Bio: /blog-authors/patrica/
 
 - Contribute: /contribute/
 
 # Blog: /blog/
 
-## Sample Post: /blog-articles/sample-post-1/
+## Sample Post: /blog-articles/category-1/sample-post-1/
 
 # Landing: /landing/
