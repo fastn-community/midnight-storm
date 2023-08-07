@@ -20,7 +20,7 @@ $processor$: pr.sitemap
 -- pr.sitemap-data footer-toc:
 $processor$: pr.full-sitemap
 
--- fastn.app-ui apps:
+-- pr.app-ui apps:
 $processor$: pr.fastn-apps
 
 -- record social-media:
