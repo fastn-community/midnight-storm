@@ -1,0 +1,57 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: features-card
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.features-card` represents to  add featured content of the page, over here you can
+add the list for your features-card and body of features card.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.features-card: We Transform ideas into digital outcomes
+features: $common.list-of-features
+tag: KICKER
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- ds.rendered.output:
+
+-- ds.features-card: We Transform ideas into digital outcomes
+features: $common.list-of-features
+tag: KICKER
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `features-card` component
+
+- **title** - `type: caption` It’s used to add title to `features-card`
+    component.
+- **list** - `type: record` It’s used to add list type to `features-card`
+    component.
+- **body** - `type: body` It’s used to add body type to `features-card`
+    component.
+- **tag** - `type: string` It’s used to add tag type to `features-card`
+    component.
+
+-- end: ds.page

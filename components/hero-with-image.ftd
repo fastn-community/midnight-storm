@@ -1,0 +1,74 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: hero-with-image
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.hero-with-image` represents to a hero-section of the page, over here you can
+add the title for your page, followed by some image or cta-buttons, with some
+body.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.hero-with-image: We transform ideas into digital outcomes.
+link: landing/
+cta-primary: Demo
+cta-primary-link: landing/
+cta-secondary: How it works
+cta-secondary-link: landing/
+image: $assets.files.static.landing.svg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- ds.rendered.output:
+
+-- ds.hero-with-image: We transform ideas into digital outcomes.
+link: landing/
+cta-primary: Demo
+cta-primary-link: landing/
+cta-secondary: How it works
+cta-secondary-link: landing/
+image: $assets.files.static.landing.svg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `hero-with-image` component
+
+- **title** - `type: caption` It’s used to add title to `hero-with-image`
+    component.
+- **link** - `type: string` It’s used to add link type to `hero-with-image`
+    component.
+- **cta-primary** - `type: string` It’s used to add button text to
+    `hero-with-image` component.
+- **cta-primary-link** - `type: string` It’s used to add button link url to
+    `hero-with-image` component.
+- **cta-secondary** - `type: string` It’s used to add button text to
+    `hero-with-image` component.
+- **cta-secondary-link** - `type: string` It’s used to add button link url to
+    `hero-with-image` component.
+- **body** - `type: body` It’s used to add body content to `hero-with-image`
+    component.
+- **image** - `type: ftd.image-src` It’s used to add image to `hero-with-image`
+    component.
+
+-- end: ds.page

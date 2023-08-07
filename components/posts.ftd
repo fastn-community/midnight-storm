@@ -34,7 +34,7 @@ lang: ftd
 download: post-list.ftd
 max-height.fixed.px: 300
 
-\-- import: fastn-community.github.io/midnight-storm/blog-articles/sample-post-1
+\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-1/sample-post-1
 
 \-- ds.page:
 
@@ -71,7 +71,7 @@ remove-gap: true
 -- ds.code:
 lang: ftd
 
-\-- import: fastn-community.github.io/midnight-storm/blog-articles/sample-post-1
+\-- import: fastn-community.github.io/midnight-storm/blog-articles/category-1/sample-post-1
 
 -- ds.markdown:
 

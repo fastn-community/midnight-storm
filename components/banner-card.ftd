@@ -1,0 +1,51 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: banner-card
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.banner-card` represents to a banner card of the page, over here you can
+add the title for your banner and lists.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.banner-card: See how much faster you can get paid with fastn
+info-cards: $common.list-of-info-cards
+
+Use our calculator to see how many days we can free up in cash flow for your
+business.
+
+-- ds.rendered.output:
+
+-- ds.banner-card: See how much faster you can get paid with fastn
+info-cards: $common.list-of-info-cards
+
+Use our calculator to see how many days we can free up in cash flow for your
+business.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `banner-card` component
+
+- **title** - `type: caption` It’s used to add title to `banner-card`
+    component.
+- **list** - `type: record` It’s used to add list type to `banner-card`
+    component.
+
+-- end: ds.page

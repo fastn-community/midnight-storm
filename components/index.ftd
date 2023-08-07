@@ -19,6 +19,7 @@ learn more about it.
 height.fixed.px if { ftd.device != "mobile" }: 1000
 height: fill-container
 contents-a: $letter-contents-a
+contents-b: $letter-contents-b
 contents-c: $letter-contents-c
 contents-f: $letter-contents-f
 contents-h: $letter-contents-h
@@ -29,6 +30,7 @@ contents-n: $letter-contents-n
 contents-o: $letter-contents-o
 contents-p: $letter-contents-p
 contents-r: $letter-contents-r
+contents-s: $letter-contents-s
 contents-t: $letter-contents-t
 contents-w: $letter-contents-w
 contents-y: $letter-contents-y
@@ -53,6 +55,13 @@ link: components/author-bio/
 
 -- end: letter-contents-a
 
+-- ds.letter-data list letter-contents-b:
+
+-- ds.letter-data: banner-card
+link: components/banner-card/
+
+-- end: letter-contents-b
+
 -- ds.letter-data list letter-contents-c:
 
 -- ds.letter-data: code
@@ -61,9 +70,18 @@ link: components/code/
 -- ds.letter-data: compact-text
 link: components/compact-text/
 
+-- ds.letter-data: content
+link: components/content/
+
 -- end: letter-contents-c
 
 -- ds.letter-data list letter-contents-f:
+
+-- ds.letter-data: faqs
+link: components/faqs/
+
+-- ds.letter-data: features-card
+link: components/features-card/
 
 -- ds.letter-data: featured-post
 link: components/featured-post/
@@ -74,6 +92,15 @@ link: components/featured-post/
 
 -- ds.letter-data: h0, h1, h2, h3
 link: components/headers/
+
+-- ds.letter-data: hero-with-image
+link: components/hero-with-image/
+
+-- ds.letter-data: hero-image-left
+link: components/hero-image-left/
+
+-- ds.letter-data: hero-image-right
+link: components/hero-image-right/
 
 -- end: letter-contents-h
 
@@ -97,6 +124,9 @@ link: components/image-in-between/
 
 -- ds.letter-data: link & link-group
 link: components/link/
+
+-- ds.letter-data: logo-cloud
+link: components/logo-cloud/
 
 -- end: letter-contents-l
 
@@ -146,7 +176,17 @@ link: components/rendered/
 
 -- end: letter-contents-r
 
+-- ds.letter-data list letter-contents-s:
+
+-- ds.letter-data: search-card
+link: components/search-card/
+
+-- end: letter-contents-s
+
 -- ds.letter-data list letter-contents-t:
+
+-- ds.letter-data: testimonials-card
+link: components/testimonials-card/
 
 -- ds.letter-data: tip
 link: components/tip/
@@ -190,17 +230,38 @@ cta: components/
 -- ds.link: ☞ author-bio
 cta: components/author-bio/
 
+-- ds.link: ☞ banner-card
+cta: components/banner-card/
+
 -- ds.link: ☞ code
 cta: components/code/
 
 -- ds.link: ☞ compact-text
 cta: components/compact-text/
 
+-- ds.link: ☞ content
+cta: components/content/
+
+-- ds.link: ☞ faqs
+cta: components/faqs/
+
 -- ds.link: ☞ featured-post
 cta: components/featured-post/
 
+-- ds.link: ☞ features-card
+cta: components/features-card/
+
 -- ds.link: ☞ h0, h1, h2, h3
 cta: components/headers/
+
+-- ds.link: ☞ hero-image-left
+cta: components/hero-image-left/
+
+-- ds.link: ☞ hero-image-right
+cta: components/hero-image-right/
+
+-- ds.link: ☞ hero-with-image
+cta: components/hero-with-image/
 
 -- ds.link: ☞ iframe
 cta: components/iframe/
@@ -216,6 +277,9 @@ cta: components/image-in-between/
 
 -- ds.link: ☞ link & link-group
 cta: components/link/
+
+-- ds.link: ☞ logo-cloud
+cta: components/logo-cloud/
 
 -- ds.link: ☞ markdown
 cta: components/markdown/
@@ -243,6 +307,12 @@ cta: components/posts/
 
 -- ds.link: ☞ rendered
 cta: components/rendered/
+
+-- ds.link: ☞ search-card
+cta: components/search-card/
+
+-- ds.link: ☞ testimonials-card
+cta: components/testimonials-card/
 
 -- ds.link: ☞ tip
 cta: components/tip/

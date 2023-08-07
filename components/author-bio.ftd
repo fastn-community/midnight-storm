@@ -17,7 +17,7 @@ sidebar: true
 -- ds.page.body:
 
 `ds.author-bio` can be used to show blog/article author profile page. 
- To see it in action - [Click here] blog-authors/patrica/).
+ To see it in action - [Click here](blog-authors/patrica/).
 
 -- ds.h2: Example:
 
@@ -25,7 +25,7 @@ sidebar: true
 
 -- ds.rendered.input:
 
-\-- common.author-meta patrica: John Doe
+\-- common.author-meta patrica: Patrica Ava
 profile: UX Designer
 bio-url: blog-authors/patrica/
 image: $assets.files.static.avatar.jpg
@@ -38,7 +38,7 @@ commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
 velit esse.
 
 \-- ds.author-bio: 
-author: $patrica
+author: $patrica.patrica
 
 -- ds.rendered.output:
 
@@ -64,7 +64,7 @@ author: $patrica
 -- ds.code:
 lang: ftd
 
-\-- common.author-meta patrica: John Doe
+\-- common.author-meta patrica: Patrica Ava
 profile: UX Designer
 bio-url: blog-authors/patrica/
 image: $assets.files.static.avatar.jpg
