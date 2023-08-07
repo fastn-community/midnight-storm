@@ -1,0 +1,53 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: faqs
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.faqs` represents to  add frequently asked questions on the page, over here you can
+add the list for your faqs and body of testimonials.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.faqs: Frequently Asked Questions
+faqs-list: $common.list-of-faqs
+
+Flex is the only saas business platform that lets you run your business on one
+platform, seamlessly across all digital channels.
+
+-- ds.rendered.output:
+
+-- ds.faqs: Frequently Asked Questions
+faqs-list: $common.list-of-faqs
+
+Flex is the only saas business platform that lets you run your business on one
+platform, seamlessly across all digital channels.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `faqs` component
+
+- **title** - `type: caption` It’s used to add title to `faqs`
+    component.
+- **list** - `type: record` It’s used to add list type to `faqs`
+    component.
+- **body** - `type: body` It’s used to add body type to `faqs`
+    component.
+
+-- end: ds.page

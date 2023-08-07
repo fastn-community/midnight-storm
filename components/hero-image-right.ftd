@@ -1,0 +1,66 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: hero-image-right
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.hero-image-right` represents to a hero-section with right side image of the
+page, over here you can add the title for your page, followed by some image or
+cta-buttons, with some body.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.hero-image-right: Engage
+image: $assets.files.static.right-img.svg
+link: landing/
+cta-primary: Sign me up
+cta-primary-link: index.html
+
+Welcome Studio gives you all the tools you need to create and host virtual
+experiences that look awesome and put your brand centerstage.
+
+-- ds.rendered.output:
+
+-- ds.hero-image-right: Engage
+image: $assets.files.static.right-img.svg
+link: landing/
+cta-primary: Sign me up
+cta-primary-link: index.html
+
+Welcome Studio gives you all the tools you need to create and host virtual
+experiences that look awesome and put your brand centerstage.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `hero-image-right` component
+
+- **title** - `type: caption` It’s used to add title to `hero-image-right`
+    component.
+- **link** - `type: string` It’s used to add link type to `hero-image-right`
+    component.
+- **cta-primary** - `type: string` It’s used to add button text to
+    `hero-image-right` component.
+- **cta-primary-link** - `type: string` It’s used to add button link url to
+    `hero-image-right` component.
+- **body** - `type: body` It’s used to add body content to `hero-image-right`
+    component.
+- **image** - `type: ftd.image-src` It’s used to add image to `hero-image-right`
+    component.
+
+-- end: ds.page

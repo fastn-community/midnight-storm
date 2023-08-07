@@ -1,0 +1,47 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: testimonials-card
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.testimonials-card` represents to a testimonials card of the page, over here you can
+add the title for your testimonials and lists of testimonials.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.testimonials-card:
+testimonials: $common.list-of-testimonials
+nav: $common.navs
+
+-- ds.rendered.output:
+
+-- ds.testimonials-card:
+testimonials: $common.list-of-testimonials
+nav: $common.navs
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `testimonials-card` component
+
+- **title** - `type: caption` It’s used to add title to `testimonials-card`
+    component.
+- **list** - `type: record` It’s used to add list type to `testimonials-card`
+    component.
+
+-- end: ds.page

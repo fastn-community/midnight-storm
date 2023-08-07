@@ -1,0 +1,49 @@
+-- import: fastn-community.github.io/midnight-storm/components
+
+-- ds.page: content
+document-title: fastn midnight-storm Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+`ds.content` represents to a small content of the page, over here you can add
+the title for your page, with some body.
+
+-- ds.h2: Example:
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ds.content: Built for the next generation of small business
+
+Fastn is an all-in-one payments platform where businesses can connect, transact,
+and grow together.
+
+-- ds.rendered.output:
+
+-- ds.content: Built for the next generation of small business
+
+Fastn is an all-in-one payments platform where businesses can connect, transact,
+and grow together.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Properties of `content` component
+
+- **title** - `type: caption` It’s used to add title to `content`
+    component.
+- **body** - `type: body` It’s used to add body content to `content`
+    component.
+
+-- end: ds.page

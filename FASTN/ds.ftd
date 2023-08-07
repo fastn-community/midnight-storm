@@ -1,5 +1,5 @@
 -- import: fastn-community.github.io/midnight-storm 
-export: author-bio,code,compact-text,featured-post,h0,h1,h2,h3,iframe,image,image-first,image-in-between,link,link-group,markdown,not-found-1,not-found-2,output,post,posts,rendered,tip,without-image,youtube,letter, letter-data, letter-bar, letter-category, letter-stack,post-card,toc-title
+export: author-bio,code,compact-text,featured-post,h0,h1,h2,h3,iframe,image,image-first,image-in-between,link,link-group,markdown,not-found-1,not-found-2,output,post,posts,rendered,tip,without-image,youtube,letter, letter-data, letter-bar, letter-category, letter-stack,post-card,toc-title, hero-with-image, logo-cloud, content, hero-image-left, hero-image-right, banner-card, testimonials-card, features-card, faqs, search-card
 
 -- ftd.image-src fastn-logo:
 light: https://fastn.com/-/fastn.com/images/fastn.svg

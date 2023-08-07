@@ -38,13 +38,27 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 - Components: /components/
   - author-bio: /components/author-bio/
   skip: true
+  - banner-card: /components/banner-card/
+  skip: true
   - code: /components/code/
   skip: true
   - compact-text: /components/compact-text/
   skip: true
+  - content: /components/content/
+  skip: true
+  - faqs: /components/faqs/
+  skip: true
   - featured-post: /components/featured-post/
   skip: true
+  - features-card: /components/features-card/
+  skip: true
   - h0, h1, h2, h3: /components/headers/
+  skip: true
+  - hero-with-image: /components/hero-with-image/
+  skip: true
+  - hero-image-left: /components/hero-image-left/
+  skip: true
+  - hero-image-right: /components/hero-image-right/
   skip: true
   - iframe: /components/iframe/
   skip: true
@@ -55,6 +69,8 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
   - image-in-between: /components/image-in-between/
   skip: true
   - link & link-group: /components/link/
+  skip: true
+  - logo-cloud: /components/logo-cloud/
   skip: true
   - markdown: /components/markdown/
   skip: true
@@ -73,6 +89,10 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
   - posts: /components/posts/
   skip: true
   - rendered: /components/rendered/
+  skip: true
+  - search-card: /components/search-card/
+  skip: true
+  - testimonials-card: /components/testimonials-card/
   skip: true
   - tip: /components/tip/
   skip: true
