@@ -15,7 +15,9 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 -- fastn.dependency: fastn-community.github.io/banner
 -- fastn.dependency: fastn-community.github.io/typography
 -- fastn.dependency: gargajit.github.io/optimization
+-- fastn.dependency: fastn.com
 
+-- fastn.auto-import: fastn
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/typography as tf
 -- fastn.auto-import: fastn-community.github.io/midnight-storm/assets
@@ -106,10 +108,10 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 - Updating Footer: /footer/
 - SEO: /seo/
 
-- Blog: blog/
-  - Post List: post-list/
-  - Sample Post: blog-articles/category-1/sample-post-1/
-  - Sample Author Bio: blog-authors/patrica/
+- Blog: /blog/
+  - Post List: /post-list/
+  - Sample Post: /blog-articles/category-1/sample-post-1/
+  - Sample Author Bio: /blog-authors/patrica/
 
 - Contribute: /contribute/
 
@@ -117,4 +119,4 @@ favicon: https://fastn-community.github.io/midnight-storm/-/fastn-community.gith
 
 ## Sample Post: blog-articles/category-1/sample-post-1/
 
-# Landing: /landing/
+# Landing: landing/
