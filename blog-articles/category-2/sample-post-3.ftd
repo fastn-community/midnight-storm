@@ -1,6 +1,4 @@
--- import: fastn-community.github.io/midnight-storm/assets
--- import: fastn-community.github.io/midnight-storm/common
--- import: fastn-community.github.io/midnight-storm/blog-authors/patrica as author
+-- import: fastn-community.github.io/midnight-storm/blog-authors/patrica
 
 
 
@@ -12,7 +10,7 @@
 published-on: July 22, 2014 at 10:02 pm
 post-image: $assets.files.static.image-placeholder.png
 post-url: blog-articles/category-2/sample-post-3/
-author: $author.patrica
+author: $patrica.patrica
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
