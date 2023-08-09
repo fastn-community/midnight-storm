@@ -12,6 +12,8 @@
 
 -- string site-url: index.html
 
+-- boolean login-button: false
+
 -- integer max-width: 1320
 
 -- pr.sitemap-data sitemap:
@@ -22,6 +24,10 @@ $processor$: pr.full-sitemap
 
 -- fastn.app-ui apps:
 $processor$: pr.fastn-apps
+
+-- ftd.image-src fastn-logo:
+light: https://fastn.com/-/fastn.com/images/fastn.svg
+dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
 -- record social-media:
 ftd.image-src src:
