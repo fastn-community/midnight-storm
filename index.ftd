@@ -303,7 +303,7 @@ align-content if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.sideb
 margin-top.px: 24
 
 -- ftd.column:
-if: { !doc-page-desktop.blog && doc-page-desktop.sidebar }
+if: { !doc-page-desktop.blog }
 min-width.fixed.percent: 20
 min-height.fixed.calc: 100vh - 200px
 height: fill-container
