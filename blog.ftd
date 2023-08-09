@@ -10,10 +10,10 @@ blog: true
 post-data: $sample-post-1.meta
 info: Small Incidental Text.
 cta-primary: Button
-cta-primary-url: /blog-articles/category-1/sample-post-1/
+cta-primary-url: blog-articles/category-1/sample-post-1/
 cta-secondary: Button
-cta-secondary-url: /blog-articles/category-1/sample-post-1/
-link: /blog-articles/category-1/sample-post-1/
+cta-secondary-url: blog-articles/category-1/sample-post-1/
+link: blog-articles/category-1/sample-post-1/
 
 -- end: ds.page.hero
 

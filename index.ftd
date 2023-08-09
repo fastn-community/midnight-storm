@@ -4,6 +4,7 @@
 -- import: fastn-community.github.io/midnight-storm/common/fonts as fonts
 -- import: fastn-community.github.io/midnight-storm-typography
 -- import: fastn-community.github.io/midnight-storm-cs
+-- import: fastn-community.github.io/app-switcher as apps-switcher
 
 -- import: fastn-community.github.io/typography
 export: markdown,h0,h1,h2,h3
@@ -132,6 +133,7 @@ boolean github-icon: false
 optional string github-url:
 boolean blog: false
 ftd.ui list hero:
+fastn.app-ui apps: $common.apps
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -181,6 +183,7 @@ github-url: $page.github-url
 full-width: $page.full-width
 blog: $page.blog
 hero: $page.hero
+apps: $page.apps
 
 -- end: ftd.desktop
 
@@ -203,6 +206,7 @@ github-icon: $page.github-icon
 github-url: $page.github-url
 blog: $page.blog
 hero: $page.hero
+apps: $page.apps
 
 -- end: ftd.mobile
 
@@ -245,6 +249,7 @@ optional pr.toc-item current-section:
 optional pr.toc-item current-page:
 optional pr.toc-item current-subsection:
 children wrapper:
+fastn.app-ui apps:
 optional integer logo-width: 
 optional integer logo-height:
 optional string login-btn-txt: Login
@@ -262,6 +267,10 @@ ftd.ui list hero:
 align-self: center
 max-width.fixed.px: $common.max-width
 width: fill-container
+
+-- apps-switcher.app-switcher:
+if: { ftd.is_empty(doc-page-desktop.apps) }
+apps: $doc-page-desktop.apps
 
 -- h.header:
 sections: $doc-page-desktop.sections
@@ -377,6 +386,7 @@ optional pr.toc-item current-page:
 optional pr.toc-item current-subsection:
 ftd.ui list right-sidebar:
 children wrapper:
+fastn.app-ui apps:
 boolean github-icon: false
 optional string github-url: 
 boolean blog: false
@@ -385,6 +395,14 @@ ftd.ui list hero:
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+
+-- apps-switcher.app-switcher:
+if: { ftd.is_empty(doc-page-mobile.apps) }
+apps: $doc-page-mobile.apps
+
+-- end: ftd.column
 
 -- h.header:
 sections: $doc-page-mobile.sections
