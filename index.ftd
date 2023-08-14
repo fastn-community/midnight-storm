@@ -3717,9 +3717,11 @@ optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
 optional boolean align-right: false
+optional string id: 
 
 -- ftd.column:
 width: fill-container
+id: $hero-with-image.id
 
 -- ftd.desktop:
 
@@ -3968,9 +3970,11 @@ link: $hero-with-image-mobile.link
 caption title:
 body body:
 common.logos list logo-list:
+optional string id: 
 
 -- ftd.column:
 width: fill-container
+id: $logo-cloud.id
 
 -- ftd.desktop:
 
@@ -4136,9 +4140,11 @@ caption title:
 body body:
 optional ftd.image-src image:
 optional ftd.background-image bg-image: $assets.files.static.background.svg
+optional string id: 
 
 -- ftd.column:
 width: fill-container
+id: $content.id
 
 -- ftd.desktop:
 
@@ -4258,9 +4264,11 @@ optional string cta-primary:
 optional string cta-primary-link:
 optional string link:
 body body:
+optional string id: 
 
 -- ftd.column:
 width: fill-container
+id: $hero-image-left.id
 
 -- ftd.desktop:
 
@@ -4438,9 +4446,11 @@ optional string cta-primary:
 optional string cta-primary-link:
 body body:
 optional string link:
+optional string id:
 
 -- ftd.column:
 width: fill-container
+id: $hero-image-right.id
 
 -- ftd.desktop:
 
@@ -4615,9 +4625,11 @@ link: $hero-image-right-mobile.link
 caption title:
 body body:
 common.info-card list info-cards:
+optional string id:
 
 -- ftd.column:
 width: fill-container
+id: $banner-card.id
 
 -- ftd.desktop:
 
@@ -4785,9 +4797,11 @@ $banner-card-list.body
 optional caption title:
 common.testimonial list testimonials:
 common.testimonial-nav list nav:
+optional string id:
 
 -- ftd.column:
 width: fill-container
+id: $testimonials-card.id
 
 -- ftd.desktop: 
 
@@ -5005,8 +5019,10 @@ caption title:
 body body:
 optional string tag:
 common.feature list features:
+optional string id:
 
 -- ftd.column:
+id: $features-card.id
 width: fill-container
 padding-vertical.px: 80
 align-content: center
@@ -5111,8 +5127,10 @@ $features-card-details.body
 caption title:
 body body:
 common.faq list faqs-list:
+optional string id:
 
 -- ftd.column:
+id: $faqs.id
 padding-top.px if {ftd.device != "mobile"}: 50
 padding-bottom.px if {ftd.device != "mobile"}: 70
 width: fill-container
@@ -5230,8 +5248,10 @@ optional string input-placeholder: Enter your work email...
 optional body body:
 optional ftd.image-src cta-icon:
 optional ftd.image-src info-icon: $assets.files.static.check-circle.svg
+optional string id:
 
 -- ftd.column:
+id: $search-card.id
 width: fill-container
 align-content: center
 spacing.fixed.px: 56
