@@ -4150,6 +4150,7 @@ id: $content.id
 
 -- content-desktop: $content.title
 body: $content.body
+bg-image: $content.bg-image
 
 -- end: ftd.desktop
 
@@ -4176,10 +4177,23 @@ body: $content.body
 -- component content-desktop:
 caption title:
 body body: 
+optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 100
+
+-- ftd.row:
+background.image: $bg-image
+align-content: left
+height.fixed.px: 250
+width.fixed.px: 250
+anchor: parent
+top.px: 50
+left.px: 0
+z-index: 0
+
+-- end: ftd.row
 
 -- ftd.column:
 padding-top.px: 50

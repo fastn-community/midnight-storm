@@ -1,4 +1,3 @@
-
 -- ds.page:
 full-width: true
 sidebar: false
@@ -59,7 +58,7 @@ link: landing/
 
 Lorem ipsum dolor sit amet
 
--- ds.banner-card: See how much faster you can get paid with fastn
+-- ds.banner-card: SEE HOW MUCH FASTER YOU CAN GET PAID WITH FASTN
 info-cards: $common.list-of-info-cards
 
 Use our calculator to see how many days we can free up in cash flow for your
