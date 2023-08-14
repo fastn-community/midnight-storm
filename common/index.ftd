@@ -365,15 +365,15 @@ logo: $assets.files.static.img1.svg
 link: landing/
 
 -- logos: 
-logo: $assets.files.static.img2.svg
+logo: $assets.files.static.img3.svg
+link: landing/
+
+-- logos: 
+logo: $assets.files.static.img3.svg
 link: landing/
 
 -- logos: 
 logo: $assets.files.static.img1.svg
-link: landing/
-
--- logos: 
-logo: $assets.files.static.img2.svg
 link: landing/
 
 -- end: list-of-logos
