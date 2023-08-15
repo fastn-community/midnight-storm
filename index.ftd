@@ -3846,6 +3846,7 @@ link: $hero-with-image-desktop.cta-primary-link
 -- end: ftd.row
 
 -- ftd.row:
+if: { hero-with-image-desktop.cta-secondary != NULL }
 border-color: $inherited.colors.shadow
 border-width.px: 1
 background.solid if { hero-with-image-desktop.mouse-enter }: $inherited.colors.cta-primary.hover
@@ -3855,7 +3856,6 @@ padding-horizontal.px: 28
 padding-vertical.px: 10
 
 -- ftd.text: $hero-with-image-desktop.cta-secondary
-if: { hero-with-image-desktop.cta-secondary != NULL }
 role: $inherited.types.button-large
 color: $inherited.colors.shadow
 color if { hero-with-image-desktop.mouse-enter }: $inherited.colors.background.step-1
@@ -3938,13 +3938,13 @@ link: $hero-with-image-mobile.cta-primary-link
 -- end: ftd.row
 
 -- ftd.row:
+if: { hero-with-image-mobile.cta-secondary != NULL }
 border-color: $inherited.colors.shadow
 border-width.px: 1
 padding-horizontal.px: 28
 padding-vertical.px: 10
 
 -- ftd.text: $hero-with-image-mobile.cta-secondary
-if: { hero-with-image-mobile.cta-secondary != NULL }
 role: $inherited.types.button-large
 color: $inherited.colors.shadow
 link: $hero-with-image-mobile.cta-secondary-link
@@ -4363,6 +4363,7 @@ color: $inherited.colors.text
 $hero-image-left-desktop.body
 
 -- ftd.row:
+if: { hero-image-left-desktop.cta-primary != NULL }
 align-content: center
 spacing.fixed.px: 16
 background.solid: $inherited.colors.cta-primary.base
@@ -4425,6 +4426,7 @@ color: $inherited.colors.text
 $hero-image-left-mobile.body
 
 -- ftd.row:
+if: { hero-image-left-mobile.cta-primary != NULL }
 align-content: center
 spacing.fixed.px: 16
 background.solid: $inherited.colors.cta-primary.base
@@ -4541,6 +4543,7 @@ color: $inherited.colors.text
 $hero-image-right-desktop.body
 
 -- ftd.row:
+if: { hero-image-right-desktop.cta-primary != NULL }
 align-content: center
 background.solid: $inherited.colors.shadow
 background.solid if { hero-image-right-desktop.mouse-in }: $inherited.colors.cta-primary.hover
@@ -4608,6 +4611,7 @@ color: $inherited.colors.text
 $hero-image-right-mobile.body
 
 -- ftd.row:
+if: { hero-image-right-mobile.cta-primary != NULL }
 align-content: center
 background.solid: $inherited.colors.shadow
 background.solid if { hero-image-right-mobile.mouse-in }: $inherited.colors.cta-primary.hover
