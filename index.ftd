@@ -134,6 +134,7 @@ optional string github-url:
 boolean blog: false
 ftd.ui list hero:
 fastn.app-ui apps: $common.apps
+boolean breadcrumb: true
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -184,6 +185,7 @@ full-width: $page.full-width
 blog: $page.blog
 hero: $page.hero
 apps: $page.apps
+breadcrumb: $page.breadcrumb
 
 -- end: ftd.desktop
 
@@ -207,6 +209,7 @@ github-url: $page.github-url
 blog: $page.blog
 hero: $page.hero
 apps: $page.apps
+breadcrumb: $page.breadcrumb
 
 -- end: ftd.mobile
 
@@ -262,6 +265,7 @@ optional string github-url:
 boolean full-width:
 boolean blog: false
 ftd.ui list hero:
+boolean breadcrumb: false
 
 -- ftd.column:
 align-self: center
@@ -290,6 +294,7 @@ site-name: $doc-page-desktop.site-name
 menu-icon: $assets.files.static.hamburger.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
+breadcrumb: $doc-page-desktop.breadcrumb
 
 -- ftd.column:
 children: $doc-page-desktop.hero
@@ -391,6 +396,7 @@ boolean github-icon: false
 optional string github-url: 
 boolean blog: false
 ftd.ui list hero:
+boolean breadcrumb: false
 
 -- ftd.column:
 width: fill-container
