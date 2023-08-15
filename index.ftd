@@ -4817,7 +4817,7 @@ $banner-card-list.body
 optional caption title:
 common.testimonial list testimonials:
 common.testimonial-nav list nav:
-string id: testimonials-card
+string id: testimonials
 
 -- ftd.column:
 width: fill-container
