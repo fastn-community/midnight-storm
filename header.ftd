@@ -173,8 +173,7 @@ site-name: $header-desktop.site-name
 
 -- ftd.row: 
 width: fill-container
-align-content if { !header-desktop.login-button }: left
-align-content if { header-desktop.login-button }: center
+align-content: center
 spacing.fixed.px: 32
 margin-left.px: 24
 
