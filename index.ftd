@@ -3728,6 +3728,7 @@ string id: hero-with-image
 -- ftd.column:
 width: fill-container
 id: $hero-with-image.id
+classes: section
 
 -- ftd.desktop:
 
@@ -3981,6 +3982,7 @@ string id: logo-cloud
 -- ftd.column:
 width: fill-container
 id: $logo-cloud.id
+classes: section
 
 -- ftd.desktop:
 
@@ -4151,6 +4153,7 @@ string id: content
 -- ftd.column:
 width: fill-container
 id: $content.id
+classes: section
 
 -- ftd.desktop:
 
@@ -4289,6 +4292,7 @@ string id: hero-image-left
 -- ftd.column:
 width: fill-container
 id: $hero-image-left.id
+classes: section
 
 -- ftd.desktop:
 
@@ -4471,6 +4475,7 @@ string id: hero-image-right
 -- ftd.column:
 width: fill-container
 id: $hero-image-right.id
+classes: section
 
 -- ftd.desktop:
 
@@ -4650,6 +4655,7 @@ string id: banner-card
 -- ftd.column:
 width: fill-container
 id: $banner-card.id
+classes: section
 
 -- ftd.desktop:
 
@@ -4822,6 +4828,7 @@ string id: testimonials
 -- ftd.column:
 width: fill-container
 id: $testimonials-card.id
+classes: section
 
 -- ftd.desktop: 
 
@@ -5046,6 +5053,7 @@ id: $features-card.id
 width: fill-container
 padding-vertical.px: 80
 align-content: center
+classes: section
 
 -- ftd.column:
 align-content: center
@@ -5156,6 +5164,7 @@ padding-bottom.px if {ftd.device != "mobile"}: 70
 width: fill-container
 align-content: center
 spacing.fixed.px: 29
+classes: section
 
 -- ftd.text: $faqs.title
 role: $inherited.types.heading-large
@@ -5280,6 +5289,7 @@ padding-vertical.px if { ftd.device != "mobile" }: 80
 padding-top.px if { ftd.device == "mobile" }: 80
 padding-bottom.px if { ftd.device == "mobile" }: 24
 background.solid if { ftd.device != "mobile" }: $inherited.colors.custom.one
+classes: section
 
 -- ftd.column:
 width if { ftd.device == "mobile"}: fill-container
