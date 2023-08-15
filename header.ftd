@@ -30,6 +30,7 @@ boolean $sidebar-open: false
 boolean github-icon: false
 optional string github-url:
 boolean blog: false
+boolean breadcrumb: true
 
 -- ftd.column:
 width: fill-container
@@ -77,6 +78,7 @@ current-subsection: $header.current-subsection
 logo-width: $header.logo-width 
 logo-height: $header.logo-height 
 blog: $header.blog
+breadcrumb: $header.breadcrumb
 
 -- end: ftd.mobile
 
@@ -98,6 +100,7 @@ logo-width: $header.logo-width
 logo-height: $header.logo-height 
 github-icon: $header.github-icon
 github-url: $header.github-url
+breadcrumb: $header.breadcrumb
 
 -- end: ftd.desktop
 
@@ -130,6 +133,7 @@ integer logo-width: 120
 integer logo-height: 44
 boolean github-icon: 
 optional string github-url: 
+boolean breadcrumb: false
 
 -- ftd.column:
 width: fill-container
@@ -141,6 +145,7 @@ padding-horizontal.px: 40
 width: fill-container
 spacing: space-between
 padding-vertical.px: 20
+align-content: center
 
 -- ftd.row:
 link: $header-desktop.site-url
@@ -167,8 +172,10 @@ site-name: $header-desktop.site-name
 -- end: ftd.row
 
 -- ftd.row: 
-align-self: center
+width: fill-container
+align-content: left
 spacing.fixed.px: 32
+margin-left.px: 24
 
 -- header-item: $obj.title
 $loop$: $header-desktop.sections as $obj
@@ -179,6 +186,7 @@ is-active: $obj.is-active
 
 -- ftd.row:
 if: { header-desktop.login-button }
+align-content: center
 
 -- login-signup:
 login: $header-desktop.login-btn-txt
@@ -193,6 +201,7 @@ github-url: $header-desktop.github-url
 -- end: ftd.row
 
 -- ftd.row:
+if: { header-desktop.breadcrumb }
 width: fill-container
 padding-top.px: 20
 padding-bottom.px: 32
@@ -487,6 +496,7 @@ integer logo-height: 38
 boolean github-icon: false
 optional string github-url:
 boolean blog: false
+boolean breadcrumb: false
 
 -- ftd.column: 
 width: fill-container
