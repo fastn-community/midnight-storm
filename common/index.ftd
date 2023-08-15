@@ -59,6 +59,9 @@ src: $assets.files.static.social.png
 
 -- end: social-links
 
+-- pr.toc-item list empty-toc:
+$processor$: pr.toc
+
 -- pr.toc-item list footer-links:
 $processor$: pr.toc
 

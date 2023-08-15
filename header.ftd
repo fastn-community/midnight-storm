@@ -159,8 +159,8 @@ height.fixed.px: $header-desktop.logo-height
 
 -- ftd.text: $header-desktop.site-name
 if: { header-desktop.site-name != NULL }
-role: $inherited.types.heading-medium
-color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+color: $inherited.colors.text
 margin-left.px if { header-desktop.site-logo != NULL }: 16
 white-space: nowrap
 align-self: center
