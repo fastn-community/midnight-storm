@@ -3717,7 +3717,7 @@ optional string cta-primary-link:
 optional string cta-secondary:
 optional string cta-secondary-link:
 optional boolean align-right: false
-optional string id: 
+string id: hero-with-image
 
 -- ftd.column:
 width: fill-container
@@ -3970,7 +3970,7 @@ link: $hero-with-image-mobile.link
 caption title:
 body body:
 common.logos list logo-list:
-optional string id: 
+string id: logo-cloud
 
 -- ftd.column:
 width: fill-container
@@ -4140,7 +4140,7 @@ caption title:
 body body:
 optional ftd.image-src image:
 optional ftd.background-image bg-image: $assets.files.static.background.svg
-optional string id: 
+string id: content
 
 -- ftd.column:
 width: fill-container
@@ -4278,7 +4278,7 @@ optional string cta-primary:
 optional string cta-primary-link:
 optional string link:
 body body:
-optional string id: 
+string id: hero-image-left
 
 -- ftd.column:
 width: fill-container
@@ -4460,7 +4460,7 @@ optional string cta-primary:
 optional string cta-primary-link:
 body body:
 optional string link:
-optional string id:
+string id: hero-image-right
 
 -- ftd.column:
 width: fill-container
@@ -4639,7 +4639,7 @@ link: $hero-image-right-mobile.link
 caption title:
 body body:
 common.info-card list info-cards:
-optional string id:
+string id: banner-card
 
 -- ftd.column:
 width: fill-container
@@ -4811,7 +4811,7 @@ $banner-card-list.body
 optional caption title:
 common.testimonial list testimonials:
 common.testimonial-nav list nav:
-optional string id:
+string id: testimonials-card
 
 -- ftd.column:
 width: fill-container
@@ -5033,7 +5033,7 @@ caption title:
 body body:
 optional string tag:
 common.feature list features:
-optional string id:
+string id: features-card
 
 -- ftd.column:
 id: $features-card.id
@@ -5141,7 +5141,7 @@ $features-card-details.body
 caption title:
 body body:
 common.faq list faqs-list:
-optional string id:
+string id: faqs
 
 -- ftd.column:
 id: $faqs.id
@@ -5262,7 +5262,7 @@ optional string input-placeholder: Enter your work email...
 optional body body:
 optional ftd.image-src cta-icon:
 optional ftd.image-src info-icon: $assets.files.static.check-circle.svg
-optional string id:
+string id: search-card
 
 -- ftd.column:
 id: $search-card.id
