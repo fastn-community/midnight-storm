@@ -5536,7 +5536,7 @@ align-self: end
 -- ftd.image:
 margin-right.px: 8
 margin-top.px: 8
-src: $assets.files.static.cross.svg
+src: $assets.files.static.cross.svg 
 height.fixed.px: 14
 width: auto
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
