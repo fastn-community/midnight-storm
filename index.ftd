@@ -5395,13 +5395,11 @@ width: auto
 string copyright:
 string cta-text-1: Terms and Conditions
 
--- ftd.column:
-width: fill-container
-spacing.fixed.px: 12
-align-content: center
-
 -- ftd.row:
-spacing.fixed.px: 24
+width: fill-container
+spacing: space-between
+align-content: center
+padding-vertical.px: 18
 
 -- ftd.text: $footer-badge.cta-text-1
 role: $inherited.types.copy-regular
@@ -5412,14 +5410,12 @@ $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
--- end: ftd.row
-
 -- ftd.image:
-src: $assets.files.assets.fastn-badge.svg
+src: $assets.files.static.fastn-badge.svg
 link: https://fastn.com/
 open-in-new-tab: true
 
--- end: ftd.column
+-- end: ftd.row
 
 -- end: footer-badge
 
@@ -5466,7 +5462,7 @@ align-self: end
 -- ftd.image:
 margin-right.px: 16
 margin-top.px: 16
-src: $assets.files.assets.cross.svg
+src: $assets.files.static.cross.svg
 height.fixed.px: 14
 width: auto
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
@@ -5540,7 +5536,7 @@ align-self: end
 -- ftd.image:
 margin-right.px: 8
 margin-top.px: 8
-src: $assets.files.assets.cross.svg
+src: $assets.files.static.cross.svg
 height.fixed.px: 14
 width: auto
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
