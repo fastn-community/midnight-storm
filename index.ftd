@@ -5411,7 +5411,7 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
 -- ftd.image:
-src: $assets.files.static.fastn-badge.svg
+src: $assets.files.static.fastn-badge-white.svg
 link: https://fastn.com/
 open-in-new-tab: true
 
