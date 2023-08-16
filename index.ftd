@@ -5392,7 +5392,7 @@ width: auto
 
 
 -- component footer-badge:
-string copyright:
+caption title:
 string cta-text-1: Terms and Conditions
 
 -- ftd.row:
@@ -5406,7 +5406,7 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
 
--- ftd.text: $footer-badge.copyright
+-- ftd.text: $footer-badge.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
