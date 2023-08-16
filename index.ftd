@@ -5395,27 +5395,70 @@ width: auto
 caption title:
 string cta-text-1: Terms and Conditions
 
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
 -- ftd.row:
 width: fill-container
 spacing: space-between
 align-content: center
-padding-vertical.px: 18
-
--- ftd.text: $footer-badge.cta-text-1
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-$on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
+padding-vertical.px: 24
+padding-horizontal.px: 24
+border-top-width.px: 1
+border-color: $inherited.colors.border-strong
 
 -- ftd.text: $footer-badge.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $footer-badge.cta-text-1
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+$on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
 
 -- ftd.image:
 src: $assets.files.static.fastn-badge-white.svg
 link: https://fastn.com/
 open-in-new-tab: true
+width.fixed.px: 140
 
 -- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 24
+padding-horizontal.px: 24
+border-top-width.px: 1
+border-color: $inherited.colors.border-strong
+spacing.fixed.px: 24
+
+-- ftd.text: $footer-badge.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $footer-badge.cta-text-1
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+$on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
+
+-- ftd.image:
+src: $assets.files.static.fastn-badge-white.svg
+link: https://fastn.com/
+open-in-new-tab: true
+width.fixed.px: 140
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
 
 -- end: footer-badge
 
@@ -5437,34 +5480,34 @@ if: { tc-pop-up-status }
 anchor: window
 width: fill-container
 height.fixed.percent: 100
-background.solid: $inherited.colors.background.overlay
+background.solid: #000000ba
 z-index: 99999
 
 -- ftd.column:
 if: {ftd.device == "desktop"}
 width: fill-container
 height: fill-container
+align-content: center
 
 -- ftd.column:  
 width.fixed.percent: 70
 border-width.px: 1
-border-top-width.px: 2
-border-radius.px: 20
-border-color: $inherited.colors.accent.primary
+border-radius.px: 8
+border-color: $inherited.colors.border
 background.solid: $inherited.colors.background.base
-align-self: center
-height: fill-container
+height.fixed.percent: 80
+overflow-y: hidden
+padding-bottom.px: 96
 
 -- ftd.row:
-align-content: right
 align-self: end
 
 -- ftd.image:
 margin-right.px: 16
 margin-top.px: 16
 src: $assets.files.static.cross.svg
-height.fixed.px: 14
-width: auto
+width.fixed.px: 24
+height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
 
 -- end: ftd.row
@@ -5473,10 +5516,7 @@ $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
 width: fill-container
 height: fill-container
 align-content: left
-padding-top.px: 96
 padding-horizontal.px: 24
-css: [ $assets.files.static.scroll.css ]
-classes: body
 
 -- ftd.text: $tc-popup.title
 role: $inherited.types.heading-tiny
@@ -5494,18 +5534,28 @@ style: bold
 color: $inherited.colors.text
 margin-bottom.px: 8
 
+-- ftd.column:
+width: fill-container
+css: [ $assets.files.static.scroll.css ]
+classes: body
+padding-vertical.px: 48
+padding-horizontal.px: 48
+
 -- ftd.text: 
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 width: fill-container
 color: $inherited.colors.text
+text-align: justify
 
 $tc-popup.body
 
 -- ftd.column:
 width: fill-container
-height: fill-container
 children: $tc-popup.c
 spacing.fixed.px: 16
+margin-bottom.px: 48
+
+-- end: ftd.column
 
 -- end: ftd.column
            
@@ -5515,19 +5565,23 @@ spacing.fixed.px: 16
 
 -- end: ftd.column
 
+-- ftd.mobile:
+
 -- ftd.column:
-if: {ftd.device == "mobile"}
 width: fill-container
+align-content: center
+background.solid: $inherited.colors.background.base
 height: fill-container
 
 -- ftd.column:  
-height: fill-container
-width.fixed.percent: 70
+width.fixed.percent: 90
 border-width.px: 1
-border-top-width.px: 2
-border-radius.px: 20
-border-color: $inherited.colors.accent.primary
+border-radius.px: 8
+border-color: $inherited.colors.border
 align-self: center
+height.fixed.percent: 90
+overflow-y: hidden
+padding-bottom.px: 96
 
 -- ftd.row:
 align-content: right
@@ -5537,20 +5591,15 @@ align-self: end
 margin-right.px: 8
 margin-top.px: 8
 src: $assets.files.static.cross.svg 
-height.fixed.px: 14
-width: auto
+height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
 
 -- end: ftd.row
 
 -- ftd.column:
 width: fill-container
-;;height: fill-container
-align-content: left
-padding-top.px: 96
-padding-horizontal.px: 24
-css: [ $assets.files.static.scroll.css ]
-classes: body
+height: fill-container
+align-content: center
 
 -- ftd.text: $tc-popup.title
 role: $inherited.types.heading-tiny
@@ -5568,10 +5617,20 @@ style: bold
 color: $inherited.colors.text
 margin-bottom.px: 8
 
--- ftd.text: $tc-popup.body
-role: $inherited.types.copy-regular
+-- ftd.column:
+width: fill-container
+css: [ $assets.files.static.scroll.css ]
+classes: body
+padding-vertical.px: 48
+padding-horizontal.px: 48
+
+-- ftd.text: 
+role: $inherited.types.copy-small
 width: fill-container
 color: $inherited.colors.text
+text-align: justify
+
+$tc-popup.body
 
 -- ftd.column:
 width: fill-container
@@ -5583,10 +5642,14 @@ spacing.fixed.px: 16
 -- end: ftd.column
 
 -- end: ftd.column
+
+-- end: ftd.column
            
 -- end: ftd.column
 
 -- end: ftd.column
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -5614,19 +5677,21 @@ width: fill-container
 spacing.fixed.px: 4
 
 -- ftd.text: $tc-item.number
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 color: $inherited.colors.text
+style: bold
 
 -- ftd.text: $tc-item.heading
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- end: ftd.row
 
 -- ftd.text: 
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-left.px: 8
+text-align: justify
 
 $tc-item.content
 
@@ -5658,19 +5723,21 @@ width: fill-container
 spacing.fixed.px: 4
 
 -- ftd.text: $tc-item-item.number
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 color: $inherited.colors.text
+style: bold
 
 -- ftd.text: $tc-item-item.heading
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- end: ftd.row
 
 -- ftd.text: 
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-left.px: 8
+text-align: justify
 
 $tc-item-item.content
 
