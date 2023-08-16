@@ -15,6 +15,8 @@ export: code, rendered
 
 -- integer $current-slide: 1
 
+-- boolean $tc-pop-up-status: false
+
 -- page: Overview
 document-title: fastn midnight-storm Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -5365,3 +5367,303 @@ width: auto
 -- end: ftd.column
 
 -- end: search-card
+
+
+
+
+
+
+
+
+
+
+-- component footer-badge:
+string copyright:
+string cta-text-1: Terms and Conditions
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 12
+align-content: center
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.text: $footer-badge.cta-text-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+$on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
+
+-- ftd.text: $footer-badge.copyright
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.image:
+src: $assets.files.assets.fastn-badge.svg
+link: https://fastn.com/
+open-in-new-tab: true
+
+-- end: ftd.column
+
+-- end: footer-badge
+
+
+
+
+
+
+
+
+-- component tc-popup: 
+caption title:
+string head:
+body body:
+children c:
+
+-- ftd.column:
+if: { tc-pop-up-status }
+anchor: window
+width: fill-container
+height.fixed.percent: 100
+background.solid: $inherited.colors.background.overlay
+z-index: 99999
+
+-- ftd.column:
+if: {ftd.device == "desktop"}
+width: fill-container
+height: fill-container
+
+-- ftd.column:  
+width.fixed.percent: 70
+border-width.px: 1
+border-top-width.px: 2
+border-radius.px: 20
+border-color: $inherited.colors.accent.primary
+background.solid: $inherited.colors.background.base
+align-self: center
+height: fill-container
+
+-- ftd.row:
+align-content: right
+align-self: end
+
+-- ftd.image:
+margin-right.px: 16
+margin-top.px: 16
+src: $assets.files.assets.cross.svg
+height.fixed.px: 14
+width: auto
+$on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: left
+padding-top.px: 96
+padding-horizontal.px: 24
+css: [ $assets.files.static.scroll.css ]
+classes: body
+
+-- ftd.text: $tc-popup.title
+role: $inherited.types.heading-tiny
+width: fill-container
+style: bold
+text-align: center
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.text: $tc-popup.head
+role: $inherited.types.copy-regular
+width: fill-container
+text-align: center
+style: bold
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+width: fill-container
+color: $inherited.colors.text
+
+$tc-popup.body
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+children: $tc-popup.c
+spacing.fixed.px: 16
+
+-- end: ftd.column
+           
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: {ftd.device == "mobile"}
+width: fill-container
+height: fill-container
+
+-- ftd.column:  
+height: fill-container
+width.fixed.percent: 70
+border-width.px: 1
+border-top-width.px: 2
+border-radius.px: 20
+border-color: $inherited.colors.accent.primary
+align-self: center
+
+-- ftd.row:
+align-content: right
+align-self: end
+
+-- ftd.image:
+margin-right.px: 8
+margin-top.px: 8
+src: $assets.files.assets.cross.svg
+height.fixed.px: 14
+width: auto
+$on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+;;height: fill-container
+align-content: left
+padding-top.px: 96
+padding-horizontal.px: 24
+css: [ $assets.files.static.scroll.css ]
+classes: body
+
+-- ftd.text: $tc-popup.title
+role: $inherited.types.heading-tiny
+width: fill-container
+style: bold
+text-align: center
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.text: $tc-popup.head
+role: $inherited.types.copy-regular
+width: fill-container
+text-align: center
+style: bold
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.text: $tc-popup.body
+role: $inherited.types.copy-regular
+width: fill-container
+color: $inherited.colors.text
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+margin-bottom.px: 8
+children: $tc-popup.c
+spacing.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: ftd.column
+           
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: tc-popup
+
+
+
+
+
+
+
+
+
+-- component tc-item:
+string number:
+caption heading:
+body content:
+
+-- ftd.column:
+width: fill-container
+margin-vertical.px: 8
+
+-- ftd.row: 
+width: fill-container
+spacing.fixed.px: 4
+
+-- ftd.text: $tc-item.number
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $tc-item.heading
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-left.px: 8
+
+$tc-item.content
+
+-- end: ftd.column
+
+-- end: tc-item
+
+
+
+
+
+
+
+
+
+
+-- component tc-item-item:
+string number:
+caption heading:
+body content:
+
+-- ftd.column:
+width: fill-container
+margin-left.px: 8
+margin-vertical.px: 8
+
+-- ftd.row: 
+width: fill-container
+spacing.fixed.px: 4
+
+-- ftd.text: $tc-item-item.number
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $tc-item-item.heading
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-left.px: 8
+
+$tc-item-item.content
+
+-- end: ftd.column
+
+-- end: tc-item-item
