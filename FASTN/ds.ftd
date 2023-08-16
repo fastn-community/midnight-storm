@@ -29,6 +29,8 @@ boolean blog: false
 boolean show-banner: false
 ftd.ui list banner:
 ftd.ui list hero:
+ftd.ui list popup:
+boolean breadcrumb: false
 children wrapper:
 
 -- midnight-storm.page: $page.title
@@ -47,6 +49,8 @@ blog: $page.blog
 show-banner: $page.show-banner
 banner: $page.banner
 hero: $page.hero
+popup: $page.popup
+breadcrumb: $page.breadcrumb
 
 -- midnight-storm.page.footer:
 

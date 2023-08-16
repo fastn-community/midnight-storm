@@ -137,6 +137,7 @@ boolean blog: false
 ftd.ui list hero:
 fastn.app-ui apps: $common.apps
 boolean breadcrumb: true
+ftd.ui list popup:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -223,6 +224,19 @@ width: fill-container
 children: $page.footer
 align-self: center
 max-width.fixed.px: $common.max-width
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { tc-pop-up-status }
+width: fill-container
+children: $page.popup
+align-self: center
+anchor: window
+height: fill-container
+top.px: 0
+left.px: 0
+z-index: 9999
 
 -- end: ftd.column
 
