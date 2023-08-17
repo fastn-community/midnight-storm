@@ -189,6 +189,7 @@ is-active: $obj.is-active
 width: fill-container
 
 -- ftd.row:
+if: { header-desktop.login-button }
 width: fill-container
 align-content: right
 
