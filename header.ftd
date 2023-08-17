@@ -148,8 +148,9 @@ padding-vertical.px: 20
 align-content: center
 
 -- ftd.row:
+width: fill-container
 link: $header-desktop.site-url
-align-content: center
+align-content: left
 
 -- ftd.image:
 if: { header-desktop.site-logo != NULL }
@@ -185,8 +186,11 @@ is-active: $obj.is-active
 -- end: ftd.row
 
 -- ftd.row:
-if: { header-desktop.login-button }
-align-content: center
+width: fill-container
+
+-- ftd.row:
+width: fill-container
+align-content: right
 
 -- login-signup:
 login: $header-desktop.login-btn-txt
@@ -197,6 +201,8 @@ login-btn-url: $header-desktop.login-btn-url
 -- github-button:
 if: { header-desktop.github-icon }
 github-url: $header-desktop.github-url
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -285,6 +291,7 @@ boolean $hover: false
 
 -- ftd.row:
 width: fill-container
+align-content: right
 
 -- ftd.desktop:
 
