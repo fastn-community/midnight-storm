@@ -4039,7 +4039,7 @@ width: fill-container
 spacing.fixed.px: 80
 padding-vertical.px: 111
 padding-horizontal.px: 50
-background.solid: $inherited.colors.custom.one
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 spacing.fixed.px: 17
@@ -4090,7 +4090,9 @@ common.logos list logo-list:
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 24
-padding-top.px: 80
+padding-vertical.px: 24
+padding-horizontal.px: 24
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 spacing.fixed.px: 17
@@ -4889,7 +4891,7 @@ padding-vertical.px: 50
 width: fill-container
 spacing.fixed.px: 32
 align-content: center
-background.solid: $inherited.colors.custom.one
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.text: $testimonials-card-desktop.title
 if: { testimonials-card-desktop.title != NULL }
@@ -4933,9 +4935,12 @@ common.testimonial list testimonials:
 common.testimonial-nav list nav:
 
 -- ftd.column:
+padding-vertical.px: 24
+padding-horizontal.px: 24
 width: fill-container
 spacing.fixed.px: 32
 align-content: center
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.text: $testimonials-card-mobile.title
 if: { testimonials-card-mobile.title != NULL }
