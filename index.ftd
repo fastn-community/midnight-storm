@@ -5772,6 +5772,10 @@ optional ftd.image-src facebook:
 optional ftd.image-src twitter:
 optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
+optional string facebook-link:
+optional string twitter-link:
+optional string instagram-link:
+optional string linkedin-link:
 
 -- ftd.column:
 
@@ -5788,6 +5792,10 @@ twitter: $contact-form.twitter
 instagram: $contact-form.instagram
 linkedin: $contact-form.linkedin
 company: $contact-form.company
+facebook-link:  $contact-form.facebook-link
+twitter-link: $contact-form.twitter-link
+instagram-link: $contact-form.instagram-link
+linkedin-link: $contact-form.linkedin-link
 
 -- end: ftd.desktop
 
@@ -5804,6 +5812,10 @@ twitter: $contact-form.twitter
 instagram: $contact-form.instagram
 linkedin: $contact-form.linkedin
 company: $contact-form.company
+facebook-link:  $contact-form.facebook-link
+twitter-link: $contact-form.twitter-link
+instagram-link: $contact-form.instagram-link
+linkedin-link: $contact-form.linkedin-link
 
 -- end: ftd.mobile
 
@@ -5833,6 +5845,10 @@ optional ftd.image-src facebook:
 optional ftd.image-src twitter:
 optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
+optional string facebook-link:
+optional string twitter-link:
+optional string instagram-link:
+optional string linkedin-link:
 
 -- ftd.row:
 width: fill-container
@@ -5849,7 +5865,7 @@ spacing: space-between
 border-radius.px: 8
 
 -- ftd.column:
-spacing.fixed.px: 16
+spacing.fixed.px: 32
 
 -- ftd.text: Contact Info
 role: $inherited.types.heading-small
@@ -5875,7 +5891,7 @@ style: bold
 $contact-form-desktop.company
 
 -- ftd.text: 
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 
 $contact-form-desktop.address
@@ -5891,11 +5907,13 @@ align-content: center
 -- ftd.image:
 src: $assets.files.static.email.svg
 width: auto
+height.fixed.px: 16
 
 -- ftd.image:
 src: $contact-form-desktop.email
 width: auto
 link: mailto: hello@fifthtry.com
+height.fixed.px: 14
 
 -- end: ftd.row
 
@@ -5908,7 +5926,7 @@ src: $assets.files.static.phone.svg
 width.fixed.px: 18 
 
 -- ftd.text: $contact-form-desktop.phone
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 
 -- end: ftd.row
@@ -5920,24 +5938,32 @@ spacing.fixed.px: 16
 align-content: center
 
 -- ftd.image:
+if: { contact-form-desktop.facebook != NULL }
 src: $contact-form-desktop.facebook
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-desktop.facebook-link
 
 -- ftd.image:
+if: { contact-form-desktop.twitter != NULL }
 src: $contact-form-desktop.twitter
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-desktop.twitter-link
 
 -- ftd.image:
+if: { contact-form-desktop.instagram != NULL }
 src: $contact-form-desktop.instagram
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-desktop.instagram-link
 
 -- ftd.image:
+if: { contact-form-desktop.linkedin != NULL }
 src: $contact-form-desktop.linkedin
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-desktop.linkedin-link
 
 -- end: ftd.row
 
@@ -5969,6 +5995,10 @@ optional ftd.image-src facebook:
 optional ftd.image-src twitter:
 optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
+optional string facebook-link:
+optional string twitter-link:
+optional string instagram-link:
+optional string linkedin-link:
 
 -- ftd.column:
 margin-top.px: 24
@@ -6060,24 +6090,32 @@ align-content: center
 margin-top.px: 32
 
 -- ftd.image:
+if: { contact-form-mobile.facebook != NULL }
 src: $contact-form-mobile.facebook
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-mobile.facebook-link
 
 -- ftd.image:
+if: { contact-form-mobile.twitter != NULL }
 src: $contact-form-mobile.twitter
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-mobile.twitter-link
 
 -- ftd.image:
+if: { contact-form-mobile.instagram != NULL }
 src: $contact-form-mobile.instagram
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-mobile.instagram-link
 
 -- ftd.image:
+if: { contact-form-mobile.linkedin != NULL }
 src: $contact-form-mobile.linkedin
-width.fixed.px: 18
-height.fixed.px: 18
+width.fixed.px: 24
+height.fixed.px: 24
+link: $contact-form-mobile.linkedin-link
 
 -- end: ftd.row
 
@@ -6108,7 +6146,7 @@ width: fill-container
 width: fill-container
 spacing.fixed.px: 30
 padding-vertical.px: 82
-padding-horizontal.px: 82
+padding-horizontal.px: 0
 children: $row-container.wrapper
 
 -- end: ftd.row
