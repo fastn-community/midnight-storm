@@ -2095,7 +2095,7 @@ link: $featured-post-card-mobile.link
 -- ftd.image:
 if: { featured-post-card-mobile.image != NULL }
 src: $featured-post-card-mobile.image
-width.fixed.px: 365
+width: fill-container
 link: $featured-post-card-mobile.url
 
 -- ftd.text:
@@ -2250,7 +2250,7 @@ common.tags-list list tags:
 -- ftd.column:
 border-width.px: 1
 border-color: $inherited.colors.border
-width.fixed.px: 360
+width.fixed.px: 390
 color: $inherited.colors.text
 margin-top.px : 44
 margin-bottom.px : 32
@@ -2327,7 +2327,7 @@ common.tags-list list tags:
 -- ftd.column:
 border-width.px: 1
 border-color: $inherited.colors.border
-width.fixed.px: 360
+width: fill-container
 color: $inherited.colors.text
 margin-top.px : 42
 margin-bottom.px : 32
@@ -2335,7 +2335,7 @@ spacing.fixed.px: 12
 
 -- ftd.image:
 src: $post-card-ui-mobile.image
-width.fixed.px: 360
+width: fill-container
 link: $post-card-ui-mobile.url
 
 -- ftd.column:
