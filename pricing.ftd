@@ -1,0 +1,406 @@
+
+-- ds.page:
+sidebar: false
+full-width: true
+
+-- pricing: Incredibly Easy To Use, But Surprisingly Powerful
+
+-- pricing.body:
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique. consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- pricing.pricing-cards:
+
+-- pricing-card: Free Plan
+active: false 
+price: 0
+currency: \$
+subscription: monthly
+feature-list: $free-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: For startups
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- pricing-card: Startup Plan
+active: true 
+price: 99
+currency: \$
+subscription: monthly
+feature-list: $startup-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: For startups
+tag: best-plan
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- pricing-card: Enterprise Plan
+active: false 
+price: 153
+currency: \$
+subscription: monthly
+feature-list: $enterprise-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: For startups
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- end: pricing.pricing-cards
+
+-- end: pricing
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+-- component pricing:
+optional caption title:
+optional body body:
+ftd.ui list pricing-cards:
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- pricing-desktop: $pricing.title
+pricing-cards: $pricing.pricing-cards
+
+$pricing.body
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- pricing-mobile: $pricing.title
+pricing-cards: $pricing.pricing-cards
+
+$pricing.body
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: pricing
+
+
+
+
+
+
+
+
+
+
+-- component pricing-desktop:
+optional caption title:
+optional body body:
+ftd.ui list pricing-cards:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+spacing.fixed.px: 32
+
+-- ftd.text: $pricing-desktop.title
+if: { pricing-desktop.title!= NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+if: { pricing-desktop.body!= NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+text-align: center
+width.fixed.percent: 60
+
+$pricing-desktop.body
+
+-- ftd.row:
+width: fill-container
+children: $pricing-desktop.pricing-cards
+spacing.fixed.px: 32
+margin-vertical.px: 48
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: pricing-desktop
+
+
+
+
+
+
+
+
+
+
+-- component pricing-mobile:
+optional caption title:
+optional body body:
+ftd.ui list pricing-cards:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+spacing.fixed.px: 24
+
+-- ftd.text: $pricing-mobile.title
+if: { pricing-mobile.title!= NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+text-align: center
+
+-- ftd.text:
+if: { pricing-mobile.body!= NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+text-align: center
+
+$pricing-mobile.body
+
+-- ftd.column:
+width: fill-container
+children: $pricing-mobile.pricing-cards
+spacing.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: pricing-mobile
+
+
+
+
+
+
+
+
+
+
+-- component pricing-card:
+caption title:
+boolean active:
+integer price:
+string currency:
+string subscription:
+feature list feature-list:
+string cta-text:
+string cta-link:
+string body-title:
+body body:
+optional string tag:
+
+-- ftd.column:
+width.fixed.percent: 30
+width if { ftd.device == "mobile" }: fill-container
+background.solid: $inherited.colors.background.base
+border-width.px: 2
+border-color: $inherited.colors.border
+border-color if { pricing-card.active }: $inherited.colors.custom.ten
+border-radius.px: 24
+padding.px: 32
+
+-- ftd.row:
+color: $inherited.colors.custom.ten
+role: $inherited.types.copy-small
+width: fill-container
+margin-bottom.px: 16
+
+-- ftd.text: $pricing-card.title
+style: medium
+width: fill-container
+
+-- ftd.text: $pricing-card.tag
+if: { pricing-card.tag != NULL }
+background.solid: $inherited.colors.accent.primary
+border-radius.px: 20
+padding-vertical.px: 4
+padding-horizontal.px: 10
+white-space: nowrap
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.row
+
+-- ftd.row:
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+margin-bottom.px: 32
+
+-- ftd.integer: $pricing-card.price
+role: $inherited.types.heading-large
+style: regular
+
+-- ftd.row:
+padding-top.px: 36
+
+-- ftd.text: $pricing-card.currency
+
+-- ftd.text: \/
+
+-- ftd.text: $pricing-card.subscription
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+padding.px: 16
+background.solid: $inherited.colors.background.step-1
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+width: fill-container
+margin-bottom.px: 32
+
+-- ftd.text: $pricing-card.body-title
+color: $inherited.colors.text-strong
+margin-bottom.px: 4
+
+-- ftd.text: 
+
+$pricing-card.body
+
+-- end: ftd.column
+
+-- feature-loop: $obj.title
+active: $obj.active
+$loop$: $pricing-card.feature-list as $obj
+
+-- ftd.text: $pricing-card.cta-text
+link: $pricing-card.cta-link
+padding-vertical.px: 10
+padding-horizontal.px: 16
+border-radius.px: 25
+background.solid: $inherited.colors.cta-secondary.base
+color: $inherited.colors.cta-secondary.text
+color if { pricing-card.active }: $inherited.colors.cta-primary.text
+background.solid if { pricing-card.active }: $inherited.colors.cta-primary.base
+align-self: center
+role: $inherited.types.button-medium
+margin-top.px: 48
+
+-- end: ftd.column
+
+-- end: pricing-card
+
+
+
+
+
+
+
+
+
+-- component feature-loop:
+caption title:
+boolean active:
+ftd.image-src info-icon: $assets.files.static.check-circle.svg 
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 12
+margin-bottom.px: 12
+
+-- ftd.image:
+src: $feature-loop.info-icon
+width.fixed.px: 20
+
+-- ftd.text: $feature-loop.title
+color: $inherited.colors.text-strong
+color if { !feature-loop.active } : $inherited.colors.text
+role: $inherited.types.copy-small
+
+-- end: ftd.row
+
+-- end: feature-loop
+
+
+
+
+
+
+
+
+
+
+
+-- record feature:
+caption title:
+boolean active: false
+
+
+
+-- feature list free-feature-list:
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+
+-- feature: All the features
+
+-- feature: All the features
+
+-- end: free-feature-list
+
+
+
+-- feature list startup-feature-list:
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+
+-- feature: All the features
+
+-- end: startup-feature-list
+
+
+
+
+-- feature list enterprise-feature-list:
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- feature: All the features
+active: true
+
+-- end: enterprise-feature-list
