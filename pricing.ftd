@@ -71,7 +71,7 @@ in eros elementum tristique.
 -- component pricing:
 optional caption title:
 optional body body:
-ftd.ui list pricing-cards:
+children pricing-cards:
 
 -- ftd.column:
 
@@ -109,7 +109,7 @@ $pricing.body
 -- component pricing-desktop:
 optional caption title:
 optional body body:
-ftd.ui list pricing-cards:
+children pricing-cards:
 
 -- ftd.column:
 width: fill-container
@@ -154,7 +154,7 @@ margin-vertical.px: 48
 -- component pricing-mobile:
 optional caption title:
 optional body body:
-ftd.ui list pricing-cards:
+children pricing-cards:
 
 -- ftd.column:
 width: fill-container
