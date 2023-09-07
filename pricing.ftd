@@ -213,7 +213,7 @@ border-radius.px: 24
 padding.px: 32
 
 -- ftd.row:
-color: $inherited.colors.custom.ten
+color: $inherited.colors.custom.three
 role: $inherited.types.copy-small
 width: fill-container
 margin-bottom.px: 16
