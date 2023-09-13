@@ -5149,6 +5149,9 @@ spacing.fixed.px: 24
 -- ftd.image:
 src: $features-card-details.icon
 width: auto
+background.solid: $inherited.colors.cta-primary.base
+padding.px: 12
+border-radius.px: 4
 
 -- ftd.column:
 spacing.fixed.px: 8
@@ -5263,7 +5266,7 @@ width.fixed.px: 35
 
 -- ftd.image:
 if: {faqs-list-detail.toggle}
-src: $assets.files.static.upArrow.svg
+src: $assets.files.static.toggle-up-arrow.svg
 height.fixed.px: 35
 width.fixed.px: 35
 
