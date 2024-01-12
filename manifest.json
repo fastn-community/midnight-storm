@@ -1,0 +1,1036 @@
+{
+  "files": {
+    "components/features-card.ftd": {
+      "name": "components/features-card.ftd",
+      "hash": "276DA2BC7B2DBDBF5558A4EF4801B9DC30BD6A2A83C29CAB98354B4E6F781467",
+      "size": 1812
+    },
+    "static/post-list/image-6.svg": {
+      "name": "static/post-list/image-6.svg",
+      "hash": "94961A5BA64F8E6E4C0C18EFD207E2A6D7F1C75816F28B429CDF637B460E43E5",
+      "size": 10663893
+    },
+    "components/hero-image-left.ftd": {
+      "name": "components/hero-image-left.ftd",
+      "hash": "27511EE669B630A3E3624561D586F2622C321F3AC33B873730DF81586BA4459B",
+      "size": 2151
+    },
+    "static/avatar.svg": {
+      "name": "static/avatar.svg",
+      "hash": "0B2B102D752927D360301FF59DE0AC2BDF0E69F560E917156073EEE486AB834F",
+      "size": 5888740
+    },
+    "index.ftd": {
+      "name": "index.ftd",
+      "hash": "F697A8C02B7D9128996C8357B2A476942F461BA1A5695779F2FD6DB83D5DCD74",
+      "size": 114399
+    },
+    "static/domains/figure-11.png": {
+      "name": "static/domains/figure-11.png",
+      "hash": "3E1C807859D9EB8886D0C0111A3D5AD2D84221705FC6F7ED5EEE9021F23E89AB",
+      "size": 232205
+    },
+    "how-to.ftd": {
+      "name": "how-to.ftd",
+      "hash": "AC16ED0F3CDE6C7783AF63D5A7485AC456B2E6C1460BFA8E8FFA3B6411DC3DA7",
+      "size": 1802
+    },
+    "pricing.ftd": {
+      "name": "pricing.ftd",
+      "hash": "37A69565B9248EE60213CA2D0CBCEC51D99F4AC8E430471F7051A0C2F26B482E",
+      "size": 6701
+    },
+    "static/cross-dark.svg": {
+      "name": "static/cross-dark.svg",
+      "hash": "6205EDE0EC3407E3B9B491652C7701CA250976D25692818545100D3F70DD13C0",
+      "size": 678
+    },
+    "markdown.ftd": {
+      "name": "markdown.ftd",
+      "hash": "107D0EF851A601A4905B3746BDDF284B3484C0276ADDFF186B52ABD61524BFED",
+      "size": 1885
+    },
+    "static/img3.svg": {
+      "name": "static/img3.svg",
+      "hash": "C3EA15E0B74D2A7C7BE74EFACA3425A70BD27EE688518C3AFFF42427CA7C990B",
+      "size": 3809
+    },
+    "static/fastn-badge-white-dark.svg": {
+      "name": "static/fastn-badge-white-dark.svg",
+      "hash": "1D43A0697ECDF3A3E5A9E76EFF01539EF4AC940928C5C7830834DF7EE12907A5",
+      "size": 11451
+    },
+    "common/index.ftd": {
+      "name": "common/index.ftd",
+      "hash": "2D32BC29FF53850EA0EA30E4C55C27DF00DB994F18CFBF93042FFF45BE34D049",
+      "size": 6808
+    },
+    "components/posts.ftd": {
+      "name": "components/posts.ftd",
+      "hash": "90D6314ACBC515D06AA7194FE750B4E95EA5D982E747E28851C232EA7CC5C772",
+      "size": 3540
+    },
+    "post-list.ftd": {
+      "name": "post-list.ftd",
+      "hash": "A06C3B042DD47844632F188B2B71BFBD4F6A995FB56AE81353147B13C0CBC755",
+      "size": 3294
+    },
+    "static/article/image-1.svg": {
+      "name": "static/article/image-1.svg",
+      "hash": "666ACEFE34F0F62BFE919D68FD713987F687E6BD10A016240DCEE7A901B88C53",
+      "size": 7464464
+    },
+    "static/card2.svg": {
+      "name": "static/card2.svg",
+      "hash": "7FC6A2B19974FAADED527B999FBFBB89D4552DD158D68AF3B4B13ABE925B8DF6",
+      "size": 1532261
+    },
+    "static/info-icon-dark.svg": {
+      "name": "static/info-icon-dark.svg",
+      "hash": "C440100CC263B5EC201AAEA3ABCE913F84D2E5661687923EB61CF1EACD30B275",
+      "size": 628
+    },
+    "favicon.ftd": {
+      "name": "favicon.ftd",
+      "hash": "8F90CED322AA4A1235AFE0FBDD53BEFD488C572D250597C1A29E7F04542BDD86",
+      "size": 767
+    },
+    "static/fastn-badge.svg": {
+      "name": "static/fastn-badge.svg",
+      "hash": "004E32CFFE57ECB1C28611B4F40E5725656F033EEAC77F21123C52A0F6CDDD01",
+      "size": 11484
+    },
+    "static/landing.svg": {
+      "name": "static/landing.svg",
+      "hash": "E024BB6D0375C5A347EB74CA5DE3326BE7B4D5BBDE7EC205B47F9D29E61B1123",
+      "size": 523808
+    },
+    "components/compact-text.ftd": {
+      "name": "components/compact-text.ftd",
+      "hash": "E96AF568CA96994A5F7D643BAB0C6B264EB5AAA4708E19F419433B034B1EBBD0",
+      "size": 2151
+    },
+    "static/landing/logo-1.svg": {
+      "name": "static/landing/logo-1.svg",
+      "hash": "E81B324FCD8ABCEE00AA1E83ECA2AAFC6B91BCB4EEDEF64F7F05C3527312A22C",
+      "size": 7625
+    },
+    "static/arrowRight.png": {
+      "name": "static/arrowRight.png",
+      "hash": "7CB6F5C0A0DE6AE7A905D54A41289595E35E74A5D3FAEE7D35D7617573A8BB58",
+      "size": 226
+    },
+    "static/checkmark.svg": {
+      "name": "static/checkmark.svg",
+      "hash": "C3E73837D13D2BBE8D5ED040FBBDA69BE53AE09BCE7048C0D8D0683D68F98835",
+      "size": 607
+    },
+    "static/landing/hero.svg": {
+      "name": "static/landing/hero.svg",
+      "hash": "F0D10967A73C5F21A85878B61E563A226896EB82B0416FA568D61B2C7C8204D5",
+      "size": 288819
+    },
+    "blog-articles/category-2/index.ftd": {
+      "name": "blog-articles/category-2/index.ftd",
+      "hash": "60466931BFB448856945B34082F3906955135893E6CE529A79AAB2249D8D78E2",
+      "size": 896
+    },
+    "static/landing/logo-4-dark.svg": {
+      "name": "static/landing/logo-4-dark.svg",
+      "hash": "95E9E68A222B8B544E8CFC65465141DEDC3EADF1B53F7A694BD794DDA8BB765A",
+      "size": 15941
+    },
+    "static/landing/smart_dashboard.png": {
+      "name": "static/landing/smart_dashboard.png",
+      "hash": "F0733E4226B9E55AA3D6D18B49D16186B5624C72E5E0CD41B6D51D023ACAEFD4",
+      "size": 161028
+    },
+    "static/post-list/image-1.svg": {
+      "name": "static/post-list/image-1.svg",
+      "hash": "AEAAD5C8A4A10AE42DAA95D98C0943055F05F4914787271C1E10A3075F39D14B",
+      "size": 9427125
+    },
+    "footer.ftd": {
+      "name": "footer.ftd",
+      "hash": "13EA0CA3499FBFB61BAED1DEC65F4BC0C41DE9969E11C68B6A9C1E10302AD092",
+      "size": 3295
+    },
+    "static/post-list/image-12.svg": {
+      "name": "static/post-list/image-12.svg",
+      "hash": "5D297CBD77A613DF06A75D7A22653C2E564660D24B6E76EF72FE861C8BE16502",
+      "size": 13147983
+    },
+    "static/post-list/image-13.svg": {
+      "name": "static/post-list/image-13.svg",
+      "hash": "5456717FC48DD61397C606160090FD27AAE39F7D34F288796D4B5F6B714BB480",
+      "size": 8513413
+    },
+    "static/domains/figure-16.png": {
+      "name": "static/domains/figure-16.png",
+      "hash": "EF39A2568341F3C173569F0A2AF62F7C83F1A05E5526DB4EF4F5346BC5E6A0C7",
+      "size": 105307
+    },
+    "static/domains/figure-5.png": {
+      "name": "static/domains/figure-5.png",
+      "hash": "795FF9CDB9B6940A83314DF821E5B4DC8921AE78934875E805B4EF7688ABF912",
+      "size": 592019
+    },
+    "components/logo-cloud.ftd": {
+      "name": "components/logo-cloud.ftd",
+      "hash": "4E37A40DEDEDB06A3A7415B970AC1113642C87078B213C5E5B67B2F5F5715041",
+      "size": 1496
+    },
+    "static/doc1.png": {
+      "name": "static/doc1.png",
+      "hash": "7E690EFF3A5C1597ECD7B59665EC2298E29C156D55DC474EF30915C4DD577620",
+      "size": 185070
+    },
+    "contribute.ftd": {
+      "name": "contribute.ftd",
+      "hash": "70E1E645E90C02EE239DA1E8D1BE02AD9ABB1A6BAF6CEB7E9CC25C2D41497A36",
+      "size": 2737
+    },
+    "static/post-list/image-7.svg": {
+      "name": "static/post-list/image-7.svg",
+      "hash": "A2CC4E74F074319EF4DDB8F13913DF64363191EF1F8F273F7D464F7466800643",
+      "size": 9530527
+    },
+    "static/post-list/image-8.svg": {
+      "name": "static/post-list/image-8.svg",
+      "hash": "A2CC4E74F074319EF4DDB8F13913DF64363191EF1F8F273F7D464F7466800643",
+      "size": 9530527
+    },
+    "components/youtube.ftd": {
+      "name": "components/youtube.ftd",
+      "hash": "2B51405B10519F72737218B9A8D905F6B25479A103D66DEA4B91798653AFBC76",
+      "size": 1752
+    },
+    "static/tick.svg": {
+      "name": "static/tick.svg",
+      "hash": "CFD218E6AF594A02EF3B2DD0A033165AD670744240653D715059A0E21286500A",
+      "size": 627
+    },
+    "static/card5.svg": {
+      "name": "static/card5.svg",
+      "hash": "D6DB315C82CD40770085E73A1346F33EBEECBA4C79F545C26FC1B83BFB28156F",
+      "size": 8765790
+    },
+    "components/without-image.ftd": {
+      "name": "components/without-image.ftd",
+      "hash": "F9040089A6E78C4A583D3676EFBCE190EE164C203022C6789F9C9693C2E57B15",
+      "size": 2367
+    },
+    "components/image.ftd": {
+      "name": "components/image.ftd",
+      "hash": "52BC8D622C31F62601A3A2A133565C78E033FCE64D30F41911177C955A42B954",
+      "size": 4654
+    },
+    "static/card3.svg": {
+      "name": "static/card3.svg",
+      "hash": "0DAE811E5634E45379FC9E40DAA33A7FEF4279314C9D19F518340ECD8CE58F0B",
+      "size": 345341
+    },
+    "static/landing/cash_control.png": {
+      "name": "static/landing/cash_control.png",
+      "hash": "85EC6764B35359570977B3EF33A9F363003CF0FB5398D3E76A2D60A552A61DCE",
+      "size": 137038
+    },
+    "team.ftd": {
+      "name": "team.ftd",
+      "hash": "F3390505E8404C1A39C297D47D465CB8A0298A3EF221771A2CBE1BEED07633A0",
+      "size": 4624
+    },
+    "static/landing/toggle-down-dark.svg": {
+      "name": "static/landing/toggle-down-dark.svg",
+      "hash": "F00C0BA9FFF2C3BA2A8408EBC92D89BCA2A125DD3697270BBF19BCC1693F1FCC",
+      "size": 473
+    },
+    "static/post-list/image-3.svg": {
+      "name": "static/post-list/image-3.svg",
+      "hash": "F947E738C3E83C94DBD8383D072F5C86D113B06C255B4C1150A5B68E636E4B10",
+      "size": 7048907
+    },
+    "header.ftd": {
+      "name": "header.ftd",
+      "hash": "E23D01F3E235DF86F4AA40BF8DB8B1454769E67959FC5F477D1E903E09F428A4",
+      "size": 19291
+    },
+    "static/doc3.png": {
+      "name": "static/doc3.png",
+      "hash": "2F3DCDD4A9B1856127EF3EE6FAF730D5714593422E8CD2A71BE91896BB7D7F75",
+      "size": 250362
+    },
+    "static/img1.svg": {
+      "name": "static/img1.svg",
+      "hash": "D9B325615D7CC394799C15679643B34E57070FCF53F3368C7CFBE90FA237F205",
+      "size": 8337
+    },
+    "static/landing/logo-1-dark.svg": {
+      "name": "static/landing/logo-1-dark.svg",
+      "hash": "864082C2C74871A77484ED773294DCD4E9649C4EB449C9AE7BA2D4261587C3F4",
+      "size": 7658
+    },
+    "static/post-list/image-10.svg": {
+      "name": "static/post-list/image-10.svg",
+      "hash": "6DBA9FEA6580BF93B905545CBD730EA91A925CBC449A6E0CF881041528D83CCE",
+      "size": 153301
+    },
+    "components/404-2.ftd": {
+      "name": "components/404-2.ftd",
+      "hash": "13F6E25BB563A664D0716D7BD601970E5DDBA67F5A93A485AA9ECF6FABA35B34",
+      "size": 1982
+    },
+    "static/card4.svg": {
+      "name": "static/card4.svg",
+      "hash": "FF2329C2D966A323E17E0FA97C38FC431211368513FD90D69DD3853661CD3CFD",
+      "size": 5963177
+    },
+    "static/landing/toggle-up-dark.svg": {
+      "name": "static/landing/toggle-up-dark.svg",
+      "hash": "50BAA6BE9A61EDFC8D7F4E5AF7CB673A475451B3AB505BB4F6B9CB476EAED5EA",
+      "size": 480
+    },
+    "getting-started.ftd": {
+      "name": "getting-started.ftd",
+      "hash": "2B7BB5155FD072C7EE95791E1003CBB428C60B17FBEDA9460121943EBF52A1F4",
+      "size": 2054
+    },
+    "static/featured.svg": {
+      "name": "static/featured.svg",
+      "hash": "4022584383C4712BCF779548DE4076398BF9BFBEA4E5524CB173D735D1BB2772",
+      "size": 8765794
+    },
+    "landing.ftd": {
+      "name": "landing.ftd",
+      "hash": "306AB0A35C733205F050DD86DB13619177A9DB997D5B7D34A8759569902B8FB7",
+      "size": 2654
+    },
+    "static/post-list/image-5.svg": {
+      "name": "static/post-list/image-5.svg",
+      "hash": "43FD20B45378FAC1A006899A77FC5E00D7F3EB41CE0FD8C80FDE2004DCD87497",
+      "size": 10508281
+    },
+    "static/figma.png": {
+      "name": "static/figma.png",
+      "hash": "D0EF8E9A7706266C6D182E5070816FBA7B72C045A726FC66D639B24E9793A643",
+      "size": 533
+    },
+    "components/tip.ftd": {
+      "name": "components/tip.ftd",
+      "hash": "7A02851EE08588810D03C32F67D31C64495087ED821D013201158A3B6240D1B9",
+      "size": 1325
+    },
+    "components/rendered.ftd": {
+      "name": "components/rendered.ftd",
+      "hash": "BDBC68C50CBFC46D7AC92F5CF22735FBD2107A181E8E11A648E2B1A3C5ABF6C7",
+      "size": 1860
+    },
+    "static/domains/figure-8.png": {
+      "name": "static/domains/figure-8.png",
+      "hash": "862A4A731B6BF96B521CC1AC3AAF582F283CAB7DD3633D1C03183F5A000CB94A",
+      "size": 835065
+    },
+    "static/calendar.svg": {
+      "name": "static/calendar.svg",
+      "hash": "80EBF7707DD126E02A5D7E18511C37817661042D3D115CF0E4A2DDC651604357",
+      "size": 401
+    },
+    "static/down-arrow-dark.svg": {
+      "name": "static/down-arrow-dark.svg",
+      "hash": "A04270E890C3BB2A9182EB31FEDA50637D643FE71D0D3D636EE0D34C107548C0",
+      "size": 345
+    },
+    "static/article/image-2.svg": {
+      "name": "static/article/image-2.svg",
+      "hash": "CC2B7081F9E120F7A8C8ADC87F565F9302620CE2D4107299D90278D834AD8A56",
+      "size": 552619
+    },
+    "static/icon-github.svg": {
+      "name": "static/icon-github.svg",
+      "hash": "322ABEA990E2F1300DFBB3AEB327126F1E33CA3C1B024ACB5A98EC53A9B1FD4D",
+      "size": 938
+    },
+    "static/landing/img2.svg": {
+      "name": "static/landing/img2.svg",
+      "hash": "F2E7BC5FCA4D20A0AD58721D9966789EF3C1B337541E03AA9CAECCC55361ACA0",
+      "size": 3821
+    },
+    "static/landing/logo-3-dark.svg": {
+      "name": "static/landing/logo-3-dark.svg",
+      "hash": "B2CCC977110AE13C5D68156F8043801AE049F4E95E2639F0F57802D87DF9CB0E",
+      "size": 9694
+    },
+    "static/post-list/image-2.svg": {
+      "name": "static/post-list/image-2.svg",
+      "hash": "5ADBF79A23AC7EFFFEBF055F1B85EBB5E86B42CA399DCD347D20C70130FCC5F6",
+      "size": 10577808
+    },
+    "static/post1.svg": {
+      "name": "static/post1.svg",
+      "hash": "7070E3FBE9BD2358837755C5EE4528109B3793DA0448BEA2A1D0E1F15909705E",
+      "size": 10593107
+    },
+    "static/down.svg": {
+      "name": "static/down.svg",
+      "hash": "426CE75C4A61E9CA6C3B196023C5EED9CE98ACF3BCDD30B581251A97FB3FB970",
+      "size": 319
+    },
+    "static/article/image-6.svg": {
+      "name": "static/article/image-6.svg",
+      "hash": "27626E683A25DEFE41648D48DD0FBD662B80082E6FAD7D1E9F5C5DAE2A057244",
+      "size": 19254523
+    },
+    "static/scroll.css": {
+      "name": "static/scroll.css",
+      "hash": "46A7ABFBF2095F5E455B9B8D9D4935D77E4BF42CFC122FEE351E08CDC94303CC",
+      "size": 145
+    },
+    "static/up-arrow.svg": {
+      "name": "static/up-arrow.svg",
+      "hash": "3FAD53EC8EC276FC50D94330B87D911C75E51C608871F93633AC1E156B0A8696",
+      "size": 342
+    },
+    "static/image-placeholder.jpg": {
+      "name": "static/image-placeholder.jpg",
+      "hash": "0F31952818348623F06FEC80F4D62D847735A6812C7D01644F64BCFA140DA5CA",
+      "size": 23455
+    },
+    "seo.ftd": {
+      "name": "seo.ftd",
+      "hash": "2380EB332272E28D9142EBB426A9E92BB3FB0CF7327BFF360379CBB231568846",
+      "size": 2188
+    },
+    "banner.ftd": {
+      "name": "banner.ftd",
+      "hash": "A5669244C9CA5D74611A79F29192958AEF092888EAE5AAAAFBE83047973ED1A4",
+      "size": 6454
+    },
+    "static/location.svg": {
+      "name": "static/location.svg",
+      "hash": "6170F1DD49D8B614F4A1B45FD0A65FC14B6A49D6D99BE4DA0590CEC14861EF9B",
+      "size": 509
+    },
+    "common/fonts.ftd": {
+      "name": "common/fonts.ftd",
+      "hash": "1C30F2A24066C44C525E350AD2A8E8AE89FF93DEE5BA4CDBA470B8462F873D8E",
+      "size": 2270
+    },
+    "components/banner-card.ftd": {
+      "name": "components/banner-card.ftd",
+      "hash": "40E7935961C92D5B4A4DFD238045C7A8A3E6CAC06BE78AA59C2FBB5F7FA5640B",
+      "size": 1494
+    },
+    "static/domains/figure-4.png": {
+      "name": "static/domains/figure-4.png",
+      "hash": "03E90DDA0699F24CC8CCD690CB9824E808DD51A328D5918099564C7CE8EAEC9D",
+      "size": 381099
+    },
+    "static/hamburger.svg": {
+      "name": "static/hamburger.svg",
+      "hash": "E84E587F947CFBDA9470C4D010AAAAEEC4EBBAFBE122011EFFEC2B25D062C561",
+      "size": 612
+    },
+    "static/landing/dbl-qoutes.svg": {
+      "name": "static/landing/dbl-qoutes.svg",
+      "hash": "29FB062D96E00B38B73ED78C526DF5917BD9AE1B5BAADF57B3247AC3C09507C6",
+      "size": 2670
+    },
+    "blog-articles/category-2/sample-post-4.ftd": {
+      "name": "blog-articles/category-2/sample-post-4.ftd",
+      "hash": "1E6DC2E469E7B63759825B10B8EE19648864F1C438DC6E5E7FCF701736B1AEA4",
+      "size": 3406
+    },
+    "favicon.svg": {
+      "name": "favicon.svg",
+      "hash": "1952C9D3E87F8528689108B8F0142875F04875F4D7260A9C26E0ABB65F10F07D",
+      "size": 4057
+    },
+    "blog.ftd": {
+      "name": "blog.ftd",
+      "hash": "1745B03F86FC3D11487DD26499E43FF29F8E7C0E5B7916578FA3A71DADD83A71",
+      "size": 1154
+    },
+    "components/headers.ftd": {
+      "name": "components/headers.ftd",
+      "hash": "96787306E0CC1A8A7D9DFC628DC6979C2FE05543A2F1EF6DE9EDD4745174FF3B",
+      "size": 2058
+    },
+    "Changelog.md": {
+      "name": "Changelog.md",
+      "hash": "3982EBFBF8142DE37A880AEA6A88E2386C0D6CCAF02F58307640C1A5C25F0D6A",
+      "size": 2257
+    },
+    "blog-articles/category-1/index.ftd": {
+      "name": "blog-articles/category-1/index.ftd",
+      "hash": "B99D90F20AD4E374F7B0C1C928CE3CFD0EEECF01670A870F4CD6D3D71854BE62",
+      "size": 946
+    },
+    "components/hero-with-image.ftd": {
+      "name": "components/hero-with-image.ftd",
+      "hash": "6B7447EA42BA1481CC8E159B86D8C5A716B9A4E53FD412AD30900CE5CAEB25CA",
+      "size": 2505
+    },
+    "static/domains/figure-7.png": {
+      "name": "static/domains/figure-7.png",
+      "hash": "7496B185B02D4BD844452048E97FB7B3FD93AB0226EA843CC8EB15E954CE3867",
+      "size": 573789
+    },
+    "static/down-arrow.svg": {
+      "name": "static/down-arrow.svg",
+      "hash": "AA08C25EE6D54F60F9865463AA3F55B808B33F0F4AF655EA12E2F518BF6827F0",
+      "size": 347
+    },
+    "static/email-dark.svg": {
+      "name": "static/email-dark.svg",
+      "hash": "B7876A10B5644D1F3D6C60FBBEFC392ADA42BEED3B1A73D51D8F130283DA9AB5",
+      "size": 1124
+    },
+    "static/email.svg": {
+      "name": "static/email.svg",
+      "hash": "3626A779C047FCEB6DD0897A32D3BF6DD4D63DAF0A859E99AC253D1E02579FF9",
+      "size": 1126
+    },
+    "components/code.ftd": {
+      "name": "components/code.ftd",
+      "hash": "A0177F2F7F065B6FD948B1172031FB151AE867860B13AEC3EA0BFC2BC0EDA58B",
+      "size": 1319
+    },
+    "static/landing/arrow.svg": {
+      "name": "static/landing/arrow.svg",
+      "hash": "98A3087F2C87F31F87B1061401C2A107CB7F7FAF5CDB6B7050C08D5E23B929F9",
+      "size": 884
+    },
+    "static/landing/logo-2.svg": {
+      "name": "static/landing/logo-2.svg",
+      "hash": "2C996EDA691FD5D58207F6F79249B7E32B0D4D2F342AD1AB580E6CA47CD05F1C",
+      "size": 3050
+    },
+    "static/landing/logo-5.svg": {
+      "name": "static/landing/logo-5.svg",
+      "hash": "342F8EC64E8C8F5D109950795AFA8E04B6F9952317AEA5A17AC946B392F597A2",
+      "size": 2842
+    },
+    "components/content.ftd": {
+      "name": "components/content.ftd",
+      "hash": "18F2E7EAFC8277CE9040C2A63C78E14DDC577A708C793459C5DA42876BCA46D7",
+      "size": 1421
+    },
+    "static/landing/dashboard.png": {
+      "name": "static/landing/dashboard.png",
+      "hash": "65CEFB1294AB93422C8FA1E650E1E744F44DC779DFD2668644FA8100CB3C110A",
+      "size": 19184
+    },
+    "static/landing/smart_dashboard-dark.png": {
+      "name": "static/landing/smart_dashboard-dark.png",
+      "hash": "6C69955763E2F5DA93ACBE62769565ACDDFE5023FB7BC7D07A52B022FE7ED76C",
+      "size": 176285
+    },
+    "static/landing/strategy.svg": {
+      "name": "static/landing/strategy.svg",
+      "hash": "120308FED68185D26F3A625A72636E9C035A7DA63D9604C37CE82B7C4B731014",
+      "size": 478
+    },
+    "static/location-dark.svg": {
+      "name": "static/location-dark.svg",
+      "hash": "F29B31CC298967037EB4F4366E2AEE9C18BEEEDCE2A66F84178C3397D942DD53",
+      "size": 522
+    },
+    "static/phone.svg": {
+      "name": "static/phone.svg",
+      "hash": "62AADA7F732384373B1A8CE12B673A94A0A5F0EC74D75AE7C6F67E8980D4635B",
+      "size": 499
+    },
+    "components/faqs.ftd": {
+      "name": "components/faqs.ftd",
+      "hash": "049E0236DBA8F2E71018DD9953FC939794CC9A62861F239334FA5E470359F398",
+      "size": 1583
+    },
+    "static/post-list/image-9.svg": {
+      "name": "static/post-list/image-9.svg",
+      "hash": "5A4350584C7F3C4DE3FCBDF9775745D0710D20F6B63149CE3C02769C512BA4FA",
+      "size": 13502075
+    },
+    "static/right-img.svg": {
+      "name": "static/right-img.svg",
+      "hash": "D80B5F7B7CEC6F19E3615720E310D04D0ACD420EA1810375CB511782ADDB2DE2",
+      "size": 221839
+    },
+    "static/upArrow.svg": {
+      "name": "static/upArrow.svg",
+      "hash": "C5D82A8C3A97711BFBEAAC8B5D0FFF21406407C4C2FF8385C62B619B94E75AFC",
+      "size": 480
+    },
+    "static/search-icon.svg": {
+      "name": "static/search-icon.svg",
+      "hash": "4E78DD8C52BD606B460AEDB202C66D519F85A1FC744FF5701FF2FC63AA976070",
+      "size": 552
+    },
+    "static/landing/invoicing.png": {
+      "name": "static/landing/invoicing.png",
+      "hash": "02BF77339AECEBE48D7DF7063A86E5B3560B651229593F07EB621791BC5775EF",
+      "size": 189044
+    },
+    "static/post-list/image-11.svg": {
+      "name": "static/post-list/image-11.svg",
+      "hash": "ABBBD3E6E151827323B227C12C6554E875764FA38A082109E79C462E9D071051",
+      "size": 10635373
+    },
+    "static/landing/cash_control-dark.png": {
+      "name": "static/landing/cash_control-dark.png",
+      "hash": "FCFEC3E2D3898142BE1C2D1C5CD5324FF68FF39F9562A54C156BE4C0DF5E273D",
+      "size": 137119
+    },
+    "blog-articles/category-1/sample-post-2.ftd": {
+      "name": "blog-articles/category-1/sample-post-2.ftd",
+      "hash": "07CECD8EA65E707E5A49D94ECFA9A4D4EDC7C240A8CB80F67D2D60D1E8C8A405",
+      "size": 3541
+    },
+    "components/iframe.ftd": {
+      "name": "components/iframe.ftd",
+      "hash": "431096BAECE882557BB104E1F05B68DCB2072C8A5B06D0A54C62BE51C30656F9",
+      "size": 1522
+    },
+    "static/image-placeholder.svg": {
+      "name": "static/image-placeholder.svg",
+      "hash": "B207F18F9994EB3F8A9206DF8BDDDCA49041CCEA8DD247A6806338006D0D76C9",
+      "size": 6134769
+    },
+    "static/ipsum-logo-dark.svg": {
+      "name": "static/ipsum-logo-dark.svg",
+      "hash": "8290B3397C465FE1BB40B7CA280C976DF7DA3DABFC655B429805ABF33964FB5B",
+      "size": 16202
+    },
+    "domain-setup.ftd": {
+      "name": "domain-setup.ftd",
+      "hash": "2643A48100317C2A081EE7E4412112B9AAAEB3BA5B24C943F62363E1FF02E3FC",
+      "size": 9008
+    },
+    "static/article/image-5.svg": {
+      "name": "static/article/image-5.svg",
+      "hash": "216D198B2EA0DF8F7A30BFB249C8BE91207DC233ACD76BD3365EAD4AA102FCA5",
+      "size": 427423
+    },
+    "static/domains/figure-6.png": {
+      "name": "static/domains/figure-6.png",
+      "hash": "929B64D31BCA845AF2F97DFE13CB252278AB713F7E1018F4810A77B161640409",
+      "size": 866434
+    },
+    "static/domains/figure-12.png": {
+      "name": "static/domains/figure-12.png",
+      "hash": "41A66930D863B948BC85C92C02CE7270EB1DAAE2F3F6BF9D01F87FF09BE16E34",
+      "size": 156475
+    },
+    "static/post-list/image-4.svg": {
+      "name": "static/post-list/image-4.svg",
+      "hash": "08D72A2C194F23C168FABD461B6B90228D4737413FCE4DCAA967DFA941830411",
+      "size": 11159779
+    },
+    "components/page.ftd": {
+      "name": "components/page.ftd",
+      "hash": "389CB6861969FADD2F2CE3DD7DA93392CD983D89A6402B5DA59AFA10CFC7B091",
+      "size": 7083
+    },
+    "static/fastn-badge-white.svg": {
+      "name": "static/fastn-badge-white.svg",
+      "hash": "9D3626F3BFA1E309BA0A9827279CEF1E890311BEEA3920BB42643E8F49884430",
+      "size": 11453
+    },
+    "static/midnight-strom-example-dark.png": {
+      "name": "static/midnight-strom-example-dark.png",
+      "hash": "8B5DFB0BF8D063A5C046C19CF12F7D5B9FB6D5780B5E2429A7940B2235B267BD",
+      "size": 100470
+    },
+    "FASTN/ds.ftd": {
+      "name": "FASTN/ds.ftd",
+      "hash": "5520E8DDAA9C5E3AD2AFAA00F9CC908C82FF4596B4F3764CBE9B25C455AFC275",
+      "size": 2133
+    },
+    "types.ftd": {
+      "name": "types.ftd",
+      "hash": "A4A1FB009D449E815D721372A7BA0645ADBDFF9B300DE694EE7ABE9B9489F3A8",
+      "size": 3866
+    },
+    "right-sidebar.ftd": {
+      "name": "right-sidebar.ftd",
+      "hash": "75920CB8BF362885A4141118E5F0430E0D795D8880A554110DC93BBDEEBA873E",
+      "size": 4443
+    },
+    "_config.yml": {
+      "name": "_config.yml",
+      "hash": "A42D91290C93B5F17412C3B346737EA1C796E5D287306758AFE8B20470119D80",
+      "size": 21
+    },
+    "static/blog.svg": {
+      "name": "static/blog.svg",
+      "hash": "24ED15E823E5E2C4BB82ED1985E50DFFEA2A6BEE8C231B51FFCD111F748189B6",
+      "size": 25204534
+    },
+    "static/dollar.svg": {
+      "name": "static/dollar.svg",
+      "hash": "E5E583513F2B8CE4DE96EC1ECCA7E945999E7CFF39C1ECAC973F59C76287BC07",
+      "size": 1185
+    },
+    "static/domains/figure-9.png": {
+      "name": "static/domains/figure-9.png",
+      "hash": "666A6AED6A94018B8F88D494DA413A48840DAE7189B09346B16CDFD7447F4F9C",
+      "size": 222370
+    },
+    "static/info-icon.svg": {
+      "name": "static/info-icon.svg",
+      "hash": "F431FAA7D03A6946C9DFF60FDCB2A89BB212FC87315BD97ECD2560E96A67B889",
+      "size": 631
+    },
+    "static/social.png": {
+      "name": "static/social.png",
+      "hash": "C7DCA62E8C9283E7B2B5424AA567CB15D8BC98ACF94BA67C8ADB5CAE91381325",
+      "size": 1065
+    },
+    "components/image-in-between.ftd": {
+      "name": "components/image-in-between.ftd",
+      "hash": "96A3B160981026EF06376EB08E0E54FC0C4EC3AE92631B85DFD4911F617B9827",
+      "size": 2435
+    },
+    "blog-authors/patrica.ftd": {
+      "name": "blog-authors/patrica.ftd",
+      "hash": "5AD743B7CB42519F226DA88A93A3F98FB2ED63714698A00E9F8D069D58E263C2",
+      "size": 436
+    },
+    "components/testimonials-card.ftd": {
+      "name": "components/testimonials-card.ftd",
+      "hash": "72FA5E3D70D79D3F07B7B9CFB1D630B3E1838BE41147CB0D9555A7A183294091",
+      "size": 1336
+    },
+    "static/landing/logo-4.svg": {
+      "name": "static/landing/logo-4.svg",
+      "hash": "58FDB2980CA9B025DF439F52BBDB49A49CF54B2B2B22ED532EB68F186584521C",
+      "size": 15958
+    },
+    "static/up.svg": {
+      "name": "static/up.svg",
+      "hash": "DDFAD8DC8CFB5F8C21C72FF9FF834C2C2BBAFB5236F9F2E9024951C6ECEE1780",
+      "size": 314
+    },
+    "static/fb.png": {
+      "name": "static/fb.png",
+      "hash": "B3507529C21CA9CD3813E15E16863C721327D5876D4AA83618087D2063539ACB",
+      "size": 668
+    },
+    "static/landing/logo-3.svg": {
+      "name": "static/landing/logo-3.svg",
+      "hash": "8EC14606B65906EC488A79E901B623E736D1FC62B02A4E87A6048B6DC771FEDD",
+      "size": 9708
+    },
+    "cs.ftd": {
+      "name": "cs.ftd",
+      "hash": "9DCA69B7D57246AE75CB4D80C399DF780EC11512F2E59D646EE236F15D645D4E",
+      "size": 3525
+    },
+    "components/featured-post.ftd": {
+      "name": "components/featured-post.ftd",
+      "hash": "6296AB77BAFDCF182FC71AA5BEAA35032F11DB2D91BF6DC81CD9BA11D93AAE55",
+      "size": 2357
+    },
+    "static/landing/logo-2-dark.svg": {
+      "name": "static/landing/logo-2-dark.svg",
+      "hash": "B382A85FDFF03357E68BF484C5C8B4C762B3FEDC0E2AB87E4C77613C1A7546E6",
+      "size": 3036
+    },
+    "static/domains/figure-14.png": {
+      "name": "static/domains/figure-14.png",
+      "hash": "3DC53A054E052F89C49AD6DCE3A04E4436437BCA8CDC72E50C089D49FC9C86E9",
+      "size": 357658
+    },
+    "static/strategy.svg": {
+      "name": "static/strategy.svg",
+      "hash": "23D38F78FC856E9035F98E73FB306417120008F980903B4350AFDE39E8E3BAE1",
+      "size": 505
+    },
+    "static/downArrow.svg": {
+      "name": "static/downArrow.svg",
+      "hash": "A801C197E31AC5996E976E718183FFC61277C63736B8A6A546D2001CE8DA197C",
+      "size": 507
+    },
+    "static/landing/logo-5-dark.svg": {
+      "name": "static/landing/logo-5-dark.svg",
+      "hash": "BCFE18F358C469DFCB5B9814F6FE040282179D82FE51B39BEA01BE9077E4CC2C",
+      "size": 2828
+    },
+    "blog-articles/category-2/sample-post-3.ftd": {
+      "name": "blog-articles/category-2/sample-post-3.ftd",
+      "hash": "5A735191B4C0444D1B8D5AD665241AB1BBC7422706B6E0157F16061F0A9E2D40",
+      "size": 3482
+    },
+    "logo.ftd": {
+      "name": "logo.ftd",
+      "hash": "3756FAC3EF3E88CBCB52FD34281DD36D15B7EF9027364B1F76EC3AAEC11E1C81",
+      "size": 3514
+    },
+    "components/search-card.ftd": {
+      "name": "components/search-card.ftd",
+      "hash": "052AF61120F2E4FB58D670B3B0872B5FB47D11767AD92967849312014D4DA001",
+      "size": 1703
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "hash": "5B8B83357C092AC57F28508D18CAB65E4965AAA3BA61226DE038719E022638C1",
+      "size": 1516
+    },
+    "sitemap.ftd": {
+      "name": "sitemap.ftd",
+      "hash": "D9899E28F9A77FC4828A2C1CD36EA0B7C7A3B7BEC7704DA23B1AFA9C78CFBF24",
+      "size": 2213
+    },
+    "components/output.ftd": {
+      "name": "components/output.ftd",
+      "hash": "1E5130B30595936E08FDF2772086764F132320C891756265D980D0DD6F2CDAA9",
+      "size": 1887
+    },
+    "static/arrow-to-right.svg": {
+      "name": "static/arrow-to-right.svg",
+      "hash": "187893DB1DFAA210B021F5CE0589CE2EE3DB9E884CCA37580B37415D0D990435",
+      "size": 220
+    },
+    "components/image-first.ftd": {
+      "name": "components/image-first.ftd",
+      "hash": "30472AB60358CC4D9BB5F4E31EC1DC4B69C297EB60B147287633A7CDCFC44BFC",
+      "size": 2292
+    },
+    "FASTN.ftd": {
+      "name": "FASTN.ftd",
+      "hash": "28A9FC6603D135B207DE83AC38F1A3A0E26BD2AC874D9C60E1A4336534B91910",
+      "size": 3700
+    },
+    "components/index.ftd": {
+      "name": "components/index.ftd",
+      "hash": "CFBE62DAAE822B4DBCFEE0B707C93F56B45742E836565D4D4E5608CC0F70C548",
+      "size": 6475
+    },
+    "author.ftd": {
+      "name": "author.ftd",
+      "hash": "6EEEB114F239E950B814386739854AC9ED7AB004D8DD41BCDC0C50748EBE4E02",
+      "size": 1659
+    },
+    "static/card1.svg": {
+      "name": "static/card1.svg",
+      "hash": "E47C3B63B9C5C439A8EE601E3D7A236E4AB3F23E88652564F18F160030538DA9",
+      "size": 7379478
+    },
+    "static/chat.png": {
+      "name": "static/chat.png",
+      "hash": "51864C595B6BB56C70E0B13E12466BB9C813E60574FF8F504DAD12AD906F208D",
+      "size": 854
+    },
+    "static/doc2.png": {
+      "name": "static/doc2.png",
+      "hash": "65FC0041BD9B35E2A97C83324EFF24506BFA218B86F2B628880FFD1D9EB10AAA",
+      "size": 176736
+    },
+    "static/domains/figure-10.png": {
+      "name": "static/domains/figure-10.png",
+      "hash": "A2815EA379AA2F6BE8BA317FC8E2C6EA4547FA9575CE1E3DBE57D959A753AB30",
+      "size": 275526
+    },
+    "static/background.svg": {
+      "name": "static/background.svg",
+      "hash": "54DB3128DC99E752BEA39BBC798DB9C360B36F2B1EA1F8A2A580AA30BBD8DA1E",
+      "size": 8853
+    },
+    "static/domains/figure-13.png": {
+      "name": "static/domains/figure-13.png",
+      "hash": "DDA1D56ED899252AAD03081E303404C7205A219550F90CDF93773D8FC3199756",
+      "size": 90168
+    },
+    "static/domains/figure-15.png": {
+      "name": "static/domains/figure-15.png",
+      "hash": "FFE8A8601A58336B10CA12084D1C575104DB4C15080578B00DBB72D493A310F2",
+      "size": 367328
+    },
+    "static/domains/figure-3.png": {
+      "name": "static/domains/figure-3.png",
+      "hash": "49A0321DA375D2C6322E713DBFD802D5CA848A08B7B45FA9AC6020828C876638",
+      "size": 210897
+    },
+    "static/fastn-badge-dark.svg": {
+      "name": "static/fastn-badge-dark.svg",
+      "hash": "70FA4F035EFF8A3D71920D6D9570B89B311A3DCF736CC5E59D78E0F8842E4DB4",
+      "size": 11356
+    },
+    "static/favicon.svg": {
+      "name": "static/favicon.svg",
+      "hash": "1952C9D3E87F8528689108B8F0142875F04875F4D7260A9C26E0ABB65F10F07D",
+      "size": 4057
+    },
+    "static/google.png": {
+      "name": "static/google.png",
+      "hash": "11B49DC271E934EE5054606806C54AC78F89DA4C2E22B278A37B590945333268",
+      "size": 883
+    },
+    "static/hamburger-dark.svg": {
+      "name": "static/hamburger-dark.svg",
+      "hash": "5ACE4B96CE32DF599A487BB0CC823C41E6C8DC255CE27745F48A6F4ED096E170",
+      "size": 610
+    },
+    "static/cross.svg": {
+      "name": "static/cross.svg",
+      "hash": "DE0A2D4C3651335FFF978C12B1FD286ECDB86D59FFC6EC06A40066009A9D29C0",
+      "size": 678
+    },
+    "static/landing/hero.jpg": {
+      "name": "static/landing/hero.jpg",
+      "hash": "DD5A12AD829345558149550CD87C9312C8F299E19262A4A2A3F769B69CA93D81",
+      "size": 3736196
+    },
+    "static/landing/image.svg": {
+      "name": "static/landing/image.svg",
+      "hash": "4C4C9CB6849907C8275A699FE9803EC82C92E41A87A7389EF7F500B8CFBB97F8",
+      "size": 169152
+    },
+    "static/landing/toggle-up.svg": {
+      "name": "static/landing/toggle-up.svg",
+      "hash": "50BAA6BE9A61EDFC8D7F4E5AF7CB673A475451B3AB505BB4F6B9CB476EAED5EA",
+      "size": 480
+    },
+    "static/left-img1.svg": {
+      "name": "static/left-img1.svg",
+      "hash": "31BEA933441B1C2242890D3A431EB262C35881B027C0A8D3ABB35EAA28CEFA69",
+      "size": 159267
+    },
+    "static/domains/figure-1.png": {
+      "name": "static/domains/figure-1.png",
+      "hash": "9BAD97FB70CB7A20C554D92796E4B658AA5DD60D3E942B8BF09047123FB6ED84",
+      "size": 25460
+    },
+    "components/404-1.ftd": {
+      "name": "components/404-1.ftd",
+      "hash": "D2244627615F7F6AFCEA4B768C22F97698058FA2924A32FAA469D3FCC7730E59",
+      "size": 1932
+    },
+    "static/left-img2.svg": {
+      "name": "static/left-img2.svg",
+      "hash": "DFEB4D2359E1567263D7594A780B47D82A8C6316C9A8CB28E82B52B5B0474A1F",
+      "size": 293644
+    },
+    "static/phone-dark.svg": {
+      "name": "static/phone-dark.svg",
+      "hash": "670238C03833D9222284EE94F39B54BC1DA560637C72D11ACEBD70316502F912",
+      "size": 500
+    },
+    "static/post2.svg": {
+      "name": "static/post2.svg",
+      "hash": "3D971CE6EEE906B56A0874C245A3674CC3FFAB22C6B9B3970828F65C9C77443B",
+      "size": 743622
+    },
+    "static/right.svg": {
+      "name": "static/right.svg",
+      "hash": "816340BF868308F45C3982F00536F02F1242BE2FB395E5DA82C70776FA3C5166",
+      "size": 452
+    },
+    "static/domains/figure-17.png": {
+      "name": "static/domains/figure-17.png",
+      "hash": "9F0340BBFEFF74C3655F944D6EA28DB66564F54F12148A8E27B1283BE7B54EBB",
+      "size": 160772
+    },
+    "components/post-card.ftd": {
+      "name": "components/post-card.ftd",
+      "hash": "080F69EA34D27B76D7F2894A3C993CAE79CE687F7BB1B0D5553CA403211BDF63",
+      "size": 1908
+    },
+    "static/midnight-strom-example.png": {
+      "name": "static/midnight-strom-example.png",
+      "hash": "21942793670CD656CED5735523DCBE15DAC4E3618F52386C30E59C97BAB5EAC1",
+      "size": 111072
+    },
+    "components/link.ftd": {
+      "name": "components/link.ftd",
+      "hash": "CE620C66478F0BA0FA1BFE353F05F1A1D12EB7E47EE5B1CFD70D90C3AE9F1812",
+      "size": 1792
+    },
+    "README.md": {
+      "name": "README.md",
+      "hash": "365D87F607F39B1404672670AADD660D080305AD95DE374989849B55ED180B72",
+      "size": 1332
+    },
+    "static/icon-github-dark.svg": {
+      "name": "static/icon-github-dark.svg",
+      "hash": "807A4D55D55D06004780E21C415F20375AA2DFB34A0CEDDDE83215396ECE2936",
+      "size": 938
+    },
+    "blog-articles/category-1/sample-post-1.ftd": {
+      "name": "blog-articles/category-1/sample-post-1.ftd",
+      "hash": "C7CC642EE3911B40C20857D0E6CD54808CE30D30CCA096FA7A15ED3DCF33BF5D",
+      "size": 9739
+    },
+    "static/article/image-3.svg": {
+      "name": "static/article/image-3.svg",
+      "hash": "16E2359C789A1287B6EAE23CFC6152B8EAF467F95F88CB06A9DE292D5768804E",
+      "size": 6188891
+    },
+    "static/ipsum-logo.svg": {
+      "name": "static/ipsum-logo.svg",
+      "hash": "A227CF22E798ACFB2D01B6352FC22A28047444F028AF05440C6CE6F9499C0EDF",
+      "size": 15494
+    },
+    "static/john-deo.jpg": {
+      "name": "static/john-deo.jpg",
+      "hash": "947E5926586E43C02C8324F90293F53326534461477E78241F529740F2D4A641",
+      "size": 11769
+    },
+    "components/author-bio.ftd": {
+      "name": "components/author-bio.ftd",
+      "hash": "6395CD1AC8D5B477B50FA32DDC4D5FED504AA27BF3B5A617BC56B8DC6FBE55E3",
+      "size": 2294
+    },
+    "components/hero-image-right.ftd": {
+      "name": "components/hero-image-right.ftd",
+      "hash": "6F6B8BA2796DF04ED6FBDAD30987EA14E6445B2AFC35FC4C81721DBD2EF2ED89",
+      "size": 2163
+    },
+    "static/landing/toggle-down.svg": {
+      "name": "static/landing/toggle-down.svg",
+      "hash": "F00C0BA9FFF2C3BA2A8408EBC92D89BCA2A125DD3697270BBF19BCC1693F1FCC",
+      "size": 473
+    },
+    "components/post.ftd": {
+      "name": "components/post.ftd",
+      "hash": "8DF8C11C6A4CFD1FBF441259825D5ED7E952CD770D73F3342040C4D0BC0DD2DC",
+      "size": 5874
+    },
+    "static/image-placeholder.png": {
+      "name": "static/image-placeholder.png",
+      "hash": "F8CEDD499315902E0CF4B516B65C9426C3F8B680183B57B86CAD5F309B2BF981",
+      "size": 5203
+    },
+    "components/markdown.ftd": {
+      "name": "components/markdown.ftd",
+      "hash": "07442B35B97FEE7E30720B6896877EDC970467FC7244D6EF434F996CD7095CED",
+      "size": 2426
+    },
+    "static/article/image-4.svg": {
+      "name": "static/article/image-4.svg",
+      "hash": "83D0717B72E977E4B6F7660FC6EEF5E5DFA5B0B0259B5C2A8EF009EBE426DECF",
+      "size": 1192079
+    },
+    "static/check-circle.svg": {
+      "name": "static/check-circle.svg",
+      "hash": "E8E8823ADF635B6019B1394D3726F7FB89AE5713EC5C2F8B84CCBC51941B5626",
+      "size": 417
+    },
+    "static/domains/figure-2.png": {
+      "name": "static/domains/figure-2.png",
+      "hash": "E3957985EDE86DC1941E7C21303FC4724A61A6FF4303AB50C57A502D79329FB6",
+      "size": 383199
+    },
+    "static/landing/img1.svg": {
+      "name": "static/landing/img1.svg",
+      "hash": "D9B325615D7CC394799C15679643B34E57070FCF53F3368C7CFBE90FA237F205",
+      "size": 8337
+    },
+    "static/up-arrow-dark.svg": {
+      "name": "static/up-arrow-dark.svg",
+      "hash": "3FAD53EC8EC276FC50D94330B87D911C75E51C608871F93633AC1E156B0A8696",
+      "size": 342
+    }
+  },
+  "zip_url": "https://github.com/fastn-community/midnight-storm/archive/f3acc11b54d54ce544c55f9dda253dcfd9488aae.zip",
+  "checksum": "F06D32604472FA3054BF86F66D409B07ABBC9402268211CA82AB74497BA81CF2"
+}
